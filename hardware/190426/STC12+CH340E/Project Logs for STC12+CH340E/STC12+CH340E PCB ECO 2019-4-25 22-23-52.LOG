@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=NetR6_1 Pin=R9-1
+Removed Pin From Net: NetName=NetK1_2 Pin=R9-2
+Removed Pin From Net: NetName=GND Pin=R10-1
+Removed Pin From Net: NetName=NetR6_1 Pin=R10-2
+Removed Member From Class: ClassName=STC12+CH340E Member=R9
+Removed Member From Class: ClassName=STC12+CH340E Member=R10
+Added Component: Designator=0.1¦Ì(C_0603)
+Added Pin To Net: NetName=VIN Pin=0.1¦Ì-1
+Added Pin To Net: NetName=GND Pin=0.1¦Ì-2
+Added Member To Class: ClassName=STC12+CH340E Member=Component 0.1¦Ì ¦ÌF
+Added Room: Name=STC12+CH340E

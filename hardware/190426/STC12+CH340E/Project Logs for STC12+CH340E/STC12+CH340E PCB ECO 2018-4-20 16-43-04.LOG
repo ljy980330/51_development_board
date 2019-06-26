@@ -1,0 +1,32 @@
+Change Component DesignItemId : Designator=P9 Old DesignItemId= New DesignItemId=PIN2
+Change Component DesignItemId : Designator=P10 Old DesignItemId= New DesignItemId=PIN2
+Change Component DesignItemId : Designator=P1 Old DesignItemId= New DesignItemId=PIN4
+Change Component DesignItemId : Designator=P2 Old DesignItemId= New DesignItemId=PIN4
+Change Component DesignItemId : Designator=P3 Old DesignItemId= New DesignItemId=PIN8
+Change Component DesignItemId : Designator=P4 Old DesignItemId= New DesignItemId=PIN8
+Change Component DesignItemId : Designator=P5 Old DesignItemId= New DesignItemId=PIN8
+Change Component DesignItemId : Designator=P7 Old DesignItemId= New DesignItemId=PIN8
+Change Component DesignItemId : Designator=P8 Old DesignItemId= New DesignItemId=PIN8
+Change Component DesignItemId : Designator=Q1 Old DesignItemId=2 New DesignItemId=2N7002
+Change Component DesignItemId : Designator=C1 Old DesignItemId=C New DesignItemId=C_0603
+Change Component DesignItemId : Designator=C2 Old DesignItemId=C New DesignItemId=C_0603
+Change Component DesignItemId : Designator=C3 Old DesignItemId=C New DesignItemId=C_0603
+Change Component DesignItemId : Designator=C4 Old DesignItemId=C New DesignItemId=C_0603
+Change Component DesignItemId : Designator=C5 Old DesignItemId=C New DesignItemId=C_0603
+Change Component DesignItemId : Designator=C7 Old DesignItemId=C New DesignItemId=C_0603
+Change Component DesignItemId : Designator=C8 Old DesignItemId=C New DesignItemId=C_0603
+Change Component DesignItemId : Designator=U1 Old DesignItemId=C New DesignItemId=CH340E
+Change Component DesignItemId : Designator=Y1 Old DesignItemId=Crystal_HC New DesignItemId=Crystal_HC_49US
+Change Component DesignItemId : Designator=FB1 Old DesignItemId=FB New DesignItemId=FB_0805
+Change Component DesignItemId : Designator=LED1 Old DesignItemId=LED_0 New DesignItemId=LED_0603-B
+Change Component DesignItemId : Designator=LED2 Old DesignItemId=LED_0 New DesignItemId=LED_0603-G
+Change Component DesignItemId : Designator=USB1 Old DesignItemId=MICRO New DesignItemId=MICRO USB B
+Change Component DesignItemId : Designator=R1 Old DesignItemId=R New DesignItemId=R_0603
+Change Component DesignItemId : Designator=R2 Old DesignItemId=R New DesignItemId=R_0603
+Change Component DesignItemId : Designator=R3 Old DesignItemId=R New DesignItemId=R_0603
+Change Component DesignItemId : Designator=R5 Old DesignItemId=R New DesignItemId=R_0603
+Change Component DesignItemId : Designator=MOS1 Old DesignItemId=S New DesignItemId=SI2301
+Change Component DesignItemId : Designator=U2 Old DesignItemId=STC12LE5AXXS2 - L New DesignItemId=STC12LE5AXXS2 - LQPF44
+Change Component DesignItemId : Designator=K1 Old DesignItemId=TACT SWITCH_ New DesignItemId=TACT SWITCH_2_SMD
+Added Member To Class: ClassName=STC12+CH340E Member=Component K1 TACT SWITCH_2_SMD
+Added Room: Name=STC12+CH340E

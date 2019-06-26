@@ -1,0 +1,4 @@
+Change Component DesignItemId : Designator=D1 Old DesignItemId=ZMMxxV New DesignItemId=BZT52CxVx
+Change Component Footprint: Designator=D1 Old Footprint=SOD_80 New Footprint=SOD_123
+Change Component Comment : Designator=D1 Old Comment=3.3V New Comment=BZT52C3V3
+Added Room: Name=STC12+CH340E

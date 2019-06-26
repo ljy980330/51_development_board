@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=LED_R Pin=P4-9
+Removed Pin From Net: NetName=LED_G Pin=P4-10
+Removed Pin From Net: NetName=LED_B Pin=P4-11
+Added Pin To Net: NetName=LED_B Pin=P4-9
+Added Pin To Net: NetName=LED_R Pin=P4-10
+Added Pin To Net: NetName=LED_G Pin=P4-11
+Added Room: Name=STC12C5A60S2µ×°å

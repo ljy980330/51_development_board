@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=NetR8_1 Pin=R8-1
+Removed Member From Class: ClassName=STC12+CH340E Member=R8
+Change Component Comment : Designator=C9 Old Comment=0.1¦ÌF New Comment=0.1¦ÌF 0603
+Change Component Comment : Designator=F1 Old Comment=6V 1.1A 0805 New Comment=6V 3A 0805
+Change Component Comment : Designator=R4 Old Comment=¦¸ New Comment=1k
+Change Component Comment : Designator=R6 Old Comment=¦¸ New Comment=22k
+Change Component Comment : Designator=R7 Old Comment=¦¸ New Comment=33k
+Added Pin To Net: NetName=NetR8_1 Pin=R6-1
+Added Pin To Net: NetName=NetR8_1 Pin=R7-2
+Change Net Name : Old Net Name=NetR8_1 New Net Name=NetR6_1
+Change Net Name : Old Net Name=RST New Net Name=NetP5_8
+Added Room: Name=STC12+CH340E

@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=GND Pin=D1-1
+Added Pin To Net: NetName=GND Pin=MOS2-2
+Added Pin To Net: NetName=GND Pin=R7-1
+Added Room: Name=STC12+CH340E

@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=VCC Pin=C6-1
+Removed Pin From Net: NetName=GND Pin=C6-2
+Removed Member From Class: ClassName=STC12+CH340E Member=C6
+Change Component DesignItemId : Designator=C5 Old DesignItemId=C_0603 New DesignItemId=C_0805
+Change Component Footprint: Designator=C5 Old Footprint=C_0603 New Footprint=C_0805
+Change Component Comment : Designator=C5 Old Comment=10¦ÌF New Comment=22¦ÌF 0805
+Added Room: Name=STC12+CH340E
