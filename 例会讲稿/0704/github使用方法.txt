@@ -1,0 +1,4 @@
+1. 登录github官网注册账号 https://github.com
+2. 下载git PC客户端并安装 https://blog.csdn.net/weixin_41714277/article/details/79399270
+3. 生成ssh key密钥 https://blog.csdn.net/xb12369/article/details/78682018
+4. 下载GitHub desktop客户端(也可以使用bash命令行进行操作) https://www.jianshu.com/p/06a960d991aa
