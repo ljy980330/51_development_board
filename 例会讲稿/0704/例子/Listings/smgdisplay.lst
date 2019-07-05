@@ -1,10 +1,10 @@
-C51 COMPILER V9.54   SMGDISPLAY                                                            06/13/2019 14:03:53 PAGE 1   
+C51 COMPILER V9.00   SMGDISPLAY                                                            07/05/2019 20:51:38 PAGE 1   
 
 
-C51 COMPILER V9.54, COMPILATION OF MODULE SMGDISPLAY
+C51 COMPILER V9.00, COMPILATION OF MODULE SMGDISPLAY
 OBJECT MODULE PLACED IN .\Objects\smgdisplay.obj
-COMPILER INVOKED BY: C:\KEIL5\C51\BIN\C51.EXE smgdisplay\smgdisplay.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(
-                    -.\Listings\smgdisplay.lst) OBJECT(.\Objects\smgdisplay.obj)
+COMPILER INVOKED BY: D:\µ¥Æ¬»ú\C51\BIN\C51.EXE smgdisplay\smgdisplay.c BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\smgdis
+                    -play.lst) OBJECT(.\Objects\smgdisplay.obj)
 
 line level    source
 
@@ -62,7 +62,7 @@ MODULE INFORMATION:   STATIC OVERLAYABLE
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
    DATA SIZE        =   ----    ----
-C51 COMPILER V9.54   SMGDISPLAY                                                            06/13/2019 14:03:53 PAGE 2   
+C51 COMPILER V9.00   SMGDISPLAY                                                            07/05/2019 20:51:38 PAGE 2   
 
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----

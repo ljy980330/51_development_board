@@ -1,0 +1,8 @@
+"main.obj",
+"delay.obj",
+"OLED_Init.obj",
+"function.obj",
+"i2c.obj",
+"display.obj" 
+TO "OLED" 
+RAMSIZE(256) 

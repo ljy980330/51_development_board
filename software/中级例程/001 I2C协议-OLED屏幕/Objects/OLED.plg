@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\001 I2C协议-OLED屏幕\OLED.uvproj
+Project File Date:  07/05/2019
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling OLED_Init.c...
+compiling function.c...
+compiling i2c.c...
+compiling display.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  BMP2
+    MODULE:  display.obj (DISPLAY)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  BMP1
+    MODULE:  display.obj (DISPLAY)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  F8X16
+    MODULE:  display.obj (DISPLAY)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  F6X8
+    MODULE:  display.obj (DISPLAY)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  F16X16
+    MODULE:  display.obj (DISPLAY)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MIAN?MAIN
+*** WARNING L10: CANNOT DETERMINE ROOT SEGMENT
+Program Size: data=55.0 xdata=0 code=11806
+Target not created
