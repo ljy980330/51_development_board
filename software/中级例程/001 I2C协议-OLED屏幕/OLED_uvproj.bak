@@ -46,7 +46,7 @@
           <OutputName>OLED</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>1</CreateHexFile>
+          <CreateHexFile>0</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\</ListingPath>
@@ -375,6 +375,11 @@
               <FileName>display.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\display\display.c</FilePath>
+            </File>
+            <File>
+              <FileName>code_tab.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\code_tab\code_tab.c</FilePath>
             </File>
           </Files>
         </Group>
