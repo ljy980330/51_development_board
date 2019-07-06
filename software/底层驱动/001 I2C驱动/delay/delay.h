@@ -10,8 +10,10 @@
 #define _DELAY_H
 
 #include "config.h"
+#include "intrins.h"
 
-void Delay_ms(U16 z);
+void Delay_us(U16 i);
 
+void nop();
 
 #endif

@@ -10,10 +10,9 @@
 #define _I2C_SET_H
 
 #include "config.h"
-#include "intrins.h"
 #include "STC12C5A.H"
+#include "intrins.h"
 
-#define AT24C02_ADDR  0xa0	//AT24C02地址
 #define high 1	//高电平
 #define low  0	//低电位
 
@@ -26,9 +25,9 @@ void I2C_Start();
 
 void I2C_Stop();
 
-void Master_ACK(bit i);
+void WriteByte(U8 j);
 
-bit Test_ACK();
+U8 ReadByte();
 
 
 #endif

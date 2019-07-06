@@ -1,0 +1,45 @@
+C51 COMPILER V9.00   UART_INTERRUPT                                                        07/06/2019 09:43:48 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE UART_INTERRUPT
+OBJECT MODULE PLACED IN UART_Interrupt.obj
+COMPILER INVOKED BY: D:\单片机\C51\BIN\C51.EXE UART_Interrupt\UART_Interrupt.c BROWSE DEBUG OBJECTEXTEND PRINT(.\UART_In
+                    -terrupt.lst) OBJECT(UART_Interrupt.obj)
+
+line level    source
+
+   1          /*********************************************************************************************************
+   2          *名称：UART_Interrupt.c
+   3          *功能：串口的接收
+   4          创建时间：2019/7/5
+   5          修改时间：2019/XX/XX
+   6          作者：XXX
+   7          *********************************************************************************************************/
+   8          
+   9          #include "UART_Interrupt.h"
+  10          
+  11          void UART_Interrupt()
+  12          {
+  13   1              U8 date;
+  14   1      
+  15   1              date=SBUF;        //取出接受到的数据
+  16   1              RI=0;                     //清除接受中断标志位
+  17   1              SBUF=date;                //接收到的数据放入发送缓存器发送
+  18   1              while(!TI);        //等待发送数据完成
+  19   1              TI=0;                           //清除发送完成标志位
+  20   1      
+  21   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     12    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

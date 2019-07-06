@@ -160,10 +160,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>19</ColumnNumber>
+      <ColumnNumber>26</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>6</TopLine>
-      <CurrentLine>18</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>3</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -174,10 +174,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>28</ColumnNumber>
+      <ColumnNumber>48</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>4</TopLine>
-      <CurrentLine>16</CurrentLine>
+      <TopLine>17</TopLine>
+      <CurrentLine>24</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\delay\delay.c</PathWithFileName>
       <FilenameWithoutPath>delay.c</FilenameWithoutPath>
@@ -190,27 +190,39 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>2</TopLine>
+      <CurrentLine>19</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\i2c_set\i2c_set.c</PathWithFileName>
       <FilenameWithoutPath>i2c_set.c</FilenameWithoutPath>
     </File>
-    <File>
-      <GroupNumber>1</GroupNumber>
-      <FileNumber>4</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
-      <bDave2>0</bDave2>
-      <PathWithFileName>.\i2c_data\i2c_data.c</PathWithFileName>
-      <FilenameWithoutPath>i2c_data.c</FilenameWithoutPath>
-    </File>
   </Group>
+
+  <AlienFiles>
+    <PathWithFilename>C:\Users\LEE SZE KI\Desktop\吴燕婷\i2c_drive\INCLUDES.H</PathWithFilename>
+    <TopLine>2</TopLine>
+    <CurrentLine>11</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
 
   <AlienFiles>
     <PathWithFilename>C:\Users\LEE SZE KI\Desktop\吴燕婷\i2c_drive\CONFIG.H</PathWithFilename>
@@ -240,8 +252,8 @@
 
   <AlienFiles>
     <PathWithFilename>C:\Users\LEE SZE KI\Desktop\吴燕婷\i2c_drive\DELAY\DELAY.H</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>1</CurrentLine>
+    <TopLine>2</TopLine>
+    <CurrentLine>17</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -265,9 +277,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\LEE SZE KI\Desktop\吴燕婷\i2c_drive\INCLUDES.H</PathWithFilename>
-    <TopLine>2</TopLine>
-    <CurrentLine>2</CurrentLine>
+    <PathWithFilename>C:\Users\LEE SZE KI\Desktop\吴燕婷\i2c_drive\I2C_SET\I2C_SET.H</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>14</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1631,25 +1643,25 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>4</ActiveTab>
+      <ActiveTab>5</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>19</ColumnNumber>
-          <TopLine>6</TopLine>
-          <CurrentLine>18</CurrentLine>
+          <ColumnNumber>26</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\delay\delay.c</Name>
-          <ColumnNumber>28</ColumnNumber>
-          <TopLine>4</TopLine>
-          <CurrentLine>16</CurrentLine>
+          <ColumnNumber>48</ColumnNumber>
+          <TopLine>17</TopLine>
+          <CurrentLine>24</CurrentLine>
         </Doc>
         <Doc>
           <Name>DELAY/DELAY.H</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
+          <ColumnNumber>11</ColumnNumber>
+          <TopLine>2</TopLine>
+          <CurrentLine>17</CurrentLine>
         </Doc>
         <Doc>
           <Name>CONFIG.H</Name>
@@ -1659,9 +1671,21 @@
         </Doc>
         <Doc>
           <Name>INCLUDES.H</Name>
+          <ColumnNumber>51</ColumnNumber>
+          <TopLine>2</TopLine>
+          <CurrentLine>11</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\i2c_set\i2c_set.c</Name>
           <ColumnNumber>0</ColumnNumber>
           <TopLine>2</TopLine>
-          <CurrentLine>2</CurrentLine>
+          <CurrentLine>19</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>I2C_SET/I2C_SET.H</Name>
+          <ColumnNumber>19</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>14</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

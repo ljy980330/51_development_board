@@ -15,10 +15,10 @@
 
 void I2C_Init()	
 {
-	SDA = high;
-	_nop_();
 	SCL = high;
-	_nop_();
+	nop();
+	SDA = high;
+	nop();
 }
 
 
@@ -29,12 +29,14 @@ void I2C_Init()
 
 void I2C_Start()  
 {
-	SCL = high;
-	_nop_();
 	SDA = high;
-	_nop_();
+	nop();
+	SCL = high;
+	nop();
 	SDA = low;
-	_nop_();
+	nop();
+	SCL = low;
+	nop();
 }
 
 
@@ -46,62 +48,83 @@ void I2C_Start()
 void I2C_Stop()
 {
 	SDA = low;
-	_nop_();
+	nop();
 	SCL = high;
-	_nop_();
+	nop();
 	SDA = high;
-	_nop_();
+	nop();
 }
 
 
 /*******************************************************************************
-* 函 数 名         : Master_ACK
-* 函数功能		   : 主机发送应答
+* 函 数 名         : WriteByte
+* 函数功能		   : 写入一个字节
 *******************************************************************************/
 
-void Master_ACK(bit i)		
+void WriteByte(U8 j)  
 {
-	SCL = low; 	// 拉低时钟总线允许SDA数据总线上的数据变化
-	_nop_(); 	// 让总线稳定
-	if (i)	 	//如果i = 1 那么拉低数据总线 表示主机应答
-	{
-		SDA = low;
-	}
-	else	 
-	{
-		SDA = high;	//发送非应答
-	}
-	_nop_();	//让总线稳定
-	SCL = high;	//拉高时钟总线 让从机从SDA线上读走 主机的应答信号
-	_nop_();
-	SCL = low;	//拉低时钟总线， 占用总线继续通信
-	_nop_();
-	SDA = high;	//释放SDA数据总线。
-	_nop_();
+	U8 i,temp;
+   	temp = j;
+   	for(i=0; i<8; i++)
+   {
+	   temp = temp<<1;
+	   SCL = low;
+	   nop();
+	   SDA = CY;		//temp左移时，移出的值放入了CY中 CY:进位标志
+	   nop();
+	   SCL = high;		//待sda线上的数据稳定后，将scl拉高
+	   nop();
+   }
+   SCL = low;
+   nop();
+   SDA = high;
+   nop();
 }
 
 
 /*******************************************************************************
-* 函 数 名         : Test_ACK
-* 函数功能		   : 检测从机应答
+* 函 数 名         : ReadByte
+* 函数功能		   : 读取一个字节
 *******************************************************************************/
 
-bit Test_ACK()
+U8 ReadByte()   
 {
+   U8 i, j;
+   U8 k = 0;
+   SCL = low; 
+   nop(); 
+   SDA = high;
+   for (i=0; i<8; i++)
+   {  
+		nop(); 
+		SCL = high; 
+		nop();
+      	if(SCL == high) 
+			j = 1;
+      	else
+			j = 0;
+      	k = (k<<1)|j;
+	  	SCL = 0;
+	}
+   	nop();
+	return(k);
+}
+
+
+/*******************************************************************************
+* 函 数 名         : Clock
+* 函数功能		   : i2c总线时钟
+*******************************************************************************/
+
+void Clock()
+{
+	U8 i = 0;
 	SCL = high;
-	_nop_();
-	if (SDA)
-	{
-		SCL = low;
-		_nop_();
-		I2C_Stop();
-		return(0);
-	}
-	else
-	{
-		SCL = low;
-		_nop_();
-		return(1);
-	}
+	nop();
+	while((SDA == high) && (i < 255))
+		i++;
+	SCL = low;
+	nop();
+
 }
 

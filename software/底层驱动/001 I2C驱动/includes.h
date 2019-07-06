@@ -14,6 +14,6 @@
 #include "config.h"
 #include "delay/delay.h"
 #include "i2c_set/i2c_set.h"
-#include "i2c_data/i2c_data.h"
+
 
 #endif
