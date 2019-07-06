@@ -1,8 +1,9 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/05/2019  21:17:46  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/06/2019  20:23:18  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-D:\单片机\C51\BIN\BL51.EXE main.obj, delay.obj, OLED_Init.obj, function.obj, i2c.obj, display.obj TO OLED RAMSIZE (256)
+D:\单片机\C51\BIN\BL51.EXE main.obj, delay.obj, OLED_Init.obj, function.obj, i2c.obj, display.obj, code_tab.obj TO OLED 
+>> RAMSIZE (256)
 
 
 MEMORY MODEL: SMALL
@@ -15,6 +16,7 @@ INPUT MODULES INCLUDED:
   function.obj (FUNCTION)
   i2c.obj (I2C)
   display.obj (DISPLAY)
+  code_tab.obj (CODE_TAB)
   D:\单片机\C51\LIB\C51S.LIB (?C?CLDOPTR)
   D:\单片机\C51\LIB\C51S.LIB (?C?SIDIV)
   D:\单片机\C51\LIB\C51S.LIB (?C?UIDIV)
@@ -40,27 +42,27 @@ LINK MAP OF MODULE:  OLED (MAIN)
             DATA    0036H     0001H     UNIT         ?DT?_OLED_SET_POS?FUNCTION
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
-            CODE    0000H     1460H     UNIT         ?CO?MAIN
-            CODE    1460H     1418H     UNIT         ?CO?DISPLAY
-            CODE    2878H     012CH     UNIT         ?PR?MIAN?MAIN
-            CODE    29A4H     00B8H     UNIT         ?C?LIB_CODE
-            CODE    2A5CH     00B3H     UNIT         ?PR?_OLED_P8X16STR?DISPLAY
-            CODE    2B0FH     009EH     UNIT         ?PR?OLED_INIT?OLED_INIT
-            CODE    2BADH     0086H     UNIT         ?PR?_DRAW_BMP?DISPLAY
-            CODE    2C33H     0079H     UNIT         ?PR?_OLED_P6X8STR?DISPLAY
-            CODE    2CACH     0076H     UNIT         ?PR?_OLED_P16X16CH?DISPLAY
-            CODE    2D22H     0030H     UNIT         ?PR?OLED_CLS?FUNCTION
-            CODE    2D52H     002FH     UNIT         ?PR?_OLED_FILL?FUNCTION
-            CODE    2D81H     001FH     UNIT         ?PR?_WRITE_IIC_BYTE?I2C
-            CODE    2DA0H     001EH     UNIT         ?PR?_DELAY_MS?DELAY
-            CODE    2DBEH     001DH     UNIT         ?PR?_OLED_SET_POS?FUNCTION
-            CODE    2DDBH     001AH     UNIT         ?PR?_OLED_WRCMD?FUNCTION
-            CODE    2DF5H     0017H     UNIT         ?PR?_OLED_WRDAT?FUNCTION
-            CODE    2E0CH     0009H     UNIT         ?PR?IIC_START?I2C
-            CODE    2E15H     0009H     UNIT         ?PR?IIC_STOP?I2C
+            CODE    0000H     1418H     UNIT         ?CO?CODE_TAB
+            CODE    1418H     012CH     UNIT         ?PR?MIAN?MAIN
+            CODE    1544H     00B8H     UNIT         ?C?LIB_CODE
+            CODE    15FCH     00B3H     UNIT         ?PR?_OLED_P8X16STR?DISPLAY
+            CODE    16AFH     009EH     UNIT         ?PR?OLED_INIT?OLED_INIT
+            CODE    174DH     0086H     UNIT         ?PR?_DRAW_BMP?DISPLAY
+            CODE    17D3H     0079H     UNIT         ?PR?_OLED_P6X8STR?DISPLAY
+            CODE    184CH     0076H     UNIT         ?PR?_OLED_P16X16CH?DISPLAY
+            CODE    18C2H     0048H     UNIT         ?CO?MAIN
+            CODE    190AH     0030H     UNIT         ?PR?OLED_CLS?FUNCTION
+            CODE    193AH     002FH     UNIT         ?PR?_OLED_FILL?FUNCTION
+            CODE    1969H     001FH     UNIT         ?PR?_WRITE_IIC_BYTE?I2C
+            CODE    1988H     001EH     UNIT         ?PR?_DELAY_MS?DELAY
+            CODE    19A6H     001DH     UNIT         ?PR?_OLED_SET_POS?FUNCTION
+            CODE    19C3H     001AH     UNIT         ?PR?_OLED_WRCMD?FUNCTION
+            CODE    19DDH     0017H     UNIT         ?PR?_OLED_WRDAT?FUNCTION
+            CODE    19F4H     0009H     UNIT         ?PR?IIC_START?I2C
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  20:23:18  PAGE 2
 
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/05/2019  21:17:46  PAGE 2
 
+            CODE    19FDH     0009H     UNIT         ?PR?IIC_STOP?I2C
 
 
 
@@ -70,15 +72,6 @@ OVERLAY MAP OF MODULE:   OLED (MAIN)
 SEGMENT
   +--> CALLED SEGMENT
 ---------------------
-
-
-IGNORED SYMBOLS:
-   BMP1
-   BMP2
-   F16X16
-   F6X8
-   F8X16
-
 
 
 SYMBOL TABLE OF MODULE:  OLED (MAIN)
@@ -94,73 +87,68 @@ SYMBOL TABLE OF MODULE:  OLED (MAIN)
   D:00B0H         PUBLIC        P3
   D:00C0H         PUBLIC        P4
   D:00C8H         PUBLIC        P5
-  C:0048H         PUBLIC        F16x16
   D:00A8H         PUBLIC        IE
-  C:0C60H         PUBLIC        BMP1
-  C:1060H         PUBLIC        BMP2
   D:00B8H         PUBLIC        IP
   D:00D8H         PUBLIC        CCON
-  C:2878H         PUBLIC        mian
-  C:0448H         PUBLIC        F6x8
+  C:1418H         PUBLIC        mian
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-  C:0670H         PUBLIC        F8X16
   D:00E0H         PUBLIC        ACC
   D:00D0H         PUBLIC        PSW
   -------         PROC          MIAN
   -------         DO            
   D:0033H         SYMBOL        i
   -------         ENDDO         
-  C:2878H         LINE#         11
-  C:2878H         LINE#         12
-  C:2878H         LINE#         15
-  C:287BH         LINE#         17
-  C:287BH         LINE#         18
-  C:287BH         LINE#         19
-  C:2887H         LINE#         21
-  C:2893H         LINE#         23
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/05/2019  21:17:46  PAGE 3
+  C:1418H         LINE#         11
+  C:1418H         LINE#         12
+  C:1418H         LINE#         15
+  C:141BH         LINE#         17
+  C:141BH         LINE#         18
+  C:141BH         LINE#         19
+  C:1427H         LINE#         21
+  C:1433H         LINE#         23
+  C:143FH         LINE#         25
+  C:144BH         LINE#         27
+  C:1457H         LINE#         29
+  C:145AH         LINE#         30
+  C:145AH         LINE#         32
+  C:146FH         LINE#         34
+  C:1484H         LINE#         36
+  C:1499H         LINE#         38
+  C:14A2H         LINE#         39
+  C:14A9H         LINE#         41
+  C:14ACH         LINE#         43
+  C:14B9H         LINE#         45
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  20:23:18  PAGE 3
 
 
-  C:289FH         LINE#         25
-  C:28ABH         LINE#         27
-  C:28B7H         LINE#         29
-  C:28BAH         LINE#         30
-  C:28BAH         LINE#         32
-  C:28CFH         LINE#         34
-  C:28E4H         LINE#         36
-  C:28F9H         LINE#         38
-  C:2902H         LINE#         39
-  C:2909H         LINE#         41
-  C:290CH         LINE#         43
-  C:2919H         LINE#         45
-  C:2928H         LINE#         47
-  C:2937H         LINE#         49
-  C:2946H         LINE#         51
-  C:2955H         LINE#         53
-  C:295CH         LINE#         55
-  C:295FH         LINE#         57
-  C:2979H         LINE#         59
-  C:2980H         LINE#         61
-  C:299AH         LINE#         63
-  C:29A1H         LINE#         64
+  C:14C8H         LINE#         47
+  C:14D7H         LINE#         49
+  C:14E6H         LINE#         51
+  C:14F5H         LINE#         53
+  C:14FCH         LINE#         55
+  C:14FFH         LINE#         57
+  C:1519H         LINE#         59
+  C:1520H         LINE#         61
+  C:153AH         LINE#         63
+  C:1541H         LINE#         64
   -------         ENDPROC       MIAN
   -------         ENDMOD        MAIN
 
   -------         MODULE        DELAY
   C:0000H         SYMBOL        _ICE_DUMMY_
-  C:2DA0H         PUBLIC        _Delay_ms
+  C:1988H         PUBLIC        _Delay_ms
   -------         PROC          _DELAY_MS
   D:0006H         SYMBOL        z
   -------         DO            
   D:0006H         SYMBOL        x
   D:0004H         SYMBOL        y
   -------         ENDDO         
-  C:2DA0H         LINE#         15
-  C:2DA0H         LINE#         16
-  C:2DA0H         LINE#         19
-  C:2DA9H         LINE#         21
-  C:2DBDH         LINE#         22
+  C:1988H         LINE#         15
+  C:1988H         LINE#         16
+  C:1988H         LINE#         19
+  C:1991H         LINE#         21
+  C:19A5H         LINE#         22
   -------         ENDPROC       _DELAY_MS
   -------         ENDMOD        DELAY
 
@@ -177,46 +165,46 @@ SYMBOL TABLE OF MODULE:  OLED (MAIN)
   D:00D8H         PUBLIC        CCON
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-  C:2B0FH         PUBLIC        OLED_init
+  C:16AFH         PUBLIC        OLED_init
   D:00E0H         PUBLIC        ACC
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/05/2019  21:17:46  PAGE 4
-
-
   D:00D0H         PUBLIC        PSW
   -------         PROC          OLED_INIT
-  C:2B0FH         LINE#         16
-  C:2B0FH         LINE#         17
-  C:2B0FH         LINE#         18
-  C:2B16H         LINE#         20
-  C:2B1BH         LINE#         22
-  C:2B20H         LINE#         24
-  C:2B25H         LINE#         26
-  C:2B2AH         LINE#         28
-  C:2B2FH         LINE#         30
-  C:2B34H         LINE#         32
-  C:2B39H         LINE#         34
-  C:2B3EH         LINE#         36
-  C:2B43H         LINE#         38
-  C:2B48H         LINE#         40
-  C:2B4DH         LINE#         42
-  C:2B52H         LINE#         44
-  C:2B57H         LINE#         46
-  C:2B5CH         LINE#         48
-  C:2B61H         LINE#         50
-  C:2B66H         LINE#         52
-  C:2B6BH         LINE#         54
-  C:2B70H         LINE#         56
-  C:2B75H         LINE#         58
-  C:2B7AH         LINE#         60
-  C:2B7FH         LINE#         62
-  C:2B84H         LINE#         64
-  C:2B89H         LINE#         66
-  C:2B8EH         LINE#         68
-  C:2B93H         LINE#         70
-  C:2B98H         LINE#         72
-  C:2B9DH         LINE#         74
-  C:2BA2H         LINE#         76
-  C:2BA7H         LINE#         78
+  C:16AFH         LINE#         16
+  C:16AFH         LINE#         17
+  C:16AFH         LINE#         18
+  C:16B6H         LINE#         20
+  C:16BBH         LINE#         22
+  C:16C0H         LINE#         24
+  C:16C5H         LINE#         26
+  C:16CAH         LINE#         28
+  C:16CFH         LINE#         30
+  C:16D4H         LINE#         32
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  20:23:18  PAGE 4
+
+
+  C:16D9H         LINE#         34
+  C:16DEH         LINE#         36
+  C:16E3H         LINE#         38
+  C:16E8H         LINE#         40
+  C:16EDH         LINE#         42
+  C:16F2H         LINE#         44
+  C:16F7H         LINE#         46
+  C:16FCH         LINE#         48
+  C:1701H         LINE#         50
+  C:1706H         LINE#         52
+  C:170BH         LINE#         54
+  C:1710H         LINE#         56
+  C:1715H         LINE#         58
+  C:171AH         LINE#         60
+  C:171FH         LINE#         62
+  C:1724H         LINE#         64
+  C:1729H         LINE#         66
+  C:172EH         LINE#         68
+  C:1733H         LINE#         70
+  C:1738H         LINE#         72
+  C:173DH         LINE#         74
+  C:1742H         LINE#         76
+  C:1747H         LINE#         78
   -------         ENDPROC       OLED_INIT
   -------         ENDMOD        OLED_INIT
 
@@ -229,50 +217,50 @@ SYMBOL TABLE OF MODULE:  OLED (MAIN)
   D:00C0H         PUBLIC        P4
   D:00C8H         PUBLIC        P5
   D:00A8H         PUBLIC        IE
-  C:2D52H         PUBLIC        _OLED_Fill
+  C:193AH         PUBLIC        _OLED_Fill
   D:00B8H         PUBLIC        IP
   D:00D8H         PUBLIC        CCON
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-  C:2DBEH         PUBLIC        _OLED_Set_Pos
+  C:19A6H         PUBLIC        _OLED_Set_Pos
   D:00E0H         PUBLIC        ACC
-  C:2DDEH         PUBLIC        _OLED_WrCmd
-  C:2D22H         PUBLIC        OLED_CLS
-  C:2DF5H         PUBLIC        _OLED_WrDat
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/05/2019  21:17:46  PAGE 5
-
-
+  C:19C6H         PUBLIC        _OLED_WrCmd
+  C:190AH         PUBLIC        OLED_CLS
+  C:19DDH         PUBLIC        _OLED_WrDat
   D:00D0H         PUBLIC        PSW
   -------         PROC          L?0018
   -------         ENDPROC       L?0018
   -------         PROC          _OLED_WRCMD
   D:0034H         SYMBOL        IIC_Command
-  C:2DDEH         LINE#         16
-  C:2DE0H         LINE#         17
-  C:2DE0H         LINE#         18
-  C:2DE3H         LINE#         20
-  C:2DE8H         LINE#         22
-  C:2DEDH         LINE#         24
-  C:2DF2H         LINE#         26
+  C:19C6H         LINE#         16
+  C:19C8H         LINE#         17
+  C:19C8H         LINE#         18
+  C:19CBH         LINE#         20
+  C:19D0H         LINE#         22
+  C:19D5H         LINE#         24
+  C:19DAH         LINE#         26
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  20:23:18  PAGE 5
+
+
   -------         ENDPROC       _OLED_WRCMD
   -------         PROC          _OLED_WRDAT
   D:0035H         SYMBOL        IIC_Data
-  C:2DF5H         LINE#         34
-  C:2DF7H         LINE#         35
-  C:2DF7H         LINE#         36
-  C:2DFAH         LINE#         38
-  C:2DFFH         LINE#         40
-  C:2E04H         LINE#         42
-  C:2E09H         LINE#         44
+  C:19DDH         LINE#         34
+  C:19DFH         LINE#         35
+  C:19DFH         LINE#         36
+  C:19E2H         LINE#         38
+  C:19E7H         LINE#         40
+  C:19ECH         LINE#         42
+  C:19F1H         LINE#         44
   -------         ENDPROC       _OLED_WRDAT
   -------         PROC          _OLED_SET_POS
   D:0036H         SYMBOL        x
   D:0005H         SYMBOL        y
-  C:2DBEH         LINE#         52
-  C:2DC0H         LINE#         53
-  C:2DC0H         LINE#         54
-  C:2DC4H         LINE#         56
-  C:2DD1H         LINE#         58
+  C:19A6H         LINE#         52
+  C:19A8H         LINE#         53
+  C:19A8H         LINE#         54
+  C:19ACH         LINE#         56
+  C:19B9H         LINE#         58
   -------         ENDPROC       _OLED_SET_POS
   -------         PROC          _OLED_FILL
   D:002EH         SYMBOL        bmp_dat
@@ -280,39 +268,39 @@ SYMBOL TABLE OF MODULE:  OLED (MAIN)
   D:002FH         SYMBOL        y
   D:0030H         SYMBOL        x
   -------         ENDDO         
-  C:2D52H         LINE#         67
-  C:2D54H         LINE#         68
-  C:2D54H         LINE#         70
-  C:2D57H         LINE#         71
-  C:2D57H         LINE#         72
-  C:2D5CH         LINE#         74
-  C:2D61H         LINE#         76
-  C:2D66H         LINE#         78
-  C:2D69H         LINE#         80
-  C:2D77H         LINE#         81
-  C:2D80H         LINE#         82
+  C:193AH         LINE#         67
+  C:193CH         LINE#         68
+  C:193CH         LINE#         70
+  C:193FH         LINE#         71
+  C:193FH         LINE#         72
+  C:1944H         LINE#         74
+  C:1949H         LINE#         76
+  C:194EH         LINE#         78
+  C:1951H         LINE#         80
+  C:195FH         LINE#         81
+  C:1968H         LINE#         82
   -------         ENDPROC       _OLED_FILL
   -------         PROC          OLED_CLS
   -------         DO            
   D:0031H         SYMBOL        y
   D:0032H         SYMBOL        x
   -------         ENDDO         
-  C:2D22H         LINE#         90
-  C:2D22H         LINE#         91
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/05/2019  21:17:46  PAGE 6
-
-
-  C:2D22H         LINE#         93
-  C:2D25H         LINE#         94
-  C:2D25H         LINE#         95
-  C:2D2DH         LINE#         97
-  C:2D32H         LINE#         99
-  C:2D37H         LINE#         101
-  C:2D3AH         LINE#         103
-  C:2D48H         LINE#         104
-  C:2D51H         LINE#         105
+  C:190AH         LINE#         90
+  C:190AH         LINE#         91
+  C:190AH         LINE#         93
+  C:190DH         LINE#         94
+  C:190DH         LINE#         95
+  C:1915H         LINE#         97
+  C:191AH         LINE#         99
+  C:191FH         LINE#         101
+  C:1922H         LINE#         103
+  C:1930H         LINE#         104
+  C:1939H         LINE#         105
   -------         ENDPROC       OLED_CLS
   -------         ENDMOD        FUNCTION
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  20:23:18  PAGE 6
+
 
   -------         MODULE        I2C
   C:0000H         SYMBOL        _ICE_DUMMY_
@@ -327,54 +315,54 @@ SYMBOL TABLE OF MODULE:  OLED (MAIN)
   D:00D8H         PUBLIC        CCON
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-  C:2D81H         PUBLIC        _Write_IIC_Byte
-  C:2E0CH         PUBLIC        IIC_Start
+  C:1969H         PUBLIC        _Write_IIC_Byte
+  C:19F4H         PUBLIC        IIC_Start
   D:00E0H         PUBLIC        ACC
   B:00A0H.1       PUBLIC        SDA
-  C:2E15H         PUBLIC        IIC_Stop
+  C:19FDH         PUBLIC        IIC_Stop
   B:00A0H.0       PUBLIC        SCL
   D:00D0H         PUBLIC        PSW
   -------         PROC          IIC_START
-  C:2E0CH         LINE#         16
-  C:2E0CH         LINE#         17
-  C:2E0CH         LINE#         18
-  C:2E0EH         LINE#         19
-  C:2E10H         LINE#         20
-  C:2E12H         LINE#         21
-  C:2E14H         LINE#         22
+  C:19F4H         LINE#         16
+  C:19F4H         LINE#         17
+  C:19F4H         LINE#         18
+  C:19F6H         LINE#         19
+  C:19F8H         LINE#         20
+  C:19FAH         LINE#         21
+  C:19FCH         LINE#         22
   -------         ENDPROC       IIC_START
   -------         PROC          IIC_STOP
-  C:2E15H         LINE#         29
-  C:2E15H         LINE#         30
-  C:2E15H         LINE#         31
-  C:2E17H         LINE#         32
-  C:2E19H         LINE#         33
-  C:2E1BH         LINE#         34
-  C:2E1DH         LINE#         35
+  C:19FDH         LINE#         29
+  C:19FDH         LINE#         30
+  C:19FDH         LINE#         31
+  C:19FFH         LINE#         32
+  C:1A01H         LINE#         33
+  C:1A03H         LINE#         34
+  C:1A05H         LINE#         35
   -------         ENDPROC       IIC_STOP
   -------         PROC          _WRITE_IIC_BYTE
   D:0007H         SYMBOL        IIC_Byte
   -------         DO            
   D:0006H         SYMBOL        i
   -------         ENDDO         
-  C:2D81H         LINE#         43
-  C:2D81H         LINE#         44
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/05/2019  21:17:46  PAGE 7
+  C:1969H         LINE#         43
+  C:1969H         LINE#         44
+  C:1969H         LINE#         47
+  C:196BH         LINE#         48
+  C:196BH         LINE#         49
+  C:196FH         LINE#         50
+  C:1973H         LINE#         52
+  C:1975H         LINE#         54
+  C:1977H         LINE#         56
+  C:1979H         LINE#         58
+  C:197DH         LINE#         59
+  C:1981H         LINE#         60
+  C:1983H         LINE#         61
+  C:1985H         LINE#         62
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  20:23:18  PAGE 7
 
 
-  C:2D81H         LINE#         47
-  C:2D83H         LINE#         48
-  C:2D83H         LINE#         49
-  C:2D87H         LINE#         50
-  C:2D8BH         LINE#         52
-  C:2D8DH         LINE#         54
-  C:2D8FH         LINE#         56
-  C:2D91H         LINE#         58
-  C:2D95H         LINE#         59
-  C:2D99H         LINE#         60
-  C:2D9BH         LINE#         61
-  C:2D9DH         LINE#         62
-  C:2D9FH         LINE#         63
+  C:1987H         LINE#         63
   -------         ENDPROC       _WRITE_IIC_BYTE
   -------         ENDMOD        I2C
 
@@ -387,20 +375,15 @@ SYMBOL TABLE OF MODULE:  OLED (MAIN)
   D:00C0H         PUBLIC        P4
   D:00C8H         PUBLIC        P5
   D:00A8H         PUBLIC        IE
-  C:1460H         PUBLIC        F16x16
-  C:2078H         PUBLIC        BMP1
-  C:2478H         PUBLIC        BMP2
   D:00B8H         PUBLIC        IP
   D:00D8H         PUBLIC        CCON
-  C:2A5CH         PUBLIC        _OLED_P8x16Str
-  C:1860H         PUBLIC        F6x8
+  C:15FCH         PUBLIC        _OLED_P8x16Str
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-  C:1A88H         PUBLIC        F8X16
   D:00E0H         PUBLIC        ACC
-  C:2CACH         PUBLIC        _OLED_P16x16Ch
-  C:2BADH         PUBLIC        _Draw_BMP
-  C:2C33H         PUBLIC        _OLED_P6x8Str
+  C:184CH         PUBLIC        _OLED_P16x16Ch
+  C:174DH         PUBLIC        _Draw_BMP
+  C:17D3H         PUBLIC        _OLED_P6x8Str
   D:00D0H         PUBLIC        PSW
   -------         PROC          _OLED_P6X8STR
   D:0016H         SYMBOL        x
@@ -411,23 +394,20 @@ SYMBOL TABLE OF MODULE:  OLED (MAIN)
   D:001DH         SYMBOL        i
   D:001EH         SYMBOL        j
   -------         ENDDO         
-  C:2C33H         LINE#         16
-  C:2C3FH         LINE#         17
-  C:2C3FH         LINE#         18
-  C:2C46H         LINE#         20
-  C:2C57H         LINE#         21
-  C:2C57H         LINE#         22
-  C:2C5BH         LINE#         24
-  C:2C6DH         LINE#         26
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/05/2019  21:17:46  PAGE 8
-
-
-  C:2C74H         LINE#         28
-  C:2C77H         LINE#         30
-  C:2CA1H         LINE#         32
-  C:2CA7H         LINE#         34
-  C:2CA9H         LINE#         35
-  C:2CABH         LINE#         36
+  C:17D3H         LINE#         16
+  C:17DFH         LINE#         17
+  C:17DFH         LINE#         18
+  C:17E6H         LINE#         20
+  C:17F7H         LINE#         21
+  C:17F7H         LINE#         22
+  C:17FBH         LINE#         24
+  C:180DH         LINE#         26
+  C:1814H         LINE#         28
+  C:1817H         LINE#         30
+  C:1841H         LINE#         32
+  C:1847H         LINE#         34
+  C:1849H         LINE#         35
+  C:184BH         LINE#         36
   -------         ENDPROC       _OLED_P6X8STR
   -------         PROC          _OLED_P8X16STR
   D:001FH         SYMBOL        x
@@ -438,23 +418,26 @@ SYMBOL TABLE OF MODULE:  OLED (MAIN)
   D:0026H         SYMBOL        i
   D:0027H         SYMBOL        j
   -------         ENDDO         
-  C:2A5CH         LINE#         44
-  C:2A68H         LINE#         45
-  C:2A68H         LINE#         46
-  C:2A6FH         LINE#         47
-  C:2A83H         LINE#         48
-  C:2A83H         LINE#         49
-  C:2A87H         LINE#         51
-  C:2A99H         LINE#         53
-  C:2AA0H         LINE#         55
-  C:2AA3H         LINE#         57
-  C:2ACDH         LINE#         59
-  C:2AD6H         LINE#         61
-  C:2AD9H         LINE#         63
-  C:2B03H         LINE#         65
-  C:2B09H         LINE#         67
-  C:2B0BH         LINE#         68
-  C:2B0EH         LINE#         69
+  C:15FCH         LINE#         44
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  20:23:18  PAGE 8
+
+
+  C:1608H         LINE#         45
+  C:1608H         LINE#         46
+  C:160FH         LINE#         47
+  C:1623H         LINE#         48
+  C:1623H         LINE#         49
+  C:1627H         LINE#         51
+  C:1639H         LINE#         53
+  C:1640H         LINE#         55
+  C:1643H         LINE#         57
+  C:166DH         LINE#         59
+  C:1676H         LINE#         61
+  C:1679H         LINE#         63
+  C:16A3H         LINE#         65
+  C:16A9H         LINE#         67
+  C:16ABH         LINE#         68
+  C:16AEH         LINE#         69
   -------         ENDPROC       _OLED_P8X16STR
   -------         PROC          _OLED_P16X16CH
   D:0028H         SYMBOL        x
@@ -464,26 +447,23 @@ SYMBOL TABLE OF MODULE:  OLED (MAIN)
   D:002BH         SYMBOL        wm
   D:002CH         SYMBOL        adder
   -------         ENDDO         
-  C:2CACH         LINE#         77
-  C:2CB2H         LINE#         78
-  C:2CB2H         LINE#         79
-  C:2CB5H         LINE#         81
-  C:2CC5H         LINE#         83
-  C:2CCCH         LINE#         85
-  C:2CCFH         LINE#         86
-  C:2CCFH         LINE#         87
-  C:2CE1H         LINE#         89
-  C:2CE9H         LINE#         90
-  C:2CF2H         LINE#         91
-  C:2CFBH         LINE#         93
-  C:2CFEH         LINE#         94
-  C:2CFEH         LINE#         95
-  C:2D10H         LINE#         97
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/05/2019  21:17:46  PAGE 9
-
-
-  C:2D18H         LINE#         98
-  C:2D21H         LINE#         99
+  C:184CH         LINE#         77
+  C:1852H         LINE#         78
+  C:1852H         LINE#         79
+  C:1855H         LINE#         81
+  C:1865H         LINE#         83
+  C:186CH         LINE#         85
+  C:186FH         LINE#         86
+  C:186FH         LINE#         87
+  C:1881H         LINE#         89
+  C:1889H         LINE#         90
+  C:1892H         LINE#         91
+  C:189BH         LINE#         93
+  C:189EH         LINE#         94
+  C:189EH         LINE#         95
+  C:18B0H         LINE#         97
+  C:18B8H         LINE#         98
+  C:18C1H         LINE#         99
   -------         ENDPROC       _OLED_P16X16CH
   -------         PROC          _DRAW_BMP
   D:0008H         SYMBOL        x0
@@ -496,62 +476,51 @@ SYMBOL TABLE OF MODULE:  OLED (MAIN)
   D:0014H         SYMBOL        x
   D:0015H         SYMBOL        y
   -------         ENDDO         
-  C:2BADH         LINE#         107
-  C:2BB7H         LINE#         108
-  C:2BB7H         LINE#         109
-  C:2BBCH         LINE#         113
-  C:2BD8H         LINE#         115
-  C:2BE3H         LINE#         117
-  C:2BF5H         LINE#         118
-  C:2BF5H         LINE#         119
-  C:2BFCH         LINE#         121
-  C:2C0EH         LINE#         122
-  C:2C0EH         LINE#         123
-  C:2C2AH         LINE#         124
-  C:2C2EH         LINE#         125
-  C:2C32H         LINE#         126
+  C:174DH         LINE#         107
+  C:1757H         LINE#         108
+  C:1757H         LINE#         109
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  20:23:18  PAGE 9
+
+
+  C:175CH         LINE#         113
+  C:1778H         LINE#         115
+  C:1783H         LINE#         117
+  C:1795H         LINE#         118
+  C:1795H         LINE#         119
+  C:179CH         LINE#         121
+  C:17AEH         LINE#         122
+  C:17AEH         LINE#         123
+  C:17CAH         LINE#         124
+  C:17CEH         LINE#         125
+  C:17D2H         LINE#         126
   -------         ENDPROC       _DRAW_BMP
   -------         ENDMOD        DISPLAY
 
+  -------         MODULE        CODE_TAB
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0000H         PUBLIC        F16x16
+  C:0C18H         PUBLIC        BMP1
+  C:1018H         PUBLIC        BMP2
+  C:0400H         PUBLIC        F6x8
+  C:0628H         PUBLIC        F8X16
+  -------         ENDMOD        CODE_TAB
+
   -------         MODULE        ?C?CLDOPTR
-  C:29A4H         PUBLIC        ?C?CLDOPTR
+  C:1544H         PUBLIC        ?C?CLDOPTR
   -------         ENDMOD        ?C?CLDOPTR
 
   -------         MODULE        ?C?SIDIV
-  C:29D1H         PUBLIC        ?C?SIDIV
+  C:1571H         PUBLIC        ?C?SIDIV
   -------         ENDMOD        ?C?SIDIV
 
   -------         MODULE        ?C?UIDIV
-  C:2A07H         PUBLIC        ?C?UIDIV
+  C:15A7H         PUBLIC        ?C?UIDIV
   -------         ENDMOD        ?C?UIDIV
-
-*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
-    SYMBOL:  BMP2
-    MODULE:  display.obj (DISPLAY)
-
-*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
-    SYMBOL:  BMP1
-    MODULE:  display.obj (DISPLAY)
-
-*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
-    SYMBOL:  F8X16
-    MODULE:  display.obj (DISPLAY)
-
-*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
-    SYMBOL:  F6X8
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/05/2019  21:17:46  PAGE 10
-
-
-    MODULE:  display.obj (DISPLAY)
-
-*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
-    SYMBOL:  F16X16
-    MODULE:  display.obj (DISPLAY)
 
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?MIAN?MAIN
 
 *** WARNING L10: CANNOT DETERMINE ROOT SEGMENT
 
-Program Size: data=55.0 xdata=0 code=11806
-LINK/LOCATE RUN COMPLETE.  2 WARNING(S),  5 ERROR(S)
+Program Size: data=55.0 xdata=0 code=6662
+LINK/LOCATE RUN COMPLETE.  2 WARNING(S),  0 ERROR(S)

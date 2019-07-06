@@ -3,6 +3,7 @@
 "OLED_Init.obj",
 "function.obj",
 "i2c.obj",
-"display.obj" 
+"display.obj",
+"code_tab.obj" 
 TO "OLED" 
 RAMSIZE(256) 
