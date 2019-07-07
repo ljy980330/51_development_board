@@ -1,0 +1,347 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\HJQ\Desktop\程序\蜂鸣器\FengMingQi.uvproj
+Project File Date:  07/05/2019
+
+<h2>Output:</h2>
+compiling FengMingQi.c...
+FENGMINGQI\FENGMINGQI.H(13): error C202: 'P2': undefined identifier
+FENGMINGQI\FENGMINGQI.H(66): error C132: 'int0': not in formal parameter list
+FENGMINGQI\FENGMINGQI.H(66): error C141: syntax error near 'interrupt'
+FENGMINGQI\FENGMINGQI.C(14): error C132: 'Feng_Ming_Qi': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(14): error C141: syntax error near 'void'
+FENGMINGQI\FENGMINGQI.C(15): error C132: '_delay_pinglu': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(15): error C141: syntax error near '{'
+FENGMINGQI\FENGMINGQI.C(16): error C136: 'i': 'void' on variable
+FENGMINGQI\FENGMINGQI.C(16): error C244: 'i': can't initialize, bad type or class
+FENGMINGQI\FENGMINGQI.C(16): error C202: 'm': undefined identifier
+FENGMINGQI\FENGMINGQI.C(16): error C136: 'i': 'void' on variable
+FENGMINGQI\FENGMINGQI.C(16): error C132: 'i': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(17): error C141: syntax error near 'while'
+FENGMINGQI\FENGMINGQI.C(17): error C141: syntax error near '--'
+FENGMINGQI\FENGMINGQI.C(17): error C129: missing ';' before ')'
+FengMingQi\FengMingQi.c - 15 Error(s), 0 Warning(s).
+compiling FengMingQi.c...
+FENGMINGQI\FENGMINGQI.H(68): error C132: 'int0': not in formal parameter list
+FENGMINGQI\FENGMINGQI.H(68): error C141: syntax error near 'interrupt'
+FENGMINGQI\FENGMINGQI.C(14): error C132: 'Feng_Ming_Qi': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(14): error C141: syntax error near 'void'
+FENGMINGQI\FENGMINGQI.C(15): error C132: '_delay_pinglu': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(15): error C141: syntax error near '{'
+FENGMINGQI\FENGMINGQI.C(16): error C136: 'i': 'void' on variable
+FENGMINGQI\FENGMINGQI.C(16): error C244: 'i': can't initialize, bad type or class
+FENGMINGQI\FENGMINGQI.C(16): error C202: 'm': undefined identifier
+FENGMINGQI\FENGMINGQI.C(16): error C136: 'i': 'void' on variable
+FENGMINGQI\FENGMINGQI.C(16): error C132: 'i': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(17): error C141: syntax error near 'while'
+FENGMINGQI\FENGMINGQI.C(17): error C141: syntax error near '--'
+FENGMINGQI\FENGMINGQI.C(17): error C129: missing ';' before ')'
+FengMingQi\FengMingQi.c - 14 Error(s), 0 Warning(s).
+compiling FengMingQi.c...
+FENGMINGQI\FENGMINGQI.H(69): error C132: 'Feng_Ming_Qi': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(15): error C132: '_delay_pinglu': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(15): error C141: syntax error near '{'
+FENGMINGQI\FENGMINGQI.C(16): error C136: 'i': 'void' on variable
+FENGMINGQI\FENGMINGQI.C(16): error C244: 'i': can't initialize, bad type or class
+FENGMINGQI\FENGMINGQI.C(16): error C202: 'm': undefined identifier
+FENGMINGQI\FENGMINGQI.C(16): error C136: 'i': 'void' on variable
+FENGMINGQI\FENGMINGQI.C(16): error C132: 'i': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(17): error C141: syntax error near 'while'
+FENGMINGQI\FENGMINGQI.C(17): error C141: syntax error near '--'
+FENGMINGQI\FENGMINGQI.C(17): error C129: missing ';' before ')'
+FengMingQi\FengMingQi.c - 11 Error(s), 0 Warning(s).
+compiling FengMingQi.c...
+FENGMINGQI\FENGMINGQI.H(69): error C132: 'Feng_Ming_Qi': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(15): error C132: '_delay_pinglu': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(15): error C141: syntax error near '{'
+FENGMINGQI\FENGMINGQI.C(16): error C136: 'i': 'void' on variable
+FENGMINGQI\FENGMINGQI.C(16): error C244: 'i': can't initialize, bad type or class
+FENGMINGQI\FENGMINGQI.C(16): error C202: 'm': undefined identifier
+FENGMINGQI\FENGMINGQI.C(16): error C136: 'i': 'void' on variable
+FENGMINGQI\FENGMINGQI.C(16): error C132: 'i': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(17): error C141: syntax error near 'while'
+FENGMINGQI\FENGMINGQI.C(17): error C141: syntax error near '--'
+FENGMINGQI\FENGMINGQI.C(17): error C129: missing ';' before ')'
+FengMingQi\FengMingQi.c - 11 Error(s), 0 Warning(s).
+compiling FengMingQi.c...
+FENGMINGQI\FENGMINGQI.H(69): error C132: 'Feng_Ming_Qi': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(15): error C132: '_delay_pinglu': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(15): error C141: syntax error near '{'
+FENGMINGQI\FENGMINGQI.C(16): error C136: 'i': 'void' on variable
+FENGMINGQI\FENGMINGQI.C(16): error C244: 'i': can't initialize, bad type or class
+FENGMINGQI\FENGMINGQI.C(16): error C202: 'm': undefined identifier
+FENGMINGQI\FENGMINGQI.C(16): error C136: 'i': 'void' on variable
+FENGMINGQI\FENGMINGQI.C(16): error C132: 'i': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(17): error C141: syntax error near 'while'
+FENGMINGQI\FENGMINGQI.C(17): error C141: syntax error near '--'
+FENGMINGQI\FENGMINGQI.C(17): error C129: missing ';' before ')'
+FengMingQi\FengMingQi.c - 11 Error(s), 0 Warning(s).
+compiling delay.c...
+delay\delay.c - 0 Error(s), 0 Warning(s).
+compiling FengMingQi.c...
+FENGMINGQI\FENGMINGQI.H(69): error C132: 'Feng_Ming_Qi': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(15): error C132: '_delay_pinglu': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(15): error C141: syntax error near '{'
+FENGMINGQI\FENGMINGQI.C(16): error C136: 'i': 'void' on variable
+FENGMINGQI\FENGMINGQI.C(16): error C244: 'i': can't initialize, bad type or class
+FENGMINGQI\FENGMINGQI.C(16): error C202: 'm': undefined identifier
+FENGMINGQI\FENGMINGQI.C(16): error C136: 'i': 'void' on variable
+FENGMINGQI\FENGMINGQI.C(16): error C132: 'i': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(17): error C141: syntax error near 'while'
+FENGMINGQI\FENGMINGQI.C(17): error C141: syntax error near '--'
+FENGMINGQI\FENGMINGQI.C(17): error C129: missing ';' before ')'
+FengMingQi\FengMingQi.c - 11 Error(s), 0 Warning(s).
+compiling FengMingQi.c...
+FENGMINGQI\FENGMINGQI.H(69): error C132: 'Feng_Ming_Qi': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(15): error C132: '_delay_pinglu': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(15): error C141: syntax error near '{'
+FENGMINGQI\FENGMINGQI.C(16): error C136: 'i': 'void' on variable
+FENGMINGQI\FENGMINGQI.C(16): error C244: 'i': can't initialize, bad type or class
+FENGMINGQI\FENGMINGQI.C(16): error C202: 'm': undefined identifier
+FENGMINGQI\FENGMINGQI.C(16): error C136: 'i': 'void' on variable
+FENGMINGQI\FENGMINGQI.C(16): error C132: 'i': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(17): error C141: syntax error near 'while'
+FENGMINGQI\FENGMINGQI.C(17): error C141: syntax error near '--'
+FENGMINGQI\FENGMINGQI.C(17): error C129: missing ';' before ')'
+FengMingQi\FengMingQi.c - 11 Error(s), 0 Warning(s).
+compiling FengMingQi.c...
+FENGMINGQI\FENGMINGQI.H(69): error C132: 'Feng_Ming_Qi': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(15): error C132: '_delay_pinglu': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(15): error C141: syntax error near '{'
+FENGMINGQI\FENGMINGQI.C(16): error C136: 'i': 'void' on variable
+FENGMINGQI\FENGMINGQI.C(16): error C244: 'i': can't initialize, bad type or class
+FENGMINGQI\FENGMINGQI.C(16): error C202: 'm': undefined identifier
+FENGMINGQI\FENGMINGQI.C(16): error C136: 'i': 'void' on variable
+FENGMINGQI\FENGMINGQI.C(16): error C132: 'i': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(17): error C141: syntax error near 'while'
+FENGMINGQI\FENGMINGQI.C(17): error C141: syntax error near '--'
+FENGMINGQI\FENGMINGQI.C(17): error C129: missing ';' before ')'
+FengMingQi\FengMingQi.c - 11 Error(s), 0 Warning(s).
+compiling FengMingQi.c...
+FENGMINGQI\FENGMINGQI.H(69): error C132: 'Feng_Ming_Qi': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(15): error C132: '_delay_pinglu': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(15): error C141: syntax error near '{'
+FENGMINGQI\FENGMINGQI.C(16): error C136: 'i': 'void' on variable
+FENGMINGQI\FENGMINGQI.C(16): error C132: 'i': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(17): error C244: 'i': can't initialize, bad type or class
+FENGMINGQI\FENGMINGQI.C(17): error C202: 'm': undefined identifier
+FENGMINGQI\FENGMINGQI.C(17): error C132: 'i': not in formal parameter list
+FENGMINGQI\FENGMINGQI.C(18): error C141: syntax error near 'while'
+FENGMINGQI\FENGMINGQI.C(18): error C141: syntax error near '--'
+FENGMINGQI\FENGMINGQI.C(18): error C129: missing ';' before ')'
+FengMingQi\FengMingQi.c - 11 Error(s), 0 Warning(s).
+compiling FengMingQi.c...
+FENGMINGQI\FENGMINGQI.C(36): error C141: syntax error near '{'
+FENGMINGQI\FENGMINGQI.C(39): error C129: missing ';' before '&='
+FengMingQi\FengMingQi.c - 2 Error(s), 0 Warning(s).
+compiling FengMingQi.c...
+FENGMINGQI\FENGMINGQI.C(36): error C141: syntax error near '{'
+FENGMINGQI\FENGMINGQI.C(39): error C129: missing ';' before '&='
+FengMingQi\FengMingQi.c - 2 Error(s), 0 Warning(s).
+compiling FengMingQi.c...
+FengMingQi\FengMingQi.c - 0 Error(s), 0 Warning(s).
+compiling delay.c...
+delay\delay.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target '目标 1'
+compiling main.c...
+compiling delay.c...
+compiling FengMingQi.c...
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+"main.obj",
+"delay.obj",
+"FengMingQi.obj" 
+TO "FengMingQi" 
+RAMSIZE(256) 
+*** FATAL ERROR L211: I/O ERROR ON OUTPUT FILE:
+    EXCEPTION 0029H: ACCESS TO FILE DENIED
+    FILE: FengMingQi
+目标未创建
+Build target '目标 1'
+compiling main.c...
+compiling delay.c...
+compiling FengMingQi.c...
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+"main.obj",
+"delay.obj",
+"FengMingQi.obj" 
+TO "FengMingQi" 
+RAMSIZE(256) 
+*** FATAL ERROR L211: I/O ERROR ON OUTPUT FILE:
+    EXCEPTION 0029H: ACCESS TO FILE DENIED
+    FILE: FengMingQi
+目标未创建
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+compiling delay.c...
+delay\delay.c - 0 Error(s), 0 Warning(s).
+compiling FengMingQi.c...
+FengMingQi\FengMingQi.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target '目标 1'
+compiling main.c...
+compiling delay.c...
+compiling FengMingQi.c...
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+"main.obj",
+"delay.obj",
+"FengMingQi.obj" 
+TO "FengMingQi" 
+RAMSIZE(256) 
+*** FATAL ERROR L211: I/O ERROR ON OUTPUT FILE:
+    EXCEPTION 0029H: ACCESS TO FILE DENIED
+    FILE: FengMingQi
+目标未创建
+Build target '目标 1'
+compiling main.c...
+compiling delay.c...
+compiling FengMingQi.c...
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+"main.obj",
+"delay.obj",
+"FengMingQi.obj" 
+TO "FengMingQi" 
+RAMSIZE(256) 
+*** FATAL ERROR L211: I/O ERROR ON OUTPUT FILE:
+    EXCEPTION 0029H: ACCESS TO FILE DENIED
+    FILE: FengMingQi
+目标未创建
+Build target '目标 1'
+compiling main.c...
+compiling delay.c...
+compiling FengMingQi.c...
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+"main.obj",
+"delay.obj",
+"FengMingQi.obj" 
+TO "FengMingQi" 
+RAMSIZE(256) 
+*** FATAL ERROR L211: I/O ERROR ON OUTPUT FILE:
+    EXCEPTION 0029H: ACCESS TO FILE DENIED
+    FILE: FengMingQi
+目标未创建
+Build target '目标 1'
+compiling main.c...
+compiling delay.c...
+compiling FengMingQi.c...
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+"main.obj",
+"delay.obj",
+"FengMingQi.obj" 
+TO "FengMingQi" 
+RAMSIZE(256) 
+*** FATAL ERROR L211: I/O ERROR ON OUTPUT FILE:
+    EXCEPTION 0029H: ACCESS TO FILE DENIED
+    FILE: FengMingQi
+目标未创建
+Build target '目标 1'
+compiling main.c...
+compiling delay.c...
+compiling FengMingQi.c...
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+"main.obj",
+"delay.obj",
+"FengMingQi.obj" 
+TO "FengMingQi" 
+RAMSIZE(256) 
+*** FATAL ERROR L211: I/O ERROR ON OUTPUT FILE:
+    EXCEPTION 0029H: ACCESS TO FILE DENIED
+    FILE: FengMingQi
+目标未创建
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target '目标 1'
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+"main.obj",
+"delay.obj",
+"FengMingQi.obj" 
+TO "FengMingQi" 
+RAMSIZE(256) 
+*** FATAL ERROR L211: I/O ERROR ON OUTPUT FILE:
+    EXCEPTION 0029H: ACCESS TO FILE DENIED
+    FILE: FengMingQi
+目标未创建
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target '目标 1'
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+"main.obj",
+"delay.obj",
+"FengMingQi.obj" 
+TO "FengMingQi" 
+RAMSIZE(256) 
+*** FATAL ERROR L211: I/O ERROR ON OUTPUT FILE:
+    EXCEPTION 0029H: ACCESS TO FILE DENIED
+    FILE: FengMingQi
+目标未创建
+compiling FengMingQi.c...
+FengMingQi\FengMingQi.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target '目标 1'
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+"main.obj",
+"delay.obj",
+"FengMingQi.obj" 
+TO "FengMingQi" 
+RAMSIZE(256) 
+*** FATAL ERROR L211: I/O ERROR ON OUTPUT FILE:
+    EXCEPTION 0029H: ACCESS TO FILE DENIED
+    FILE: FengMingQi
+目标未创建
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target '目标 1'
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+"main.obj",
+"delay.obj",
+"FengMingQi.obj" 
+TO "FengMingQi" 
+RAMSIZE(256) 
+*** FATAL ERROR L211: I/O ERROR ON OUTPUT FILE:
+    EXCEPTION 0029H: ACCESS TO FILE DENIED
+    FILE: FengMingQi
+目标未创建
+Build target '目标 1'
+compiling main.c...
+compiling delay.c...
+compiling FengMingQi.c...
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+"main.obj",
+"delay.obj",
+"FengMingQi.obj" 
+TO "FengMingQi" 
+RAMSIZE(256) 
+*** FATAL ERROR L211: I/O ERROR ON OUTPUT FILE:
+    EXCEPTION 0029H: ACCESS TO FILE DENIED
+    FILE: FengMingQi
+目标未创建

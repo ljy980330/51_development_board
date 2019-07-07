@@ -1,0 +1,6 @@
+"main.obj",
+"delay.obj",
+"smgdisplay.obj",
+"Key1.obj" 
+TO "DU-LI-KEY" 
+RAMSIZE(256) 

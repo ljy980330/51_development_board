@@ -1,0 +1,16 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\HJQ\Desktop\程序\点亮第一个流水灯\DianLiangDiYiGeLED.uvproj
+Project File Date:  07/04/2019
+
+<h2>Output:</h2>
+Build target '目标 1'
+compiling main.c...
+compiling DianliangLED.c...
+linking...
+Program Size: data=9.0 xdata=0 code=30
+creating hex file from "DianLiangDiYiGeLED"...
+"DianLiangDiYiGeLED" - 0 Error(s), 0 Warning(s).
