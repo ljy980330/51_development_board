@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/06/2019  21:02:31  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/07/2019  22:30:31  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -59,7 +59,7 @@ SYMBOL TABLE OF MODULE:  steppingMotor (MAIN)
   ----------------------------------
 
   -------         MODULE        MAIN
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  21:02:31  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/07/2019  22:30:31  PAGE 2
 
 
   C:0000H         SYMBOL        _ICE_DUMMY_
@@ -92,67 +92,67 @@ SYMBOL TABLE OF MODULE:  steppingMotor (MAIN)
   D:0006H         SYMBOL        b
   D:0007H         SYMBOL        c
   -------         ENDDO         
-  C:0020H         LINE#         20
   C:0020H         LINE#         21
-  C:0020H         LINE#         23
-  C:0022H         LINE#         24
-  C:0024H         LINE#         25
-  C:002CH         LINE#         26
+  C:0020H         LINE#         22
+  C:0020H         LINE#         24
+  C:0022H         LINE#         25
+  C:0024H         LINE#         26
+  C:002CH         LINE#         27
   -------         ENDPROC       DELAY10MS
   -------         PROC          A_RUN
-  C:0039H         LINE#         34
   C:0039H         LINE#         35
   C:0039H         LINE#         36
-  C:003BH         LINE#         37
-  C:003DH         LINE#         38
-  C:003FH         LINE#         39
-  C:0041H         LINE#         40
+  C:0039H         LINE#         37
+  C:003BH         LINE#         38
+  C:003DH         LINE#         39
+  C:003FH         LINE#         40
+  C:0041H         LINE#         41
   -------         ENDPROC       A_RUN
   -------         PROC          B_RUN
-  C:0042H         LINE#         42
   C:0042H         LINE#         43
   C:0042H         LINE#         44
-  C:0044H         LINE#         45
-  C:0046H         LINE#         46
-  C:0048H         LINE#         47
-  C:004AH         LINE#         48
+  C:0042H         LINE#         45
+  C:0044H         LINE#         46
+  C:0046H         LINE#         47
+  C:0048H         LINE#         48
+  C:004AH         LINE#         49
   -------         ENDPROC       B_RUN
   -------         PROC          C_RUN
-  C:004BH         LINE#         50
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  21:02:31  PAGE 3
-
-
   C:004BH         LINE#         51
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/07/2019  22:30:31  PAGE 3
+
+
   C:004BH         LINE#         52
-  C:004DH         LINE#         53
-  C:004FH         LINE#         54
-  C:0051H         LINE#         55
-  C:0053H         LINE#         56
+  C:004BH         LINE#         53
+  C:004DH         LINE#         54
+  C:004FH         LINE#         55
+  C:0051H         LINE#         56
+  C:0053H         LINE#         57
   -------         ENDPROC       C_RUN
   -------         PROC          D_RUN
-  C:0054H         LINE#         57
   C:0054H         LINE#         58
   C:0054H         LINE#         59
-  C:0056H         LINE#         60
-  C:0058H         LINE#         61
-  C:005AH         LINE#         62
-  C:005CH         LINE#         63
+  C:0054H         LINE#         60
+  C:0056H         LINE#         61
+  C:0058H         LINE#         62
+  C:005AH         LINE#         63
+  C:005CH         LINE#         64
   -------         ENDPROC       D_RUN
   -------         PROC          MAIN
-  C:0003H         LINE#         69
   C:0003H         LINE#         70
   C:0003H         LINE#         71
   C:0003H         LINE#         72
   C:0003H         LINE#         73
-  C:0006H         LINE#         74
-  C:0009H         LINE#         75
-  C:000CH         LINE#         76
-  C:000FH         LINE#         77
-  C:0012H         LINE#         78
-  C:0015H         LINE#         79
-  C:0018H         LINE#         80
-  C:001BH         LINE#         81
-  C:001EH         LINE#         82
+  C:0003H         LINE#         74
+  C:0006H         LINE#         75
+  C:0009H         LINE#         76
+  C:000CH         LINE#         77
+  C:000FH         LINE#         78
+  C:0012H         LINE#         79
+  C:0015H         LINE#         80
+  C:0018H         LINE#         81
+  C:001BH         LINE#         82
+  C:001EH         LINE#         83
   -------         ENDPROC       MAIN
   -------         ENDMOD        MAIN
 

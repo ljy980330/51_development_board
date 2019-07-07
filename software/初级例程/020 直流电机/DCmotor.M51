@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/06/2019  20:57:48  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/07/2019  22:26:35  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -59,7 +59,7 @@ SYMBOL TABLE OF MODULE:  DCmotor (MAIN)
 
   VALUE           TYPE          NAME
   ----------------------------------
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  20:57:48  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/07/2019  22:26:35  PAGE 2
 
 
 
@@ -91,16 +91,16 @@ SYMBOL TABLE OF MODULE:  DCmotor (MAIN)
   C:00A8H         PUBLIC        Init_PWM
   D:00D0H         PUBLIC        PSW
   -------         PROC          INIT_PWM
-  C:00A8H         LINE#         17
-  C:00A8H         LINE#         18
-  C:00A8H         LINE#         19
-  C:00ABH         LINE#         21
-  C:00AEH         LINE#         22
-  C:00B1H         LINE#         23
-  C:00B4H         LINE#         24
-  C:00B7H         LINE#         25
-  C:00B9H         LINE#         26
-  C:00BBH         LINE#         27
+  C:00A8H         LINE#         20
+  C:00A8H         LINE#         21
+  C:00A8H         LINE#         22
+  C:00ABH         LINE#         24
+  C:00AEH         LINE#         25
+  C:00B1H         LINE#         26
+  C:00B4H         LINE#         27
+  C:00B7H         LINE#         28
+  C:00B9H         LINE#         29
+  C:00BBH         LINE#         30
   -------         ENDPROC       INIT_PWM
   -------         PROC          MOTO_DELAY80MS
   -------         DO            
@@ -108,38 +108,38 @@ SYMBOL TABLE OF MODULE:  DCmotor (MAIN)
   D:0006H         SYMBOL        b
   D:0007H         SYMBOL        c
   -------         ENDDO         
-  C:00CEH         LINE#         34
-  C:00CEH         LINE#         35
   C:00CEH         LINE#         37
-  C:00D0H         LINE#         38
-  C:00D2H         LINE#         39
-  C:00DAH         LINE#         40
-  C:00DBH         LINE#         41
+  C:00CEH         LINE#         38
+  C:00CEH         LINE#         40
+  C:00D0H         LINE#         41
+  C:00D2H         LINE#         42
+  C:00DAH         LINE#         43
+  C:00DBH         LINE#         44
   -------         ENDPROC       MOTO_DELAY80MS
   -------         PROC          PWM_CHANGE
   -------         DO            
   D:0002H         SYMBOL        i
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  20:57:48  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/07/2019  22:26:35  PAGE 3
 
 
   -------         ENDDO         
-  C:008FH         LINE#         50
-  C:008FH         LINE#         51
   C:008FH         LINE#         53
-  C:0092H         LINE#         54
-  C:0092H         LINE#         55
-  C:0099H         LINE#         56
-  C:009CH         LINE#         57
-  C:00A7H         LINE#         59
+  C:008FH         LINE#         54
+  C:008FH         LINE#         56
+  C:0092H         LINE#         57
+  C:0092H         LINE#         58
+  C:0099H         LINE#         59
+  C:009CH         LINE#         60
+  C:00A7H         LINE#         62
   -------         ENDPROC       PWM_CHANGE
   -------         PROC          MAIN
-  C:00DCH         LINE#         65
-  C:00DCH         LINE#         66
   C:00DCH         LINE#         67
-  C:00DFH         LINE#         68
-  C:00DFH         LINE#         69
+  C:00DCH         LINE#         68
+  C:00DCH         LINE#         69
   C:00DFH         LINE#         70
-  C:00E2H         LINE#         71
+  C:00DFH         LINE#         71
+  C:00DFH         LINE#         72
+  C:00E2H         LINE#         73
   -------         ENDPROC       MAIN
   -------         ENDMOD        MAIN
 
