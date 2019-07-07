@@ -13,9 +13,6 @@
 #include "config.h"
 #include "OLED_Init/OLED_Init.h"
 #include "delay/delay.h"
-#include "code_tab/code_tab.h"
-#include "display/display.h"
-#include "function/function.h"
 #include "i2c/i2c.h"
 
 
