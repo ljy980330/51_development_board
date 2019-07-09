@@ -43,7 +43,7 @@
         <PageWidth>120</PageWidth>
         <PageLength>65</PageLength>
         <TabStop>8</TabStop>
-        <ListingPath>.\</ListingPath>
+        <ListingPath>.\Listings\</ListingPath>
       </OPTLEX>
       <ListingPage>
         <CreateCListing>1</CreateCListing>
@@ -1744,7 +1744,7 @@
           <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
-          <Name>F:\工作\github_stc12 - 副本\software\高级例程\003 万年历\INCLUDES.H</Name>
+          <Name>INCLUDES.H</Name>
           <ColumnNumber>28</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>12</CurrentLine>
@@ -1756,7 +1756,7 @@
           <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>F:\工作\github_stc12 - 副本\software\高级例程\003 万年历\IIC\IIC.H</Name>
+          <Name>IIC/IIC.H</Name>
           <ColumnNumber>26</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>1</CurrentLine>
@@ -1768,7 +1768,7 @@
           <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>F:\工作\github_stc12 - 副本\software\高级例程\003 万年历\OLED\OLED.H</Name>
+          <Name>OLED/OLED.H</Name>
           <ColumnNumber>34</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>5</CurrentLine>
@@ -1780,7 +1780,7 @@
           <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>F:\工作\github_stc12 - 副本\software\高级例程\003 万年历\RTC\RTC.H</Name>
+          <Name>RTC/RTC.H</Name>
           <ColumnNumber>20</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>4</CurrentLine>
@@ -1792,13 +1792,13 @@
           <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>F:\工作\github_stc12 - 副本\software\高级例程\003 万年历\DELAY\DELAY.H</Name>
+          <Name>DELAY/DELAY.H</Name>
           <ColumnNumber>49</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
-          <Name>F:\工作\github_stc12 - 副本\software\高级例程\003 万年历\CONFIG.H</Name>
+          <Name>CONFIG.H</Name>
           <ColumnNumber>34</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>4</CurrentLine>

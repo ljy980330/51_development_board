@@ -1,9 +1,9 @@
-"main.obj",
-"delay.obj",
-"color.obj",
-"flame.obj",
-"pwm.obj",
-"track.obj",
-"voice.obj" 
-TO "car" 
-RAMSIZE(256) 
+".\Objects\main.obj",
+".\Objects\delay.obj",
+".\Objects\color.obj",
+".\Objects\flame.obj",
+".\Objects\pwm.obj",
+".\Objects\track.obj",
+".\Objects\voice.obj" 
+TO ".\Objects\car" 
+PRINT(".\Listings\car.m51") RAMSIZE(256) 

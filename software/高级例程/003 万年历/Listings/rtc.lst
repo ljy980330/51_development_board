@@ -1,4 +1,4 @@
-C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:43:41 PAGE 1   
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:46:06 PAGE 1   
 
 
 C51 COMPILER V9.01, COMPILATION OF MODULE RTC
@@ -62,7 +62,7 @@ line level    source
   51   2                      RTC_Data[1]=0;           //分
   52   2                      RTC_Data[2]=12;          //时
   53   2                      RTC_Data[3]=3;           //日
-C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:43:41 PAGE 2   
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:46:06 PAGE 2   
 
   54   2                      RTC_Data[4]=11;          //月
   55   2                      RTC_Data[5]=2;           //周
@@ -126,7 +126,7 @@ line level    source
  113   1              OLED_12864_Write_commomand(0x00);
  114   1              OLED_12864_Write_commomand(0xd5);
  115   1              OLED_12864_Write_commomand(0x80);
-C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:43:41 PAGE 3   
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:46:06 PAGE 3   
 
  116   1              OLED_12864_Write_commomand(0xd9);
  117   1              OLED_12864_Write_commomand(0xf1);
@@ -190,7 +190,7 @@ line level    source
  175   1              OLED_8x16Str(48, 0, display_buff[3]);
  176   1              OLED_8x16Str(56, 0, 10);                         // -
  177   1              OLED_8x16Str(64, 0, display_buff[4]);// 月
-C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:43:41 PAGE 4   
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:46:06 PAGE 4   
 
  178   1              OLED_8x16Str(72, 0, display_buff[5]);
  179   1              OLED_8x16Str(80, 0, 10);                         // -
@@ -254,7 +254,7 @@ line level    source
  237   5                                              RTC_Save_Cnt=0;
  238   5                                              RTC_Save_Flag=0;
  239   5                                              RTC_Set_ID=0;
-C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:43:41 PAGE 5   
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:46:06 PAGE 5   
 
  240   5                                              DS3231_write_time();
  241   5                                      }
@@ -318,7 +318,7 @@ line level    source
  299   4                                      OLED_16x16CN(80, 0, 15);//置
  300   4                              }
  301   3                              else if(RTC_Set_ID==3)
-C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:43:41 PAGE 6   
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:46:06 PAGE 6   
 
  302   3                              {
  303   4                                      OLED_16x16CN(32, 0, 11);//日
@@ -382,7 +382,7 @@ line level    source
  361   4                                              RTC_Data[6]++;
  362   4                                      display1();
  363   4                                      OLED_16x32(0, 2, display_buff[2]);//年
-C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:43:41 PAGE 7   
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:46:06 PAGE 7   
 
  364   4                                      OLED_16x32(16, 2, display_buff[3]);
  365   4                                      OLED_16x32(32, 2, 11);//-
@@ -446,7 +446,7 @@ line level    source
  423   4                                      OLED_16x32(64, 2, display_buff[11]);
  424   4                                      OLED_16x32(80, 2, 10);//:
  425   4                                      OLED_16x32(96, 2, display_buff[12]);//秒
-C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:43:41 PAGE 8   
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:46:06 PAGE 8   
 
  426   4                                      OLED_16x32(112, 2, display_buff[13]);
  427   4                              }
@@ -510,7 +510,7 @@ line level    source
  485   4                                      OLED_16x32(80, 2, 11);//-
  486   4                                      OLED_16x32(96, 2, display_buff[6]);//日
  487   4                                      OLED_16x32(112, 2, display_buff[7]);
-C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:43:41 PAGE 9   
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:46:06 PAGE 9   
 
  488   4                              }
  489   3                              else if(RTC_Set_ID==3)
@@ -574,7 +574,7 @@ line level    source
  547   4                                      if(RTC_Data[5])            //周-
  548   4                                              RTC_Data[5]--;
  549   4                                      display1();
-C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:43:41 PAGE 10  
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:46:06 PAGE 10  
 
  550   4                                      OLED_16x32(40, 2, 12);//星
  551   4                                      OLED_16x32(56, 2, 13);//期
@@ -638,7 +638,7 @@ line level    source
  609   4                              }
  610   3                              else if(RTC_Set_ID==4)
  611   3                              {
-C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:43:41 PAGE 11  
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:46:06 PAGE 11  
 
  612   4                                      OLED_16x16CN(32, 0, 13);//小
  613   4                                      OLED_16x16CN(48, 0, 12);//时
@@ -702,7 +702,7 @@ line level    source
  671   3                              {
  672   4                                      if(RTC_Data[4]<12)        //月+
  673   4                                              RTC_Data[4]++;
-C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:43:41 PAGE 12  
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:46:06 PAGE 12  
 
  674   4                                      display1();
  675   4                                      OLED_16x32(0, 2, display_buff[2]);//年
@@ -766,7 +766,7 @@ line level    source
  733   4                                      OLED_16x32(32, 2, 10);//:
  734   4                                      OLED_16x32(48, 2, display_buff[10]);//分
  735   4                                      OLED_16x32(64, 2, display_buff[11]);
-C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:43:41 PAGE 13  
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:46:06 PAGE 13  
 
  736   4                                      OLED_16x32(80, 2, 10);//:
  737   4                                      OLED_16x32(96, 2, display_buff[12]);//秒
@@ -830,7 +830,7 @@ line level    source
  795   4                                      OLED_16x32(112, 2, display_buff[7]);
  796   4                              }
  797   3                              else if(RTC_Set_ID==4)
-C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:43:41 PAGE 14  
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:46:06 PAGE 14  
 
  798   3                              {
  799   4                                      if(RTC_Data[2])            //时-
@@ -894,7 +894,7 @@ line level    source
  857   1      }
  858          /*******************************************************************************
  859          * 函 数 名         : Time1
-C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:43:41 PAGE 15  
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:46:06 PAGE 15  
 
  860          * 函数功能                 : 125us定时 中断服务函数    
  861          *******************************************************************************/
@@ -958,7 +958,7 @@ line level    source
  919   1      }
 
 
-C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:43:41 PAGE 16  
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:46:06 PAGE 16  
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
    CODE SIZE        =   3403    ----

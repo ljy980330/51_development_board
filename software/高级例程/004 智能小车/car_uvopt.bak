@@ -217,10 +217,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>19</ColumnNumber>
+      <ColumnNumber>15</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>32</TopLine>
-      <CurrentLine>32</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>3</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\color\color.c</PathWithFileName>
       <FilenameWithoutPath>color.c</FilenameWithoutPath>
@@ -245,10 +245,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>44</ColumnNumber>
+      <ColumnNumber>15</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>103</TopLine>
-      <CurrentLine>103</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>3</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\flame\flame.c</PathWithFileName>
       <FilenameWithoutPath>flame.c</FilenameWithoutPath>
@@ -273,10 +273,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>19</ColumnNumber>
+      <ColumnNumber>14</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>79</TopLine>
-      <CurrentLine>79</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>3</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\pwm\pwm.c</PathWithFileName>
       <FilenameWithoutPath>pwm.c</FilenameWithoutPath>
@@ -301,10 +301,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>84</ColumnNumber>
+      <ColumnNumber>11</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>13</TopLine>
-      <CurrentLine>13</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>3</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\track\track.c</PathWithFileName>
       <FilenameWithoutPath>track.c</FilenameWithoutPath>
@@ -329,10 +329,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>34</ColumnNumber>
+      <ColumnNumber>11</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>171</TopLine>
-      <CurrentLine>171</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>3</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\voice\voice.c</PathWithFileName>
       <FilenameWithoutPath>voice.c</FilenameWithoutPath>
@@ -1772,7 +1772,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>3</ActiveTab>
+      <ActiveTab>12</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
@@ -1782,54 +1782,54 @@
         </Doc>
         <Doc>
           <Name>.\track\track.c</Name>
-          <ColumnNumber>84</ColumnNumber>
-          <TopLine>13</TopLine>
-          <CurrentLine>13</CurrentLine>
+          <ColumnNumber>11</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>TRACK/TRACK.H</Name>
+          <Name>.\track\track.h</Name>
           <ColumnNumber>26</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>12</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\pwm\pwm.c</Name>
-          <ColumnNumber>19</ColumnNumber>
-          <TopLine>79</TopLine>
-          <CurrentLine>79</CurrentLine>
+          <ColumnNumber>14</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>PWM/PWM.H</Name>
+          <Name>.\pwm\pwm.h</Name>
           <ColumnNumber>41</ColumnNumber>
           <TopLine>3</TopLine>
           <CurrentLine>9</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\flame\flame.c</Name>
-          <ColumnNumber>44</ColumnNumber>
-          <TopLine>103</TopLine>
-          <CurrentLine>103</CurrentLine>
+          <ColumnNumber>15</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>FLAME/FLAME.H</Name>
+          <Name>.\flame\flame.h</Name>
           <ColumnNumber>23</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>9</CurrentLine>
         </Doc>
         <Doc>
-          <Name>INCLUDES.H</Name>
+          <Name>F:\工作\github_stc12\software\高级例程\004 智能小车\INCLUDES.H</Name>
           <ColumnNumber>19</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>11</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\color\color.c</Name>
-          <ColumnNumber>19</ColumnNumber>
-          <TopLine>32</TopLine>
-          <CurrentLine>32</CurrentLine>
+          <ColumnNumber>15</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>COLOR/COLOR.H</Name>
+          <Name>.\color\color.h</Name>
           <ColumnNumber>66</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>13</CurrentLine>
@@ -1841,25 +1841,25 @@
           <CurrentLine>25</CurrentLine>
         </Doc>
         <Doc>
-          <Name>DELAY/DELAY.H</Name>
+          <Name>F:\工作\github_stc12\software\高级例程\004 智能小车\DELAY\DELAY.H</Name>
           <ColumnNumber>77</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>7</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\voice\voice.c</Name>
-          <ColumnNumber>34</ColumnNumber>
-          <TopLine>171</TopLine>
-          <CurrentLine>171</CurrentLine>
+          <ColumnNumber>11</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>VOICE/VOICE.H</Name>
+          <Name>.\voice\voice.h</Name>
           <ColumnNumber>16</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>10</CurrentLine>
         </Doc>
         <Doc>
-          <Name>CONFIG.H</Name>
+          <Name>F:\工作\github_stc12\software\高级例程\004 智能小车\CONFIG.H</Name>
           <ColumnNumber>45</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>12</CurrentLine>

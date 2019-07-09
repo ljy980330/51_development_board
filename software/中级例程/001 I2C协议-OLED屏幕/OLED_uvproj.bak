@@ -362,24 +362,14 @@
               <FilePath>.\OLED_Init\OLED_Init.c</FilePath>
             </File>
             <File>
-              <FileName>function.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\function\function.c</FilePath>
-            </File>
-            <File>
               <FileName>i2c.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\i2c\i2c.c</FilePath>
             </File>
             <File>
-              <FileName>display.c</FileName>
+              <FileName>function.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\display\display.c</FilePath>
-            </File>
-            <File>
-              <FileName>code_tab.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\code_tab\code_tab.c</FilePath>
+              <FilePath>.\function\function.c</FilePath>
             </File>
           </Files>
         </Group>

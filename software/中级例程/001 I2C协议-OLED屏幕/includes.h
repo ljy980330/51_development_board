@@ -9,7 +9,8 @@
 #ifndef _INCLUDES_H
 #define _INCLUDES_H
 
-#include <STC12C5A.H>
+#include "STC12C5A.H"
+
 #include "config.h"
 #include "OLED_Init/OLED_Init.h"
 #include "delay/delay.h"
