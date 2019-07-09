@@ -186,10 +186,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>43</ColumnNumber>
+      <ColumnNumber>15</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>338</TopLine>
-      <CurrentLine>342</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>3</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\oled\oled.c</PathWithFileName>
       <FilenameWithoutPath>oled.c</FilenameWithoutPath>
@@ -200,10 +200,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>75</ColumnNumber>
+      <ColumnNumber>15</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>150</TopLine>
-      <CurrentLine>150</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>3</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtc\rtc.c</PathWithFileName>
       <FilenameWithoutPath>rtc.c</FilenameWithoutPath>
@@ -214,10 +214,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>6</ColumnNumber>
+      <ColumnNumber>10</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>91</TopLine>
-      <CurrentLine>91</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>3</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\iic\iic.c</PathWithFileName>
       <FilenameWithoutPath>iic.c</FilenameWithoutPath>
@@ -228,10 +228,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>42</ColumnNumber>
+      <ColumnNumber>32</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>16</CurrentLine>
+      <CurrentLine>3</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\delay\delay.c</PathWithFileName>
       <FilenameWithoutPath>delay.c</FilenameWithoutPath>
@@ -1735,7 +1735,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>8</ActiveTab>
+      <ActiveTab>2</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
@@ -1744,61 +1744,61 @@
           <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
-          <Name>INCLUDES.H</Name>
+          <Name>F:\工作\github_stc12 - 副本\software\高级例程\003 万年历\INCLUDES.H</Name>
           <ColumnNumber>28</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>12</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\iic\iic.c</Name>
-          <ColumnNumber>6</ColumnNumber>
-          <TopLine>91</TopLine>
-          <CurrentLine>91</CurrentLine>
+          <ColumnNumber>10</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>IIC/IIC.H</Name>
+          <Name>F:\工作\github_stc12 - 副本\software\高级例程\003 万年历\IIC\IIC.H</Name>
           <ColumnNumber>26</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\oled\oled.c</Name>
-          <ColumnNumber>43</ColumnNumber>
-          <TopLine>338</TopLine>
-          <CurrentLine>342</CurrentLine>
+          <ColumnNumber>15</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>OLED/OLED.H</Name>
+          <Name>F:\工作\github_stc12 - 副本\software\高级例程\003 万年历\OLED\OLED.H</Name>
           <ColumnNumber>34</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>5</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\rtc\rtc.c</Name>
-          <ColumnNumber>75</ColumnNumber>
-          <TopLine>150</TopLine>
-          <CurrentLine>150</CurrentLine>
+          <ColumnNumber>15</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>RTC/RTC.H</Name>
+          <Name>F:\工作\github_stc12 - 副本\software\高级例程\003 万年历\RTC\RTC.H</Name>
           <ColumnNumber>20</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>4</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\delay\delay.c</Name>
-          <ColumnNumber>42</ColumnNumber>
+          <ColumnNumber>32</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>16</CurrentLine>
+          <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>DELAY/DELAY.H</Name>
+          <Name>F:\工作\github_stc12 - 副本\software\高级例程\003 万年历\DELAY\DELAY.H</Name>
           <ColumnNumber>49</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
-          <Name>CONFIG.H</Name>
+          <Name>F:\工作\github_stc12 - 副本\software\高级例程\003 万年历\CONFIG.H</Name>
           <ColumnNumber>34</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>4</CurrentLine>

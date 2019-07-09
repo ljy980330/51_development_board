@@ -1,7 +1,7 @@
-"main.obj",
-"oled.obj",
-"rtc.obj",
-"iic.obj",
-"delay.obj" 
-TO "calendar" 
-RAMSIZE(256) 
+".\Objects\main.obj",
+".\Objects\oled.obj",
+".\Objects\rtc.obj",
+".\Objects\iic.obj",
+".\Objects\delay.obj" 
+TO ".\Objects\calendar" 
+PRINT(".\Listings\calendar.m51") RAMSIZE(256) 
