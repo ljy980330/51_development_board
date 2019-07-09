@@ -8,7 +8,6 @@
 
 #ifndef _COLOR_H
 #define _COLOR_H
-#include <STC12C5A.H> 
 
 void Send_24bits(unsigned char R,unsigned char G,unsigned char B);
 
