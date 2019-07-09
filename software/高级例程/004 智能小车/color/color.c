@@ -7,8 +7,6 @@
 *********************************************************************************************************/
 
 #include <intrins.h>
-#include "color.h"		
-#include "config.h"
 sbit Send_Dat=P2^6;	  
 uchar RGB_BUF[24];
 
@@ -21,20 +19,12 @@ void Send_A_bit(unsigned char VAL)
 	 if(VAL==1)
 	 {
 	    Send_Dat=1;
-		_nop_();
-		_nop_();
-		_nop_();
 		Send_Dat=0;
-		_nop_();
 	 }
 	 else
 	 {
 		Send_Dat=1;
-		_nop_();
 		Send_Dat=0;
-		_nop_();
-		_nop_();
-		_nop_();
 		
 	 }
 }	   
@@ -64,9 +54,5 @@ void Send_24bits(unsigned char R,unsigned char G,unsigned char B)
 		 Send_A_bit(RGB_BUF[23-i]);
 	    }
 		    Send_Dat=0;
-			_nop_();
-		    _nop_();
-			_nop_();
-		    _nop_();
 	 }
 }
