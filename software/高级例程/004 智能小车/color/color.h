@@ -8,7 +8,9 @@
 
 #ifndef _COLOR_H
 #define _COLOR_H
+#include "config.h"
 
 void Send_24bits(unsigned char R,unsigned char G,unsigned char B);
+void Send_24bits(uchar R,uchar G,uchar B);
 
 #endif
