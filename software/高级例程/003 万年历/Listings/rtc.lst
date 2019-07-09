@@ -1,0 +1,973 @@
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:26:37 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE RTC
+OBJECT MODULE PLACED IN rtc.obj
+COMPILER INVOKED BY: D:\cx\C51\BIN\C51.EXE rtc\rtc.c BROWSE DEBUG OBJECTEXTEND PRINT(.\rtc.lst) OBJECT(rtc.obj)
+
+line level    source
+
+   1          /*********************************************************************************************************
+   2          *名称：rtc.c
+   3          *功能：时钟模块包括的函数
+   4          创建时间：2019/XX/XX
+   5          修改时间：2019/6/5
+   6          作者：XXX
+   7          *********************************************************************************************************/
+   8          #include <STC12C5A.H>           
+   9          #include <intrins.h>  
+  10          #include "delay/delay.h"        
+  11          #include "oled/oled.h"           
+  12          #include "rtc.h"
+  13          #define uint unsigned int       
+  14          #define uchar unsigned char
+  15          
+  16          sbit key1=P0^2; //设置
+  17          sbit key2=P0^5; //加
+  18          sbit key3=P0^6; //减
+  19          sbit key4=P0^7; //确定
+  20          sbit laba=P3^7; //喇叭
+  21          bit laba_flag;                                                                   //蜂鸣器标志位
+  22          bit Open_Flag;                                                                   //蜂鸣器标志位
+  23          bit RTC_Save_Flag;                                                               //设置时间标志位
+  24          bit shezhi_display_flag;        
+  25          bit T0_Flag;                                                                     //定时器T01ms标志位
+  26          
+  27          #define Imax 14000//此处为晶振为11.0592时的取值,   //时间计算     //红外接口P3.3
+  28          #define Imin 8000 //如用其它频率的晶振时,
+  29          #define Inum1 1450//要改变相应的取值。 
+  30          #define Inum3 3000 
+  31          #define Inum2 700       
+  32          
+  33          extern uchar display_buff[16];
+  34          extern uchar RTC_Data[8];
+  35          extern uchar RTC_Data1[8];
+  36          extern uchar RTC_Set_ID;
+  37          uchar f;
+  38          uchar IrOK;
+  39          unsigned long m,Tc;
+  40          uchar Im[4]={0x00,0x00,0x00,0x00};
+  41          /**************************************************************************
+  42          * 函数名称： Ram_init()
+  43          * 功能：     时间初始化
+  44          ******************************************************************************/
+  45           void Ram_init()
+  46          {
+  47   1              DS3231_Read_time();                             //读取 秒分时日月周年
+  48   1              if((!RTC_Data[6])&&(!RTC_Data[5])&&(!RTC_Data[4])&&(!RTC_Data[3])&&(!RTC_Data[2])&&(!RTC_Data[1])&&(!RTC_
+             -Data[0]))
+  49   1              {
+  50   2                      RTC_Data[0]=0;       //秒                       //秒分时日月周年 最低位读写位
+  51   2                      RTC_Data[1]=0;           //分
+  52   2                      RTC_Data[2]=12;          //时
+  53   2                      RTC_Data[3]=3;           //日
+  54   2                      RTC_Data[4]=11;          //月
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:26:37 PAGE 2   
+
+  55   2                      RTC_Data[5]=2;           //周
+  56   2                      RTC_Data[6]=15;          //年
+  57   2                      DS3231_write_time();                    //写入 秒分时日月周年
+  58   2              }
+  59   1              RTC_Set_ID=0;   
+  60   1      }
+  61          
+  62          /**************************************************************************
+  63          * 函数名称： interrupt_init()
+  64          * 功能：     主程序初始化
+  65          ******************************************************************************/
+  66           void main_init()
+  67          {
+  68   1              
+  69   1              EA=1;                                   //开总中断
+  70   1              IT1=1;                                          //下降沿有效
+  71   1              EX1=1;                                          //外部中断开
+  72   1              ET1=1;                                          //打开允许开关
+  73   1      
+  74   1              TMOD=0x11;                              //定时/计数器 工作于方式1
+  75   1              TH1=0xff;                                       //50ms定时常数
+  76   1              TL1=256-131;                            
+  77   1              TR1=1;                                   //启动定时/计数器 中断 
+  78   1      
+  79   1              TH0=0;                                          //赋初值
+  80   1              TL0=0;
+  81   1              TR0=1;                                          //开始计时
+  82   1              shezhi_display_flag=0;
+  83   1      
+  84   1              delay_ms(10);
+  85   1              OLED_12864_Init();      
+  86   1              delay_ms(10);   
+  87   1              display1();                                     //显示
+  88   1              display2();                                     //显示
+  89   1              Ram_init();                                     //初始化时间
+  90   1              DS3231_Init();                          //模块初始化
+  91   1      
+  92   1      }
+  93          /**************************************************************************
+  94          * 函数名称                      ：OLED_12864_Init
+  95          * 功能                          ：OLED12864初始化
+  96          ******************************************************************************/
+  97          
+  98          void OLED_12864_Init()
+  99          {
+ 100   1              delay_ms(500);                                          //初始化之前的延时很重要！
+ 101   1              OLED_12864_Write_commomand(0xae);
+ 102   1              OLED_12864_Write_commomand(0x00);
+ 103   1              OLED_12864_Write_commomand(0x10);
+ 104   1              OLED_12864_Write_commomand(0x40);
+ 105   1              OLED_12864_Write_commomand(0x81);
+ 106   1              OLED_12864_Write_commomand(0xcf);
+ 107   1              OLED_12864_Write_commomand(0xa1);
+ 108   1              OLED_12864_Write_commomand(0xc8);
+ 109   1              OLED_12864_Write_commomand(0xa6);
+ 110   1              OLED_12864_Write_commomand(0xa8);
+ 111   1              OLED_12864_Write_commomand(0x3f);
+ 112   1              OLED_12864_Write_commomand(0xd3);
+ 113   1              OLED_12864_Write_commomand(0x00);
+ 114   1              OLED_12864_Write_commomand(0xd5);
+ 115   1              OLED_12864_Write_commomand(0x80);
+ 116   1              OLED_12864_Write_commomand(0xd9);
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:26:37 PAGE 3   
+
+ 117   1              OLED_12864_Write_commomand(0xf1);
+ 118   1              OLED_12864_Write_commomand(0xda);
+ 119   1              OLED_12864_Write_commomand(0x12);
+ 120   1              OLED_12864_Write_commomand(0xdb);
+ 121   1              OLED_12864_Write_commomand(0x40);
+ 122   1              OLED_12864_Write_commomand(0x20);
+ 123   1              OLED_12864_Write_commomand(0x02);
+ 124   1              OLED_12864_Write_commomand(0x8d);
+ 125   1              OLED_12864_Write_commomand(0x14);
+ 126   1              OLED_12864_Write_commomand(0xa4);
+ 127   1              OLED_12864_Write_commomand(0xa6); 
+ 128   1              OLED_12864_Write_commomand(0xaf);
+ 129   1              OLED_Fill(0x00);                                        //清屏                                                                                                   
+ 130   1              OLED_SetPos(0,0);
+ 131   1      }
+ 132          /*******************************************************************************
+ 133          * 函 数 名         : display1
+ 134          * 函数功能                 : 显示方式1
+ 135          *******************************************************************************/
+ 136          
+ 137          void display1()
+ 138          {
+ 139   1              display_buff[0] =2;
+ 140   1              display_buff[1] =0;
+ 141   1              display_buff[2] =RTC_Data[6]/10;
+ 142   1              display_buff[3] =RTC_Data[6]%10;                //年
+ 143   1              
+ 144   1              display_buff[4] =RTC_Data[4]/10;
+ 145   1              display_buff[5] =RTC_Data[4]%10;                //月
+ 146   1              
+ 147   1              display_buff[6] =RTC_Data[3]/10;
+ 148   1              display_buff[7] =RTC_Data[3]%10;                //日
+ 149   1              
+ 150   1              display_buff[8] =RTC_Data[2]/10;
+ 151   1              display_buff[9] =RTC_Data[2]%10;                //时
+ 152   1              
+ 153   1              display_buff[10] =RTC_Data[1]/10;
+ 154   1              display_buff[11] =RTC_Data[1]%10;               //分
+ 155   1              
+ 156   1              display_buff[12] =RTC_Data[0]/10;
+ 157   1              display_buff[13] =RTC_Data[0]%10;               //秒
+ 158   1              
+ 159   1              display_buff[14] =RTC_Data[5]/10;
+ 160   1              display_buff[15] =RTC_Data[5]%10;               //星期
+ 161   1      
+ 162   1              display_buff[16] =RTC_Data[7]/10;
+ 163   1              display_buff[17] =RTC_Data[7]%10;               //温度
+ 164   1      }         
+ 165          /*******************************************************************************
+ 166          * 函 数 名         : display2
+ 167          * 函数功能                 : 显示方式2
+ 168          *******************************************************************************/
+ 169          
+ 170          void display2()
+ 171          {
+ 172   1              OLED_8x16Str(24, 0, display_buff[0]);// 年
+ 173   1              OLED_8x16Str(32, 0, display_buff[1]);
+ 174   1              OLED_8x16Str(40, 0, display_buff[2]);
+ 175   1              OLED_8x16Str(48, 0, display_buff[3]);
+ 176   1              OLED_8x16Str(56, 0, 10);                         // -
+ 177   1              OLED_8x16Str(64, 0, display_buff[4]);// 月
+ 178   1              OLED_8x16Str(72, 0, display_buff[5]);
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:26:37 PAGE 4   
+
+ 179   1              OLED_8x16Str(80, 0, 10);                         // -
+ 180   1              OLED_8x16Str(88, 0, display_buff[6]);// 日
+ 181   1              OLED_8x16Str(96, 0, display_buff[7]);
+ 182   1      
+ 183   1              OLED_16x32(0, 2, display_buff[8]);// 时
+ 184   1              OLED_16x32(16, 2, display_buff[9]);
+ 185   1      
+ 186   1              OLED_16x32(48, 2, display_buff[10]);// 分
+ 187   1              OLED_16x32(64, 2, display_buff[11]);
+ 188   1      
+ 189   1              OLED_16x32(96, 2, display_buff[12]);// 秒
+ 190   1              OLED_16x32(112, 2, display_buff[13]);
+ 191   1      
+ 192   1              if(RTC_Data[0]/1%2==0)  OLED_16x32(32, 2, 10);// :
+ 193   1              else  OLED_16x32(32, 2, 21);
+ 194   1              if(RTC_Data[0]/1%2==0)  OLED_16x32(80, 2, 10);// :
+ 195   1              else  OLED_16x32(80, 2, 21);
+ 196   1      
+ 197   1              OLED_16x16CN(8, 6, 8);// 星
+ 198   1              OLED_16x16CN(24, 6, 9);// 期
+ 199   1              OLED_16x16CN(40, 6, display_buff[15]);// ？
+ 200   1      
+ 201   1              OLED_8x16Str(96, 6, display_buff[16]);// 温度
+ 202   1              OLED_8x16Str(104, 6, display_buff[17]);
+ 203   1              OLED_16x16CN(112, 6, 10);// ℃
+ 204   1      }
+ 205          
+ 206          /*******************************************************************************
+ 207          * 函 数 名         : Time_Fun
+ 208          * 函数功能                 : 时基、走时函数
+ 209          *******************************************************************************/
+ 210          void Time_Fun()
+ 211          {
+ 212   1              if(T0_Flag)
+ 213   1              {                
+ 214   2                      static  uchar T10Ms_Cnt=0,T200Ms_Cnt=0;
+ 215   2                      static uchar Buzz_On_Cnt=0,RTC_Save_Cnt=0;      
+ 216   2                      T0_Flag=0;
+ 217   2                      
+ 218   2                      T10Ms_Cnt++;    
+ 219   2                      if(T10Ms_Cnt>=5)
+ 220   2                      {
+ 221   3                              T10Ms_Cnt=0;
+ 222   3                              KeyDataProcess();
+ 223   3                              if(laba_flag)
+ 224   3                              {
+ 225   4                                      Buzz_On_Cnt++;
+ 226   4                                      if(Buzz_On_Cnt>=10)
+ 227   4                                      {
+ 228   5                                              laba_flag=0;
+ 229   5                                              Buzz_On_Cnt=0;
+ 230   5                                      }
+ 231   4                              }       
+ 232   3                              if(RTC_Save_Flag)
+ 233   3                              {
+ 234   4                                      RTC_Save_Cnt++;
+ 235   4                                      if(RTC_Save_Cnt>=50)
+ 236   4                                      {
+ 237   5                                              RTC_Save_Cnt=0;
+ 238   5                                              RTC_Save_Flag=0;
+ 239   5                                              RTC_Set_ID=0;
+ 240   5                                              DS3231_write_time();
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:26:37 PAGE 5   
+
+ 241   5                                      }
+ 242   4                              }
+ 243   3                      }
+ 244   2                      T200Ms_Cnt++;
+ 245   2                      if(T200Ms_Cnt>=100&&shezhi_display_flag==0)
+ 246   2                      {
+ 247   3                              T200Ms_Cnt=0;           
+ 248   3                              if(!RTC_Set_ID)
+ 249   3                                      DS3231_Read_time();
+ 250   3                              display1();
+ 251   3                              display2();
+ 252   3                      }
+ 253   2              
+ 254   2              }
+ 255   1      }
+ 256          
+ 257          /*******************************************************************************
+ 258          * 函 数 名         : KeyDataProcess
+ 259          * 函数功能                 : 键值处理
+ 260          *******************************************************************************/
+ 261          
+ 262          void KeyDataProcess()   //10mS处理一次
+ 263          {       //按键操作部分
+ 264   1              if(key1==0)
+ 265   1              {
+ 266   2                      delay_ms(10);
+ 267   2                      if(key1==0)
+ 268   2                      {
+ 269   3                              while(!key1);
+ 270   3                              laba_flag=1; //蜂鸣器响一声
+ 271   3                              shezhi_display_flag=1;
+ 272   3                              RTC_Set_ID++;
+ 273   3                              if(RTC_Set_ID>=8)
+ 274   3                                      RTC_Set_ID=1;
+ 275   3                              Open_Flag=1;
+ 276   3      
+ 277   3                              display1();
+ 278   3                              if(RTC_Set_ID==1)
+ 279   3                              {
+ 280   4                                      OLED_Fill(0x00);
+ 281   4                                      OLED_16x16CN(32, 0, 16);//年
+ 282   4                                      OLED_16x16CN(48, 0, 18);//份
+ 283   4                                      OLED_16x16CN(64, 0, 14);//设
+ 284   4                                      OLED_16x16CN(80, 0, 15);//置
+ 285   4                                      OLED_16x32(0, 2, display_buff[2]);//年
+ 286   4                                      OLED_16x32(16, 2, display_buff[3]);
+ 287   4                                      OLED_16x32(32, 2, 11);//-
+ 288   4                                      OLED_16x32(48, 2, display_buff[4]);//月
+ 289   4                                      OLED_16x32(64, 2, display_buff[5]);
+ 290   4                                      OLED_16x32(80, 2, 11);//-
+ 291   4                                      OLED_16x32(96, 2, display_buff[6]);//日
+ 292   4                                      OLED_16x32(112, 2, display_buff[7]);    
+ 293   4                              }
+ 294   3                              else if(RTC_Set_ID==2)
+ 295   3                              {
+ 296   4                                      OLED_16x16CN(32, 0, 17);//月
+ 297   4                                      OLED_16x16CN(48, 0, 18);//份
+ 298   4                                      OLED_16x16CN(64, 0, 14);//设
+ 299   4                                      OLED_16x16CN(80, 0, 15);//置
+ 300   4                              }
+ 301   3                              else if(RTC_Set_ID==3)
+ 302   3                              {
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:26:37 PAGE 6   
+
+ 303   4                                      OLED_16x16CN(32, 0, 11);//日
+ 304   4                                      OLED_16x16CN(48, 0, 9);//期
+ 305   4                                      OLED_16x16CN(64, 0, 14);//设
+ 306   4                                      OLED_16x16CN(80, 0, 15);//置
+ 307   4                              }
+ 308   3                              else if(RTC_Set_ID==4)
+ 309   3                              {
+ 310   4                                      OLED_16x16CN(32, 0, 13);//小
+ 311   4                                      OLED_16x16CN(48, 0, 12);//时
+ 312   4                                      OLED_16x16CN(64, 0, 14);//设
+ 313   4                                      OLED_16x16CN(80, 0, 15);//置
+ 314   4                                      OLED_16x32(0, 2, display_buff[8]);//时
+ 315   4                                      OLED_16x32(16, 2, display_buff[9]);
+ 316   4                                      OLED_16x32(32, 2, 10);//:
+ 317   4                                      OLED_16x32(48, 2, display_buff[10]);//分
+ 318   4                                      OLED_16x32(64, 2, display_buff[11]);
+ 319   4                                      OLED_16x32(80, 2, 10);//:
+ 320   4                                      OLED_16x32(96, 2, display_buff[12]);//秒
+ 321   4                                      OLED_16x32(112, 2, display_buff[13]);
+ 322   4                              }
+ 323   3                              else if(RTC_Set_ID==5)
+ 324   3                              {
+ 325   4                                      OLED_16x16CN(32, 0, 19);//分
+ 326   4                                      OLED_16x16CN(48, 0, 20);//钟
+ 327   4                                      OLED_16x16CN(64, 0, 14);//设
+ 328   4                                      OLED_16x16CN(80, 0, 15);//置
+ 329   4                              }
+ 330   3                              else if(RTC_Set_ID==6)
+ 331   3                              {
+ 332   4                                      OLED_16x16CN(32, 0, 21);//秒
+ 333   4                                      OLED_16x16CN(48, 0, 22);//数
+ 334   4                                      OLED_16x16CN(64, 0, 14);//设
+ 335   4                                      OLED_16x16CN(80, 0, 15);//置
+ 336   4                              }
+ 337   3                              else if(RTC_Set_ID==7)
+ 338   3                              {
+ 339   4                                      OLED_Fill(0x00);
+ 340   4                                      OLED_16x16CN(32, 0, 8);//星
+ 341   4                                      OLED_16x16CN(48, 0, 9);//期
+ 342   4                                      OLED_16x16CN(64, 0, 14);//设
+ 343   4                                      OLED_16x16CN(80, 0, 15);//置
+ 344   4                                      OLED_16x32(40, 2, 12);//星
+ 345   4                                      OLED_16x32(56, 2, 13);//期
+ 346   4                                      OLED_16x32(72, 2, display_buff[15]+13);
+ 347   4                              }
+ 348   3                      }
+ 349   2              }
+ 350   1              if(key2==0)
+ 351   1              {
+ 352   2                      delay_ms(10);
+ 353   2                      if(key2==0)
+ 354   2                      {
+ 355   3                              while(!key2);
+ 356   3                              laba_flag=1;   //蜂鸣器响一声
+ 357   3                              shezhi_display_flag=1;
+ 358   3                              if(RTC_Set_ID==1)
+ 359   3                              {
+ 360   4                                      if(RTC_Data[6]<99)        //年+
+ 361   4                                              RTC_Data[6]++;
+ 362   4                                      display1();
+ 363   4                                      OLED_16x32(0, 2, display_buff[2]);//年
+ 364   4                                      OLED_16x32(16, 2, display_buff[3]);
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:26:37 PAGE 7   
+
+ 365   4                                      OLED_16x32(32, 2, 11);//-
+ 366   4                                      OLED_16x32(48, 2, display_buff[4]);//月
+ 367   4                                      OLED_16x32(64, 2, display_buff[5]);
+ 368   4                                      OLED_16x32(80, 2, 11);//-
+ 369   4                                      OLED_16x32(96, 2, display_buff[6]);//日
+ 370   4                                      OLED_16x32(112, 2, display_buff[7]);
+ 371   4                              }
+ 372   3                              else if(RTC_Set_ID==2)
+ 373   3                              {
+ 374   4                                      if(RTC_Data[4]<12)        //月+
+ 375   4                                              RTC_Data[4]++;
+ 376   4                                      display1();
+ 377   4                                      OLED_16x32(0, 2, display_buff[2]);//年
+ 378   4                                      OLED_16x32(16, 2, display_buff[3]);
+ 379   4                                      OLED_16x32(32, 2, 11);//-
+ 380   4                                      OLED_16x32(48, 2, display_buff[4]);//月
+ 381   4                                      OLED_16x32(64, 2, display_buff[5]);
+ 382   4                                      OLED_16x32(80, 2, 11);//-
+ 383   4                                      OLED_16x32(96, 2, display_buff[6]);//日
+ 384   4                                      OLED_16x32(112, 2, display_buff[7]);
+ 385   4                              }
+ 386   3                              else if(RTC_Set_ID==3)
+ 387   3                              {
+ 388   4                                      if(RTC_Data[3]<31)        //日+
+ 389   4                                              RTC_Data[3]++;
+ 390   4                                      display1();
+ 391   4                                      OLED_16x32(0, 2, display_buff[2]);//年
+ 392   4                                      OLED_16x32(16, 2, display_buff[3]);
+ 393   4                                      OLED_16x32(32, 2, 11);//-
+ 394   4                                      OLED_16x32(48, 2, display_buff[4]);//月
+ 395   4                                      OLED_16x32(64, 2, display_buff[5]);
+ 396   4                                      OLED_16x32(80, 2, 11);//-
+ 397   4                                      OLED_16x32(96, 2, display_buff[6]);//日
+ 398   4                                      OLED_16x32(112, 2, display_buff[7]);    
+ 399   4                              }
+ 400   3                              else if(RTC_Set_ID==4)
+ 401   3                              {
+ 402   4                                      if(RTC_Data[2]<23)        //时+
+ 403   4                                              RTC_Data[2]++;
+ 404   4                                      display1();
+ 405   4                                      OLED_16x32(0, 2, display_buff[8]);//时
+ 406   4                                      OLED_16x32(16, 2, display_buff[9]);
+ 407   4                                      OLED_16x32(32, 2, 10);//:
+ 408   4                                      OLED_16x32(48, 2, display_buff[10]);//分
+ 409   4                                      OLED_16x32(64, 2, display_buff[11]);
+ 410   4                                      OLED_16x32(80, 2, 10);//:
+ 411   4                                      OLED_16x32(96, 2, display_buff[12]);//秒
+ 412   4                                      OLED_16x32(112, 2, display_buff[13]);
+ 413   4                              }
+ 414   3                              else if(RTC_Set_ID==5)
+ 415   3                              {
+ 416   4                                      if(RTC_Data[1]<59)        //分+
+ 417   4                                              RTC_Data[1]++;
+ 418   4                                      display1();
+ 419   4                                      OLED_16x32(0, 2, display_buff[8]);//时
+ 420   4                                      OLED_16x32(16, 2, display_buff[9]);
+ 421   4                                      OLED_16x32(32, 2, 10);//:
+ 422   4                                      OLED_16x32(48, 2, display_buff[10]);//分
+ 423   4                                      OLED_16x32(64, 2, display_buff[11]);
+ 424   4                                      OLED_16x32(80, 2, 10);//:
+ 425   4                                      OLED_16x32(96, 2, display_buff[12]);//秒
+ 426   4                                      OLED_16x32(112, 2, display_buff[13]);
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:26:37 PAGE 8   
+
+ 427   4                              }
+ 428   3                              else if(RTC_Set_ID==6)
+ 429   3                              {
+ 430   4                                      if(RTC_Data[0]<59)        //秒+
+ 431   4                                              RTC_Data[0]++;
+ 432   4                                      display1();
+ 433   4                                      OLED_16x32(0, 2, display_buff[8]);//时
+ 434   4                                      OLED_16x32(16, 2, display_buff[9]);
+ 435   4                                      OLED_16x32(32, 2, 10);//:
+ 436   4                                      OLED_16x32(48, 2, display_buff[10]);//分
+ 437   4                                      OLED_16x32(64, 2, display_buff[11]);
+ 438   4                                      OLED_16x32(80, 2, 10);//:
+ 439   4                                      OLED_16x32(96, 2, display_buff[12]);//秒
+ 440   4                                      OLED_16x32(112, 2, display_buff[13]);
+ 441   4                              }
+ 442   3                              else if(RTC_Set_ID==7)
+ 443   3                              {
+ 444   4                                      if(RTC_Data[5]<7)         //周+
+ 445   4                                              RTC_Data[5]++;
+ 446   4                                      display1();
+ 447   4                                      OLED_16x32(40, 2, 12);//星
+ 448   4                                      OLED_16x32(56, 2, 13);//期
+ 449   4                                      OLED_16x32(72, 2, display_buff[15]+13);
+ 450   4                              }
+ 451   3                      }
+ 452   2              }
+ 453   1              if(key3==0)
+ 454   1              {
+ 455   2                      delay_ms(10);
+ 456   2                      if(key3==0)
+ 457   2                      {
+ 458   3                              while(!key3);
+ 459   3                              laba_flag=1;      //蜂鸣器响一声
+ 460   3                              shezhi_display_flag=1;
+ 461   3                              if(RTC_Set_ID==1)
+ 462   3                              {
+ 463   4                                      if(RTC_Data[6])            //年-
+ 464   4                                              RTC_Data[6]--;
+ 465   4                                      display1();
+ 466   4                                      OLED_16x32(0, 2, display_buff[2]);//年
+ 467   4                                      OLED_16x32(16, 2, display_buff[3]);
+ 468   4                                      OLED_16x32(32, 2, 11);//-
+ 469   4                                      OLED_16x32(48, 2, display_buff[4]);//月
+ 470   4                                      OLED_16x32(64, 2, display_buff[5]);
+ 471   4                                      OLED_16x32(80, 2, 11);//-
+ 472   4                                      OLED_16x32(96, 2, display_buff[6]);//日
+ 473   4                                      OLED_16x32(112, 2, display_buff[7]);
+ 474   4                              }
+ 475   3                              else if(RTC_Set_ID==2)
+ 476   3                              {
+ 477   4                                      if(RTC_Data[4])            //月-
+ 478   4                                              RTC_Data[4]--;
+ 479   4                                      display1();
+ 480   4                                      OLED_16x32(0, 2, display_buff[2]);//年
+ 481   4                                      OLED_16x32(16, 2, display_buff[3]);
+ 482   4                                      OLED_16x32(32, 2, 11);//-
+ 483   4                                      OLED_16x32(48, 2, display_buff[4]);//月
+ 484   4                                      OLED_16x32(64, 2, display_buff[5]);
+ 485   4                                      OLED_16x32(80, 2, 11);//-
+ 486   4                                      OLED_16x32(96, 2, display_buff[6]);//日
+ 487   4                                      OLED_16x32(112, 2, display_buff[7]);
+ 488   4                              }
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:26:37 PAGE 9   
+
+ 489   3                              else if(RTC_Set_ID==3)
+ 490   3                              {
+ 491   4                                      if(RTC_Data[3])            //日-
+ 492   4                                              RTC_Data[3]--;
+ 493   4                                      display1();
+ 494   4                                      OLED_16x32(0, 2, display_buff[2]);//年
+ 495   4                                      OLED_16x32(16, 2, display_buff[3]);
+ 496   4                                      OLED_16x32(32, 2, 11);//-
+ 497   4                                      OLED_16x32(48, 2, display_buff[4]);//月
+ 498   4                                      OLED_16x32(64, 2, display_buff[5]);
+ 499   4                                      OLED_16x32(80, 2, 11);//-
+ 500   4                                      OLED_16x32(96, 2, display_buff[6]);//日
+ 501   4                                      OLED_16x32(112, 2, display_buff[7]);
+ 502   4                              }
+ 503   3                              else if(RTC_Set_ID==4)
+ 504   3                              {
+ 505   4                                      if(RTC_Data[2])            //时-
+ 506   4                                              RTC_Data[2]--;
+ 507   4                                      display1();
+ 508   4                                      OLED_16x32(0, 2, display_buff[8]);//时
+ 509   4                                      OLED_16x32(16, 2, display_buff[9]);
+ 510   4                                      OLED_16x32(32, 2, 10);//:
+ 511   4                                      OLED_16x32(48, 2, display_buff[10]);//分
+ 512   4                                      OLED_16x32(64, 2, display_buff[11]);
+ 513   4                                      OLED_16x32(80, 2, 10);//:
+ 514   4                                      OLED_16x32(96, 2, display_buff[12]);//秒
+ 515   4                                      OLED_16x32(112, 2, display_buff[13]);
+ 516   4                              }
+ 517   3                              else if(RTC_Set_ID==5)
+ 518   3                              {
+ 519   4                                      if(RTC_Data[1])            //分-
+ 520   4                                              RTC_Data[1]--;
+ 521   4                                      display1();
+ 522   4                                      OLED_16x32(0, 2, display_buff[8]);//时
+ 523   4                                      OLED_16x32(16, 2, display_buff[9]);
+ 524   4                                      OLED_16x32(32, 2, 10);//:
+ 525   4                                      OLED_16x32(48, 2, display_buff[10]);//分
+ 526   4                                      OLED_16x32(64, 2, display_buff[11]);
+ 527   4                                      OLED_16x32(80, 2, 10);//:
+ 528   4                                      OLED_16x32(96, 2, display_buff[12]);//秒
+ 529   4                                      OLED_16x32(112, 2, display_buff[13]);
+ 530   4                              }
+ 531   3                              else if(RTC_Set_ID==6)
+ 532   3                              {
+ 533   4                                      if(RTC_Data[0])            //秒-
+ 534   4                                              RTC_Data[0]--;
+ 535   4                                      display1();
+ 536   4                                      OLED_16x32(0, 2, display_buff[8]);//时
+ 537   4                                      OLED_16x32(16, 2, display_buff[9]);
+ 538   4                                      OLED_16x32(32, 2, 10);//:
+ 539   4                                      OLED_16x32(48, 2, display_buff[10]);//分
+ 540   4                                      OLED_16x32(64, 2, display_buff[11]);
+ 541   4                                      OLED_16x32(80, 2, 10);//:
+ 542   4                                      OLED_16x32(96, 2, display_buff[12]);//秒
+ 543   4                                      OLED_16x32(112, 2, display_buff[13]);
+ 544   4                              }
+ 545   3                              else if(RTC_Set_ID==7)
+ 546   3                              {
+ 547   4                                      if(RTC_Data[5])            //周-
+ 548   4                                              RTC_Data[5]--;
+ 549   4                                      display1();
+ 550   4                                      OLED_16x32(40, 2, 12);//星
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:26:37 PAGE 10  
+
+ 551   4                                      OLED_16x32(56, 2, 13);//期
+ 552   4                                      OLED_16x32(72, 2, display_buff[15]+13);
+ 553   4                              }
+ 554   3                      }
+ 555   2              }
+ 556   1              if(key4==0)
+ 557   1              {
+ 558   2                      delay_ms(10);
+ 559   2                      if(key4==0)
+ 560   2                      {
+ 561   3                              while(!key4);
+ 562   3                              laba_flag=1;      //蜂鸣器响一声
+ 563   3                              shezhi_display_flag=0;
+ 564   3                              RTC_Save_Flag=1;
+ 565   3                      }
+ 566   2              }
+ 567   1              //红外遥控操作部分
+ 568   1              if(IrOK==1)                                             //设置/遥控器C键
+ 569   1              {
+ 570   2                      if(Im[2]==0x0d)
+ 571   2                      {
+ 572   3                              laba_flag=1; //蜂鸣器响一声
+ 573   3                              shezhi_display_flag=1;
+ 574   3                              RTC_Set_ID++;
+ 575   3                              if(RTC_Set_ID>=8)
+ 576   3                                      RTC_Set_ID=1;
+ 577   3                              Open_Flag=1;
+ 578   3      
+ 579   3                              display1();
+ 580   3                              if(RTC_Set_ID==1)
+ 581   3                              {
+ 582   4                                      OLED_Fill(0x00);
+ 583   4                                      OLED_16x16CN(32, 0, 16);//年
+ 584   4                                      OLED_16x16CN(48, 0, 18);//份
+ 585   4                                      OLED_16x16CN(64, 0, 14);//设
+ 586   4                                      OLED_16x16CN(80, 0, 15);//置
+ 587   4                                      OLED_16x32(0, 2, display_buff[2]);//年
+ 588   4                                      OLED_16x32(16, 2, display_buff[3]);
+ 589   4                                      OLED_16x32(32, 2, 11);//-
+ 590   4                                      OLED_16x32(48, 2, display_buff[4]);//月
+ 591   4                                      OLED_16x32(64, 2, display_buff[5]);
+ 592   4                                      OLED_16x32(80, 2, 11);//-
+ 593   4                                      OLED_16x32(96, 2, display_buff[6]);//日
+ 594   4                                      OLED_16x32(112, 2, display_buff[7]);    
+ 595   4                              }
+ 596   3                              else if(RTC_Set_ID==2)
+ 597   3                              {
+ 598   4                                      OLED_16x16CN(32, 0, 17);//月
+ 599   4                                      OLED_16x16CN(48, 0, 18);//份
+ 600   4                                      OLED_16x16CN(64, 0, 14);//设
+ 601   4                                      OLED_16x16CN(80, 0, 15);//置
+ 602   4                              }
+ 603   3                              else if(RTC_Set_ID==3)
+ 604   3                              {
+ 605   4                                      OLED_16x16CN(32, 0, 11);//日
+ 606   4                                      OLED_16x16CN(48, 0, 9);//期
+ 607   4                                      OLED_16x16CN(64, 0, 14);//设
+ 608   4                                      OLED_16x16CN(80, 0, 15);//置
+ 609   4                              }
+ 610   3                              else if(RTC_Set_ID==4)
+ 611   3                              {
+ 612   4                                      OLED_16x16CN(32, 0, 13);//小
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:26:37 PAGE 11  
+
+ 613   4                                      OLED_16x16CN(48, 0, 12);//时
+ 614   4                                      OLED_16x16CN(64, 0, 14);//设
+ 615   4                                      OLED_16x16CN(80, 0, 15);//置
+ 616   4                                      OLED_16x32(0, 2, display_buff[8]);//时
+ 617   4                                      OLED_16x32(16, 2, display_buff[9]);
+ 618   4                                      OLED_16x32(32, 2, 10);//:
+ 619   4                                      OLED_16x32(48, 2, display_buff[10]);//分
+ 620   4                                      OLED_16x32(64, 2, display_buff[11]);
+ 621   4                                      OLED_16x32(80, 2, 10);//:
+ 622   4                                      OLED_16x32(96, 2, display_buff[12]);//秒
+ 623   4                                      OLED_16x32(112, 2, display_buff[13]);
+ 624   4                              }
+ 625   3                              else if(RTC_Set_ID==5)
+ 626   3                              {
+ 627   4                                      OLED_16x16CN(32, 0, 19);//分
+ 628   4                                      OLED_16x16CN(48, 0, 20);//钟
+ 629   4                                      OLED_16x16CN(64, 0, 14);//设
+ 630   4                                      OLED_16x16CN(80, 0, 15);//置
+ 631   4                              }
+ 632   3                              else if(RTC_Set_ID==6)
+ 633   3                              {
+ 634   4                                      OLED_16x16CN(32, 0, 21);//秒
+ 635   4                                      OLED_16x16CN(48, 0, 22);//数
+ 636   4                                      OLED_16x16CN(64, 0, 14);//设
+ 637   4                                      OLED_16x16CN(80, 0, 15);//置
+ 638   4                              }
+ 639   3                              else if(RTC_Set_ID==7)
+ 640   3                              {
+ 641   4                                      OLED_Fill(0x00);
+ 642   4                                      OLED_16x16CN(32, 0, 8);//星
+ 643   4                                      OLED_16x16CN(48, 0, 9);//期
+ 644   4                                      OLED_16x16CN(64, 0, 14);//设
+ 645   4                                      OLED_16x16CN(80, 0, 15);//置
+ 646   4                                      OLED_16x32(40, 2, 12);//星
+ 647   4                                      OLED_16x32(56, 2, 13);//期
+ 648   4                                      OLED_16x32(72, 2, display_buff[15]+13);
+ 649   4                              }
+ 650   3                      }
+ 651   2      
+ 652   2                      else if(Im[2]==0x40)//遥控器+键
+ 653   2                      {
+ 654   3                              laba_flag=1;   //蜂鸣器响一声
+ 655   3                              shezhi_display_flag=1;
+ 656   3                              if(RTC_Set_ID==1)
+ 657   3                              {
+ 658   4                                      if(RTC_Data[6]<99)        //年+
+ 659   4                                              RTC_Data[6]++;
+ 660   4                                      display1();
+ 661   4                                      OLED_16x32(0, 2, display_buff[2]);//年
+ 662   4                                      OLED_16x32(16, 2, display_buff[3]);
+ 663   4                                      OLED_16x32(32, 2, 11);//-
+ 664   4                                      OLED_16x32(48, 2, display_buff[4]);//月
+ 665   4                                      OLED_16x32(64, 2, display_buff[5]);
+ 666   4                                      OLED_16x32(80, 2, 11);//-
+ 667   4                                      OLED_16x32(96, 2, display_buff[6]);//日
+ 668   4                                      OLED_16x32(112, 2, display_buff[7]);
+ 669   4                              }
+ 670   3                              else if(RTC_Set_ID==2)
+ 671   3                              {
+ 672   4                                      if(RTC_Data[4]<12)        //月+
+ 673   4                                              RTC_Data[4]++;
+ 674   4                                      display1();
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:26:37 PAGE 12  
+
+ 675   4                                      OLED_16x32(0, 2, display_buff[2]);//年
+ 676   4                                      OLED_16x32(16, 2, display_buff[3]);
+ 677   4                                      OLED_16x32(32, 2, 11);//-
+ 678   4                                      OLED_16x32(48, 2, display_buff[4]);//月
+ 679   4                                      OLED_16x32(64, 2, display_buff[5]);
+ 680   4                                      OLED_16x32(80, 2, 11);//-
+ 681   4                                      OLED_16x32(96, 2, display_buff[6]);//日
+ 682   4                                      OLED_16x32(112, 2, display_buff[7]);
+ 683   4                              }
+ 684   3                              else if(RTC_Set_ID==3)
+ 685   3                              {
+ 686   4                                      if(RTC_Data[3]<31)        //日+
+ 687   4                                              RTC_Data[3]++;
+ 688   4                                      display1();
+ 689   4                                      OLED_16x32(0, 2, display_buff[2]);//年
+ 690   4                                      OLED_16x32(16, 2, display_buff[3]);
+ 691   4                                      OLED_16x32(32, 2, 11);//-
+ 692   4                                      OLED_16x32(48, 2, display_buff[4]);//月
+ 693   4                                      OLED_16x32(64, 2, display_buff[5]);
+ 694   4                                      OLED_16x32(80, 2, 11);//-
+ 695   4                                      OLED_16x32(96, 2, display_buff[6]);//日
+ 696   4                                      OLED_16x32(112, 2, display_buff[7]);
+ 697   4                              }
+ 698   3                              else if(RTC_Set_ID==4)
+ 699   3                              {
+ 700   4                                      if(RTC_Data[2]<23)        //时+
+ 701   4                                              RTC_Data[2]++;
+ 702   4                                      display1();
+ 703   4                                      OLED_16x32(0, 2, display_buff[8]);//时
+ 704   4                                      OLED_16x32(16, 2, display_buff[9]);
+ 705   4                                      OLED_16x32(32, 2, 10);//:
+ 706   4                                      OLED_16x32(48, 2, display_buff[10]);//分
+ 707   4                                      OLED_16x32(64, 2, display_buff[11]);
+ 708   4                                      OLED_16x32(80, 2, 10);//:
+ 709   4                                      OLED_16x32(96, 2, display_buff[12]);//秒
+ 710   4                                      OLED_16x32(112, 2, display_buff[13]);
+ 711   4                              }
+ 712   3                              else if(RTC_Set_ID==5)
+ 713   3                              {
+ 714   4                                      if(RTC_Data[1]<59)        //分+
+ 715   4                                              RTC_Data[1]++;
+ 716   4                                      display1();
+ 717   4                                      OLED_16x32(0, 2, display_buff[8]);//时
+ 718   4                                      OLED_16x32(16, 2, display_buff[9]);
+ 719   4                                      OLED_16x32(32, 2, 10);//:
+ 720   4                                      OLED_16x32(48, 2, display_buff[10]);//分
+ 721   4                                      OLED_16x32(64, 2, display_buff[11]);
+ 722   4                                      OLED_16x32(80, 2, 10);//:
+ 723   4                                      OLED_16x32(96, 2, display_buff[12]);//秒
+ 724   4                                      OLED_16x32(112, 2, display_buff[13]);
+ 725   4                              }
+ 726   3                              else if(RTC_Set_ID==6)
+ 727   3                              {
+ 728   4                                      if(RTC_Data[0]<59)        //秒+
+ 729   4                                              RTC_Data[0]++;
+ 730   4                                      display1();
+ 731   4                                      OLED_16x32(0, 2, display_buff[8]);//时
+ 732   4                                      OLED_16x32(16, 2, display_buff[9]);
+ 733   4                                      OLED_16x32(32, 2, 10);//:
+ 734   4                                      OLED_16x32(48, 2, display_buff[10]);//分
+ 735   4                                      OLED_16x32(64, 2, display_buff[11]);
+ 736   4                                      OLED_16x32(80, 2, 10);//:
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:26:37 PAGE 13  
+
+ 737   4                                      OLED_16x32(96, 2, display_buff[12]);//秒
+ 738   4                                      OLED_16x32(112, 2, display_buff[13]);
+ 739   4                              }
+ 740   3                              else if(RTC_Set_ID==7)
+ 741   3                              {
+ 742   4                                      if(RTC_Data[5]<7)         //周+
+ 743   4                                              RTC_Data[5]++;
+ 744   4                                      display1();
+ 745   4                                      OLED_16x32(40, 2, 12);//星
+ 746   4                                      OLED_16x32(56, 2, 13);//期
+ 747   4                                      OLED_16x32(72, 2, display_buff[15]+13);
+ 748   4                              }
+ 749   3                      }
+ 750   2      
+ 751   2                      else if(Im[2]==0x19)//遥控器-键
+ 752   2                      {
+ 753   3                              laba_flag=1;      //蜂鸣器响一声
+ 754   3                              shezhi_display_flag=1;
+ 755   3                              if(RTC_Set_ID==1)
+ 756   3                              {
+ 757   4                                      if(RTC_Data[6])            //年-
+ 758   4                                              RTC_Data[6]--;
+ 759   4                                      display1();
+ 760   4                                      OLED_16x32(0, 2, display_buff[2]);//年
+ 761   4                                      OLED_16x32(16, 2, display_buff[3]);
+ 762   4                                      OLED_16x32(32, 2, 11);//-
+ 763   4                                      OLED_16x32(48, 2, display_buff[4]);//月
+ 764   4                                      OLED_16x32(64, 2, display_buff[5]);
+ 765   4                                      OLED_16x32(80, 2, 11);//-
+ 766   4                                      OLED_16x32(96, 2, display_buff[6]);//日
+ 767   4                                      OLED_16x32(112, 2, display_buff[7]);
+ 768   4                              }
+ 769   3                              else if(RTC_Set_ID==2)
+ 770   3                              {
+ 771   4                                      if(RTC_Data[4])            //月-
+ 772   4                                              RTC_Data[4]--;
+ 773   4                                      display1();
+ 774   4                                      OLED_16x32(0, 2, display_buff[2]);//年
+ 775   4                                      OLED_16x32(16, 2, display_buff[3]);
+ 776   4                                      OLED_16x32(32, 2, 11);//-
+ 777   4                                      OLED_16x32(48, 2, display_buff[4]);//月
+ 778   4                                      OLED_16x32(64, 2, display_buff[5]);
+ 779   4                                      OLED_16x32(80, 2, 11);//-
+ 780   4                                      OLED_16x32(96, 2, display_buff[6]);//日
+ 781   4                                      OLED_16x32(112, 2, display_buff[7]);
+ 782   4                              }
+ 783   3                              else if(RTC_Set_ID==3)
+ 784   3                              {
+ 785   4                                      if(RTC_Data[3])            //日-
+ 786   4                                              RTC_Data[3]--;
+ 787   4                                      display1();
+ 788   4                                      OLED_16x32(0, 2, display_buff[2]);//年
+ 789   4                                      OLED_16x32(16, 2, display_buff[3]);
+ 790   4                                      OLED_16x32(32, 2, 11);//-
+ 791   4                                      OLED_16x32(48, 2, display_buff[4]);//月
+ 792   4                                      OLED_16x32(64, 2, display_buff[5]);
+ 793   4                                      OLED_16x32(80, 2, 11);//-
+ 794   4                                      OLED_16x32(96, 2, display_buff[6]);//日
+ 795   4                                      OLED_16x32(112, 2, display_buff[7]);
+ 796   4                              }
+ 797   3                              else if(RTC_Set_ID==4)
+ 798   3                              {
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:26:37 PAGE 14  
+
+ 799   4                                      if(RTC_Data[2])            //时-
+ 800   4                                              RTC_Data[2]--;
+ 801   4                                      display1();
+ 802   4                                      OLED_16x32(0, 2, display_buff[8]);//时
+ 803   4                                      OLED_16x32(16, 2, display_buff[9]);
+ 804   4                                      OLED_16x32(32, 2, 10);//:
+ 805   4                                      OLED_16x32(48, 2, display_buff[10]);//分
+ 806   4                                      OLED_16x32(64, 2, display_buff[11]);
+ 807   4                                      OLED_16x32(80, 2, 10);//:
+ 808   4                                      OLED_16x32(96, 2, display_buff[12]);//秒
+ 809   4                                      OLED_16x32(112, 2, display_buff[13]);
+ 810   4                              }
+ 811   3                              else if(RTC_Set_ID==5)
+ 812   3                              {
+ 813   4                                      if(RTC_Data[1])            //分-
+ 814   4                                              RTC_Data[1]--;
+ 815   4                                      display1();
+ 816   4                                      OLED_16x32(0, 2, display_buff[8]);//时
+ 817   4                                      OLED_16x32(16, 2, display_buff[9]);
+ 818   4                                      OLED_16x32(32, 2, 10);//:
+ 819   4                                      OLED_16x32(48, 2, display_buff[10]);//分
+ 820   4                                      OLED_16x32(64, 2, display_buff[11]);
+ 821   4                                      OLED_16x32(80, 2, 10);//:
+ 822   4                                      OLED_16x32(96, 2, display_buff[12]);//秒
+ 823   4                                      OLED_16x32(112, 2, display_buff[13]);
+ 824   4                              }
+ 825   3                              else if(RTC_Set_ID==6)
+ 826   3                              {
+ 827   4                                      if(RTC_Data[0])            //秒-
+ 828   4                                              RTC_Data[0]--;
+ 829   4                                      display1();
+ 830   4                                      OLED_16x32(0, 2, display_buff[8]);//时
+ 831   4                                      OLED_16x32(16, 2, display_buff[9]);
+ 832   4                                      OLED_16x32(32, 2, 10);//:
+ 833   4                                      OLED_16x32(48, 2, display_buff[10]);//分
+ 834   4                                      OLED_16x32(64, 2, display_buff[11]);
+ 835   4                                      OLED_16x32(80, 2, 10);//:
+ 836   4                                      OLED_16x32(96, 2, display_buff[12]);//秒
+ 837   4                                      OLED_16x32(112, 2, display_buff[13]);
+ 838   4                              }
+ 839   3                              else if(RTC_Set_ID==7)
+ 840   3                              {
+ 841   4                                      if(RTC_Data[5])            //周-
+ 842   4                                              RTC_Data[5]--;
+ 843   4                                      display1();
+ 844   4                                      OLED_16x32(40, 2, 12);//星
+ 845   4                                      OLED_16x32(56, 2, 13);//期
+ 846   4                                      OLED_16x32(72, 2, display_buff[15]+13);
+ 847   4                              }
+ 848   3                      }
+ 849   2                      else if(Im[2]==0x15)//遥控器播放键
+ 850   2                      {
+ 851   3                              laba_flag=1;
+ 852   3                              shezhi_display_flag=0;
+ 853   3                              RTC_Save_Flag=1;
+ 854   3                      }
+ 855   2                      IrOK=0;
+ 856   2              }
+ 857   1      }
+ 858          /*******************************************************************************
+ 859          * 函 数 名         : Time1
+ 860          * 函数功能                 : 125us定时 中断服务函数    
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:26:37 PAGE 15  
+
+ 861          *******************************************************************************/
+ 862          void Time1() interrupt 3
+ 863          {
+ 864   1              static uchar timecount;
+ 865   1              TF1=0;
+ 866   1              TH1=0xff;//125us
+ 867   1              TL1=256-110;
+ 868   1              
+ 869   1              timecount++;
+ 870   1              if(timecount>=16)//1ms
+ 871   1              {
+ 872   2                      timecount=0;
+ 873   2                      T0_Flag=1;
+ 874   2              }
+ 875   1              if(laba_flag)
+ 876   1              {
+ 877   2                      laba=~laba;
+ 878   2              }
+ 879   1              else
+ 880   1              laba=0;
+ 881   1      }
+ 882          /*******************************************************************************
+ 883          * 函 数 名         : intersvr1
+ 884          * 函数功能                 : 红外解码定时器程序  
+ 885          *******************************************************************************/
+ 886          void intersvr1() interrupt 2 using 1   //外部中断解码程序_外部中断1       P3.3口
+ 887          {
+ 888   1              Tc=TH0*256+TL0;//提取中断时间间隔时长
+ 889   1              TH0=0; 
+ 890   1              TL0=0;         //定时中断重新置零
+ 891   1      
+ 892   1              if((Tc>Imin)&&(Tc<Imax))
+ 893   1              { 
+ 894   2                      m=0;
+ 895   2                      f=1;
+ 896   2                      return;
+ 897   2              }              //找到启始码
+ 898   1              if(f==1)
+ 899   1              {
+ 900   2                      if(Tc>Inum1&&Tc<Inum3) 
+ 901   2                      {
+ 902   3                              Im[m/8]=Im[m/8]>>1|0x80; m++; 
+ 903   3                      }
+ 904   2                      if(Tc>Inum2&&Tc<Inum1) 
+ 905   2                      {
+ 906   3                              Im[m/8]=Im[m/8]>>1; m++; //取码
+ 907   3                      }
+ 908   2                      if(m==32) 
+ 909   2                      {
+ 910   3                              m=0;  
+ 911   3                              f=0;
+ 912   3                              if(Im[2]==~Im[3]) 
+ 913   3                              {
+ 914   4                                      IrOK=1; 
+ 915   4                              }
+ 916   3                              else IrOK=0;   //取码完成后判断读码是否正确
+ 917   3                      }
+ 918   2              }
+ 919   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+C51 COMPILER V9.01   RTC                                                                   07/09/2019 14:26:37 PAGE 16  
+
+   CODE SIZE        =   3403    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     19    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      5    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

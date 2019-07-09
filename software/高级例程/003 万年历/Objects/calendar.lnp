@@ -1,0 +1,7 @@
+"main.obj",
+"oled.obj",
+"rtc.obj",
+"iic.obj",
+"delay.obj" 
+TO "calendar" 
+RAMSIZE(256) 
