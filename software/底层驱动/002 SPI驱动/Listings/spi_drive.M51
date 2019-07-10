@@ -1,0 +1,178 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/10/2019  19:48:37  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+D:\单片机\C51\BIN\BL51.EXE main.obj, delay.obj, spi_set.obj TO spi_drive RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  delay.obj (DELAY)
+  spi_set.obj (SPI_SET)
+  D:\单片机\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  spi_drive (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0002H     UNIT         ?DT?MAIN
+                    000AH     0016H                  *** GAP ***
+            BIT     0020H.0   0000H.1   UNIT         ?BI?MAIN
+                    0020H.1   0000H.7                *** GAP ***
+            IDATA   0021H     0040H     UNIT         ?ID?MAIN
+            IDATA   0061H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     001EH     UNIT         ?PR?_DELAY_MS?DELAY
+                    0021H     0002H                  *** GAP ***
+            CODE    0023H     0003H     ABSOLUTE     
+            CODE    0026H     0031H     UNIT         ?PR?MAIN?MAIN
+            CODE    0057H     002FH     UNIT         ?PR?UART_RCV?MAIN
+            CODE    0086H     001BH     UNIT         ?PR?UART_INIT?SPI_SET
+            CODE    00A1H     000CH     UNIT         ?C_C51STARTUP
+            CODE    00ADH     0004H     UNIT         ?PR?SPI_INIT?SPI_SET
+
+
+
+OVERLAY MAP OF MODULE:   spi_drive (MAIN)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN
+  +--> ?PR?UART_INIT?SPI_SET
+  +--> ?PR?SPI_INIT?SPI_SET
+
+
+
+SYMBOL TABLE OF MODULE:  spi_drive (MAIN)
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/10/2019  19:48:37  PAGE 2
+
+
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:0008H         PUBLIC        uart_wr
+  C:0057H         PUBLIC        UART_RCV
+  B:0098H.0       PUBLIC        RI
+  B:0098H.1       PUBLIC        TI
+  C:0026H         PUBLIC        main
+  D:0099H         PUBLIC        SBUF
+  B:0020H.0       PUBLIC        B_TI
+  D:00CDH         PUBLIC        SPSTAT
+  B:0090H.4       PUBLIC        SPI_CS
+  I:0021H         PUBLIC        RX_Buffer
+  D:0009H         PUBLIC        uart_rd
+  D:00CFH         PUBLIC        SPDAT
+  -------         PROC          MAIN
+  C:0026H         LINE#         17
+  C:0026H         LINE#         18
+  C:0026H         LINE#         19
+  C:0029H         LINE#         20
+  C:002CH         LINE#         22
+  C:002CH         LINE#         23
+  C:002CH         LINE#         24
+  C:0032H         LINE#         25
+  C:0032H         LINE#         26
+  C:0034H         LINE#         27
+  C:0037H         LINE#         28
+  C:003FH         LINE#         29
+  C:0044H         LINE#         30
+  C:0047H         LINE#         31
+  C:0049H         LINE#         33
+  C:0055H         LINE#         34
+  C:0055H         LINE#         35
+  -------         ENDPROC       MAIN
+  -------         PROC          UART_RCV
+  C:0057H         LINE#         38
+  C:0060H         LINE#         40
+  C:0063H         LINE#         41
+  C:0063H         LINE#         42
+  C:0065H         LINE#         43
+  C:006CH         LINE#         44
+  C:0078H         LINE#         45
+  C:0078H         LINE#         47
+  C:007BH         LINE#         48
+  C:007BH         LINE#         49
+  C:007DH         LINE#         50
+  C:007FH         LINE#         51
+  C:007FH         LINE#         52
+  -------         ENDPROC       UART_RCV
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        DELAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/10/2019  19:48:37  PAGE 3
+
+
+  C:0003H         PUBLIC        _Delay_ms
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        z
+  -------         DO            
+  D:0006H         SYMBOL        x
+  D:0004H         SYMBOL        y
+  -------         ENDDO         
+  C:0003H         LINE#         16
+  C:0003H         LINE#         17
+  C:0003H         LINE#         20
+  C:000CH         LINE#         22
+  C:0020H         LINE#         23
+  -------         ENDPROC       _DELAY_MS
+  -------         ENDMOD        DELAY
+
+  -------         MODULE        SPI_SET
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  B:00A8H.7       PUBLIC        EA
+  D:00CEH         PUBLIC        SPCTL
+  B:00A8H.4       PUBLIC        ES
+  D:0087H         PUBLIC        PCON
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  D:008DH         PUBLIC        TH1
+  C:0086H         PUBLIC        uart_init
+  B:0088H.6       PUBLIC        TR1
+  C:00ADH         PUBLIC        spi_init
+  -------         PROC          SPI_INIT
+  C:00ADH         LINE#         17
+  C:00ADH         LINE#         18
+  C:00ADH         LINE#         19
+  C:00B0H         LINE#         20
+  -------         ENDPROC       SPI_INIT
+  -------         PROC          UART_INIT
+  C:0086H         LINE#         27
+  C:0086H         LINE#         28
+  C:0086H         LINE#         29
+  C:0089H         LINE#         30
+  C:008CH         LINE#         31
+  C:008FH         LINE#         32
+  C:0097H         LINE#         33
+  C:009AH         LINE#         34
+  C:009CH         LINE#         35
+  C:009EH         LINE#         36
+  C:00A0H         LINE#         37
+  -------         ENDPROC       UART_INIT
+  -------         ENDMOD        SPI_SET
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_MS?DELAY
+
+Program Size: data=75.1 xdata=0 code=175
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

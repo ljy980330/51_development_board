@@ -1,0 +1,77 @@
+C51 COMPILER V9.00   MAIN                                                                  07/10/2019 19:48:37 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: D:\单片机\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          /*********************************************************************************************************
+   2          *名称：spi驱动
+   3          *功能：每隔50ms，从SPI发送32个字节数据
+   4          创建时间：2019/7/10
+   5          修改时间：2019/XX/XX
+   6          作者：李诗琪
+   7          *********************************************************************************************************/
+   8          
+   9          #include "includes.h"
+  10          
+  11          #define         BUF_LENTH       64              //定义串口接收缓冲长度
+  12          U8      uart_wr;                //写指针
+  13          U8      uart_rd;                //读指针
+  14          U8      idata RX_Buffer[BUF_LENTH];
+  15          bit             B_TI;
+  16          
+  17          int main()
+  18          {
+  19   1              uart_init();
+  20   1              spi_init();
+  21   1              
+  22   1              while(1)
+  23   1              {
+  24   2                      if(uart_rd != uart_wr)  //串口0转发
+  25   2                      {
+  26   3                              SPI_CS = 0;                                                     //允许外部PSI器件
+  27   3                              SPSTAT = SPIF + WCOL;                   //清0 SPIF和WCOL标志
+  28   3                              SPDAT = RX_Buffer[uart_rd];     //发送一个字节
+  29   3                              while((SPSTAT & SPIF) == 0)     ;       //等待发送完成
+  30   3                              SPSTAT = SPIF + WCOL;                           //清0 SPIF和WCOL标志
+  31   3                              SPI_CS = 1;                                                     //禁止外部PSI器件
+  32   3      
+  33   3                              if(++uart_rd >= BUF_LENTH)              uart_rd = 0;
+  34   3                      }
+  35   2              }                        
+  36   1      }
+  37          
+  38          void UART_RCV (void) interrupt 4
+  39          {
+  40   1              if(RI)
+  41   1              {
+  42   2                      RI = 0;
+  43   2                      RX_Buffer[uart_wr] = SBUF;
+  44   2                      if(++uart_wr >= BUF_LENTH)      uart_wr = 0;
+  45   2              }
+  46   1      
+  47   1              if(TI)
+  48   1              {
+  49   2                      TI = 0;
+  50   2                      B_TI = 1;
+  51   2              }
+  52   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+C51 COMPILER V9.00   MAIN                                                                  07/10/2019 19:48:37 PAGE 2   
+
+   CODE SIZE        =     96    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2    ----
+   IDATA SIZE       =     64    ----
+   BIT SIZE         =      1    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

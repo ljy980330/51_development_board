@@ -1,0 +1,5 @@
+"main.obj",
+"delay.obj",
+"spi_set.obj" 
+TO "spi_drive" 
+RAMSIZE(256) 

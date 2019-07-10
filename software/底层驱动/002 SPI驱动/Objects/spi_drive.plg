@@ -1,0 +1,330 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\LEE SZE KI\Desktop\吴燕婷\spi_drive\spi_drive.uvproj
+Project File Date:  07/10/2019
+
+<h2>Output:</h2>
+compiling main.c...
+includes.h(16): warning C318: can't open file 'i2c_set/i2c_set.h'
+MAIN.C(14): warning C290: missing return value
+main.c - 0 Error(s), 2 Warning(s).
+compiling main.c...
+includes.h(16): warning C318: can't open file 'function/function.h'
+MAIN.C(14): warning C290: missing return value
+main.c - 0 Error(s), 2 Warning(s).
+compiling delay.c...
+delay\delay.c - 0 Error(s), 0 Warning(s).
+compiling spi_set.c...
+SPI_SET\SPI_SET.C(16): error C141: syntax error near 'ch', expected ')'
+spi_set\spi_set.c - 1 Error(s), 0 Warning(s).
+compiling spi_set.c...
+SPI_SET\SPI_SET.C(16): error C141: syntax error near 'ch', expected ')'
+spi_set\spi_set.c - 1 Error(s), 0 Warning(s).
+compiling spi_set.c...
+spi_set\spi_set.c - 0 Error(s), 0 Warning(s).
+compiling spi_set.c...
+spi_set\spi_set.c - 0 Error(s), 0 Warning(s).
+compiling spi_set.c...
+SPI_SET\SPI_SET.H(12): error C202: 'P1': undefined identifier
+SPI_SET\SPI_SET.H(13): error C202: 'P1': undefined identifier
+SPI_SET\SPI_SET.H(14): error C202: 'P1': undefined identifier
+SPI_SET\SPI_SET.H(15): error C202: 'P1': undefined identifier
+spi_set\spi_set.c - 4 Error(s), 0 Warning(s).
+compiling spi_set.c...
+spi_set\spi_set.c - 0 Error(s), 0 Warning(s).
+compiling spi_set.c...
+SPI_SET\SPI_SET.H(20): error C231: 'AUXR1': redefinition
+SPI_SET\SPI_SET.H(26): error C231: 'SPSTAT': redefinition
+SPI_SET\SPI_SET.H(27): error C231: 'SPCTL': redefinition
+SPI_SET\SPI_SET.H(28): error C231: 'SPDAT': redefinition
+SPI_SET\SPI_SET.H(33): warning C317: attempt to redefine macro 'SSIG'
+SPI_SET\SPI_SET.H(34): warning C317: attempt to redefine macro 'SPEN'
+SPI_SET\SPI_SET.H(35): warning C317: attempt to redefine macro 'DORD'
+SPI_SET\SPI_SET.H(36): warning C317: attempt to redefine macro 'MSTR'
+SPI_SET\SPI_SET.H(37): warning C317: attempt to redefine macro 'CPOL'
+SPI_SET\SPI_SET.H(38): warning C317: attempt to redefine macro 'CPHA'
+spi_set\spi_set.c - 4 Error(s), 6 Warning(s).
+compiling spi_set.c...
+spi_set\spi_set.c - 0 Error(s), 0 Warning(s).
+compiling spi_set.c...
+spi_set\spi_set.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+D:\单片机\C51\INC\REG51.H(13): error C231: 'P0': redefinition
+D:\单片机\C51\INC\REG51.H(14): error C231: 'P1': redefinition
+D:\单片机\C51\INC\REG51.H(15): error C231: 'P2': redefinition
+D:\单片机\C51\INC\REG51.H(16): error C231: 'P3': redefinition
+D:\单片机\C51\INC\REG51.H(17): error C231: 'PSW': redefinition
+D:\单片机\C51\INC\REG51.H(18): error C231: 'ACC': redefinition
+D:\单片机\C51\INC\REG51.H(19): error C231: 'B': redefinition
+D:\单片机\C51\INC\REG51.H(20): error C231: 'SP': redefinition
+D:\单片机\C51\INC\REG51.H(21): error C231: 'DPL': redefinition
+D:\单片机\C51\INC\REG51.H(22): error C231: 'DPH': redefinition
+D:\单片机\C51\INC\REG51.H(23): error C231: 'PCON': redefinition
+D:\单片机\C51\INC\REG51.H(24): error C231: 'TCON': redefinition
+D:\单片机\C51\INC\REG51.H(25): error C231: 'TMOD': redefinition
+D:\单片机\C51\INC\REG51.H(26): error C231: 'TL0': redefinition
+D:\单片机\C51\INC\REG51.H(27): error C231: 'TL1': redefinition
+D:\单片机\C51\INC\REG51.H(28): error C231: 'TH0': redefinition
+D:\单片机\C51\INC\REG51.H(29): error C231: 'TH1': redefinition
+D:\单片机\C51\INC\REG51.H(30): error C231: 'IE': redefinition
+D:\单片机\C51\INC\REG51.H(31): error C231: 'IP': redefinition
+D:\单片机\C51\INC\REG51.H(32): error C231: 'SCON': redefinition
+D:\单片机\C51\INC\REG51.H(33): error C231: 'SBUF': redefinition
+D:\单片机\C51\INC\REG51.H(38): error C231: 'CY': redefinition
+D:\单片机\C51\INC\REG51.H(39): error C231: 'AC': redefinition
+D:\单片机\C51\INC\REG51.H(40): error C231: 'F0': redefinition
+D:\单片机\C51\INC\REG51.H(41): error C231: 'RS1': redefinition
+D:\单片机\C51\INC\REG51.H(42): error C231: 'RS0': redefinition
+D:\单片机\C51\INC\REG51.H(43): error C231: 'OV': redefinition
+D:\单片机\C51\INC\REG51.H(44): error C231: 'P': redefinition
+D:\单片机\C51\INC\REG51.H(47): error C231: 'TF1': redefinition
+D:\单片机\C51\INC\REG51.H(48): error C231: 'TR1': redefinition
+D:\单片机\C51\INC\REG51.H(49): error C231: 'TF0': redefinition
+D:\单片机\C51\INC\REG51.H(50): error C231: 'TR0': redefinition
+D:\单片机\C51\INC\REG51.H(51): error C231: 'IE1': redefinition
+D:\单片机\C51\INC\REG51.H(52): error C231: 'IT1': redefinition
+D:\单片机\C51\INC\REG51.H(53): error C231: 'IE0': redefinition
+D:\单片机\C51\INC\REG51.H(54): error C231: 'IT0': redefinition
+D:\单片机\C51\INC\REG51.H(57): error C231: 'EA': redefinition
+D:\单片机\C51\INC\REG51.H(58): error C231: 'ES': redefinition
+D:\单片机\C51\INC\REG51.H(59): error C231: 'ET1': redefinition
+D:\单片机\C51\INC\REG51.H(60): error C231: 'EX1': redefinition
+D:\单片机\C51\INC\REG51.H(61): error C231: 'ET0': redefinition
+D:\单片机\C51\INC\REG51.H(62): error C231: 'EX0': redefinition
+D:\单片机\C51\INC\REG51.H(65): error C231: 'PS': redefinition
+D:\单片机\C51\INC\REG51.H(66): error C231: 'PT1': redefinition
+D:\单片机\C51\INC\REG51.H(67): error C231: 'PX1': redefinition
+D:\单片机\C51\INC\REG51.H(68): error C231: 'PT0': redefinition
+D:\单片机\C51\INC\REG51.H(69): error C231: 'PX0': redefinition
+D:\单片机\C51\INC\REG51.H(72): error C231: 'RD': redefinition
+D:\单片机\C51\INC\REG51.H(73): error C231: 'WR': redefinition
+D:\单片机\C51\INC\REG51.H(74): error C231: 'T1': redefinition
+D:\单片机\C51\INC\REG51.H(75): error C231: 'T0': redefinition
+D:\单片机\C51\INC\REG51.H(76): error C231: 'INT1': redefinition
+D:\单片机\C51\INC\REG51.H(77): error C231: 'INT0': redefinition
+D:\单片机\C51\INC\REG51.H(78): error C231: 'TXD': redefinition
+D:\单片机\C51\INC\REG51.H(79): error C231: 'RXD': redefinition
+D:\单片机\C51\INC\REG51.H(82): error C231: 'SM0': redefinition
+D:\单片机\C51\INC\REG51.H(83): error C231: 'SM1': redefinition
+D:\单片机\C51\INC\REG51.H(84): error C231: 'SM2': redefinition
+D:\单片机\C51\INC\REG51.H(85): error C231: 'REN': redefinition
+D:\单片机\C51\INC\REG51.H(86): error C231: 'TB8': redefinition
+D:\单片机\C51\INC\REG51.H(87): error C231: 'RB8': redefinition
+D:\单片机\C51\INC\REG51.H(88): error C231: 'TI': redefinition
+D:\单片机\C51\INC\REG51.H(89): error C231: 'RI': redefinition
+SPI_SET/SPI_SET.H(20): error C231: 'AUXR1': redefinition
+SPI_SET/SPI_SET.H(21): error C231: 'AUXR': redefinition
+SPI_SET/SPI_SET.H(27): error C231: 'SPSTAT': redefinition
+SPI_SET/SPI_SET.H(28): error C231: 'SPCTL': redefinition
+SPI_SET/SPI_SET.H(29): error C231: 'SPDAT': redefinition
+spi_set/spi_set.h(34): warning C317: attempt to redefine macro 'SSIG'
+spi_set/spi_set.h(35): warning C317: attempt to redefine macro 'SPEN'
+spi_set/spi_set.h(36): warning C317: attempt to redefine macro 'DORD'
+spi_set/spi_set.h(37): warning C317: attempt to redefine macro 'MSTR'
+spi_set/spi_set.h(38): warning C317: attempt to redefine macro 'CPOL'
+spi_set/spi_set.h(39): warning C317: attempt to redefine macro 'CPHA'
+MAIN.C(43): error C202: 'RX_Buffer': undefined identifier
+MAIN.C(44): error C202: 'uart0_wr': undefined identifier
+main.c - 70 Error(s), 6 Warning(s).
+compiling main.c...
+D:\单片机\C51\INC\REG51.H(13): error C231: 'P0': redefinition
+D:\单片机\C51\INC\REG51.H(14): error C231: 'P1': redefinition
+D:\单片机\C51\INC\REG51.H(15): error C231: 'P2': redefinition
+D:\单片机\C51\INC\REG51.H(16): error C231: 'P3': redefinition
+D:\单片机\C51\INC\REG51.H(17): error C231: 'PSW': redefinition
+D:\单片机\C51\INC\REG51.H(18): error C231: 'ACC': redefinition
+D:\单片机\C51\INC\REG51.H(19): error C231: 'B': redefinition
+D:\单片机\C51\INC\REG51.H(20): error C231: 'SP': redefinition
+D:\单片机\C51\INC\REG51.H(21): error C231: 'DPL': redefinition
+D:\单片机\C51\INC\REG51.H(22): error C231: 'DPH': redefinition
+D:\单片机\C51\INC\REG51.H(23): error C231: 'PCON': redefinition
+D:\单片机\C51\INC\REG51.H(24): error C231: 'TCON': redefinition
+D:\单片机\C51\INC\REG51.H(25): error C231: 'TMOD': redefinition
+D:\单片机\C51\INC\REG51.H(26): error C231: 'TL0': redefinition
+D:\单片机\C51\INC\REG51.H(27): error C231: 'TL1': redefinition
+D:\单片机\C51\INC\REG51.H(28): error C231: 'TH0': redefinition
+D:\单片机\C51\INC\REG51.H(29): error C231: 'TH1': redefinition
+D:\单片机\C51\INC\REG51.H(30): error C231: 'IE': redefinition
+D:\单片机\C51\INC\REG51.H(31): error C231: 'IP': redefinition
+D:\单片机\C51\INC\REG51.H(32): error C231: 'SCON': redefinition
+D:\单片机\C51\INC\REG51.H(33): error C231: 'SBUF': redefinition
+D:\单片机\C51\INC\REG51.H(38): error C231: 'CY': redefinition
+D:\单片机\C51\INC\REG51.H(39): error C231: 'AC': redefinition
+D:\单片机\C51\INC\REG51.H(40): error C231: 'F0': redefinition
+D:\单片机\C51\INC\REG51.H(41): error C231: 'RS1': redefinition
+D:\单片机\C51\INC\REG51.H(42): error C231: 'RS0': redefinition
+D:\单片机\C51\INC\REG51.H(43): error C231: 'OV': redefinition
+D:\单片机\C51\INC\REG51.H(44): error C231: 'P': redefinition
+D:\单片机\C51\INC\REG51.H(47): error C231: 'TF1': redefinition
+D:\单片机\C51\INC\REG51.H(48): error C231: 'TR1': redefinition
+D:\单片机\C51\INC\REG51.H(49): error C231: 'TF0': redefinition
+D:\单片机\C51\INC\REG51.H(50): error C231: 'TR0': redefinition
+D:\单片机\C51\INC\REG51.H(51): error C231: 'IE1': redefinition
+D:\单片机\C51\INC\REG51.H(52): error C231: 'IT1': redefinition
+D:\单片机\C51\INC\REG51.H(53): error C231: 'IE0': redefinition
+D:\单片机\C51\INC\REG51.H(54): error C231: 'IT0': redefinition
+D:\单片机\C51\INC\REG51.H(57): error C231: 'EA': redefinition
+D:\单片机\C51\INC\REG51.H(58): error C231: 'ES': redefinition
+D:\单片机\C51\INC\REG51.H(59): error C231: 'ET1': redefinition
+D:\单片机\C51\INC\REG51.H(60): error C231: 'EX1': redefinition
+D:\单片机\C51\INC\REG51.H(61): error C231: 'ET0': redefinition
+D:\单片机\C51\INC\REG51.H(62): error C231: 'EX0': redefinition
+D:\单片机\C51\INC\REG51.H(65): error C231: 'PS': redefinition
+D:\单片机\C51\INC\REG51.H(66): error C231: 'PT1': redefinition
+D:\单片机\C51\INC\REG51.H(67): error C231: 'PX1': redefinition
+D:\单片机\C51\INC\REG51.H(68): error C231: 'PT0': redefinition
+D:\单片机\C51\INC\REG51.H(69): error C231: 'PX0': redefinition
+D:\单片机\C51\INC\REG51.H(72): error C231: 'RD': redefinition
+D:\单片机\C51\INC\REG51.H(73): error C231: 'WR': redefinition
+D:\单片机\C51\INC\REG51.H(74): error C231: 'T1': redefinition
+D:\单片机\C51\INC\REG51.H(75): error C231: 'T0': redefinition
+D:\单片机\C51\INC\REG51.H(76): error C231: 'INT1': redefinition
+D:\单片机\C51\INC\REG51.H(77): error C231: 'INT0': redefinition
+D:\单片机\C51\INC\REG51.H(78): error C231: 'TXD': redefinition
+D:\单片机\C51\INC\REG51.H(79): error C231: 'RXD': redefinition
+D:\单片机\C51\INC\REG51.H(82): error C231: 'SM0': redefinition
+D:\单片机\C51\INC\REG51.H(83): error C231: 'SM1': redefinition
+D:\单片机\C51\INC\REG51.H(84): error C231: 'SM2': redefinition
+D:\单片机\C51\INC\REG51.H(85): error C231: 'REN': redefinition
+D:\单片机\C51\INC\REG51.H(86): error C231: 'TB8': redefinition
+D:\单片机\C51\INC\REG51.H(87): error C231: 'RB8': redefinition
+D:\单片机\C51\INC\REG51.H(88): error C231: 'TI': redefinition
+D:\单片机\C51\INC\REG51.H(89): error C231: 'RI': redefinition
+SPI_SET/SPI_SET.H(20): error C231: 'AUXR1': redefinition
+SPI_SET/SPI_SET.H(21): error C231: 'AUXR': redefinition
+SPI_SET/SPI_SET.H(27): error C231: 'SPSTAT': redefinition
+SPI_SET/SPI_SET.H(28): error C231: 'SPCTL': redefinition
+SPI_SET/SPI_SET.H(29): error C231: 'SPDAT': redefinition
+spi_set/spi_set.h(34): warning C317: attempt to redefine macro 'SSIG'
+spi_set/spi_set.h(35): warning C317: attempt to redefine macro 'SPEN'
+spi_set/spi_set.h(36): warning C317: attempt to redefine macro 'DORD'
+spi_set/spi_set.h(37): warning C317: attempt to redefine macro 'MSTR'
+spi_set/spi_set.h(38): warning C317: attempt to redefine macro 'CPOL'
+spi_set/spi_set.h(39): warning C317: attempt to redefine macro 'CPHA'
+MAIN.C(28): error C202: 'RX0_Buffer': undefined identifier
+main.c - 69 Error(s), 6 Warning(s).
+compiling spi_set.c...
+spi_set\spi_set.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+D:\单片机\C51\INC\REG51.H(13): error C231: 'P0': redefinition
+D:\单片机\C51\INC\REG51.H(14): error C231: 'P1': redefinition
+D:\单片机\C51\INC\REG51.H(15): error C231: 'P2': redefinition
+D:\单片机\C51\INC\REG51.H(16): error C231: 'P3': redefinition
+D:\单片机\C51\INC\REG51.H(17): error C231: 'PSW': redefinition
+D:\单片机\C51\INC\REG51.H(18): error C231: 'ACC': redefinition
+D:\单片机\C51\INC\REG51.H(19): error C231: 'B': redefinition
+D:\单片机\C51\INC\REG51.H(20): error C231: 'SP': redefinition
+D:\单片机\C51\INC\REG51.H(21): error C231: 'DPL': redefinition
+D:\单片机\C51\INC\REG51.H(22): error C231: 'DPH': redefinition
+D:\单片机\C51\INC\REG51.H(23): error C231: 'PCON': redefinition
+D:\单片机\C51\INC\REG51.H(24): error C231: 'TCON': redefinition
+D:\单片机\C51\INC\REG51.H(25): error C231: 'TMOD': redefinition
+D:\单片机\C51\INC\REG51.H(26): error C231: 'TL0': redefinition
+D:\单片机\C51\INC\REG51.H(27): error C231: 'TL1': redefinition
+D:\单片机\C51\INC\REG51.H(28): error C231: 'TH0': redefinition
+D:\单片机\C51\INC\REG51.H(29): error C231: 'TH1': redefinition
+D:\单片机\C51\INC\REG51.H(30): error C231: 'IE': redefinition
+D:\单片机\C51\INC\REG51.H(31): error C231: 'IP': redefinition
+D:\单片机\C51\INC\REG51.H(32): error C231: 'SCON': redefinition
+D:\单片机\C51\INC\REG51.H(33): error C231: 'SBUF': redefinition
+D:\单片机\C51\INC\REG51.H(38): error C231: 'CY': redefinition
+D:\单片机\C51\INC\REG51.H(39): error C231: 'AC': redefinition
+D:\单片机\C51\INC\REG51.H(40): error C231: 'F0': redefinition
+D:\单片机\C51\INC\REG51.H(41): error C231: 'RS1': redefinition
+D:\单片机\C51\INC\REG51.H(42): error C231: 'RS0': redefinition
+D:\单片机\C51\INC\REG51.H(43): error C231: 'OV': redefinition
+D:\单片机\C51\INC\REG51.H(44): error C231: 'P': redefinition
+D:\单片机\C51\INC\REG51.H(47): error C231: 'TF1': redefinition
+D:\单片机\C51\INC\REG51.H(48): error C231: 'TR1': redefinition
+D:\单片机\C51\INC\REG51.H(49): error C231: 'TF0': redefinition
+D:\单片机\C51\INC\REG51.H(50): error C231: 'TR0': redefinition
+D:\单片机\C51\INC\REG51.H(51): error C231: 'IE1': redefinition
+D:\单片机\C51\INC\REG51.H(52): error C231: 'IT1': redefinition
+D:\单片机\C51\INC\REG51.H(53): error C231: 'IE0': redefinition
+D:\单片机\C51\INC\REG51.H(54): error C231: 'IT0': redefinition
+D:\单片机\C51\INC\REG51.H(57): error C231: 'EA': redefinition
+D:\单片机\C51\INC\REG51.H(58): error C231: 'ES': redefinition
+D:\单片机\C51\INC\REG51.H(59): error C231: 'ET1': redefinition
+D:\单片机\C51\INC\REG51.H(60): error C231: 'EX1': redefinition
+D:\单片机\C51\INC\REG51.H(61): error C231: 'ET0': redefinition
+D:\单片机\C51\INC\REG51.H(62): error C231: 'EX0': redefinition
+D:\单片机\C51\INC\REG51.H(65): error C231: 'PS': redefinition
+D:\单片机\C51\INC\REG51.H(66): error C231: 'PT1': redefinition
+D:\单片机\C51\INC\REG51.H(67): error C231: 'PX1': redefinition
+D:\单片机\C51\INC\REG51.H(68): error C231: 'PT0': redefinition
+D:\单片机\C51\INC\REG51.H(69): error C231: 'PX0': redefinition
+D:\单片机\C51\INC\REG51.H(72): error C231: 'RD': redefinition
+D:\单片机\C51\INC\REG51.H(73): error C231: 'WR': redefinition
+D:\单片机\C51\INC\REG51.H(74): error C231: 'T1': redefinition
+D:\单片机\C51\INC\REG51.H(75): error C231: 'T0': redefinition
+D:\单片机\C51\INC\REG51.H(76): error C231: 'INT1': redefinition
+D:\单片机\C51\INC\REG51.H(77): error C231: 'INT0': redefinition
+D:\单片机\C51\INC\REG51.H(78): error C231: 'TXD': redefinition
+D:\单片机\C51\INC\REG51.H(79): error C231: 'RXD': redefinition
+D:\单片机\C51\INC\REG51.H(82): error C231: 'SM0': redefinition
+D:\单片机\C51\INC\REG51.H(83): error C231: 'SM1': redefinition
+D:\单片机\C51\INC\REG51.H(84): error C231: 'SM2': redefinition
+D:\单片机\C51\INC\REG51.H(85): error C231: 'REN': redefinition
+D:\单片机\C51\INC\REG51.H(86): error C231: 'TB8': redefinition
+D:\单片机\C51\INC\REG51.H(87): error C231: 'RB8': redefinition
+D:\单片机\C51\INC\REG51.H(88): error C231: 'TI': redefinition
+D:\单片机\C51\INC\REG51.H(89): error C231: 'RI': redefinition
+SPI_SET/SPI_SET.H(20): error C231: 'AUXR1': redefinition
+SPI_SET/SPI_SET.H(21): error C231: 'AUXR': redefinition
+SPI_SET/SPI_SET.H(27): error C231: 'SPSTAT': redefinition
+SPI_SET/SPI_SET.H(28): error C231: 'SPCTL': redefinition
+SPI_SET/SPI_SET.H(29): error C231: 'SPDAT': redefinition
+spi_set/spi_set.h(34): warning C317: attempt to redefine macro 'SSIG'
+spi_set/spi_set.h(35): warning C317: attempt to redefine macro 'SPEN'
+spi_set/spi_set.h(36): warning C317: attempt to redefine macro 'DORD'
+spi_set/spi_set.h(37): warning C317: attempt to redefine macro 'MSTR'
+spi_set/spi_set.h(38): warning C317: attempt to redefine macro 'CPOL'
+spi_set/spi_set.h(39): warning C317: attempt to redefine macro 'CPHA'
+MAIN.C(28): error C202: 'RX0_Buffer': undefined identifier
+main.c - 69 Error(s), 6 Warning(s).
+compiling main.c...
+MAIN.C(28): error C202: 'RX0_Buffer': undefined identifier
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi_set.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  SPI_TXBUFFER
+    MODULE:  spi_set.obj (SPI_SET)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  SPI_RXBUFFER
+    MODULE:  spi_set.obj (SPI_SET)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_MS?DELAY
+Program Size: data=75.1 xdata=128 code=175
+Target not created
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi_set.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_MS?DELAY
+Program Size: data=75.1 xdata=0 code=175
+"spi_drive" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling spi_set.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_MS?DELAY
+Program Size: data=75.1 xdata=0 code=175
+creating hex file from "spi_drive"...
+"spi_drive" - 0 Error(s), 1 Warning(s).
