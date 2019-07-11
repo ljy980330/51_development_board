@@ -1,4 +1,4 @@
-C51 COMPILER V9.00   DATA_READ                                                             07/10/2019 20:15:48 PAGE 1   
+C51 COMPILER V9.00   DATA_READ                                                             07/11/2019 20:17:02 PAGE 1   
 
 
 C51 COMPILER V9.00, COMPILATION OF MODULE DATA_READ
@@ -11,7 +11,7 @@ line level    source
    1          /*********************************************************************************************************
    2          *名称：data_read.c
    3          *功能：读取温湿度以及校验位数据
-   4          创建时间：2019/7/6
+   4          创建时间：2019/7/10
    5          修改时间：2019/XX/XX
    6          作者：XXX
    7          **********************************************************************************************************
@@ -19,118 +19,78 @@ line level    source
    8          
    9          #include "data_read.h"
   10          
-  11          SendData(U8 *a)
-  12          {
-  13   1              outdata[0] = a[0]; 
-  14   1              outdata[1] = a[1];
-  15   1              outdata[2] = a[2];
-  16   1              outdata[3] = a[3];
-  17   1              outdata[4] = a[4];
-  18   1              count = 1;
-  19   1              SBUF = outdata[0];
-  20   1              return 0;
+  11          extern rec_dat[9];
+  12          
+  13          void DHT11_start()
+  14          {
+  15   1         Data=1;
+  16   1         Delay_us(2);
+  17   1         Data=0;
+  18   1         Delay_ms(20);   //延时18ms以上
+  19   1         Data=1;
+  20   1         Delay_us(30);
   21   1      }
   22          
-  23          void  COM(void)
+  23          U8 DHT11_rec_byte()     //接收一个字节
   24          {
-  25   1           U8 i;
-  26   1                
-  27   1           for(i=0; i<8; i++)    
-  28   1               {
-  29   2                      
-  30   2                      flag = 2;       
-  31   2                      while((!DATA) && flag++);
-  32   2                      Delay_10us();
-  33   2                      Delay_10us();
-  34   2                      Delay_10us();
-  35   2                      temp = 0;
-  36   2      
-  37   2                  if( DATA ) temp = 1;
-  38   2      
-  39   2                      flag = 2;
-  40   2                      while((DATA) && flag++);        //超时则跳出for循环
-  41   2                      if(flag == 1) break; //判断数据位是0还是1
-  42   2                                                       // 如果高电平高过预定0高电平值则数据位为 1 
-  43   2                       comdata <<= 1;  
-  44   2                       comdata |= temp;        //0
-  45   2                 }
-  46   1      }
-  47          
-  48          
-  49          void RH(void)
-  50          {
-  51   1              //主机拉低18ms 
-  52   1              DATA = low;
-  53   1              Delay_ms(180);
-C51 COMPILER V9.00   DATA_READ                                                             07/10/2019 20:15:48 PAGE 2   
+  25   1              U8 i, dat = 0;
+  26   1              for(i=0; i<8; i++)
+  27   1              {
+  28   2                      while(!Data);
+  29   2                      Delay_us(8);
+  30   2                      dat <<= 1;
+  31   2                      if(Data == 1) dat += 1;
+  32   2                      while(Data);
+  33   2              }
+  34   1              return dat;
+  35   1      }
+  36          
+  37          void DHT11_receive()      //接收40位的数据
+  38          {
+  39   1          U8 R_H,R_L,T_H,T_L,RH,RL,TH,TL,revise; 
+  40   1          DHT11_start();
+  41   1          if(Data==0)
+  42   1          {
+  43   2              while(Data==0);   //等待拉高     
+  44   2              Delay_us(40);  //拉高后延时80us
+  45   2              R_H=DHT11_rec_byte();    //接收湿度高八位  
+  46   2              R_L=DHT11_rec_byte();    //接收湿度低八位  
+  47   2              T_H=DHT11_rec_byte();    //接收温度高八位  
+  48   2              T_L=DHT11_rec_byte();    //接收温度低八位
+  49   2              revise=DHT11_rec_byte(); //接收校正位
+  50   2      
+  51   2              Delay_us(25);    //结束
+  52   2      
+  53   2              if((R_H+R_L+T_H+T_L)==revise)      //校正
+C51 COMPILER V9.00   DATA_READ                                                             07/11/2019 20:17:02 PAGE 2   
 
-  54   1              DATA = high;
-  55   1              //总线由上拉电阻拉高 主机延时20us
-  56   1              Delay_10us();
-  57   1              Delay_10us();
-  58   1              Delay_10us();
-  59   1              Delay_10us();
-  60   1              //主机设为输入 判断从机响应信号 
-  61   1              DATA = high;
-  62   1              //判断从机是否有低电平响应信号 如不响应则跳出，响应则向下运行     
-  63   1              if( !DATA )              //T !    
-  64   1              {
-  65   2                      flag = 2;
-  66   2               //判断从机是否发出 80us 的低电平响应信号是否结束        
-  67   2                      while(( !DATA ) && flag++);
-  68   2                  flag = 2;
-  69   2               //判断从机是否发出 80us 的高电平，如发出则进入数据接收状态
-  70   2                      while(( DATA )&& flag++);
-  71   2               //数据接收状态          
-  72   2                      COM();
-  73   2                      RH_data_H_temp = comdata;
-  74   2                      COM();
-  75   2                      RH_data_L_temp = comdata;
-  76   2                      COM();
-  77   2                      T_data_H_temp = comdata;
-  78   2                      COM();
-  79   2                      T_data_L_temp = comdata;
-  80   2                      COM();
-  81   2                      checkdata_temp = comdata;
-  82   2                      DATA = high;
-  83   2      
-  84   2               //数据校验 
-  85   2                      temp = (T_data_H_temp + T_data_L_temp + RH_data_H_temp + RH_data_L_temp);
-  86   2                      if(temp == checkdata_temp)
-  87   2                      {
-  88   3                              RH_data_H = RH_data_H_temp;
-  89   3                              RH_data_L = RH_data_L_temp;
-  90   3                              T_data_H = T_data_H_temp;
-  91   3                              T_data_L = T_data_L_temp;
-  92   3                              checkdata = checkdata_temp;
-  93   3                      }
-  94   2              }
-  95   1      }
-  96          
-  97          
-  98          void Text(void)
-  99          {
- 100   1              RH(); //调用温湿度读取子程序 
- 101   1                 //串口显示程序 
- 102   1                 str[0] = RH_data_H;
- 103   1                 str[1] = RH_data_L;
- 104   1                 str[2] = T_data_H;
- 105   1                 str[3] = T_data_L;
- 106   1                 str[4] = checkdata;
- 107   1                 SendData(str) ;  //发送到串口  
- 108   1                 //读取模块数据周期不易小于 2S 
- 109   1                 Delay_ms(2500);
- 110   1      }
+  54   2              {
+  55   3                  RH=R_H;
+  56   3                  RL=R_L;
+  57   3                  TH=T_H;
+  58   3                  TL=T_L;
+  59   3              } 
+  60   2              /*数据处理，方便显示*/
+  61   2              rec_dat[0]='0'+(RH/10);
+  62   2              rec_dat[1]='0'+(RH%10);
+  63   2              rec_dat[2]='R';
+  64   2              rec_dat[3]='H';
+  65   2              rec_dat[4]=' ';
+  66   2              rec_dat[5]=' ';
+  67   2              rec_dat[6]='0'+(TH/10);
+  68   2              rec_dat[7]='0'+(TH%10);
+  69   2              rec_dat[8]='C';
+  70   2          }
+  71   1      }
+  72          
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    269    ----
+   CODE SIZE        =    254    ----
    CONSTANT SIZE    =   ----    ----
-C51 COMPILER V9.00   DATA_READ                                                             07/10/2019 20:15:48 PAGE 3   
-
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =   ----       1
+   DATA SIZE        =   ----      11
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
 END OF MODULE INFORMATION.

@@ -1,5 +1,4 @@
 "main.obj",
-"uart.obj",
 "delay.obj",
 "data_read.obj" 
 TO "temperature_drive" 

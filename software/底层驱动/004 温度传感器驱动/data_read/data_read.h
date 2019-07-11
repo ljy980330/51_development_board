@@ -13,18 +13,15 @@
 #include "STC12C5A.H"
 #include "delay/delay.h"
 
-#define high	1
-#define low		0
+sbit Data=P2^0;
 
-sbit DATA = P2^0;
 
-SendData(U8 *a);
+void DHT11_start();
 
-void  COM(void);
+U8 DHT11_rec_byte();
 
-void RH(void);
+void DHT11_receive();
 
-void Text(void);
 
 
 #endif

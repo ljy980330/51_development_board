@@ -1,110 +1,72 @@
 /*********************************************************************************************************
 *名称：data_read.c
 *功能：读取温湿度以及校验位数据
-创建时间：2019/7/6
+创建时间：2019/7/10
 修改时间：2019/XX/XX
 作者：XXX
 **********************************************************************************************************/
 
 #include "data_read.h"
 
-SendData(U8 *a)
+extern rec_dat[9];
+
+void DHT11_start()
 {
-	outdata[0] = a[0]; 
-	outdata[1] = a[1];
-	outdata[2] = a[2];
-	outdata[3] = a[3];
-	outdata[4] = a[4];
-	count = 1;
-	SBUF = outdata[0];
-	return 0;
+   Data=1;
+   Delay_us(2);
+   Data=0;
+   Delay_ms(20);   //延时18ms以上
+   Data=1;
+   Delay_us(30);
 }
 
-void  COM(void)
+U8 DHT11_rec_byte()	//接收一个字节
 {
-     U8 i;
-          
-     for(i=0; i<8; i++)	   
-	 {
-		
-	  	flag = 2;	
-	   	while((!DATA) && flag++);
-		Delay_10us();
-		Delay_10us();
-		Delay_10us();
-	  	temp = 0;
-
-	    if( DATA ) temp = 1;
-
-		flag = 2;
-		while((DATA) && flag++);	//超时则跳出for循环
-	   	if(flag == 1) break; //判断数据位是0还是1
-	   	 				 // 如果高电平高过预定0高电平值则数据位为 1 
-	   	 comdata <<= 1;  
-		 comdata |= temp;        //0
-	   }
-}
-
-
-void RH(void)
-{
-	//主机拉低18ms 
-	DATA = low;
-	Delay_ms(180);
-	DATA = high;
-	//总线由上拉电阻拉高 主机延时20us
-	Delay_10us();
-	Delay_10us();
-	Delay_10us();
-	Delay_10us();
-	//主机设为输入 判断从机响应信号 
-	DATA = high;
-	//判断从机是否有低电平响应信号 如不响应则跳出，响应则向下运行	  
-	if( !DATA )		 //T !	  
+	U8 i, dat = 0;
+	for(i=0; i<8; i++)
 	{
-		flag = 2;
-	 //判断从机是否发出 80us 的低电平响应信号是否结束	 
-		while(( !DATA ) && flag++);
-	    flag = 2;
-	 //判断从机是否发出 80us 的高电平，如发出则进入数据接收状态
-	   	while(( DATA )&& flag++);
-	 //数据接收状态		 
-	   	COM();
-	   	RH_data_H_temp = comdata;
-	   	COM();
-	   	RH_data_L_temp = comdata;
-	   	COM();
-	   	T_data_H_temp = comdata;
-	   	COM();
-	   	T_data_L_temp = comdata;
-	   	COM();
-	   	checkdata_temp = comdata;
-	   	DATA = high;
-
-	 //数据校验 
-	   	temp = (T_data_H_temp + T_data_L_temp + RH_data_H_temp + RH_data_L_temp);
-	   	if(temp == checkdata_temp)
-	   	{
-	   		RH_data_H = RH_data_H_temp;
-	   	  	RH_data_L = RH_data_L_temp;
-		  	T_data_H = T_data_H_temp;
-	   	  	T_data_L = T_data_L_temp;
-	   	  	checkdata = checkdata_temp;
-	   	}
+		while(!Data);
+		Delay_us(8);
+		dat <<= 1;
+		if(Data == 1) dat += 1;
+		while(Data);
 	}
+	return dat;
 }
 
-
-void Text(void)
+void DHT11_receive()      //接收40位的数据
 {
-	RH(); //调用温湿度读取子程序 
-	   //串口显示程序 
-	   str[0] = RH_data_H;
-	   str[1] = RH_data_L;
-	   str[2] = T_data_H;
-	   str[3] = T_data_L;
-	   str[4] = checkdata;
-	   SendData(str) ;  //发送到串口  
-	   //读取模块数据周期不易小于 2S 
-	   Delay_ms(2500);
+    U8 R_H,R_L,T_H,T_L,RH,RL,TH,TL,revise; 
+    DHT11_start();
+    if(Data==0)
+    {
+        while(Data==0);   //等待拉高     
+        Delay_us(40);  //拉高后延时80us
+        R_H=DHT11_rec_byte();    //接收湿度高八位  
+        R_L=DHT11_rec_byte();    //接收湿度低八位  
+        T_H=DHT11_rec_byte();    //接收温度高八位  
+        T_L=DHT11_rec_byte();    //接收温度低八位
+        revise=DHT11_rec_byte(); //接收校正位
+
+        Delay_us(25);    //结束
+
+        if((R_H+R_L+T_H+T_L)==revise)      //校正
+        {
+            RH=R_H;
+            RL=R_L;
+            TH=T_H;
+            TL=T_L;
+        } 
+        /*数据处理，方便显示*/
+        rec_dat[0]='0'+(RH/10);
+        rec_dat[1]='0'+(RH%10);
+        rec_dat[2]='R';
+        rec_dat[3]='H';
+        rec_dat[4]=' ';
+        rec_dat[5]=' ';
+        rec_dat[6]='0'+(TH/10);
+        rec_dat[7]='0'+(TH%10);
+        rec_dat[8]='C';
+    }
 }
+
