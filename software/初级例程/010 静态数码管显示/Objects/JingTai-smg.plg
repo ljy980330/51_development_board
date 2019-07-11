@@ -1,0 +1,76 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\HJQ\Desktop\程序\静态数码管\JingTai-smg.uvproj
+Project File Date:  07/05/2019
+
+<h2>Output:</h2>
+compiling smgdisplay.c...
+SMGDISPLAY\SMGDISPLAY.C(8): error C141: syntax error near '/'
+SMGDISPLAY\SMGDISPLAY.C(39): error C202: 'shuju': undefined identifier
+smgdisplay\smgdisplay.c - 2 Error(s), 0 Warning(s).
+compiling smgdisplay.c...
+SMGDISPLAY\SMGDISPLAY.C(39): error C202: 'shuju': undefined identifier
+smgdisplay\smgdisplay.c - 1 Error(s), 0 Warning(s).
+compiling smgdisplay.c...
+smgdisplay\smgdisplay.c - 0 Error(s), 0 Warning(s).
+compiling delay.c...
+delay\delay.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target '目标 1'
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  SHUJU
+    MODULE:  delay.obj (DELAY)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  SHUJU
+    MODULE:  smgdisplay.obj (SMGDISPLAY)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+Program Size: data=33.0 xdata=0 code=285
+目标未创建
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target '目标 1'
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  SHUJU
+    MODULE:  delay.obj (DELAY)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  SHUJU
+    MODULE:  smgdisplay.obj (SMGDISPLAY)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+Program Size: data=33.0 xdata=0 code=285
+目标未创建
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target '目标 1'
+compiling delay.c...
+compiling smgdisplay.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  SHUJU
+    MODULE:  delay.obj (DELAY)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  SHUJU
+    MODULE:  smgdisplay.obj (SMGDISPLAY)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+Program Size: data=33.0 xdata=0 code=285
+目标未创建
+compiling smgdisplay.c...
+smgdisplay\smgdisplay.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target '目标 1'
+compiling delay.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+Program Size: data=17.0 xdata=0 code=265
+creating hex file from "JingTai-smg"...
+"JingTai-smg" - 0 Error(s), 1 Warning(s).

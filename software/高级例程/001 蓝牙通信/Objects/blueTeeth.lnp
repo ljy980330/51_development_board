@@ -1,0 +1,4 @@
+".\Objects\main.obj",
+".\Objects\blueTeeth.obj" 
+TO ".\Objects\blueTeeth" 
+PRINT(".\Listings\blueTeeth.m51") RAMSIZE(256) 

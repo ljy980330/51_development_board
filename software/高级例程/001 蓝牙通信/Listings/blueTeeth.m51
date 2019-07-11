@@ -1,0 +1,149 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/09/2019  15:13:07  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+D:\CX\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\blueTeeth.obj TO .\Objects\blueTeeth PRINT (.\Listings\blueTeeth.m5
+>> 1) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\main.obj (MAIN)
+  .\Objects\blueTeeth.obj (BLUETEETH)
+  D:\CX\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\blueTeeth (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *  X D A T A   M E M O R Y  * * * * * * *
+            XDATA   0000H     0001H     UNIT         ?XD?BLUETEETH
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     001DH     UNIT         ?PR?SERIAL?BLUETEETH
+                    0020H     0003H                  *** GAP ***
+            CODE    0023H     0003H     ABSOLUTE     
+            CODE    0026H     001AH     UNIT         ?PR?BLUETEETHINIT?BLUETEETH
+            CODE    0040H     000CH     UNIT         ?C_C51STARTUP
+            CODE    004CH     0005H     UNIT         ?PR?MAIN?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\blueTeeth (MAIN)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN
+  +--> ?PR?BLUETEETHINIT?BLUETEETH
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\blueTeeth (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/09/2019  15:13:07  PAGE 2
+
+
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00C0H         PUBLIC        P4
+  D:00C8H         PUBLIC        P5
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  D:00D8H         PUBLIC        CCON
+  C:004CH         PUBLIC        main
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:00E0H         PUBLIC        ACC
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          MAIN
+  C:004CH         LINE#         14
+  C:004CH         LINE#         15
+  C:004CH         LINE#         16
+  C:004FH         LINE#         17
+  C:004FH         LINE#         18
+  C:004FH         LINE#         20
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        BLUETEETH
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00C0H         PUBLIC        P4
+  D:00C8H         PUBLIC        P5
+  B:00A8H.7       PUBLIC        EA
+  D:00A8H         PUBLIC        IE
+  B:00A8H.4       PUBLIC        ES
+  D:00B8H         PUBLIC        IP
+  B:0098H.0       PUBLIC        RI
+  B:0098H.1       PUBLIC        TI
+  D:00D8H         PUBLIC        CCON
+  D:0099H         PUBLIC        SBUF
+  D:0087H         PUBLIC        PCON
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  D:0088H         PUBLIC        TCON
+  X:0000H         PUBLIC        buf
+  C:0026H         PUBLIC        BlueteethInit
+  D:00E0H         PUBLIC        ACC
+  D:008DH         PUBLIC        TH1
+  D:008BH         PUBLIC        TL1
+  B:0088H.6       PUBLIC        TR1
+  C:0003H         PUBLIC        Serial
+  B:0098H.4       PUBLIC        REN
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          BLUETEETHINIT
+  C:0026H         LINE#         16
+  C:0026H         LINE#         17
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/09/2019  15:13:07  PAGE 3
+
+
+  C:0026H         LINE#         18
+  C:0029H         LINE#         19
+  C:002CH         LINE#         20
+  C:002FH         LINE#         22
+  C:0031H         LINE#         24
+  C:0034H         LINE#         25
+  C:0037H         LINE#         27
+  C:0039H         LINE#         29
+  C:003BH         LINE#         30
+  C:003DH         LINE#         32
+  C:003FH         LINE#         33
+  -------         ENDPROC       BLUETEETHINIT
+  -------         PROC          SERIAL
+  C:0003H         LINE#         40
+  C:0009H         LINE#         42
+  C:000FH         LINE#         43
+  C:0011H         LINE#         44
+  C:0014H         LINE#         45
+  C:0017H         LINE#         46
+  C:0019H         LINE#         47
+  -------         ENDPROC       SERIAL
+  -------         ENDMOD        BLUETEETH
+
+Program Size: data=9.0 xdata=1 code=78
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

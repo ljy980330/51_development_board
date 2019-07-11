@@ -1,0 +1,43 @@
+C51 COMPILER V9.00   DELAY                                                                 07/05/2019 20:51:38 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE DELAY
+OBJECT MODULE PLACED IN .\Objects\delay.obj
+COMPILER INVOKED BY: D:\单片机\C51\BIN\C51.EXE delay\delay.c BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\delay.lst) OBJEC
+                    -T(.\Objects\delay.obj)
+
+line level    source
+
+   1          /*********************************************************************************************************
+   2          *名称：delay.c
+   3          *功能：延时所用到的函数
+   4          创建时间：2019/XX/XX
+   5          修改时间：2019/6/5
+   6          作者：XXX
+   7          *********************************************************************************************************/
+   8          
+   9          #include "delay.h"
+  10          
+  11          /*******************************************************************************
+  12          * 函 数 名         : Delay_us
+  13          * 函数功能                 : 延时函数，i=1时，大约延时10us
+  14          *******************************************************************************/
+  15          void Delay_us(U16 i)
+  16          {
+  17   1          while(i--); 
+  18   1      }
+  19          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     11    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,278 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/05/2019  20:51:38  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+D:\单片机\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\ir.obj, .\Objects\delay.obj, .\Objects\smgdisplay.obj TO .\Obje
+>> cts\IRtest PRINT (.\Listings\IRtest.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\main.obj (MAIN)
+  .\Objects\ir.obj (IR)
+  .\Objects\delay.obj (DELAY)
+  .\Objects\smgdisplay.obj (SMGDISPLAY)
+  D:\单片机\C51\LIB\C51S.LIB (?C_STARTUP)
+  D:\单片机\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  .\Objects\IRtest (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     000FH     UNIT         ?DT?IR
+            DATA    0017H     0003H     UNIT         _DATA_GROUP_
+            IDATA   001AH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0003H     ABSOLUTE     
+            CODE    0006H     00D5H     UNIT         ?PR?IR_IN?IR
+            CODE    00DBH     008CH     UNIT         ?C_C51STARTUP
+            CODE    0167H     0021H     UNIT         ?PR?_DISPLAY?SMGDISPLAY
+            CODE    0188H     001AH     UNIT         ?PR?_DISPLAYADDR?SMGDISPLAY
+            CODE    01A2H     0019H     UNIT         ?CO?SMGDISPLAY
+            CODE    01BBH     0014H     UNIT         ?C_INITSEG
+            CODE    01CFH     0010H     UNIT         ?PR?IRINIT?IR
+            CODE    01DFH     000FH     UNIT         ?PR?MAIN?MAIN
+            CODE    01EEH     000BH     UNIT         ?PR?_DELAY_US?DELAY
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\IRtest (MAIN)
+
+
+SEGMENT                               DATA_GROUP 
+  +--> CALLED SEGMENT               START    LENGTH
+---------------------------------------------------
+?PR?IR_IN?IR                        0017H    0003H
+  +--> ?PR?_DELAY_US?DELAY
+  +--> ?PR?_DISPLAYADDR?SMGDISPLAY
+
+?PR?_DISPLAYADDR?SMGDISPLAY         -----    -----
+  +--> ?CO?SMGDISPLAY
+  +--> ?PR?_DISPLAY?SMGDISPLAY
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/05/2019  20:51:38  PAGE 2
+
+
+*** NEW ROOT ***************************************************
+
+?C_C51STARTUP                       -----    -----
+  +--> ?PR?MAIN?MAIN
+  +--> ?C_INITSEG
+
+?PR?MAIN?MAIN                       -----    -----
+  +--> ?PR?IRINIT?IR
+  +--> ?PR?_DISPLAYADDR?SMGDISPLAY
+
+?PR?IRINIT?IR                       -----    -----
+  +--> ?PR?_DELAY_US?DELAY
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\IRtest (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00C0H         PUBLIC        P4
+  D:00C8H         PUBLIC        P5
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  D:00D8H         PUBLIC        CCON
+  C:01DFH         PUBLIC        main
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:00E0H         PUBLIC        ACC
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          MAIN
+  C:01DFH         LINE#         11
+  C:01DFH         LINE#         12
+  C:01DFH         LINE#         13
+  C:01E2H         LINE#         15
+  C:01E2H         LINE#         16
+  C:01E2H         LINE#         17
+  C:01ECH         LINE#         18
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        IR
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00C0H         PUBLIC        P4
+  D:00C8H         PUBLIC        P5
+  D:00A8H         PUBLIC        IE
+  C:0006H         PUBLIC        IR_IN
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/05/2019  20:51:38  PAGE 3
+
+
+  D:00B8H         PUBLIC        IP
+  D:00D8H         PUBLIC        CCON
+  D:0008H         PUBLIC        shuju
+  B:0090H.7       PUBLIC        IRIN
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:00E0H         PUBLIC        ACC
+  B:00A8H.0       PUBLIC        EX0
+  C:01CFH         PUBLIC        IrInit
+  D:00D0H         PUBLIC        PSW
+  D:0010H         PUBLIC        IRCOM
+  -------         PROC          IRINIT
+  C:01CFH         LINE#         18
+  C:01CFH         LINE#         19
+  C:01CFH         LINE#         20
+  C:01D1H         LINE#         21
+  C:01D8H         LINE#         22
+  C:01DBH         LINE#         23
+  C:01DEH         LINE#         24
+  -------         ENDPROC       IRINIT
+  -------         PROC          IR_IN
+  -------         DO            
+  D:0017H         SYMBOL        j
+  D:0018H         SYMBOL        k
+  D:0019H         SYMBOL        N
+  -------         ENDDO         
+  C:0006H         LINE#         30
+  C:0013H         LINE#         32
+  C:0016H         LINE#         33
+  C:0018H         LINE#         34
+  C:001FH         LINE#         35
+  C:0022H         LINE#         36
+  C:0022H         LINE#         37
+  C:0027H         LINE#         39
+  C:0027H         LINE#         41
+  C:002AH         LINE#         42
+  C:0033H         LINE#         44
+  C:0036H         LINE#         45
+  C:0036H         LINE#         46
+  C:0039H         LINE#         47
+  C:0039H         LINE#         48
+  C:003CH         LINE#         49
+  C:0045H         LINE#         50
+  C:0048H         LINE#         51
+  C:0051H         LINE#         52
+  C:0054H         LINE#         53
+  C:0054H         LINE#         54
+  C:005BH         LINE#         55
+  C:005DH         LINE#         56
+  C:0064H         LINE#         57
+  C:0064H         LINE#         58
+  C:0068H         LINE#         60
+  C:0068H         LINE#         61
+  C:0068H         LINE#         62
+  C:0076H         LINE#         63
+  C:007DH         LINE#         64
+  C:007DH         LINE#         65
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/05/2019  20:51:38  PAGE 4
+
+
+  C:0086H         LINE#         66
+  C:0086H         LINE#         67
+  C:0089H         LINE#         68
+  C:0092H         LINE#         69
+  C:009BH         LINE#         71
+  C:00A2H         LINE#         72
+  C:00A2H         LINE#         73
+  C:00A6H         LINE#         75
+  C:00A6H         LINE#         77
+  C:00ACH         LINE#         78
+  C:00B3H         LINE#         80
+  C:00BAH         LINE#         81
+  C:00BAH         LINE#         82
+  C:00BCH         LINE#         83
+  C:00BEH         LINE#         85
+  C:00C4H         LINE#         86
+  C:00CEH         LINE#         87
+  C:00D0H         LINE#         88
+  -------         ENDPROC       IR_IN
+  -------         ENDMOD        IR
+
+  -------         MODULE        DELAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:01EEH         PUBLIC        _Delay_us
+  -------         PROC          _DELAY_US
+  D:0006H         SYMBOL        i
+  C:01EEH         LINE#         15
+  C:01EEH         LINE#         16
+  C:01EEH         LINE#         17
+  C:01F8H         LINE#         18
+  -------         ENDPROC       _DELAY_US
+  -------         ENDMOD        DELAY
+
+  -------         MODULE        SMGDISPLAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00C0H         PUBLIC        P4
+  D:00C8H         PUBLIC        P5
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  D:00D8H         PUBLIC        CCON
+  B:0080H.1       PUBLIC        RCLK
+  B:0080H.2       PUBLIC        SCLK
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  C:01A2H         PUBLIC        DuanMa
+  D:00E0H         PUBLIC        ACC
+  C:01B3H         PUBLIC        WeiMa
+  C:0188H         PUBLIC        _DisplayAddr
+  C:0167H         PUBLIC        _Display
+  B:0080H.0       PUBLIC        DIO
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          _DISPLAY
+  D:0007H         SYMBOL        JNdata
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/05/2019  20:51:38  PAGE 5
+
+
+  -------         DO            
+  D:0004H         SYMBOL        i
+  -------         ENDDO         
+  C:0167H         LINE#         19
+  C:0167H         LINE#         20
+  C:0167H         LINE#         22
+  C:016AH         LINE#         23
+  C:016AH         LINE#         24
+  C:0172H         LINE#         25
+  C:0174H         LINE#         26
+  C:0176H         LINE#         27
+  C:0178H         LINE#         28
+  C:017CH         LINE#         29
+  C:0187H         LINE#         30
+  -------         ENDPROC       _DISPLAY
+  -------         PROC          _DISPLAYADDR
+  D:0007H         SYMBOL        i
+  -------         DO            
+  D:0082H         SYMBOL        Data
+  -------         ENDDO         
+  C:0188H         LINE#         36
+  C:0188H         LINE#         37
+  C:0188H         LINE#         39
+  C:0192H         LINE#         40
+  C:0195H         LINE#         41
+  C:0198H         LINE#         42
+  C:019DH         LINE#         43
+  C:019FH         LINE#         44
+  C:01A1H         LINE#         46
+  -------         ENDPROC       _DISPLAYADDR
+  -------         ENDMOD        SMGDISPLAY
+
+Program Size: data=27.0 xdata=0 code=505
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

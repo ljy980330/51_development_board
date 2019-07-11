@@ -1,0 +1,5 @@
+"main.obj",
+"delay.obj",
+"i2c_set.obj" 
+TO "i2c_EEPROM" 
+RAMSIZE(256) 

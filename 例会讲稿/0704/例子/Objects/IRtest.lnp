@@ -1,0 +1,6 @@
+".\Objects\main.obj",
+".\Objects\ir.obj",
+".\Objects\delay.obj",
+".\Objects\smgdisplay.obj" 
+TO ".\Objects\IRtest" 
+PRINT(".\Listings\IRtest.m51") RAMSIZE(256) 

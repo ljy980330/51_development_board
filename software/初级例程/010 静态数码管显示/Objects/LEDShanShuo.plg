@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\HJQ\Desktop\程序\LED闪烁 - 副本\LEDShanShuo.uvproj
+Project File Date:  07/05/2019
+
+<h2>Output:</h2>
+compiling main.c...
+LEDshanshuo/LEDshanshuo.h(12): warning C318: can't open file 'delay.h'
+main.c - 0 Error(s), 1 Warning(s).
+compiling LEDshanshuo.c...
+LEDSHANSHUO\LEDSHANSHUO.H(12): warning C318: can't open file 'delay.h'
+LEDSHANSHUO\LEDSHANSHUO.C(18): warning C206: 'Delay_us': missing function-prototype
+LEDSHANSHUO\LEDSHANSHUO.C(18): error C267: 'Delay_us': requires ANSI-style prototype
+LEDshanshuo\LEDshanshuo.c - 1 Error(s), 2 Warning(s).
+compiling delay.c...
+delay\delay.c - 0 Error(s), 0 Warning(s).
+compiling LEDshanshuo.c...
+LEDSHANSHUO\LEDSHANSHUO.H(12): warning C318: can't open file 'delay.h'
+LEDSHANSHUO\LEDSHANSHUO.C(18): warning C206: 'Delay_us': missing function-prototype
+LEDSHANSHUO\LEDSHANSHUO.C(18): error C267: 'Delay_us': requires ANSI-style prototype
+LEDshanshuo\LEDshanshuo.c - 1 Error(s), 2 Warning(s).
+compiling LEDshanshuo.c...
+LEDSHANSHUO\LEDSHANSHUO.H(12): warning C318: can't open file 'delay.h'
+LEDSHANSHUO\LEDSHANSHUO.C(18): warning C206: 'Delay_us': missing function-prototype
+LEDSHANSHUO\LEDSHANSHUO.C(18): error C267: 'Delay_us': requires ANSI-style prototype
+LEDshanshuo\LEDshanshuo.c - 1 Error(s), 2 Warning(s).
+compiling LEDshanshuo.c...
+LEDSHANSHUO\LEDSHANSHUO.H(12): warning C318: can't open file 'delay.h'
+LEDshanshuo\LEDshanshuo.c - 0 Error(s), 1 Warning(s).
+compiling delay.c...
+delay\delay.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+LEDshanshuo/LEDshanshuo.h(12): warning C318: can't open file 'delay.h'
+main.c - 0 Error(s), 1 Warning(s).
+compiling LEDshanshuo.c...
+LEDSHANSHUO\LEDSHANSHUO.H(12): warning C318: can't open file 'delay.h'
+LEDSHANSHUO\LEDSHANSHUO.C(19): warning C206: 'Delay_us': missing function-prototype
+LEDSHANSHUO\LEDSHANSHUO.C(19): error C267: 'Delay_us': requires ANSI-style prototype
+LEDshanshuo\LEDshanshuo.c - 1 Error(s), 2 Warning(s).
+Build target '目标 1'
+compiling main.c...
+compiling LEDshanshuo.c...
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+"main.obj",
+"delay.obj",
+"LEDshanshuo.obj" 
+TO "LEDShanShuo" 
+RAMSIZE(256) 
+*** FATAL ERROR L211: I/O ERROR ON OUTPUT FILE:
+    EXCEPTION 0029H: ACCESS TO FILE DENIED
+    FILE: LEDShanShuo
+目标未创建
+compiling LEDshanshuo.c...
+LEDshanshuo\LEDshanshuo.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).

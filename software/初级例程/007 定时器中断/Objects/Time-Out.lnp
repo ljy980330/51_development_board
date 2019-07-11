@@ -1,0 +1,4 @@
+"main.obj",
+"timeout.obj" 
+TO "Time-Out" 
+RAMSIZE(256) 

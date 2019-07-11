@@ -1,0 +1,7 @@
+".\Objects\main.obj",
+".\Objects\delay.obj",
+".\Objects\OLED_Init.obj",
+".\Objects\i2c.obj",
+".\Objects\function.obj" 
+TO ".\Objects\OLED" 
+PRINT(".\Listings\OLED.m51") RAMSIZE(256) 

@@ -1,0 +1,147 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/07/2019  22:26:35  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+F:\KEIL4\C51\BIN\BL51.EXE main.obj TO DCmotor RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  F:\KEIL4\C51\LIB\C51S.LIB (?C_STARTUP)
+  F:\KEIL4\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  DCmotor (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     000FH     UNIT         ?DT?MAIN
+            IDATA   0017H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     008CH     UNIT         ?C_C51STARTUP
+            CODE    008FH     0019H     UNIT         ?PR?PWM_CHANGE?MAIN
+            CODE    00A8H     0014H     UNIT         ?PR?INIT_PWM?MAIN
+            CODE    00BCH     0012H     UNIT         ?C_INITSEG
+            CODE    00CEH     000EH     UNIT         ?PR?MOTO_DELAY80MS?MAIN
+            CODE    00DCH     0008H     UNIT         ?PR?MAIN?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   DCmotor (MAIN)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+  +--> ?C_INITSEG
+
+?PR?MAIN?MAIN
+  +--> ?PR?INIT_PWM?MAIN
+  +--> ?PR?PWM_CHANGE?MAIN
+
+?PR?PWM_CHANGE?MAIN
+  +--> ?PR?MOTO_DELAY80MS?MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  DCmotor (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/07/2019  22:26:35  PAGE 2
+
+
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:00CEH         PUBLIC        moto_delay80ms
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00C0H         PUBLIC        P4
+  D:00C8H         PUBLIC        P5
+  D:00A8H         PUBLIC        IE
+  D:00E9H         PUBLIC        CL
+  D:00FAH         PUBLIC        CCAP0H
+  D:00EAH         PUBLIC        CCAP0L
+  B:00D8H.6       PUBLIC        CR
+  D:00DAH         PUBLIC        CCAPM0
+  D:0008H         PUBLIC        CCAP
+  D:00B8H         PUBLIC        IP
+  D:00D9H         PUBLIC        CMOD
+  D:00D8H         PUBLIC        CCON
+  C:00DCH         PUBLIC        main
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  C:008FH         PUBLIC        PWM_change
+  D:00E0H         PUBLIC        ACC
+  D:00F2H         PUBLIC        PCA_PWM0
+  C:00A8H         PUBLIC        Init_PWM
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          INIT_PWM
+  C:00A8H         LINE#         20
+  C:00A8H         LINE#         21
+  C:00A8H         LINE#         22
+  C:00ABH         LINE#         24
+  C:00AEH         LINE#         25
+  C:00B1H         LINE#         26
+  C:00B4H         LINE#         27
+  C:00B7H         LINE#         28
+  C:00B9H         LINE#         29
+  C:00BBH         LINE#         30
+  -------         ENDPROC       INIT_PWM
+  -------         PROC          MOTO_DELAY80MS
+  -------         DO            
+  D:0005H         SYMBOL        a
+  D:0006H         SYMBOL        b
+  D:0007H         SYMBOL        c
+  -------         ENDDO         
+  C:00CEH         LINE#         37
+  C:00CEH         LINE#         38
+  C:00CEH         LINE#         40
+  C:00D0H         LINE#         41
+  C:00D2H         LINE#         42
+  C:00DAH         LINE#         43
+  C:00DBH         LINE#         44
+  -------         ENDPROC       MOTO_DELAY80MS
+  -------         PROC          PWM_CHANGE
+  -------         DO            
+  D:0002H         SYMBOL        i
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/07/2019  22:26:35  PAGE 3
+
+
+  -------         ENDDO         
+  C:008FH         LINE#         53
+  C:008FH         LINE#         54
+  C:008FH         LINE#         56
+  C:0092H         LINE#         57
+  C:0092H         LINE#         58
+  C:0099H         LINE#         59
+  C:009CH         LINE#         60
+  C:00A7H         LINE#         62
+  -------         ENDPROC       PWM_CHANGE
+  -------         PROC          MAIN
+  C:00DCH         LINE#         67
+  C:00DCH         LINE#         68
+  C:00DCH         LINE#         69
+  C:00DFH         LINE#         70
+  C:00DFH         LINE#         71
+  C:00DFH         LINE#         72
+  C:00E2H         LINE#         73
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+Program Size: data=24.0 xdata=0 code=228
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,73 @@
+C51 COMPILER V9.01   SMGDISPLAY                                                            07/05/2019 14:16:50 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE SMGDISPLAY
+OBJECT MODULE PLACED IN smgdisplay.obj
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE smg\smgdisplay.c BROWSE DEBUG OBJECTEXTEND PRINT(.\smgdisplay.lst) OBJECT(s
+                    -mgdisplay.obj)
+
+line level    source
+
+   1          /*********************************************************************************************************
+   2          *名称：smgdisplay.c
+   3          *功能：数码管显示所用到的函数
+   4          创建时间：2019/7/5
+   5          修改时间：2019/7/5
+   6          作者：黄剑桥
+   7          *********************************************************************************************************/
+   8          
+   9          #include "smgdisplay.h"
+  10          
+  11          U8 code DuanMa[]={0xC0,0xF9,0xA4,0xB0,0x99,0x92,0x82,0xF8,0x80,0x90,0x8C,0xBF,0xC6,0xA1,0x86,0xFF,0xbf};
+  12          U8 code WeiMa[]={0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80};
+  13          U8  code shuju[10]={0,1,2,3,4,5,6,7,8,9};   //储存数码管显示的值
+  14          /**************************************************************************
+  15          * 函数名称： Display
+  16          * 参数：         JNdata
+  17          * 功能：     向hc595传送一个字节
+  18          ******************************************************************************/    
+  19          void Display (U8 JNdata)
+  20          {
+  21   1          U16 i;
+  22   1              for(i=0;i<8;i++)
+  23   1              {
+  24   2          if (JNdata&0x80) DIO=1;
+  25   2               else DIO=0;//先读入高位   x&0x80;                              
+  26   2              SCLK=0;
+  27   2              SCLK=1; //SCLK引脚的上升沿移入数据
+  28   2              JNdata<<=1;             //数据向左移一位
+  29   2              }  
+  30   1      }
+  31           /**************************************************************************
+  32          * 函数名称： DisplayAddr
+  33          * 参数：         j  显示的数据
+  34          * 功能：     在指定的位置显示指定的数据（指定的位置需要在这个函数控制）
+  35          ******************************************************************************/
+  36          void DisplayAddr(U16 j)
+  37          {
+  38   1          U8 i;
+  39   1              U8 code *Data;//查表指针
+  40   1              Data = DuanMa + shuju[j];
+  41   1              i=*Data;
+  42   1              Display(i);     //i就是显示的值
+  43   1              Display(0x08);//0x02即点亮第二个数码管
+  44   1              RCLK=0;
+  45   1              RCLK=1; //RCLK引脚更新数据                                        
+  46   1      
+  47   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     70    ----
+   CONSTANT SIZE    =     35    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+C51 COMPILER V9.01   SMGDISPLAY                                                            07/05/2019 14:16:50 PAGE 2   
+
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

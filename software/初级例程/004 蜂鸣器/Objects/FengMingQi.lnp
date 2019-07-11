@@ -1,0 +1,5 @@
+"main.obj",
+"delay.obj",
+"FengMingQi.obj" 
+TO "FengMingQi" 
+RAMSIZE(256) 
