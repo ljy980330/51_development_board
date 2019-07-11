@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=24L01_CE Pin=U9-3
+Removed Pin From Net: NetName=24L01_SCK Pin=U9-6
+Added Pin To Net: NetName=24L01_SCK Pin=U9-3
+Added Pin To Net: NetName=24L01_CE Pin=U9-6
+Added Room: Name=STC12C5A60S2µ×°å

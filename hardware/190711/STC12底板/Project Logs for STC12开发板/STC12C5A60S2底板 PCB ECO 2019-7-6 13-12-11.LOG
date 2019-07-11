@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=74HC595_RCLK Pin=U3-11
+Removed Pin From Net: NetName=74HC595_SRCLK Pin=U3-12
+Removed Pin From Net: NetName=74HC595_RCLK Pin=U4-11
+Removed Pin From Net: NetName=74HC595_SRCLK Pin=U4-12
+Added Pin To Net: NetName=74HC595_SRCLK Pin=U3-11
+Added Pin To Net: NetName=74HC595_RCLK Pin=U3-12
+Added Pin To Net: NetName=74HC595_SRCLK Pin=U4-11
+Added Pin To Net: NetName=74HC595_RCLK Pin=U4-12
+Change Net Name : Old Net Name=74HC595_RCLK New Net Name=74HC595_SRCLK
+Change Net Name : Old Net Name=74HC595_SRCLK New Net Name=74HC595_RCLK
+Added Member To Class: ClassName=STC12C5A60S2µ×°å Member=Component  R20
+Added Room: Name=STC12C5A60S2µ×°å

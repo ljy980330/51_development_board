@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=24L01_CE Pin=P1-9
+Removed Pin From Net: NetName=24L01_CSN Pin=P1-10
+Removed Pin From Net: NetName=24L01_SCK Pin=P1-11
+Removed Pin From Net: NetName=24L01_MOSI Pin=P1-12
+Removed Pin From Net: NetName=24L01_MISO Pin=P1-13
+Removed Pin From Net: NetName=24L01_IRQ Pin=P1-14
+Added Pin To Net: NetName=24L01_SCK Pin=P1-9
+Added Pin To Net: NetName=24L01_MOSI Pin=P1-10
+Added Pin To Net: NetName=24L01_MISO Pin=P1-11
+Added Pin To Net: NetName=24L01_IRQ Pin=P1-12
+Added Pin To Net: NetName=24L01_CE Pin=P1-13
+Added Pin To Net: NetName=24L01_CSN Pin=P1-14
+Added Room: Name=STC12C5A60S2µ×°å
