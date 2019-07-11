@@ -1,3 +1,2 @@
-spi驱动:
-
-	每隔50ms，从SPI发送32个字节数据
+delay		:��ʱ����
+spi		:spi����

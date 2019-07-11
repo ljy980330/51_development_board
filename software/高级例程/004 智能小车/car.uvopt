@@ -205,8 +205,8 @@
       <Focus>0</Focus>
       <ColumnNumber>46</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>4</TopLine>
-      <CurrentLine>25</CurrentLine>
+      <TopLine>6</TopLine>
+      <CurrentLine>6</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\delay\delay.c</PathWithFileName>
       <FilenameWithoutPath>delay.c</FilenameWithoutPath>
@@ -1772,7 +1772,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>12</ActiveTab>
+      <ActiveTab>13</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
@@ -1837,8 +1837,8 @@
         <Doc>
           <Name>.\delay\delay.c</Name>
           <ColumnNumber>46</ColumnNumber>
-          <TopLine>4</TopLine>
-          <CurrentLine>25</CurrentLine>
+          <TopLine>6</TopLine>
+          <CurrentLine>6</CurrentLine>
         </Doc>
         <Doc>
           <Name>DELAY/DELAY.H</Name>
@@ -1854,9 +1854,9 @@
         </Doc>
         <Doc>
           <Name>VOICE/VOICE.H</Name>
-          <ColumnNumber>16</ColumnNumber>
+          <ColumnNumber>60</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>10</CurrentLine>
+          <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
           <Name>CONFIG.H</Name>

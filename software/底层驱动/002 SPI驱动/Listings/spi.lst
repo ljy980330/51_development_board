@@ -1,0 +1,86 @@
+C51 COMPILER V9.01   SPI                                                                   07/11/2019 13:33:28 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE SPI
+OBJECT MODULE PLACED IN .\Objects\spi.obj
+COMPILER INVOKED BY: D:\cx\C51\BIN\C51.EXE spi\spi.c BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\spi.lst) OBJECT(.\Object
+                    -s\spi.obj)
+
+line level    source
+
+   1          /*********************************************************************************************************
+   2          *名称：spi.c
+   3          *功能：iic包括的函数
+   4          创建时间：2019/XX/XX
+   5          修改时间：2019/6/5
+   6          作者：XXX
+   7          *********************************************************************************************************/
+   8          #include <STC12C5A.H> 
+   9          #include "spi.h"
+  10          #include "config.h"     
+  11          #include "delay/delay.h"
+  12          
+  13          sbit SPICLK = P1^0; //时钟信号 
+  14          sbit MOSI = P1^1; //主器件数据输出，从器件数据输入 
+  15          sbit MISO = P1^2; //主器件数据输入，从器件数据输出 
+  16          sbit SS = P1^3; //从器件使能信号 //---------------------------    
+  17          uchar exdat; 
+  18          uchar i=0; 
+  19          uchar code table[10]={0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07, 0x7F,0x6F};                                         
+  20          /*******************************************************************************
+  21          * 函 数 名         : Data_Receive
+  22          * 函数功能                 : 数据接收程序
+  23          *******************************************************************************/
+  24          uchar Data_Receive()  
+  25          { 
+  26   1              uchar i,dat=0,temp; 
+  27   1              bit bt; 
+  28   1              SPICLK=1; 
+  29   1              MISO=1; 
+  30   1              SS=0; //选中器件 
+  31   1              nop(2); 
+  32   1              for(i=0;i<8;i++) 
+  33   1              { 
+  34   2                      SPICLK=1; 
+  35   2                      nop(3);
+  36   2                      SPICLK=0; 
+  37   2                      nop(2); 
+  38   2                      bt=MISO; 
+  39   2                      if(bt) 
+  40   2                              temp=0x01;
+  41   2                      else 
+  42   2                              temp=0x00; 
+  43   2                      dat=(dat<<1); 
+  44   2                      dat=(dat|temp); 
+  45   2              } 
+  46   1              SS=1; 
+  47   1              SPICLK=1; 
+  48   1              return dat; 
+  49   1      }                         
+  50          /*******************************************************************************
+  51          * 函 数 名         : run
+  52          * 函数功能                 : 主程序启动函数
+  53          *******************************************************************************/
+  54          void run()
+C51 COMPILER V9.01   SPI                                                                   07/11/2019 13:33:28 PAGE 2   
+
+  55          {
+  56   1              exdat=Data_Receive(); 
+  57   1              P0=table[exdat]; 
+  58   1              for(i=0;i<200;i++)
+  59   1              delay_us(200); 
+  60   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    109    ----
+   CONSTANT SIZE    =     10    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2       3
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----       1
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -9,9 +9,9 @@
 #define _INCLUDES_H
 
 #include <STC12C5A.H>
-#include <stdio.h>
 #include "intrins.h"
-#include "spi/spi.h"	 
+#include "rtc/rtc.h" 
 #include "delay/delay.h"
+#include "config.h"
 
 #endif

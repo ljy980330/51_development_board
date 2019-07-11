@@ -1,15 +1,14 @@
 /*********************************************************************************************************
-*名称：delay.h
-*功能：外部所用到的延迟功能函数声明
+*名称：iic.h
+*功能：外部所用到的spi驱动函数声明
 创建时间：2019/7/8
 修改时间：2019/7/8
 作者：黄彦钊
 *********************************************************************************************************/
-#ifndef _DELAY_H
-#define _DELAY_H
+#include <STC12C5A.H>
+#ifndef __SPI_H
+#define __SPI_H
 
-void delay_ms(unsigned int n);
-void delay_us(unsigned int n);
-void nop(unsigned int n);
-
-#endif
+#define SCK_IO    DDRA|=0X01
+void run();
+#endif  
