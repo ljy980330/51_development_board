@@ -1,0 +1,24 @@
+Removed Pin From Net: NetName=VCC Pin=P3-17
+Removed Pin From Net: NetName=VCC Pin=P3-18
+Removed Pin From Net: NetName=VCC Pin=U6-43
+Added Component: Designator=MOS1(SOT_23_3)
+Added Component: Designator=R1(R_0805)
+Added Component: Designator=SW1(switchi_slide(SMD))
+Added Pin To Net: NetName=VCC Pin=MOS1-3
+Added Pin To Net: NetName=GND Pin=SW1-1
+Added Pin To Net: NetName=5V Pin=MOS1-2
+Added Pin To Net: NetName=5V Pin=P3-17
+Added Pin To Net: NetName=5V Pin=P3-18
+Added Pin To Net: NetName=5V Pin=R1-2
+Added Pin To Net: NetName=5V Pin=U6-43
+Added Net: Name=5V
+Added Pin To Net: NetName=NetMOS1_1 Pin=MOS1-1
+Added Pin To Net: NetName=NetMOS1_1 Pin=SW1-2
+Added Net: Name=NetMOS1_1
+Added Pin To Net: NetName=NetR1_1 Pin=R1-1
+Added Pin To Net: NetName=NetR1_1 Pin=SW1-3
+Added Net: Name=NetR1_1
+Added Member To Class: ClassName=STC12C5A60S2µ×°å Member=Component MOS1 SI2301
+Added Member To Class: ClassName=STC12C5A60S2µ×°å Member=Component R1 100K¦¸
+Added Member To Class: ClassName=STC12C5A60S2µ×°å Member=Component SW1 switchi_slide(SMD)
+Added Room: Name=STC12C5A60S2µ×°å
