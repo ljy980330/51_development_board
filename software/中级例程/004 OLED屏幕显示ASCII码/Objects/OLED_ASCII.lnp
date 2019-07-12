@@ -1,9 +1,9 @@
-"code_tab.obj",
-"delay.obj",
-"display.obj",
-"function.obj",
-"i2c.obj",
-"OLED_Init.obj",
-"main.obj" 
-TO "OLED_ASCII" 
-RAMSIZE(256) 
+".\Objects\code_tab.obj",
+".\Objects\delay.obj",
+".\Objects\display.obj",
+".\Objects\function.obj",
+".\Objects\i2c.obj",
+".\Objects\OLED_Init.obj",
+".\Objects\main.obj" 
+TO ".\Objects\OLED_ASCII" 
+PRINT(".\Listings\OLED_ASCII.m51") RAMSIZE(256) 

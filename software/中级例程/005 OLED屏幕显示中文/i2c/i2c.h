@@ -11,6 +11,7 @@
 
 #include "config.h"
 #include "STC12C5A.H"
+#include "delay/delay.h"
 
 #define high 1	//高电平
 #define low  0	//低电位

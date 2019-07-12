@@ -3,7 +3,207 @@
 <pre>
 <h1>礦ision Build Log</h1>
 <h2>Project:</h2>
-F:\工作\github_stc12\software\中级例程\001 I2C协议-OLED屏幕\OLED.uvproj
-Project File Date:  07/09/2019
+C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\001 I2C协议-OLED屏幕\OLED.uvproj
+Project File Date:  07/11/2019
 
 <h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling OLED_Init.c...
+compiling i2c.c...
+I2C\I2C.C(19): warning C206: 'nop': missing function-prototype
+compiling function.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MIAN?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_CLS?FUNCTION
+*** WARNING L10: CANNOT DETERMINE ROOT SEGMENT
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 018BH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 0190H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 0195H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 019AH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 019FH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 01A4H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 01A9H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 01AEH
+Program Size: data=16.0 xdata=0 code=437
+creating hex file from ".\Objects\OLED"...
+".\Objects\OLED" - 0 Error(s), 13 Warning(s).
+compiling function.c...
+function\function.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling OLED_Init.c...
+compiling i2c.c...
+I2C\I2C.C(19): warning C206: 'nop': missing function-prototype
+compiling function.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MIAN?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_CLS?FUNCTION
+*** WARNING L10: CANNOT DETERMINE ROOT SEGMENT
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 018BH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 0190H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 0195H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 019AH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 019FH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 01A4H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 01A9H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 01AEH
+Program Size: data=16.0 xdata=0 code=437
+creating hex file from ".\Objects\OLED"...
+".\Objects\OLED" - 0 Error(s), 13 Warning(s).
+compiling function.c...
+function\function.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling OLED_Init.c...
+compiling i2c.c...
+I2C\I2C.C(19): warning C206: 'nop': missing function-prototype
+compiling function.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MIAN?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_CLS?FUNCTION
+*** WARNING L10: CANNOT DETERMINE ROOT SEGMENT
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 018BH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 0190H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 0195H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 019AH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 019FH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 01A4H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 01A9H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  NOP
+    MODULE:  .\Objects\i2c.obj (I2C)
+    ADDRESS: 01AEH
+Program Size: data=16.0 xdata=0 code=437
+creating hex file from ".\Objects\OLED"...
+".\Objects\OLED" - 0 Error(s), 13 Warning(s).
+compiling i2c.c...
+I2C\I2C.C(19): warning C206: 'nop': missing function-prototype
+i2c\i2c.c - 0 Error(s), 1 Warning(s).
+compiling delay.c...
+delay\delay.c - 0 Error(s), 0 Warning(s).
+compiling OLED_Init.c...
+OLED_Init\OLED_Init.c - 0 Error(s), 0 Warning(s).
+compiling OLED_Init.c...
+OLED_Init\OLED_Init.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling OLED_Init.c...
+compiling i2c.c...
+compiling function.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MIAN?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_CLS?FUNCTION
+*** WARNING L10: CANNOT DETERMINE ROOT SEGMENT
+Program Size: data=16.0 xdata=0 code=440
+creating hex file from ".\Objects\OLED"...
+".\Objects\OLED" - 0 Error(s), 3 Warning(s).
+compiling delay.c...
+delay\delay.c - 0 Error(s), 0 Warning(s).
+compiling i2c.c...
+i2c\i2c.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling OLED_Init.c...
+compiling i2c.c...
+compiling function.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MIAN?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_CLS?FUNCTION
+*** WARNING L10: CANNOT DETERMINE ROOT SEGMENT
+Program Size: data=16.0 xdata=0 code=440
+creating hex file from ".\Objects\OLED"...
+".\Objects\OLED" - 0 Error(s), 3 Warning(s).

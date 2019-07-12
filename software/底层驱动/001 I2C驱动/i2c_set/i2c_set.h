@@ -11,7 +11,7 @@
 
 #include "config.h"
 #include "STC12C5A.H"
-#include "intrins.h"
+#include "delay/delay.h"
 
 #define high 1	//高电平
 #define low  0	//低电位
@@ -19,15 +19,15 @@
 sbit SCL = P2^0;	//串行时钟
 sbit SDA = P2^1;	//串行数据
 
-void I2C_Init();
+void IIC_Init();
 
-void I2C_Start();
+void IIC_Start();
 
-void I2C_Stop();
+void IIC_Stop();
 
-void WriteByte(U8 j);
+void Write_IIC_Byte(U8 IIC_Byte);
 
-U8 ReadByte();
+U8 Read_IIC_Byte();
 
 
 #endif
