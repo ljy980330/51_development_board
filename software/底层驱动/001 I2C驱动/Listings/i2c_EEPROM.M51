@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/12/2019  14:26:35  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/12/2019  14:25:01  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -59,7 +59,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\i2c_EEPROM (MAIN)
   VALUE           TYPE          NAME
   ----------------------------------
 
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/12/2019  14:26:35  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/12/2019  14:25:01  PAGE 2
 
 
   -------         MODULE        MAIN
@@ -119,7 +119,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\i2c_EEPROM (MAIN)
   C:0003H         PUBLIC        Read_IIC_Byte
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/12/2019  14:26:35  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/12/2019  14:25:01  PAGE 3
 
 
   C:003CH         PUBLIC        _Write_IIC_Byte
@@ -179,7 +179,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\i2c_EEPROM (MAIN)
   C:004AH         LINE#         79
   C:004CH         LINE#         81
   C:0050H         LINE#         82
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/12/2019  14:26:35  PAGE 4
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/12/2019  14:25:01  PAGE 4
 
 
   C:0054H         LINE#         83
@@ -239,7 +239,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\i2c_EEPROM (MAIN)
     SEGMENT: ?PR?IIC_INIT?I2C_SET
 
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/12/2019  14:26:35  PAGE 5
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/12/2019  14:25:01  PAGE 5
 
 
     SEGMENT: ?PR?IIC_START?I2C_SET

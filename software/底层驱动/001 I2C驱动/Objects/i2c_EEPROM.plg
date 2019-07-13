@@ -1,12 +1,64 @@
-<html>
-<body>
-<pre>
-<h1>礦ision Build Log</h1>
-<h2>Project:</h2>
-C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\底层驱动\001 I2C驱动\i2c_drive.uvproj
-Project File Date:  07/12/2019
-
-<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling i2c_set.c...
+I2C_SET\I2C_SET.C(19): warning C206: 'nop': missing function-prototype
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?IIC_INIT?I2C_SET
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?IIC_START?I2C_SET
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?IIC_STOP?I2C_SET
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_WRITE_IIC_BYTE?I2C_SET
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?READ_IIC_BYTE?I2C_SET
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLOCK?I2C_SET
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  I2C_INIT
+    MODULE:  .\Objects\main.obj (MAIN)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  I2C_INIT
+    MODULE:  .\Objects\main.obj (MAIN)
+    ADDRESS: 00C6H
+Program Size: data=13.0 xdata=0 code=205
+creating hex file from ".\Objects\i2c_EEPROM"...
+".\Objects\i2c_EEPROM" - 0 Error(s), 10 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+compiling delay.c...
+delay\delay.c - 0 Error(s), 0 Warning(s).
+compiling i2c_set.c...
+I2C_SET\I2C_SET.C(19): warning C206: 'nop': missing function-prototype
+i2c_set\i2c_set.c - 0 Error(s), 1 Warning(s).
+compiling i2c_set.c...
+i2c_set\i2c_set.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling delay.c...
+compiling i2c_set.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?IIC_INIT?I2C_SET
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?IIC_START?I2C_SET
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?IIC_STOP?I2C_SET
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_WRITE_IIC_BYTE?I2C_SET
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?READ_IIC_BYTE?I2C_SET
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLOCK?I2C_SET
+Program Size: data=13.0 xdata=0 code=202
+creating hex file from ".\Objects\i2c_EEPROM"...
+".\Objects\i2c_EEPROM" - 0 Error(s), 7 Warning(s).
 compiling i2c_set.c...
 i2c_set\i2c_set.c - 0 Error(s), 0 Warning(s).
 Build target 'Target 1'
