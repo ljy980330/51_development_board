@@ -1,0 +1,147 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+F:\workApp\github_repository\github_stc12\51_development_board\software\中级例程\002 SPI协议-无线模块\send\spi_wireless.uvproj
+Project File Date:  07/14/2019
+
+<h2>Output:</h2>
+compiling main.c...
+MAIN.C(8): warning C206: 'run': missing function-prototype
+MAIN.C(19): error C202: 'a': undefined identifier
+MAIN.C(20): error C202: 'uart_flag': undefined identifier
+main.c - 2 Error(s), 1 Warning(s).
+compiling main.c...
+MAIN.C(8): warning C206: 'run': missing function-prototype
+MAIN.C(19): error C202: 'a': undefined identifier
+MAIN.C(20): error C202: 'uart_flag': undefined identifier
+main.c - 2 Error(s), 1 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling spi.c...
+compiling send.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  TX_BUF1
+    MODULE:  .\Objects\send.obj (SEND)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  A
+    MODULE:  .\Objects\send.obj (SEND)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  RX_BUF
+    MODULE:  .\Objects\send.obj (SEND)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  UART_FLAG
+    MODULE:  .\Objects\send.obj (SEND)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_INTERRUPT?UART
+Program Size: data=106.0 xdata=0 code=1264
+Target not created
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  TX_BUF1
+    MODULE:  .\Objects\send.obj (SEND)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  A
+    MODULE:  .\Objects\send.obj (SEND)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  RX_BUF
+    MODULE:  .\Objects\send.obj (SEND)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  UART_FLAG
+    MODULE:  .\Objects\send.obj (SEND)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_INTERRUPT?UART
+Program Size: data=106.0 xdata=0 code=1264
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(19): error C202: 'a': undefined identifier
+MAIN.C(20): error C202: 'uart_flag': undefined identifier
+compiling send.c...
+Target not created
+compiling send.c...
+send\send.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  A
+    MODULE:  .\Objects\send.obj (SEND)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  UART_FLAG
+    MODULE:  .\Objects\send.obj (SEND)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_INTERRUPT?UART
+Program Size: data=73.0 xdata=0 code=1261
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling send.c...
+SEND\SEND.C(21): warning C206: 'init_NRF24L01': missing function-prototype
+SEND\SEND.C(24): warning C206: 'NRF24L01_Check': missing function-prototype
+SEND\SEND.C(27): warning C206: 'delay_ms': missing function-prototype
+SEND\SEND.C(27): error C267: 'delay_ms': requires ANSI-style prototype
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling send.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  A
+    MODULE:  .\Objects\send.obj (SEND)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  UART_FLAG
+    MODULE:  .\Objects\send.obj (SEND)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_INTERRUPT?UART
+Program Size: data=73.0 xdata=0 code=1261
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling send.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_INTERRUPT?UART
+Program Size: data=71.0 xdata=0 code=1261
+creating hex file from ".\Objects\spi_wireless"...
+".\Objects\spi_wireless" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling send.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_INTERRUPT?UART
+Program Size: data=71.0 xdata=0 code=1261
+creating hex file from ".\Objects\spi_wireless"...
+".\Objects\spi_wireless" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling delay.c...
+compiling spi.c...
+compiling UART.c...
+compiling main.c...
+compiling send.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_INTERRUPT?UART
+Program Size: data=71.0 xdata=0 code=1261
+creating hex file from ".\Objects\spi_wireless"...
+".\Objects\spi_wireless" - 0 Error(s), 2 Warning(s).

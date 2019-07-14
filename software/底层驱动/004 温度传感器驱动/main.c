@@ -8,7 +8,7 @@
 
 #include "includes.h"
 
-U8 rec_dat[9];
+uchar rec_dat[9];
 
 void main()
 {
