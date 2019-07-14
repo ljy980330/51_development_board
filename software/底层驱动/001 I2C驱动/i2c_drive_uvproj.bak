@@ -357,9 +357,9 @@
               <FilePath>.\delay\delay.c</FilePath>
             </File>
             <File>
-              <FileName>i2c_set.c</FileName>
+              <FileName>i2c.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\i2c_set\i2c_set.c</FilePath>
+              <FilePath>.\i2c\i2c.c</FilePath>
             </File>
           </Files>
         </Group>
