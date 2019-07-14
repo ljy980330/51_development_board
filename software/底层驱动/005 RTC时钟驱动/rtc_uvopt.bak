@@ -200,19 +200,19 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>69</ColumnNumber>
+      <ColumnNumber>19</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>31</TopLine>
-      <CurrentLine>54</CurrentLine>
+      <TopLine>35</TopLine>
+      <CurrentLine>42</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtc\rtc.c</PathWithFileName>
       <FilenameWithoutPath>rtc.c</FilenameWithoutPath>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <FileNumber>4</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -223,6 +223,32 @@
       <FilenameWithoutPath>i2c.c</FilenameWithoutPath>
     </File>
   </Group>
+
+  <AlienFiles>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\005 RTC时钟驱动\I2C\I2C.H</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>19</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
 
   <AlienFiles>
     <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\005 RTC时钟驱动\CONFIG.H</PathWithFilename>
@@ -251,7 +277,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\005 RTC时钟驱动\INCLUDES.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\底层驱动\005 RTC时钟驱动\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>15</CurrentLine>
     <Constant>0</Constant>
@@ -277,9 +303,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\005 RTC时钟驱动\DELAY\DELAY.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\底层驱动\005 RTC时钟驱动\DELAY\DELAY.H</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>12</CurrentLine>
+    <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -329,9 +355,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\005 RTC时钟驱动\I2C\I2C.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\底层驱动\005 RTC时钟驱动\I2C\I2C.H</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>19</CurrentLine>
+    <CurrentLine>20</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1705,9 +1731,9 @@
         </Doc>
         <Doc>
           <Name>.\rtc\rtc.c</Name>
-          <ColumnNumber>69</ColumnNumber>
-          <TopLine>31</TopLine>
-          <CurrentLine>54</CurrentLine>
+          <ColumnNumber>19</ColumnNumber>
+          <TopLine>35</TopLine>
+          <CurrentLine>42</CurrentLine>
         </Doc>
         <Doc>
           <Name>RTC/RTC.H</Name>

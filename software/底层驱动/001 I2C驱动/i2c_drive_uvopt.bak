@@ -160,10 +160,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>68</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>8</CurrentLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -174,10 +174,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>61</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>25</CurrentLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\delay\delay.c</PathWithFileName>
       <FilenameWithoutPath>delay.c</FilenameWithoutPath>
@@ -188,10 +188,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>42</ColumnNumber>
+      <ColumnNumber>86</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>65</TopLine>
-      <CurrentLine>82</CurrentLine>
+      <TopLine>13</TopLine>
+      <CurrentLine>24</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\i2c\i2c.c</PathWithFileName>
       <FilenameWithoutPath>i2c.c</FilenameWithoutPath>
@@ -200,8 +200,8 @@
 
   <AlienFiles>
     <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\001 I2C驱动\I2C\I2C.H</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>1</CurrentLine>
+    <TopLine>11</TopLine>
+    <CurrentLine>13</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -227,7 +227,7 @@
   <AlienFiles>
     <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\001 I2C驱动\CONFIG.H</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>16</CurrentLine>
+    <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1643,19 +1643,19 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>4</ActiveTab>
+      <ActiveTab>1</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>68</ColumnNumber>
+          <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>8</CurrentLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\delay\delay.c</Name>
-          <ColumnNumber>61</ColumnNumber>
+          <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>25</CurrentLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
           <Name>INCLUDES.H</Name>
@@ -1671,33 +1671,21 @@
         </Doc>
         <Doc>
           <Name>CONFIG.H</Name>
-          <ColumnNumber>28</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>7</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\i2c\i2c.c</Name>
-          <ColumnNumber>42</ColumnNumber>
-          <TopLine>65</TopLine>
-          <CurrentLine>82</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>I2C/I2C.H</Name>
-          <ColumnNumber>20</ColumnNumber>
+          <ColumnNumber>16</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\i2c\i2c.c</Name>
-          <ColumnNumber>4</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
+          <ColumnNumber>86</ColumnNumber>
+          <TopLine>13</TopLine>
+          <CurrentLine>24</CurrentLine>
         </Doc>
         <Doc>
           <Name>I2C/I2C.H</Name>
-          <ColumnNumber>20</ColumnNumber>
-          <TopLine>12</TopLine>
-          <CurrentLine>32</CurrentLine>
+          <ColumnNumber>31</ColumnNumber>
+          <TopLine>11</TopLine>
+          <CurrentLine>13</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

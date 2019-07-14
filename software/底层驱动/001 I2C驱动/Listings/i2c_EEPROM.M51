@@ -1,10 +1,9 @@
-
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/14/2019  13:31:48  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/14/2019  17:10:45  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-D:\单片机\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\delay.obj, .\Objects\i2c.obj TO .\Objects\i2c_EEPROM PRINT (.\L
->> istings\i2c_EEPROM.m51) RAMSIZE (256)
+F:\WORKAPP\KEIL_V5\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\delay.obj, .\Objects\i2c.obj TO .\Objects\i2c_EEPROM P
+>> RINT (.\Listings\i2c_EEPROM.m51) RAMSIZE (256)
 
 
 MEMORY MODEL: SMALL
@@ -14,7 +13,7 @@ INPUT MODULES INCLUDED:
   .\Objects\main.obj (MAIN)
   .\Objects\delay.obj (DELAY)
   .\Objects\i2c.obj (I2C)
-  D:\单片机\C51\LIB\C51S.LIB (?C_STARTUP)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
 
 
 LINK MAP OF MODULE:  .\Objects\i2c_EEPROM (MAIN)
@@ -60,8 +59,7 @@ SEGMENT
 
 
 
-
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  13:31:48  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  17:10:45  PAGE 2
 
 
 SYMBOL TABLE OF MODULE:  .\Objects\i2c_EEPROM (MAIN)
@@ -120,8 +118,8 @@ SYMBOL TABLE OF MODULE:  .\Objects\i2c_EEPROM (MAIN)
   D:0006H         SYMBOL        n
   -------         DO            
   D:0004H         SYMBOL        i
-  -------         ENDDO    
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  13:31:48  PAGE 3
+  -------         ENDDO         
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  17:10:45  PAGE 3
 
 
   C:0124H         LINE#         32
@@ -181,7 +179,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\i2c_EEPROM (MAIN)
   -------         PROC          I2C_STOP
   C:009CH         LINE#         48
   C:009CH         LINE#         49
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  13:31:48  PAGE 4
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  17:10:45  PAGE 4
 
 
   C:009CH         LINE#         50
@@ -241,7 +239,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\i2c_EEPROM (MAIN)
   C:0038H         LINE#         115
   C:0041H         LINE#         116
   C:0048H         LINE#         117
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  13:31:48  PAGE 5
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  17:10:45  PAGE 5
 
 
   C:004AH         LINE#         118

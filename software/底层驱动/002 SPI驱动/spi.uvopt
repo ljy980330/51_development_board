@@ -188,8 +188,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>12</CurrentLine>
+      <TopLine>14</TopLine>
+      <CurrentLine>14</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\delay\delay.c</PathWithFileName>
       <FilenameWithoutPath>delay.c</FilenameWithoutPath>
@@ -200,15 +200,41 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>27</ColumnNumber>
+      <ColumnNumber>116</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>43</TopLine>
-      <CurrentLine>58</CurrentLine>
+      <TopLine>130</TopLine>
+      <CurrentLine>140</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\spi\spi.c</PathWithFileName>
       <FilenameWithoutPath>spi.c</FilenameWithoutPath>
     </File>
   </Group>
+
+  <AlienFiles>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\002 SPI驱动\SPI\SPI.H</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>20</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
 
   <AlienFiles>
     <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\002 SPI驱动\DELAY\DELAY.H</PathWithFilename>
@@ -240,32 +266,6 @@
     <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\002 SPI驱动\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\002 SPI驱动\SPI\SPI.H</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>20</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1633,9 +1633,9 @@
       <Documents>
         <Doc>
           <Name>.\spi\spi.c</Name>
-          <ColumnNumber>27</ColumnNumber>
-          <TopLine>43</TopLine>
-          <CurrentLine>58</CurrentLine>
+          <ColumnNumber>116</ColumnNumber>
+          <TopLine>130</TopLine>
+          <CurrentLine>140</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\main.c</Name>
@@ -1652,8 +1652,8 @@
         <Doc>
           <Name>.\delay\delay.c</Name>
           <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>12</CurrentLine>
+          <TopLine>14</TopLine>
+          <CurrentLine>14</CurrentLine>
         </Doc>
         <Doc>
           <Name>DELAY/DELAY.H</Name>
