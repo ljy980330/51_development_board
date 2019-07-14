@@ -239,7 +239,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\工作\github_stc12 - 副本\software\高级例程\003 万年历\CONFIG.H</PathWithFilename>
+    <PathWithFilename>F:\工作\github_stc12\software\高级例程\003 万年历\CONFIG.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>4</CurrentLine>
     <Constant>0</Constant>
@@ -265,7 +265,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\工作\github_stc12 - 副本\software\高级例程\003 万年历\DELAY\DELAY.H</PathWithFilename>
+    <PathWithFilename>F:\工作\github_stc12\software\高级例程\003 万年历\DELAY\DELAY.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -291,7 +291,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\工作\github_stc12 - 副本\software\高级例程\003 万年历\RTC\RTC.H</PathWithFilename>
+    <PathWithFilename>F:\工作\github_stc12\software\高级例程\003 万年历\RTC\RTC.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>4</CurrentLine>
     <Constant>0</Constant>
@@ -317,7 +317,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\工作\github_stc12 - 副本\software\高级例程\003 万年历\OLED\OLED.H</PathWithFilename>
+    <PathWithFilename>F:\工作\github_stc12\software\高级例程\003 万年历\OLED\OLED.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>5</CurrentLine>
     <Constant>0</Constant>
@@ -343,7 +343,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\工作\github_stc12 - 副本\software\高级例程\003 万年历\IIC\IIC.H</PathWithFilename>
+    <PathWithFilename>F:\工作\github_stc12\software\高级例程\003 万年历\IIC\IIC.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -369,7 +369,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\工作\github_stc12 - 副本\software\高级例程\003 万年历\INCLUDES.H</PathWithFilename>
+    <PathWithFilename>F:\工作\github_stc12\software\高级例程\003 万年历\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>12</CurrentLine>
     <Constant>0</Constant>

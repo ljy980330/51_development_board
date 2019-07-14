@@ -1,10 +1,10 @@
-C51 COMPILER V9.00   RTC                                                                   07/14/2019 13:20:18 PAGE 1   
+C51 COMPILER V9.00   RTC                                                                   07/14/2019 16:06:23 PAGE 1   
 
 
 C51 COMPILER V9.00, COMPILATION OF MODULE RTC
 OBJECT MODULE PLACED IN .\Objects\rtc.obj
-COMPILER INVOKED BY: F:\workApp\Keil_v5\C51\BIN\C51.EXE rtc\rtc.c BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\rtc.lst) OB
-                    -JECT(.\Objects\rtc.obj)
+COMPILER INVOKED BY: D:\单片机\C51\BIN\C51.EXE rtc\rtc.c BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\rtc.lst) OBJECT(.\Ob
+                    -jects\rtc.obj)
 
 line level    source
 
@@ -62,7 +62,7 @@ line level    source
   52   1              uchar temp; 
   53   1              temp=val&0x0f; 
   54   1              val>>=4; 
-C51 COMPILER V9.00   RTC                                                                   07/14/2019 13:20:18 PAGE 2   
+C51 COMPILER V9.00   RTC                                                                   07/14/2019 16:06:23 PAGE 2   
 
   55   1              val&=0x0f; 
   56   1              val*=10; 
@@ -126,7 +126,7 @@ line level    source
  114   1              I2C_Start(); 
  115   1              Write_I2C_Byte(DS3231_WriteAddress); 
  116   1              if(ack==0) 
-C51 COMPILER V9.00   RTC                                                                   07/14/2019 13:20:18 PAGE 3   
+C51 COMPILER V9.00   RTC                                                                   07/14/2019 16:06:23 PAGE 3   
 
  117   1                      return(0); 
  118   1              Write_I2C_Byte(random_addr); 
@@ -190,7 +190,7 @@ line level    source
  176          *******************************************************************************/
  177          void get_show_time() 
  178          { 
-C51 COMPILER V9.00   RTC                                                                   07/14/2019 13:20:18 PAGE 4   
+C51 COMPILER V9.00   RTC                                                                   07/14/2019 16:06:23 PAGE 4   
 
  179   1              uchar Htemp1,Htemp2,Mtemp1,Mtemp2,Stemp1,Stemp2; 
  180   1              Htemp1=read_random(DS3231_HOUR); //时 24小时制 
