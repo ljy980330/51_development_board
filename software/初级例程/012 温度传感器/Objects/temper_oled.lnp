@@ -1,0 +1,10 @@
+".\Objects\main.obj",
+".\Objects\code_tab.obj",
+".\Objects\display.obj",
+".\Objects\function.obj",
+".\Objects\i2c.obj",
+".\Objects\delay.obj",
+".\Objects\OLED_Init.obj",
+".\Objects\drive.obj" 
+TO ".\Objects\temper_oled" 
+PRINT(".\Listings\temper_oled.m51") RAMSIZE(256) 

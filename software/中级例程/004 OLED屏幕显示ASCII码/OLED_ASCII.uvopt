@@ -254,10 +254,10 @@
     </File>
   </Group>
 
-  <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\中级例程\004 OLED屏幕显示ASCII码\I2C\I2C.H</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>7</CurrentLine>
+  <AlienFilesLine>7</CurrentLine>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\004 OLED屏幕显示ASCII码\I2C\I2C.H</PathWithFilename>
+    <TopLine>4</TopLine>
+    <CurrentLine>20</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
