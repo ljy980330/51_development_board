@@ -1,10 +1,10 @@
-C51 COMPILER V9.00   UART_INIT                                                             07/06/2019 09:43:47 PAGE 1   
+C51 COMPILER V9.00   UART                                                                  07/14/2019 13:55:42 PAGE 1   
 
 
-C51 COMPILER V9.00, COMPILATION OF MODULE UART_INIT
-OBJECT MODULE PLACED IN UART_Init.obj
-COMPILER INVOKED BY: D:\单片机\C51\BIN\C51.EXE UART_Init\UART_Init.c BROWSE DEBUG OBJECTEXTEND PRINT(.\UART_Init.lst) OB
-                    -JECT(UART_Init.obj)
+C51 COMPILER V9.00, COMPILATION OF MODULE UART
+OBJECT MODULE PLACED IN UART.obj
+COMPILER INVOKED BY: F:\workApp\Keil_v5\C51\BIN\C51.EXE UART\UART.c BROWSE DEBUG OBJECTEXTEND PRINT(.\UART.lst) OBJECT(U
+                    -ART.obj)
 
 line level    source
 
@@ -16,7 +16,7 @@ line level    source
    6          作者：XXX
    7          *********************************************************************************************************/
    8          
-   9          #include "UART_Init.h"
+   9          #include "UART.h"
   10          
   11          void UART_Init()  
   12          {  
@@ -28,11 +28,23 @@ line level    source
   18   1              EA=1;               //开启总中断
   19   1              ES=1;                   //开启串口接受中断
   20   1              TR1=1;                  //计数器1开始运行
-  21   1      }  
+  21   1      }                                                                                
+  22          
+  23          void UART_Interrupt()
+  24          {
+  25   1              uchar date;
+  26   1      
+  27   1              date=SBUF;        //取出接受到的数据
+  28   1              RI=0;                     //清除接受中断标志位
+  29   1              SBUF=date;                //接收到的数据放入发送缓存器发送
+  30   1              while(!TI);        //等待发送数据完成
+  31   1              TI=0;                           //清除发送完成标志位
+  32   1      
+  33   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =     22    ----
+   CODE SIZE        =     34    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----

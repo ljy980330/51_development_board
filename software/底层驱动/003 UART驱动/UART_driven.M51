@@ -1,8 +1,8 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/06/2019  09:43:48  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/14/2019  13:55:42  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-D:\单片机\C51\BIN\BL51.EXE main.obj, UART_Init.obj, UART_Interrupt.obj TO UART
+F:\WORKAPP\KEIL_V5\C51\BIN\BL51.EXE main.obj, UART.obj TO UART_driven RAMSIZE (256)
 
 
 MEMORY MODEL: SMALL
@@ -10,12 +10,11 @@ MEMORY MODEL: SMALL
 
 INPUT MODULES INCLUDED:
   main.obj (MAIN)
-  UART_Init.obj (UART_INIT)
-  UART_Interrupt.obj (UART_INTERRUPT)
-  D:\单片机\C51\LIB\C51S.LIB (?C_STARTUP)
+  UART.obj (UART)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
 
 
-LINK MAP OF MODULE:  UART (MAIN)
+LINK MAP OF MODULE:  UART_driven (MAIN)
 
 
             TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
@@ -28,24 +27,24 @@ LINK MAP OF MODULE:  UART (MAIN)
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
             CODE    0000H     0003H     ABSOLUTE     
-            CODE    0003H     0016H     UNIT         ?PR?UART_INIT?UART_INIT
+            CODE    0003H     0016H     UNIT         ?PR?UART_INIT?UART
             CODE    0019H     0005H     UNIT         ?PR?MAIN?MAIN
                     001EH     0005H                  *** GAP ***
             CODE    0023H     0003H     ABSOLUTE     
             CODE    0026H     003BH     UNIT         ?PR?UART?MAIN
-            CODE    0061H     000CH     UNIT         ?PR?UART_INTERRUPT?UART_INTERRUPT
+            CODE    0061H     000CH     UNIT         ?PR?UART_INTERRUPT?UART
             CODE    006DH     000CH     UNIT         ?C_C51STARTUP
 
 
 
-OVERLAY MAP OF MODULE:   UART (MAIN)
+OVERLAY MAP OF MODULE:   UART_driven (MAIN)
 
 
 SEGMENT
   +--> CALLED SEGMENT
 ---------------------
 ?PR?UART?MAIN
-  +--> ?PR?UART_INTERRUPT?UART_INTERRUPT
+  +--> ?PR?UART_INTERRUPT?UART
 
 *** NEW ROOT ***************************************************
 
@@ -53,16 +52,16 @@ SEGMENT
   +--> ?PR?MAIN?MAIN
 
 ?PR?MAIN?MAIN
-  +--> ?PR?UART_INIT?UART_INIT
+  +--> ?PR?UART_INIT?UART
 
 
 
-SYMBOL TABLE OF MODULE:  UART (MAIN)
-
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  09:43:48  PAGE 2
-
+SYMBOL TABLE OF MODULE:  UART_driven (MAIN)
 
   VALUE           TYPE          NAME
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  13:55:42  PAGE 2
+
+
   ----------------------------------
 
   -------         MODULE        MAIN
@@ -96,7 +95,7 @@ SYMBOL TABLE OF MODULE:  UART (MAIN)
   -------         ENDPROC       UART
   -------         ENDMOD        MAIN
 
-  -------         MODULE        UART_INIT
+  -------         MODULE        UART
   C:0000H         SYMBOL        _ICE_DUMMY_
   D:0080H         PUBLIC        P0
   D:0090H         PUBLIC        P1
@@ -108,7 +107,10 @@ SYMBOL TABLE OF MODULE:  UART (MAIN)
   D:00A8H         PUBLIC        IE
   B:00A8H.4       PUBLIC        ES
   D:00B8H         PUBLIC        IP
+  B:0098H.0       PUBLIC        RI
+  B:0098H.1       PUBLIC        TI
   D:00D8H         PUBLIC        CCON
+  D:0099H         PUBLIC        SBUF
   D:0087H         PUBLIC        PCON
   C:0003H         PUBLIC        UART_Init
   D:0098H         PUBLIC        SCON
@@ -117,11 +119,12 @@ SYMBOL TABLE OF MODULE:  UART (MAIN)
   D:00E0H         PUBLIC        ACC
   D:008DH         PUBLIC        TH1
   D:008BH         PUBLIC        TL1
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  13:55:42  PAGE 3
+
+
   B:0088H.6       PUBLIC        TR1
+  C:0061H         PUBLIC        UART_Interrupt
   D:00D0H         PUBLIC        PSW
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  09:43:48  PAGE 3
-
-
   -------         PROC          UART_INIT
   C:0003H         LINE#         11
   C:0003H         LINE#         12
@@ -135,41 +138,20 @@ SYMBOL TABLE OF MODULE:  UART (MAIN)
   C:0016H         LINE#         20
   C:0018H         LINE#         21
   -------         ENDPROC       UART_INIT
-  -------         ENDMOD        UART_INIT
-
-  -------         MODULE        UART_INTERRUPT
-  C:0000H         SYMBOL        _ICE_DUMMY_
-  D:0080H         PUBLIC        P0
-  D:0090H         PUBLIC        P1
-  D:00A0H         PUBLIC        P2
-  D:00B0H         PUBLIC        P3
-  D:00C0H         PUBLIC        P4
-  D:00C8H         PUBLIC        P5
-  D:00A8H         PUBLIC        IE
-  D:00B8H         PUBLIC        IP
-  B:0098H.0       PUBLIC        RI
-  B:0098H.1       PUBLIC        TI
-  D:00D8H         PUBLIC        CCON
-  D:0099H         PUBLIC        SBUF
-  D:0098H         PUBLIC        SCON
-  D:0088H         PUBLIC        TCON
-  D:00E0H         PUBLIC        ACC
-  C:0061H         PUBLIC        UART_Interrupt
-  D:00D0H         PUBLIC        PSW
   -------         PROC          UART_INTERRUPT
   -------         DO            
   D:0007H         SYMBOL        date
   -------         ENDDO         
-  C:0061H         LINE#         11
-  C:0061H         LINE#         12
-  C:0061H         LINE#         15
-  C:0063H         LINE#         16
-  C:0065H         LINE#         17
-  C:0067H         LINE#         18
-  C:006AH         LINE#         19
-  C:006CH         LINE#         21
+  C:0061H         LINE#         23
+  C:0061H         LINE#         24
+  C:0061H         LINE#         27
+  C:0063H         LINE#         28
+  C:0065H         LINE#         29
+  C:0067H         LINE#         30
+  C:006AH         LINE#         31
+  C:006CH         LINE#         33
   -------         ENDPROC       UART_INTERRUPT
-  -------         ENDMOD        UART_INTERRUPT
+  -------         ENDMOD        UART
 
 Program Size: data=10.0 xdata=0 code=116
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

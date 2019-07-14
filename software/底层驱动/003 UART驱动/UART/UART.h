@@ -1,17 +1,18 @@
 /*********************************************************************************************************
-*名称：UART_Receive.h
-*功能：串口中断用到的头文件和函数声明
+*名称：UART_Init.h
+*功能：串口初始化用到的头文件和函数声明
 创建时间：2019/7/5
 修改时间：2019/XX/XX
 作者：XXX
 *********************************************************************************************************/
 
-#ifndef _UART_RECEIVE_H
-#define _UART_RECEIVE_H
+#ifndef _UART_H
+#define _UART_H
 
 #include "config.h"
-#include "STC12C5A.H"
+#include "STC12C5A.h"
 
+void UART_Init();	 
 void UART_Interrupt();
 
 #endif
