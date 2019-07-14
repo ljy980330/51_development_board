@@ -1,10 +1,10 @@
-C51 COMPILER V9.01   RTC                                                                   07/11/2019 13:25:48 PAGE 1   
+C51 COMPILER V9.00   RTC                                                                   07/14/2019 13:20:18 PAGE 1   
 
 
-C51 COMPILER V9.01, COMPILATION OF MODULE RTC
+C51 COMPILER V9.00, COMPILATION OF MODULE RTC
 OBJECT MODULE PLACED IN .\Objects\rtc.obj
-COMPILER INVOKED BY: D:\cx\C51\BIN\C51.EXE rtc\rtc.c BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\rtc.lst) OBJECT(.\Object
-                    -s\rtc.obj)
+COMPILER INVOKED BY: F:\workApp\Keil_v5\C51\BIN\C51.EXE rtc\rtc.c BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\rtc.lst) OB
+                    -JECT(.\Objects\rtc.obj)
 
 line level    source
 
@@ -18,334 +18,229 @@ line level    source
    8          #include <STC12C5A.H> 
    9          #include<intrins.h>
   10          #include "rtc.h"          
-  11          #include "delay/delay.h"
-  12          
-  13          sbit SDA=P3^6; //模拟I2C数据传送位SDA************** 
-  14          sbit SCL=P3^7; //模拟I2C时钟控制位SCL************** 
-  15          
-  16          bit ack; //应答标志位
-  17          
-  18          #define DS3231_WriteAddress 0xD0 //器件写地址 ************** 
-  19          #define DS3231_ReadAddress 0xD1 //器件读地址************** 
-  20          #define DS3231_SECOND 0x00 //秒 
-  21          #define DS3231_MINUTE 0x01 //分 
-  22          #define DS3231_HOUR 0x02 //时 
-  23          #define DS3231_WEEK 0x03 //星期 
-  24          #define DS3231_DAY 0x04 //日 
-  25          #define DS3231_MONTH 0x05 //月 
-  26          #define DS3231_YEAR 0x06 //年 
-  27          //闹铃1 
-  28          #define DS3231_SALARM1ECOND 0x07 //秒 
-  29          #define DS3231_ALARM1MINUTE 0x08 //分 
-  30          #define DS3231_ALARM1HOUR 0x09 //时 
-  31          #define DS3231_ALARM1WEEK 0x0A //星期/日 //闹铃2 
-  32          #define DS3231_ALARM2MINUTE 0x0b //分 
-  33          #define DS3231_ALARM2HOUR 0x0c //时
-  34          #define DS3231_ALARM2WEEK 0x0d //星期/日 
-  35          #define DS3231_CONTROL 0x0e //控制寄存器 
-  36          #define DS3231_STATUS 0x0f //状态寄存器 
-  37          #define BSY 2 //忙 
-  38          #define OSF 7 //振荡器停止标志 
-  39          #define DS3231_XTAL 0x10 //晶体老化寄存器 
-  40          #define DS3231_TEMPERATUREH 0x11 //温度寄存器高字节(8位) 
-  41          #define DS3231_TEMPERATUREL 0x12 //温度寄存器低字节(高2位) //************** 
-  42          uchar code dis_code[11]={0xc0,0xf9,0xa4,0xb0, // 0,1,2,3 
-  43                  0x99,0x92,0x82,0xf8,0x80,0x90, 0xff}; // 4,5,6,7,8,9,off 
-  44          uchar data dis_buf[8]; 
-  45          uchar data dis_index; 
-  46          uchar data dis_digit;    
-  47          /*******************************************************************************
-  48          * 函 数 名         : BCD2HEX
-  49          * 函数功能                 : BCD转换为Byte 
-  50          *******************************************************************************/
-  51          uchar BCD2HEX(uchar val) 
-  52          { 
-  53   1              uchar temp; 
-  54   1              temp=val&0x0f; 
-C51 COMPILER V9.01   RTC                                                                   07/11/2019 13:25:48 PAGE 2   
+  11          #include "delay/delay.h"         
+  12          #include "i2c/i2c.h"
+  13          
+  14          
+  15          bit ack; //应答标志位
+  16          
+  17          #define DS3231_WriteAddress 0xD0 //器件写地址 ************** 
+  18          #define DS3231_ReadAddress 0xD1 //器件读地址************** 
+  19          #define DS3231_SECOND 0x00 //秒 
+  20          #define DS3231_MINUTE 0x01 //分 
+  21          #define DS3231_HOUR 0x02 //时 
+  22          #define DS3231_WEEK 0x03 //星期 
+  23          #define DS3231_DAY 0x04 //日 
+  24          #define DS3231_MONTH 0x05 //月 
+  25          #define DS3231_YEAR 0x06 //年 
+  26          //闹铃1 
+  27          #define DS3231_SALARM1ECOND 0x07 //秒 
+  28          #define DS3231_ALARM1MINUTE 0x08 //分 
+  29          #define DS3231_ALARM1HOUR 0x09 //时 
+  30          #define DS3231_ALARM1WEEK 0x0A //星期/日 //闹铃2 
+  31          #define DS3231_ALARM2MINUTE 0x0b //分 
+  32          #define DS3231_ALARM2HOUR 0x0c //时
+  33          #define DS3231_ALARM2WEEK 0x0d //星期/日 
+  34          #define DS3231_CONTROL 0x0e //控制寄存器 
+  35          #define DS3231_STATUS 0x0f //状态寄存器 
+  36          #define BSY 2 //忙 
+  37          #define OSF 7 //振荡器停止标志 
+  38          #define DS3231_XTAL 0x10 //晶体老化寄存器 
+  39          #define DS3231_TEMPERATUREH 0x11 //温度寄存器高字节(8位) 
+  40          #define DS3231_TEMPERATUREL 0x12 //温度寄存器低字节(高2位) //************** 
+  41          uchar code dis_code[11]={0xc0,0xf9,0xa4,0xb0, // 0,1,2,3 
+  42                  0x99,0x92,0x82,0xf8,0x80,0x90, 0xff}; // 4,5,6,7,8,9,off 
+  43          uchar data dis_buf[8]; 
+  44          uchar data dis_index; 
+  45          uchar data dis_digit;    
+  46          /*******************************************************************************
+  47          * 函 数 名         : BCD2HEX
+  48          * 函数功能                 : BCD转换为Byte 
+  49          *******************************************************************************/
+  50          uchar BCD2HEX(uchar val) 
+  51          { 
+  52   1              uchar temp; 
+  53   1              temp=val&0x0f; 
+  54   1              val>>=4; 
+C51 COMPILER V9.00   RTC                                                                   07/14/2019 13:20:18 PAGE 2   
 
-  55   1              val>>=4; 
-  56   1              val&=0x0f; 
-  57   1              val*=10; 
-  58   1              temp+=val; 
-  59   1              return temp; 
-  60   1      }        
-  61          /*******************************************************************************
-  62          * 函 数 名         : HEX2BCD
-  63          * 函数功能                 : B码转换为BCD码
-  64          *******************************************************************************/
-  65          uchar HEX2BCD(uchar val)  
-  66          { 
-  67   1              uchar i,j,k; 
-  68   1              i=val/10; 
-  69   1              j=val-i*10;
-  70   1              k=j+(i<<4); 
-  71   1              return k; 
-  72   1      } 
-  73          /*******************************************************************************
-  74          * 函 数 名         : Start_I2C
-  75          * 函数功能                 : I2C启动
-  76          *******************************************************************************/
-  77          void Start_I2C()
-  78          {
-  79   1              SDA=1; //发送起始条件的数据信号 
-  80   1              delay_us(1); 
-  81   1              SCL=1; 
-  82   1              delay_us(5); //起始条件建立时间大于4.7us,延时 
-  83   1              SDA=0; //发送起始信号 
-  84   1              delay_us(5); // 起始条件锁定时间大于4μs 
-  85   1              SCL=0; //钳住I2C总线，准备发送或接收数据 
-  86   1              delay_us(2); 
-  87   1      }  
-  88          /*******************************************************************************
-  89          * 函 数 名         : Stop_I2C
-  90          * 函数功能                 : I2C停止
-  91          *******************************************************************************/
-  92          void Stop_I2C() 
-  93          { 
-  94   1              SDA=0; //发送结束条件的数据信号 
-  95   1              delay_us(1); //发送结束条件的时钟信号 
-  96   1              SCL=1; //结束条件建立时间大于4us 
-  97   1              delay_us(5); 
-  98   1              SDA=1; //发送I2C总线结束信号 
-  99   1              delay_us(4); 
- 100   1      }       
- 101          /*******************************************************************************
- 102          * 函 数 名         : SendByte
- 103          * 函数功能                 : 传送8位的数据长度
- 104          *******************************************************************************/
- 105          void SendByte(uchar c) 
- 106          { 
- 107   1              uchar BitCnt; 
- 108   1              for(BitCnt=0;BitCnt<8;BitCnt++) 
- 109   1              { 
- 110   2                      if((c<<BitCnt)&0x80) 
- 111   2                              SDA=1; //判断发送位 
- 112   2                      else 
- 113   2                              SDA=0; 
- 114   2                      delay_us(1); 
- 115   2                      SCL=1; //置时钟线为高，通知被控器开始接收数据位 
- 116   2                      delay_us(5); //保证时钟高电平周期大于4μs 
-C51 COMPILER V9.01   RTC                                                                   07/11/2019 13:25:48 PAGE 3   
+  55   1              val&=0x0f; 
+  56   1              val*=10; 
+  57   1              temp+=val; 
+  58   1              return temp; 
+  59   1      }        
+  60          /*******************************************************************************
+  61          * 函 数 名         : HEX2BCD
+  62          * 函数功能                 : B码转换为BCD码
+  63          *******************************************************************************/
+  64          uchar HEX2BCD(uchar val)  
+  65          { 
+  66   1              uchar i,j,k; 
+  67   1              i=val/10; 
+  68   1              j=val-i*10;
+  69   1              k=j+(i<<4); 
+  70   1              return k; 
+  71   1      } 
+  72          /*******************************************************************************
+  73          * 函 数 名         : write_byte
+  74          * 函数功能                 : 写入一位数据
+  75          *******************************************************************************/
+  76          uchar write_byte(uchar addr, uchar write_data) 
+  77          { 
+  78   1              I2C_Start(); 
+  79   1              Write_I2C_Byte(DS3231_WriteAddress); 
+  80   1              if (ack == 0) 
+  81   1                      return 0; 
+  82   1              Write_I2C_Byte(addr); 
+  83   1              if (ack == 0) 
+  84   1                      return 0; 
+  85   1              Write_I2C_Byte(write_data); 
+  86   1              if (ack == 0) 
+  87   1                      return 0; 
+  88   1              I2C_Stop(); 
+  89   1              delay_us(10); 
+  90   1              return 1; 
+  91   1      }       
+  92          /*******************************************************************************
+  93          * 函 数 名         : read_current
+  94          * 函数功能                 : 读取RcvByte返回数据并返回
+  95          *******************************************************************************/
+  96          uchar read_current()
+  97          { 
+  98   1              uchar read_data; 
+  99   1              I2C_Start(); 
+ 100   1              Write_I2C_Byte(DS3231_ReadAddress); 
+ 101   1              if(ack==0) 
+ 102   1                      return(0); 
+ 103   1              read_data = Read_I2C_Byte(); 
+ 104   1              Ack_I2C(1); 
+ 105   1              I2C_Stop(); 
+ 106   1              return read_data; 
+ 107   1      }       
+ 108          /*******************************************************************************
+ 109          * 函 数 名         : read_random
+ 110          * 函数功能                 : 处理read_current返回数据并返回
+ 111          *******************************************************************************/
+ 112          uchar read_random(uchar random_addr) 
+ 113          { 
+ 114   1              I2C_Start(); 
+ 115   1              Write_I2C_Byte(DS3231_WriteAddress); 
+ 116   1              if(ack==0) 
+C51 COMPILER V9.00   RTC                                                                   07/14/2019 13:20:18 PAGE 3   
 
- 117   2                      SCL=0; 
- 118   2              }
- 119   1              delay_us(2); 
- 120   1              SDA=1; //8位发送完后释放数据线，准备接收应答位 
- 121   1              delay_us(2); 
- 122   1              SCL=1; 
- 123   1              delay_us(3); 
- 124   1              if(SDA==1) 
- 125   1                      ack=0; 
- 126   1              else 
- 127   1                      ack=1; //判断是否接收到应答信号 
- 128   1              SCL=0; 
- 129   1              delay_us(2); 
- 130   1      } 
- 131          /*******************************************************************************
- 132          * 函 数 名         : RcvByte
- 133          * 函数功能                 : 接收数据位放入retc并返回
- 134          *******************************************************************************/
- 135          uchar RcvByte() 
- 136          { 
- 137   1              uchar retc; 
- 138   1              uchar BitCnt; 
- 139   1              retc=0; 
- 140   1              SDA=1; //置数据线为输入方式 
- 141   1              for(BitCnt=0;BitCnt<8;BitCnt++) 
- 142   1              { 
- 143   2                      delay_us(1); 
- 144   2                      SCL=0; //置时钟线为低，准备接收数据位 
- 145   2                      delay_us(5); //时钟低电平周期大于4.7μs 
- 146   2                      SCL=1; //置时钟线为高使数据线上数据有效 
- 147   2                      delay_us(3); 
- 148   2                      retc=retc<<1; 
- 149   2                      if(SDA==1) 
- 150   2                              retc=retc+1; //读数据位,接收的数据位放入retc中 
- 151   2                      delay_us(2); 
- 152   2              } 
- 153   1              SCL=0; 
- 154   1              delay_us(2);
- 155   1              return(retc); 
- 156   1      }  
- 157          /*******************************************************************************
- 158          * 函 数 名         : Ack_I2C
- 159          * 函数功能                 : 发出应答或非应答信号
- 160          *******************************************************************************/
- 161          void Ack_I2C(bit a) 
- 162          { 
- 163   1              if(a==0) 
- 164   1                      SDA=0; //在此发出应答或非应答信号 
- 165   1              else 
- 166   1                      SDA=1; 
- 167   1              delay_us(3); 
- 168   1              SCL=1; 
- 169   1              delay_us(5); //时钟低电平周期大于4μs 
- 170   1              SCL=0; //清时钟线，钳住I2C总线以便继续接收 
- 171   1              delay_us(2); 
+ 117   1                      return(0); 
+ 118   1              Write_I2C_Byte(random_addr); 
+ 119   1              if(ack==0) 
+ 120   1                      return(0); 
+ 121   1              return(read_current()); 
+ 122   1      }       
+ 123          /*******************************************************************************
+ 124          * 函 数 名         : ModifyTime
+ 125          * 函数功能                 : 修改时间
+ 126          *******************************************************************************/
+ 127          void ModifyTime(uchar yea,uchar mon,uchar da,uchar hou,uchar min,uchar sec) 
+ 128          { 
+ 129   1              uchar temp=0; 
+ 130   1              temp=HEX2BCD(yea); 
+ 131   1              write_byte(DS3231_YEAR,temp); //修改年 
+ 132   1              temp=HEX2BCD(mon); 
+ 133   1              write_byte(DS3231_MONTH,temp); //修改月 
+ 134   1              temp=HEX2BCD(da); 
+ 135   1              write_byte(DS3231_DAY,temp); //修改日 
+ 136   1              temp=HEX2BCD(hou); 
+ 137   1              write_byte(DS3231_HOUR,temp); //修改时
+ 138   1              temp=HEX2BCD(min); 
+ 139   1              write_byte(DS3231_MINUTE,temp); //修改分 
+ 140   1              temp=HEX2BCD(sec); 
+ 141   1              write_byte(DS3231_SECOND,temp); //修改秒 
+ 142   1      }        
+ 143          /*******************************************************************************
+ 144          * 函 数 名         : TimeDisplay
+ 145          * 函数功能                 : 处理时间
+ 146          *******************************************************************************/
+ 147          void TimeDisplay(uchar Dhour,uchar Dmin,uchar Dsec)
+ 148          { 
+ 149   1              dis_buf[7]=dis_code[Dhour / 10]; // 时十位 
+ 150   1              dis_buf[6]=dis_code[Dhour % 10]; // 时个位 
+ 151   1              dis_buf[4]=dis_code[Dmin / 10]; // 分十位 
+ 152   1              dis_buf[3]=dis_code[Dmin % 10]; // 分个位 
+ 153   1              dis_buf[1]=dis_code[Dsec / 10]; // 秒十位 
+ 154   1              dis_buf[0]=dis_code[Dsec % 10]; // 秒个位 
+ 155   1              dis_buf[2]=0xbf; // 显示"-" 
+ 156   1              dis_buf[5]=0xbf; 
+ 157   1      }         
+ 158          /*******************************************************************************
+ 159          * 函 数 名         : DateDisplay
+ 160          * 函数功能                 : 处理日期
+ 161          *******************************************************************************/
+ 162          void DateDisplay(uchar Dyear,uchar Dmonth,uchar Dday)
+ 163          { 
+ 164   1              dis_buf[7]=dis_code[Dyear / 10]; // 年十位 
+ 165   1              dis_buf[6]=dis_code[Dyear % 10]; // 年个位 
+ 166   1              dis_buf[4]=dis_code[Dmonth / 10]; // 月十位 
+ 167   1              dis_buf[3]=dis_code[Dmonth % 10]; // 月个位 
+ 168   1              dis_buf[1]=dis_code[Dday / 10]; // 天十位 
+ 169   1              dis_buf[0]=dis_code[Dday % 10]; // 天个位 
+ 170   1              dis_buf[2]=0xbf; // 显示"-" 
+ 171   1              dis_buf[5]=0xbf; 
  172   1      }  
  173          /*******************************************************************************
- 174          * 函 数 名         : write_byte
- 175          * 函数功能                 : 谢茹一位数据
+ 174          * 函 数 名         : get_show_time
+ 175          * 函数功能                 : 显示24小时制时间
  176          *******************************************************************************/
- 177          uchar write_byte(uchar addr, uchar write_data) 
+ 177          void get_show_time() 
  178          { 
-C51 COMPILER V9.01   RTC                                                                   07/11/2019 13:25:48 PAGE 4   
+C51 COMPILER V9.00   RTC                                                                   07/14/2019 13:20:18 PAGE 4   
 
- 179   1              Start_I2C(); 
- 180   1              SendByte(DS3231_WriteAddress); 
- 181   1              if (ack == 0) 
- 182   1                      return 0; 
- 183   1              SendByte(addr); 
- 184   1              if (ack == 0) 
- 185   1                      return 0; 
- 186   1              SendByte(write_data); 
- 187   1              if (ack == 0) 
- 188   1                      return 0; 
- 189   1              Stop_I2C(); 
- 190   1              delay_us(10); 
- 191   1              return 1; 
- 192   1      }       
- 193          /*******************************************************************************
- 194          * 函 数 名         : read_current
- 195          * 函数功能                 : 读取RcvByte返回数据并返回
- 196          *******************************************************************************/
- 197          uchar read_current()
- 198          { 
- 199   1              uchar read_data; 
- 200   1              Start_I2C(); 
- 201   1              SendByte(DS3231_ReadAddress); 
- 202   1              if(ack==0) 
- 203   1                      return(0); 
- 204   1              read_data = RcvByte(); 
- 205   1              Ack_I2C(1); 
- 206   1              Stop_I2C(); 
- 207   1              return read_data; 
- 208   1      }       
- 209          /*******************************************************************************
- 210          * 函 数 名         : read_random
- 211          * 函数功能                 : 处理read_current返回数据并返回
- 212          *******************************************************************************/
- 213          uchar read_random(uchar random_addr) 
- 214          { 
- 215   1              Start_I2C(); 
- 216   1              SendByte(DS3231_WriteAddress); 
- 217   1              if(ack==0) 
- 218   1                      return(0); 
- 219   1              SendByte(random_addr); 
- 220   1              if(ack==0) 
- 221   1                      return(0); 
- 222   1              return(read_current()); 
- 223   1      }       
- 224          /*******************************************************************************
- 225          * 函 数 名         : ModifyTime
- 226          * 函数功能                 : 修改时间
- 227          *******************************************************************************/
- 228          void ModifyTime(uchar yea,uchar mon,uchar da,uchar hou,uchar min,uchar sec) 
- 229          { 
- 230   1              uchar temp=0; 
- 231   1              temp=HEX2BCD(yea); 
- 232   1              write_byte(DS3231_YEAR,temp); //修改年 
- 233   1              temp=HEX2BCD(mon); 
- 234   1              write_byte(DS3231_MONTH,temp); //修改月 
- 235   1              temp=HEX2BCD(da); 
- 236   1              write_byte(DS3231_DAY,temp); //修改日 
- 237   1              temp=HEX2BCD(hou); 
- 238   1              write_byte(DS3231_HOUR,temp); //修改时
- 239   1              temp=HEX2BCD(min); 
- 240   1              write_byte(DS3231_MINUTE,temp); //修改分 
-C51 COMPILER V9.01   RTC                                                                   07/11/2019 13:25:48 PAGE 5   
-
- 241   1              temp=HEX2BCD(sec); 
- 242   1              write_byte(DS3231_SECOND,temp); //修改秒 
- 243   1      }        
- 244          /*******************************************************************************
- 245          * 函 数 名         : TimeDisplay
- 246          * 函数功能                 : 处理时间
- 247          *******************************************************************************/
- 248          void TimeDisplay(uchar Dhour,uchar Dmin,uchar Dsec)
- 249          { 
- 250   1              dis_buf[7]=dis_code[Dhour / 10]; // 时十位 
- 251   1              dis_buf[6]=dis_code[Dhour % 10]; // 时个位 
- 252   1              dis_buf[4]=dis_code[Dmin / 10]; // 分十位 
- 253   1              dis_buf[3]=dis_code[Dmin % 10]; // 分个位 
- 254   1              dis_buf[1]=dis_code[Dsec / 10]; // 秒十位 
- 255   1              dis_buf[0]=dis_code[Dsec % 10]; // 秒个位 
- 256   1              dis_buf[2]=0xbf; // 显示"-" 
- 257   1              dis_buf[5]=0xbf; 
- 258   1      }         
- 259          /*******************************************************************************
- 260          * 函 数 名         : DateDisplay
- 261          * 函数功能                 : 处理日期
- 262          *******************************************************************************/
- 263          void DateDisplay(uchar Dyear,uchar Dmonth,uchar Dday)
- 264          { 
- 265   1              dis_buf[7]=dis_code[Dyear / 10]; // 年十位 
- 266   1              dis_buf[6]=dis_code[Dyear % 10]; // 年个位 
- 267   1              dis_buf[4]=dis_code[Dmonth / 10]; // 月十位 
- 268   1              dis_buf[3]=dis_code[Dmonth % 10]; // 月个位 
- 269   1              dis_buf[1]=dis_code[Dday / 10]; // 天十位 
- 270   1              dis_buf[0]=dis_code[Dday % 10]; // 天个位 
- 271   1              dis_buf[2]=0xbf; // 显示"-" 
- 272   1              dis_buf[5]=0xbf; 
- 273   1      }  
- 274          /*******************************************************************************
- 275          * 函 数 名         : get_show_time
- 276          * 函数功能                 : 显示24小时制时间
- 277          *******************************************************************************/
- 278          void get_show_time() 
- 279          { 
- 280   1              uchar Htemp1,Htemp2,Mtemp1,Mtemp2,Stemp1,Stemp2; 
- 281   1              Htemp1=read_random(DS3231_HOUR); //时 24小时制 
- 282   1              Htemp1&=0x3f;
- 283   1              Htemp2=BCD2HEX(Htemp1);
- 284   1              Mtemp1=read_random(DS3231_MINUTE); //分 
- 285   1              Mtemp2=BCD2HEX(Mtemp1); 
- 286   1              Stemp1=read_random(DS3231_SECOND); //秒 
- 287   1              Stemp2=BCD2HEX(Stemp1); 
- 288   1              TimeDisplay(Htemp2,Mtemp2,Stemp2); 
- 289   1      }         
- 290          /*******************************************************************************
- 291          * 函 数 名         : get_show_date
- 292          * 函数功能                 : 显示日期
- 293          *******************************************************************************/
- 294          void get_show_date() 
- 295          { 
- 296   1              uchar Ytemp1,Ytemp2,Mtemp1,Mtemp2,Dtemp1,Dtemp2; 
- 297   1              Ytemp1=read_random(DS3231_YEAR); //年 
- 298   1              Ytemp2=BCD2HEX(Ytemp1); 
- 299   1              Mtemp1=read_random(DS3231_MONTH); //月 
- 300   1              Mtemp2=BCD2HEX(Mtemp1); 
- 301   1              Dtemp1=read_random(DS3231_DAY); //日 
- 302   1              Dtemp2=BCD2HEX(Dtemp1); 
-C51 COMPILER V9.01   RTC                                                                   07/11/2019 13:25:48 PAGE 6   
-
- 303   1              DateDisplay(Ytemp2,Mtemp2,Dtemp2); 
- 304   1      }          
- 305          /*******************************************************************************
- 306          * 函 数 名         : get_show_Temperature
- 307          * 函数功能                 : 显示温度
- 308          *******************************************************************************/
- 309          void get_show_Temperature() 
- 310          { 
- 311   1              uchar Ttemp1,Ttemp2,Ttemp3,Ttemp4; 
- 312   1              Ttemp1=read_random(DS3231_TEMPERATUREH); //温度 高字节 
- 313   1              Ttemp2=BCD2HEX(Ttemp1); 
- 314   1              Ttemp3=read_random(DS3231_TEMPERATUREL); //温度低字节 
- 315   1              Ttemp4=BCD2HEX(Ttemp3); 
- 316   1              DateDisplay(0,Ttemp2,Ttemp4); 
- 317   1      }
- 318             
+ 179   1              uchar Htemp1,Htemp2,Mtemp1,Mtemp2,Stemp1,Stemp2; 
+ 180   1              Htemp1=read_random(DS3231_HOUR); //时 24小时制 
+ 181   1              Htemp1&=0x3f;
+ 182   1              Htemp2=BCD2HEX(Htemp1);
+ 183   1              Mtemp1=read_random(DS3231_MINUTE); //分 
+ 184   1              Mtemp2=BCD2HEX(Mtemp1); 
+ 185   1              Stemp1=read_random(DS3231_SECOND); //秒 
+ 186   1              Stemp2=BCD2HEX(Stemp1); 
+ 187   1              TimeDisplay(Htemp2,Mtemp2,Stemp2); 
+ 188   1      }         
+ 189          /*******************************************************************************
+ 190          * 函 数 名         : get_show_date
+ 191          * 函数功能                 : 显示日期
+ 192          *******************************************************************************/
+ 193          void get_show_date() 
+ 194          { 
+ 195   1              uchar Ytemp1,Ytemp2,Mtemp1,Mtemp2,Dtemp1,Dtemp2; 
+ 196   1              Ytemp1=read_random(DS3231_YEAR); //年 
+ 197   1              Ytemp2=BCD2HEX(Ytemp1); 
+ 198   1              Mtemp1=read_random(DS3231_MONTH); //月 
+ 199   1              Mtemp2=BCD2HEX(Mtemp1); 
+ 200   1              Dtemp1=read_random(DS3231_DAY); //日 
+ 201   1              Dtemp2=BCD2HEX(Dtemp1); 
+ 202   1              DateDisplay(Ytemp2,Mtemp2,Dtemp2); 
+ 203   1      }          
+ 204          /*******************************************************************************
+ 205          * 函 数 名         : get_show_Temperature
+ 206          * 函数功能                 : 显示温度
+ 207          *******************************************************************************/
+ 208          void get_show_Temperature() 
+ 209          { 
+ 210   1              uchar Ttemp1,Ttemp2,Ttemp3,Ttemp4; 
+ 211   1              Ttemp1=read_random(DS3231_TEMPERATUREH); //温度 高字节 
+ 212   1              Ttemp2=BCD2HEX(Ttemp1); 
+ 213   1              Ttemp3=read_random(DS3231_TEMPERATUREL); //温度低字节 
+ 214   1              Ttemp4=BCD2HEX(Ttemp3); 
+ 215   1              DateDisplay(0,Ttemp2,Ttemp4); 
+ 216   1      }
+ 217             
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    729    ----
+   CODE SIZE        =    464    ----
    CONSTANT SIZE    =     11    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =     10      19
+   DATA SIZE        =     10      15
    IDATA SIZE       =   ----    ----
-   BIT SIZE         =      1       1
+   BIT SIZE         =      1    ----
 END OF MODULE INFORMATION.
 
 

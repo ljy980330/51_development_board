@@ -6,10 +6,11 @@
 ×÷Õß£º»ÆÑåîÈ
 *********************************************************************************************************/
 #ifndef _DELAY_H
-#define _DELAY_H
+#define _DELAY_H	  
+#include "config.h"
 
-void delay_ms(unsigned int n);
-void delay_us(unsigned int n);
-void nop(unsigned int n);
+void delay_ms(uint n);
+void delay_us(uint n);
+void nop(uint n);
 
 #endif

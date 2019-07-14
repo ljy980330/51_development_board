@@ -11,9 +11,9 @@
 * 函 数 名         : delay_ms
 * 函数功能		   : 延时函数，i=1时，大约延时1ms
 *******************************************************************************/
-void delay_ms(unsigned int n)
+void delay_ms(uint n)
 {
-	unsigned int  i,j;
+	uint  i,j;
 	for(i=0;i<n;i++)
 		for(j=0;j<123;j++);
 }		 
@@ -21,7 +21,7 @@ void delay_ms(unsigned int n)
 * 函 数 名         : delay_us
 * 函数功能		   : 非固定的延时函数，一般用来满足时序，i=1时，大约延时1us
 *******************************************************************************/
-void delay_us(unsigned int n)
+void delay_us(uint n)
 {
 	while(n--);
 }	
@@ -29,9 +29,9 @@ void delay_us(unsigned int n)
 * 函 数 名         : nop
 * 函数功能		   : 延时函数，当晶振为12HZ，i=1时，大约延时2us
 *******************************************************************************/
-void nop(unsigned int n)
+void nop(uint n)
 {	  
-	unsigned int i;
+	uint i;
 	for(i=0;i<n;i++)
 	{
 	   _nop_();

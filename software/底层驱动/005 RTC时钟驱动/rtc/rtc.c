@@ -8,10 +8,9 @@
 #include <STC12C5A.H> 
 #include<intrins.h>
 #include "rtc.h"	  
-#include "delay/delay.h"
+#include "delay/delay.h"	 
+#include "i2c/i2c.h"
 
-sbit SDA=P3^6; //模拟I2C数据传送位SDA************** 
-sbit SCL=P3^7; //模拟I2C时钟控制位SCL************** 
 
 bit ack; //应答标志位
 
@@ -71,122 +70,22 @@ uchar HEX2BCD(uchar val)
 	return k; 
 } 
 /*******************************************************************************
-* 函 数 名         : Start_I2C
-* 函数功能		   : I2C启动
-*******************************************************************************/
-void Start_I2C()
-{
-	SDA=1; //发送起始条件的数据信号 
-	delay_us(1); 
-	SCL=1; 
-	delay_us(5); //起始条件建立时间大于4.7us,延时 
-	SDA=0; //发送起始信号 
-	delay_us(5); // 起始条件锁定时间大于4μs 
-	SCL=0; //钳住I2C总线，准备发送或接收数据 
-	delay_us(2); 
-}  
-/*******************************************************************************
-* 函 数 名         : Stop_I2C
-* 函数功能		   : I2C停止
-*******************************************************************************/
-void Stop_I2C() 
-{ 
-	SDA=0; //发送结束条件的数据信号 
-	delay_us(1); //发送结束条件的时钟信号 
-	SCL=1; //结束条件建立时间大于4us 
-	delay_us(5); 
-	SDA=1; //发送I2C总线结束信号 
-	delay_us(4); 
-} 	
-/*******************************************************************************
-* 函 数 名         : SendByte
-* 函数功能		   : 传送8位的数据长度
-*******************************************************************************/
-void SendByte(uchar c) 
-{ 
-	uchar BitCnt; 
-	for(BitCnt=0;BitCnt<8;BitCnt++) 
-	{ 
-		if((c<<BitCnt)&0x80) 
-			SDA=1; //判断发送位 
-		else 
-			SDA=0; 
-		delay_us(1); 
-		SCL=1; //置时钟线为高，通知被控器开始接收数据位 
-		delay_us(5); //保证时钟高电平周期大于4μs 
-		SCL=0; 
-	}
-	delay_us(2); 
-	SDA=1; //8位发送完后释放数据线，准备接收应答位 
-	delay_us(2); 
-	SCL=1; 
-	delay_us(3); 
-	if(SDA==1) 
-		ack=0; 
-	else 
-		ack=1; //判断是否接收到应答信号 
-	SCL=0; 
-	delay_us(2); 
-} 
-/*******************************************************************************
-* 函 数 名         : RcvByte
-* 函数功能		   : 接收数据位放入retc并返回
-*******************************************************************************/
-uchar RcvByte() 
-{ 
-	uchar retc; 
-	uchar BitCnt; 
-	retc=0; 
-	SDA=1; //置数据线为输入方式 
-	for(BitCnt=0;BitCnt<8;BitCnt++) 
-	{ 
-		delay_us(1); 
-		SCL=0; //置时钟线为低，准备接收数据位 
-		delay_us(5); //时钟低电平周期大于4.7μs 
-		SCL=1; //置时钟线为高使数据线上数据有效 
-		delay_us(3); 
-		retc=retc<<1; 
-		if(SDA==1) 
-			retc=retc+1; //读数据位,接收的数据位放入retc中 
-		delay_us(2); 
-	} 
-	SCL=0; 
-	delay_us(2);
-	return(retc); 
-}  
-/*******************************************************************************
-* 函 数 名         : Ack_I2C
-* 函数功能		   : 发出应答或非应答信号
-*******************************************************************************/
-void Ack_I2C(bit a) 
-{ 
-	if(a==0) 
-		SDA=0; //在此发出应答或非应答信号 
-	else 
-		SDA=1; 
-	delay_us(3); 
-	SCL=1; 
-	delay_us(5); //时钟低电平周期大于4μs 
-	SCL=0; //清时钟线，钳住I2C总线以便继续接收 
-	delay_us(2); 
-}  
-/*******************************************************************************
 * 函 数 名         : write_byte
-* 函数功能		   : 谢茹一位数据
+* 函数功能		   : 写入一位数据
 *******************************************************************************/
 uchar write_byte(uchar addr, uchar write_data) 
 { 
-	Start_I2C(); 
-	SendByte(DS3231_WriteAddress); 
+	I2C_Start(); 
+	Write_I2C_Byte(DS3231_WriteAddress); 
 	if (ack == 0) 
 		return 0; 
-	SendByte(addr); 
+	Write_I2C_Byte(addr); 
 	if (ack == 0) 
 		return 0; 
-	SendByte(write_data); 
+	Write_I2C_Byte(write_data); 
 	if (ack == 0) 
 		return 0; 
-	Stop_I2C(); 
+	I2C_Stop(); 
 	delay_us(10); 
 	return 1; 
 } 	
@@ -197,13 +96,13 @@ uchar write_byte(uchar addr, uchar write_data)
 uchar read_current()
 { 
 	uchar read_data; 
-	Start_I2C(); 
-	SendByte(DS3231_ReadAddress); 
+	I2C_Start(); 
+	Write_I2C_Byte(DS3231_ReadAddress); 
 	if(ack==0) 
 		return(0); 
-	read_data = RcvByte(); 
+	read_data = Read_I2C_Byte(); 
 	Ack_I2C(1); 
-	Stop_I2C(); 
+	I2C_Stop(); 
 	return read_data; 
 } 	
 /*******************************************************************************
@@ -212,11 +111,11 @@ uchar read_current()
 *******************************************************************************/
 uchar read_random(uchar random_addr) 
 { 
-	Start_I2C(); 
-	SendByte(DS3231_WriteAddress); 
+	I2C_Start(); 
+	Write_I2C_Byte(DS3231_WriteAddress); 
 	if(ack==0) 
 		return(0); 
-	SendByte(random_addr); 
+	Write_I2C_Byte(random_addr); 
 	if(ack==0) 
 		return(0); 
 	return(read_current()); 

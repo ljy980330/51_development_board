@@ -1,5 +1,5 @@
 ".\Objects\main.obj",
 ".\Objects\delay.obj",
-".\Objects\i2c_set.obj" 
+".\Objects\i2c.obj" 
 TO ".\Objects\i2c_EEPROM" 
 PRINT(".\Listings\i2c_EEPROM.m51") RAMSIZE(256) 

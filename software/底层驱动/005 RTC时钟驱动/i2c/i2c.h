@@ -6,8 +6,8 @@
 作者：XXX
 **********************************************************************************************************/
 
-#ifndef _I2C_SET_H
-#define _I2C_SET_H
+#ifndef _I2C_H
+#define _I2C_H
 
 #include "config.h"
 #include "STC12C5A.H"
@@ -19,15 +19,17 @@
 sbit SCL = P2^0;	//串行时钟
 sbit SDA = P2^1;	//串行数据
 
-void IIC_Init();
+void I2C_Init();
 
-void IIC_Start();
+void I2C_Start();
 
-void IIC_Stop();
+void I2C_Stop();
 
-void Write_IIC_Byte(U8 IIC_Byte);
+void Write_I2C_Byte(uchar I2C_Byte);
 
-U8 Read_IIC_Byte();
+uchar Read_I2C_Byte();
+
+void Ack_I2C(bit a);
 
 
 #endif

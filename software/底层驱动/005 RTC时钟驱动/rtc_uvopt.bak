@@ -172,10 +172,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>23</ColumnNumber>
+      <ColumnNumber>18</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>8</CurrentLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -200,10 +200,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>33</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>71</TopLine>
-      <CurrentLine>80</CurrentLine>
+      <TopLine>17</TopLine>
+      <CurrentLine>17</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtc\rtc.c</PathWithFileName>
       <FilenameWithoutPath>rtc.c</FilenameWithoutPath>
@@ -225,33 +225,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\工作\github_stc12 - 副本\software\底层驱动\005 RTC时钟驱动\INCLUDES.H</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>3</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>F:\工作\github_stc12 - 副本\software\底层驱动\005 RTC时钟驱动\DELAY\DELAY.H</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\005 RTC时钟驱动\DELAY\DELAY.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>12</CurrentLine>
     <Constant>0</Constant>
@@ -276,42 +250,69 @@
     </WindowPosition>
   </AlienFiles>
 
+  <AlienFiles>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\005 RTC时钟驱动\includes.H</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>11</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\005 RTC时钟驱动\CONFIG.H</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>1</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
   <WinLayout>
-    <sActiveDebugView>默认</sActiveDebugView>
+    <sActiveDebugView>Default</sActiveDebugView>
     <iActiveDebugViewLocation>1</iActiveDebugViewLocation>
     <sActiveBuildView>Build</sActiveBuildView>
     <iActiveBuildViewLocation>0</iActiveBuildViewLocation>
     <View>
-      <ViewName>默认</ViewName>
+      <ViewName>Default</ViewName>
       <ViewType>1</ViewType>
       <Window>
-        <WinId>195</WinId>
-        <ItemNo>1</ItemNo>
-        <Name>Un-named</Name>
-        <AnchorWinID>0</AnchorWinID>
-        <AnchorWinName></AnchorWinName>
-        <OtherWinID>0</OtherWinID>
-        <OtherWinName></OtherWinName>
-        <WinType>1</WinType>
-        <DockType>1</DockType>
-        <DockLocation>5</DockLocation>
-        <Pinned>0</Pinned>
-        <DockedRect_top>0</DockedRect_top>
-        <DockedRect_left>0</DockedRect_left>
-        <DockedRect_bottom>0</DockedRect_bottom>
-        <DockedRect_right>0</DockedRect_right>
-        <FloatingRect_top>0</FloatingRect_top>
-        <FloatingRect_left>0</FloatingRect_left>
-        <FloatingRect_bottom>0</FloatingRect_bottom>
-        <FloatingRect_right>0</FloatingRect_right>
-        <ContainerPercent>100</ContainerPercent>
-        <ActiveTab>0</ActiveTab>
-        <Visible>0</Visible>
-        <Dynamic>0</Dynamic>
-      </Window>
-      <Window>
         <WinId>59392</WinId>
-        <ItemNo>2</ItemNo>
+        <ItemNo>1</ItemNo>
         <Name>File</Name>
         <AnchorWinID>0</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -336,7 +337,7 @@
       </Window>
       <Window>
         <WinId>59398</WinId>
-        <ItemNo>3</ItemNo>
+        <ItemNo>2</ItemNo>
         <Name>Build</Name>
         <AnchorWinID>0</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -361,7 +362,7 @@
       </Window>
       <Window>
         <WinId>59399</WinId>
-        <ItemNo>4</ItemNo>
+        <ItemNo>3</ItemNo>
         <Name>Debug</Name>
         <AnchorWinID>0</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -386,8 +387,8 @@
       </Window>
       <Window>
         <WinId>197</WinId>
-        <ItemNo>5</ItemNo>
-        <Name>编译输出</Name>
+        <ItemNo>4</ItemNo>
+        <Name>Build Output</Name>
         <AnchorWinID>0</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>0</OtherWinID>
@@ -411,8 +412,8 @@
       </Window>
       <Window>
         <WinId>198</WinId>
-        <ItemNo>6</ItemNo>
-        <Name>指令</Name>
+        <ItemNo>5</ItemNo>
+        <Name>Command</Name>
         <AnchorWinID>197</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
@@ -436,8 +437,8 @@
       </Window>
       <Window>
         <WinId>199</WinId>
-        <ItemNo>7</ItemNo>
-        <Name>批量查找</Name>
+        <ItemNo>6</ItemNo>
+        <Name>Find in Files</Name>
         <AnchorWinID>197</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
@@ -461,7 +462,7 @@
       </Window>
       <Window>
         <WinId>38007</WinId>
-        <ItemNo>8</ItemNo>
+        <ItemNo>7</ItemNo>
         <Name>Browse</Name>
         <AnchorWinID>197</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -486,7 +487,7 @@
       </Window>
       <Window>
         <WinId>1939</WinId>
-        <ItemNo>9</ItemNo>
+        <ItemNo>8</ItemNo>
         <Name>UART #1</Name>
         <AnchorWinID>197</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -511,7 +512,7 @@
       </Window>
       <Window>
         <WinId>1940</WinId>
-        <ItemNo>10</ItemNo>
+        <ItemNo>9</ItemNo>
         <Name>UART #2</Name>
         <AnchorWinID>197</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -536,7 +537,7 @@
       </Window>
       <Window>
         <WinId>1941</WinId>
-        <ItemNo>11</ItemNo>
+        <ItemNo>10</ItemNo>
         <Name>UART #3</Name>
         <AnchorWinID>197</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -561,7 +562,7 @@
       </Window>
       <Window>
         <WinId>1942</WinId>
-        <ItemNo>12</ItemNo>
+        <ItemNo>11</ItemNo>
         <Name>UART #4</Name>
         <AnchorWinID>197</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -586,8 +587,8 @@
       </Window>
       <Window>
         <WinId>1944</WinId>
-        <ItemNo>13</ItemNo>
-        <Name>调用堆栈</Name>
+        <ItemNo>12</ItemNo>
+        <Name>Call Stack</Name>
         <AnchorWinID>197</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
@@ -611,8 +612,8 @@
       </Window>
       <Window>
         <WinId>1507</WinId>
-        <ItemNo>14</ItemNo>
-        <Name>调用堆栈</Name>
+        <ItemNo>13</ItemNo>
+        <Name>Call Stack</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
@@ -636,7 +637,7 @@
       </Window>
       <Window>
         <WinId>1935</WinId>
-        <ItemNo>15</ItemNo>
+        <ItemNo>14</ItemNo>
         <Name>Locals</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -661,7 +662,7 @@
       </Window>
       <Window>
         <WinId>1936</WinId>
-        <ItemNo>16</ItemNo>
+        <ItemNo>15</ItemNo>
         <Name>Watch 1</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -686,7 +687,7 @@
       </Window>
       <Window>
         <WinId>1937</WinId>
-        <ItemNo>17</ItemNo>
+        <ItemNo>16</ItemNo>
         <Name>Watch 2</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -711,7 +712,7 @@
       </Window>
       <Window>
         <WinId>1465</WinId>
-        <ItemNo>18</ItemNo>
+        <ItemNo>17</ItemNo>
         <Name>Memory 1</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -736,7 +737,7 @@
       </Window>
       <Window>
         <WinId>1466</WinId>
-        <ItemNo>19</ItemNo>
+        <ItemNo>18</ItemNo>
         <Name>Memory 2</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -761,7 +762,7 @@
       </Window>
       <Window>
         <WinId>1467</WinId>
-        <ItemNo>20</ItemNo>
+        <ItemNo>19</ItemNo>
         <Name>Memory 3</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -786,7 +787,7 @@
       </Window>
       <Window>
         <WinId>1468</WinId>
-        <ItemNo>21</ItemNo>
+        <ItemNo>20</ItemNo>
         <Name>Memory 4</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -811,8 +812,8 @@
       </Window>
       <Window>
         <WinId>1506</WinId>
-        <ItemNo>22</ItemNo>
-        <Name>符号</Name>
+        <ItemNo>21</ItemNo>
+        <Name>Symbols</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
@@ -836,8 +837,8 @@
       </Window>
       <Window>
         <WinId>1005</WinId>
-        <ItemNo>23</ItemNo>
-        <Name>工程</Name>
+        <ItemNo>22</ItemNo>
+        <Name>Project</Name>
         <AnchorWinID>0</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>0</OtherWinID>
@@ -861,8 +862,33 @@
       </Window>
       <Window>
         <WinId>109</WinId>
+        <ItemNo>23</ItemNo>
+        <Name>Books</Name>
+        <AnchorWinID>1005</AnchorWinID>
+        <AnchorWinName></AnchorWinName>
+        <OtherWinID>1005</OtherWinID>
+        <OtherWinName></OtherWinName>
+        <WinType>1</WinType>
+        <DockType>4</DockType>
+        <DockLocation>2</DockLocation>
+        <Pinned>0</Pinned>
+        <DockedRect_top>0</DockedRect_top>
+        <DockedRect_left>0</DockedRect_left>
+        <DockedRect_bottom>600</DockedRect_bottom>
+        <DockedRect_right>210</DockedRect_right>
+        <FloatingRect_top>0</FloatingRect_top>
+        <FloatingRect_left>0</FloatingRect_left>
+        <FloatingRect_bottom>600</FloatingRect_bottom>
+        <FloatingRect_right>250</FloatingRect_right>
+        <ContainerPercent>100</ContainerPercent>
+        <ActiveTab>0</ActiveTab>
+        <Visible>0</Visible>
+        <Dynamic>0</Dynamic>
+      </Window>
+      <Window>
+        <WinId>195</WinId>
         <ItemNo>24</ItemNo>
-        <Name>书籍</Name>
+        <Name>Functions</Name>
         <AnchorWinID>1005</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>1005</OtherWinID>
@@ -887,7 +913,7 @@
       <Window>
         <WinId>196</WinId>
         <ItemNo>25</ItemNo>
-        <Name>模板</Name>
+        <Name>Templates</Name>
         <AnchorWinID>1005</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>1005</OtherWinID>
@@ -912,7 +938,7 @@
       <Window>
         <WinId>38003</WinId>
         <ItemNo>26</ItemNo>
-        <Name>寄存器</Name>
+        <Name>Registers</Name>
         <AnchorWinID>1005</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>1005</OtherWinID>
@@ -1462,7 +1488,7 @@
       <Window>
         <WinId>203</WinId>
         <ItemNo>48</ItemNo>
-        <Name>反汇编</Name>
+        <Name>Disassembly</Name>
         <AnchorWinID>0</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>0</OtherWinID>
@@ -1487,7 +1513,7 @@
       <Window>
         <WinId>1913</WinId>
         <ItemNo>49</ItemNo>
-        <Name>指令跟踪</Name>
+        <Name>Instruction Trace</Name>
         <AnchorWinID>203</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>203</OtherWinID>
@@ -1512,7 +1538,7 @@
       <Window>
         <WinId>35824</WinId>
         <ItemNo>50</ItemNo>
-        <Name>逻辑分析器</Name>
+        <Name>Logic Analyzer</Name>
         <AnchorWinID>0</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>0</OtherWinID>
@@ -1537,7 +1563,7 @@
       <Window>
         <WinId>343</WinId>
         <ItemNo>51</ItemNo>
-        <Name>性能分析器</Name>
+        <Name>Performance Analyzer</Name>
         <AnchorWinID>203</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>203</OtherWinID>
@@ -1562,7 +1588,7 @@
       <Window>
         <WinId>204</WinId>
         <ItemNo>52</ItemNo>
-        <Name>性能分析器</Name>
+        <Name>Performance Analyzer</Name>
         <AnchorWinID>203</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>203</OtherWinID>
@@ -1587,7 +1613,7 @@
       <Window>
         <WinId>346</WinId>
         <ItemNo>53</ItemNo>
-        <Name>代码作用范围</Name>
+        <Name>Code Coverage</Name>
         <AnchorWinID>203</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>203</OtherWinID>
@@ -1617,25 +1643,25 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>3</ActiveTab>
+      <ActiveTab>0</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>23</ColumnNumber>
+          <ColumnNumber>18</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>8</CurrentLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\rtc\rtc.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>71</TopLine>
-          <CurrentLine>80</CurrentLine>
+          <ColumnNumber>33</ColumnNumber>
+          <TopLine>17</TopLine>
+          <CurrentLine>17</CurrentLine>
         </Doc>
         <Doc>
-          <Name>RTC\RTC.H</Name>
+          <Name>RTC/RTC.H</Name>
           <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>12</CurrentLine>
+          <CurrentLine>8</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\delay\delay.c</Name>
@@ -1644,16 +1670,22 @@
           <CurrentLine>14</CurrentLine>
         </Doc>
         <Doc>
-          <Name>F:\工作\github_stc12 - 副本\software\底层驱动\005 RTC时钟驱动\INCLUDES.H</Name>
-          <ColumnNumber>19</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>3</CurrentLine>
-        </Doc>
-        <Doc>
           <Name>DELAY/DELAY.H</Name>
           <ColumnNumber>30</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>12</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>INCLUDES.H</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>11</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>CONFIG.H</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>
