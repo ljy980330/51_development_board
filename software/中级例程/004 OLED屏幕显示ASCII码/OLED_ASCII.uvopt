@@ -256,8 +256,8 @@
 
   <AlienFiles>
     <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\004 OLED屏幕显示ASCII码\I2C\I2C.H</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>1</CurrentLine>
+    <TopLine>4</TopLine>
+    <CurrentLine>20</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1621,7 +1621,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>0</ActiveTab>
+      <ActiveTab>3</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
@@ -1643,9 +1643,9 @@
         </Doc>
         <Doc>
           <Name>I2C/I2C.H</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
+          <ColumnNumber>25</ColumnNumber>
+          <TopLine>4</TopLine>
+          <CurrentLine>20</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>
