@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=74HC595_SER Pin=P4-14
+Removed Pin From Net: NetName=74HC595_SRCLK Pin=P4-15
+Removed Pin From Net: NetName=74HC595_RCLK Pin=P4-16
+Added Pin To Net: NetName=74HC595_RCLK Pin=P4-14
+Added Pin To Net: NetName=74HC595_RCLK Pin=P4-15
+Added Pin To Net: NetName=74HC595_SER Pin=P4-16
+Added Member To Class: ClassName=STC12C5A60S2µ×°å Member=Component NIXIE1 Nixie Tube_CC(0.36in)_4
+Added Member To Class: ClassName=STC12C5A60S2µ×°å Member=Component OLED1 0.96''
+Added Member To Class: ClassName=STC12C5A60S2µ×°å Member=Component  R21
+Added Member To Class: ClassName=STC12C5A60S2µ×°å Member=Component  R30
+Added Member To Class: ClassName=STC12C5A60S2µ×°å Member=Component U3 74HC595
+Added Member To Class: ClassName=STC12C5A60S2µ×°å Member=Component U4 74HC595
+Added Member To Class: ClassName=STC12C5A60S2µ×°å Member=Component U7 SR04
+Added Room: Name=STC12C5A60S2µ×°å
