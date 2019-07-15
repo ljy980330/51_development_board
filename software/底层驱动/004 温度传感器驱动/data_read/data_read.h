@@ -18,7 +18,7 @@ sbit Data=P2^0;
 
 void DHT11_start();
 
-U8 DHT11_rec_byte();
+uchar DHT11_rec_byte();
 
 void DHT11_receive();
 

@@ -3,20 +3,18 @@
 <pre>
 <h1>礦ision Build Log</h1>
 <h2>Project:</h2>
-F:\工作\github_stc12 - 副本\software\底层驱动\005 RTC时钟驱动\rtc.uvproj
-Project File Date:  07/11/2019
+C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\底层驱动\005 RTC时钟驱动\rtc.uvproj
+Project File Date:  07/15/2019
 
 <h2>Output:</h2>
-compiling rtc.c...
-rtc\rtc.c - 0 Error(s), 0 Warning(s).
 Build target '目标 1'
 compiling main.c...
 compiling delay.c...
+compiling rtc.c...
+compiling i2c.c...
 linking...
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?_DELAY_MS?DELAY
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_NOP?DELAY
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?_MODIFYTIME?RTC
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
@@ -25,26 +23,10 @@ linking...
     SEGMENT: ?PR?GET_SHOW_DATE?RTC
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?GET_SHOW_TEMPERATURE?RTC
-Program Size: data=38.2 xdata=0 code=819
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?I2C_INIT?I2C
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLOCK?I2C
+Program Size: data=38.2 xdata=0 code=829
 creating hex file from ".\Objects\rtc"...
-".\Objects\rtc" - 0 Error(s), 6 Warning(s).
-Build target '目标 1'
-compiling main.c...
-compiling delay.c...
-compiling rtc.c...
-linking...
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DELAY_MS?DELAY
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_NOP?DELAY
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_MODIFYTIME?RTC
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?GET_SHOW_TIME?RTC
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?GET_SHOW_DATE?RTC
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?GET_SHOW_TEMPERATURE?RTC
-Program Size: data=38.2 xdata=0 code=819
-creating hex file from ".\Objects\rtc"...
-".\Objects\rtc" - 0 Error(s), 6 Warning(s).
+".\Objects\rtc" - 0 Error(s), 7 Warning(s).

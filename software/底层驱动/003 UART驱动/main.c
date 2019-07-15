@@ -8,7 +8,7 @@
 
 #include "includes.h"
 
-U8 num;
+uchar num;
 
 int main()
 {

@@ -13,20 +13,20 @@ extern rec_dat[9];
 void DHT11_start()
 {
    Data=1;
-   Delay_us(2);
+   delay_us(2);
    Data=0;
-   Delay_ms(20);   //延时18ms以上
+   delay_ms(20);   //延时18ms以上
    Data=1;
-   Delay_us(30);
+   delay_us(30);
 }
 
-U8 DHT11_rec_byte()	//接收一个字节
+uchar DHT11_rec_byte()	//接收一个字节
 {
-	U8 i, dat = 0;
+	uchar i, dat = 0;
 	for(i=0; i<8; i++)
 	{
 		while(!Data);
-		Delay_us(8);
+		delay_us(8);
 		dat <<= 1;
 		if(Data == 1) dat += 1;
 		while(Data);
@@ -36,19 +36,19 @@ U8 DHT11_rec_byte()	//接收一个字节
 
 void DHT11_receive()      //接收40位的数据
 {
-    U8 R_H,R_L,T_H,T_L,RH,RL,TH,TL,revise; 
+    uchar R_H,R_L,T_H,T_L,RH,RL,TH,TL,revise; 
     DHT11_start();
     if(Data==0)
     {
         while(Data==0);   //等待拉高     
-        Delay_us(40);  //拉高后延时80us
+        delay_us(40);  //拉高后延时80us
         R_H=DHT11_rec_byte();    //接收湿度高八位  
         R_L=DHT11_rec_byte();    //接收湿度低八位  
         T_H=DHT11_rec_byte();    //接收温度高八位  
         T_L=DHT11_rec_byte();    //接收温度低八位
         revise=DHT11_rec_byte(); //接收校正位
 
-        Delay_us(25);    //结束
+        delay_us(25);    //结束
 
         if((R_H+R_L+T_H+T_L)==revise)      //校正
         {

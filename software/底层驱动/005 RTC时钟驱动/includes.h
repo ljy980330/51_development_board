@@ -8,8 +8,8 @@
 #ifndef _INCLUDES_H
 #define _INCLUDES_H
 
-#include <STC12C5A.H>
-#include "intrins.h"
+#include <STC12C5A.H>	
+#include <intrins.h>
 #include "rtc/rtc.h" 
 #include "delay/delay.h"
 #include "config.h"

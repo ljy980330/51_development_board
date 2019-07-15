@@ -1,10 +1,10 @@
-C51 COMPILER V9.00   FUNCTION                                                              07/07/2019 21:43:45 PAGE 1   
+C51 COMPILER V9.00   FUNCTION                                                              07/15/2019 09:08:23 PAGE 1   
 
 
 C51 COMPILER V9.00, COMPILATION OF MODULE FUNCTION
-OBJECT MODULE PLACED IN function.obj
-COMPILER INVOKED BY: D:\单片机\C51\BIN\C51.EXE function\function.c BROWSE DEBUG OBJECTEXTEND PRINT(.\function.lst) OBJEC
-                    -T(function.obj)
+OBJECT MODULE PLACED IN .\Objects\function.obj
+COMPILER INVOKED BY: D:\单片机\C51\BIN\C51.EXE function\function.c BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\function.l
+                    -st) OBJECT(.\Objects\function.obj)
 
 line level    source
 
@@ -62,7 +62,7 @@ line level    source
   51          
   52          void OLED_Set_Pos(U8 x, U8 y) 
   53          { 
-C51 COMPILER V9.00   FUNCTION                                                              07/07/2019 21:43:45 PAGE 2   
+C51 COMPILER V9.00   FUNCTION                                                              07/15/2019 09:08:23 PAGE 2   
 
   54   1              OLED_WrCmd(0xb0+y);
   55   1      
@@ -126,7 +126,7 @@ MODULE INFORMATION:   STATIC OVERLAYABLE
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
    DATA SIZE        =   ----       8
-C51 COMPILER V9.00   FUNCTION                                                              07/07/2019 21:43:45 PAGE 3   
+C51 COMPILER V9.00   FUNCTION                                                              07/15/2019 09:08:23 PAGE 3   
 
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----

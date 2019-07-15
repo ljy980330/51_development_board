@@ -4,17 +4,9 @@
 <h1>礦ision Build Log</h1>
 <h2>Project:</h2>
 C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\005 OLED屏幕显示中文\OLED_STR.uvproj
-Project File Date:  07/07/2019
+Project File Date:  07/12/2019
 
 <h2>Output:</h2>
-compiling main.c...
-MAIN.C(27): error C202: 'i': undefined identifier
-MAIN.C(30): error C202: 'i': undefined identifier
-MAIN.C(32): error C202: 'i': undefined identifier
-MAIN.C(34): error C202: 'i': undefined identifier
-main.c - 4 Error(s), 0 Warning(s).
-compiling main.c...
-main.c - 0 Error(s), 0 Warning(s).
 Build target 'Target 1'
 compiling code_tab.c...
 compiling delay.c...
@@ -30,5 +22,6 @@ linking...
     SEGMENT: ?PR?_OLED_P8X16STR?DISPLAY
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?_DRAW_BMP?DISPLAY
-Program Size: data=50.0 xdata=0 code=6456
-"OLED_STR" - 0 Error(s), 3 Warning(s).
+Program Size: data=50.0 xdata=0 code=6481
+creating hex file from ".\Objects\OLED_STR"...
+".\Objects\OLED_STR" - 0 Error(s), 3 Warning(s).

@@ -1,22 +1,23 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/06/2019  13:33:29  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/15/2019  09:14:36  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-D:\单片机\C51\BIN\BL51.EXE main.obj, delay.obj, display.obj TO RGB RAMSIZE (256)
+D:\单片机\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\delay.obj, .\Objects\display.obj TO .\Objects\RGB PRINT (.\List
+>> ings\RGB.m51) RAMSIZE (256)
 
 
 MEMORY MODEL: SMALL
 
 
 INPUT MODULES INCLUDED:
-  main.obj (MAIN)
-  delay.obj (DELAY)
-  display.obj (DISPLAY)
+  .\Objects\main.obj (MAIN)
+  .\Objects\delay.obj (DELAY)
+  .\Objects\display.obj (DISPLAY)
   D:\单片机\C51\LIB\C51S.LIB (?C_STARTUP)
   D:\单片机\C51\LIB\C51S.LIB (?C_INIT)
 
 
-LINK MAP OF MODULE:  RGB (MAIN)
+LINK MAP OF MODULE:  .\Objects\RGB (MAIN)
 
 
             TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
@@ -40,7 +41,7 @@ LINK MAP OF MODULE:  RGB (MAIN)
 
 
 
-OVERLAY MAP OF MODULE:   RGB (MAIN)
+OVERLAY MAP OF MODULE:   .\Objects\RGB (MAIN)
 
 
 SEGMENT                          DATA_GROUP 
@@ -58,10 +59,10 @@ SEGMENT                          DATA_GROUP
 ?PR?DISPLAY1?DISPLAY           000AH    0001H
   +--> ?PR?_DELAY_MS?DELAY
 
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:14:36  PAGE 2
+
+
 ?PR?DISPLAY2?DISPLAY           000AH    0001H
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  13:33:29  PAGE 2
-
-
   +--> ?PR?_DELAY_MS?DELAY
 
 ?PR?DISPLAY3?DISPLAY           000AH    0001H
@@ -69,7 +70,7 @@ SEGMENT                          DATA_GROUP
 
 
 
-SYMBOL TABLE OF MODULE:  RGB (MAIN)
+SYMBOL TABLE OF MODULE:  .\Objects\RGB (MAIN)
 
   VALUE           TYPE          NAME
   ----------------------------------
@@ -118,8 +119,8 @@ SYMBOL TABLE OF MODULE:  RGB (MAIN)
   C:06EBH         LINE#         22
   -------         ENDPROC       _DELAY_MS
   -------         ENDMOD        DELAY
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:14:36  PAGE 3
 
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  13:33:29  PAGE 3
 
 
   -------         MODULE        DISPLAY
@@ -128,16 +129,16 @@ SYMBOL TABLE OF MODULE:  RGB (MAIN)
   D:0090H         PUBLIC        P1
   D:00A0H         PUBLIC        P2
   D:00B0H         PUBLIC        P3
-  B:0090H.0       PUBLIC        BB
+  B:0080H.7       PUBLIC        BB
   D:00C0H         PUBLIC        P4
   D:00C8H         PUBLIC        P5
   C:0003H         PUBLIC        Display1
   C:0234H         PUBLIC        Display2
   C:043BH         PUBLIC        Display3
-  B:0090H.2       PUBLIC        GG
+  B:0080H.5       PUBLIC        GG
   D:00A8H         PUBLIC        IE
   D:00B8H         PUBLIC        IP
-  B:0090H.1       PUBLIC        RR
+  B:0080H.6       PUBLIC        RR
   D:00D8H         PUBLIC        CCON
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
@@ -178,10 +179,10 @@ SYMBOL TABLE OF MODULE:  RGB (MAIN)
   C:00ACH         LINE#         46
   C:00BCH         LINE#         47
   C:00C3H         LINE#         48
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:14:36  PAGE 4
+
+
   C:00CCH         LINE#         49
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  13:33:29  PAGE 4
-
-
   C:00CFH         LINE#         50
   C:00CFH         LINE#         51
   C:00E3H         LINE#         52
@@ -238,10 +239,10 @@ SYMBOL TABLE OF MODULE:  RGB (MAIN)
   -------         ENDDO         
   C:0234H         LINE#         105
   C:0234H         LINE#         106
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:14:36  PAGE 5
+
+
   C:0234H         LINE#         109
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  13:33:29  PAGE 5
-
-
   C:023AH         LINE#         110
   C:023DH         LINE#         111
   C:023DH         LINE#         112
@@ -298,10 +299,10 @@ SYMBOL TABLE OF MODULE:  RGB (MAIN)
   C:039DH         LINE#         163
   C:03A6H         LINE#         164
   C:03ACH         LINE#         165
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:14:36  PAGE 6
+
+
   C:03AFH         LINE#         166
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  13:33:29  PAGE 6
-
-
   C:03AFH         LINE#         167
   C:03BEH         LINE#         168
   C:03C5H         LINE#         169
@@ -358,10 +359,10 @@ SYMBOL TABLE OF MODULE:  RGB (MAIN)
   C:04E7H         LINE#         225
   C:04EEH         LINE#         226
   C:04F7H         LINE#         228
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:14:36  PAGE 7
+
+
   C:04FAH         LINE#         229
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  13:33:29  PAGE 7
-
-
   C:04FAH         LINE#         230
   C:0509H         LINE#         231
   C:0510H         LINE#         232

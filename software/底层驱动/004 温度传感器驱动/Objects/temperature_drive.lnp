@@ -1,5 +1,5 @@
-"main.obj",
-"delay.obj",
-"data_read.obj" 
-TO "temperature_drive" 
-RAMSIZE(256) 
+".\Objects\main.obj",
+".\Objects\delay.obj",
+".\Objects\data_read.obj" 
+TO ".\Objects\temperature_drive" 
+PRINT(".\Listings\temperature_drive.m51") RAMSIZE(256) 

@@ -1,0 +1,1 @@
+"i2c_set\i2c_set.c" BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\i2c_set.lst) OBJECT(.\Objects\i2c_set.obj)

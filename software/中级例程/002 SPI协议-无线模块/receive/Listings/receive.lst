@@ -1,0 +1,113 @@
+C51 COMPILER V9.00   RECEIVE                                                               07/14/2019 16:46:35 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE RECEIVE
+OBJECT MODULE PLACED IN .\Objects\receive.obj
+COMPILER INVOKED BY: F:\workApp\Keil_v5\C51\BIN\C51.EXE receive\receive.c BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\rec
+                    -eive.lst) OBJECT(.\Objects\receive.obj)
+
+line level    source
+
+   1          #include"receive.h"
+   2           
+   3          sbit KEY8=P3^7;                                 //·¢ËÍ°´¼ü 
+   4          sbit beep=P2^3;                                 //À®°È 
+   5          sbit LED6=P1^6;                                 //·¢ËÍÊý¾ÝÊ±ÏÔÊ¾µÆ
+   6          sbit LED1=P0^0;                                 //½ÓÊÕµ½Êý¾ÝºóµÄ¹¦ÄÜÊµÏÖµÆ
+   7          sbit LED2=P0^1;
+   8          sbit LED3=P0^2;
+   9          sbit LED4=P0^3;  
+  10          void run()
+  11          {
+  12   1               uchar Tx_Buf1[]={1};   //·¢ËÍµÄÐÅÏ¢1 
+  13   1               uchar Rx_Buf[32];      //½ÓÊÕµ½µÄÊý¾ÝÔÝ´æÆ÷£¬×î¶à32×Ö½ÚÊý¾Ý  
+  14   1               init_NRF24L01();
+  15   1               LED6=1;                                //³õÊ¼µÆ6Ï¨Ãð   
+  16   1      
+  17   1              while(NRF24L01_Check())                                 //¼ì²é²»µ½24l01Ôò±¨¾¯ 
+  18   1              {
+  19   2                      beep=0;
+  20   2                      delay_ms(200);
+  21   2                      beep=1;
+  22   2                      delay_ms(200);
+  23   2              }
+  24   1              while(1)
+  25   1              {       
+  26   2                      RX_Mode();                                                      //½ÓÊÕÄ£Ê½  
+  27   2                      while(!nRF24L01_RxPacket(Rx_Buf))       //µÈ´ý½ÓÊÕÊý¾Ý,·µ»Ø1Ôò½ÓÊÕµ½Êý¾Ý,ÔÚµÈ´ý½ÓÊÕÊý¾ÝÆÚ¼ä,¿ÉÒÔËæÊ±±ä³É·¢ËÍÄ
+             -£Ê½  
+  28   2                  {
+  29   3                              if(KEY8==0)                                             //°´ÁË°´¼ü8,Ôò±ä³É·¢ËÍÄ£Ê½,·¢ËÍ¶ÔÓ¦Êý¾Ý,·¢ËÍÍêºó±ä³É½ÓÊÕÄ£Ê½ 
+  30   3                              {       
+  31   4                                      delay_ms(5);//Ïû¶¶¶¯ 
+  32   4                                      if(KEY8==0)
+  33   4                                      {
+  34   5                                              while(!KEY8);
+  35   5                                              TX_Mode();       //·¢ËÍÄ£Ê½ 
+  36   5                                      nRF24L01_TxPacket(Tx_Buf1);             //·¢ËÍÃüÁîÊý¾Ý
+  37   5                                              LED6=0;
+  38   5                                      delay_ms(300);
+  39   5                                              LED6=1;
+  40   5                                      delay_ms(300);                                  //·¢ËÍºóLED6ÉÁÒ»ÏÂ 
+  41   5                                              break;                                                  //ÍË³ö×î½üµÄÑ­»·,´Ó¶ø±ä»Ø½ÓÊÕÄ£Ê½,Õâ¾ä¹Ø¼ü
+  42   5                                       }      
+  43   4                               }
+  44   3                       }
+  45   2                       //1//if(Rx_Buf[0]==1)                                                  //Èô½ÓÊÕµ½¶ÔÓ¦µÄÊý¾ÝÔòÊµÏÖ¶ÔÓ¦¹¦ÄÜ 
+  46   2                       //1//{
+  47   2                       //1//   Rx_Buf[0]=0;                           //Çå¿ÕÊý¾Ý 
+  48   2                       //1//   LED6=0;
+  49   2                       //1//   delay_ms(300);
+  50   2                       //1//   LED6=1;
+  51   2                       //1//   delay_ms(300);                         //½ÓÊÕµ½Êý¾Ý ºóÉÁË¸       
+  52   2                       //1//}
+  53   2                      switch(Rx_Buf[0]){//¶ÔÊý¾Ý½øÐÐ·ÖÎöÀ´¿ØÖÆµÆÁÁ
+C51 COMPILER V9.00   RECEIVE                                                               07/14/2019 16:46:35 PAGE 2   
+
+  54   3                      case 0:
+  55   3                              break;
+  56   3                      case 1:
+  57   3                              Rx_Buf[0]=0;                            //Çå¿ÕÊý¾Ý 
+  58   3                          LED1=0;
+  59   3                              delay_ms(300);
+  60   3                              LED1=1;
+  61   3                              delay_ms(300);  
+  62   3                              break;
+  63   3                      case 2:
+  64   3                              Rx_Buf[0]=0;                            //Çå¿ÕÊý¾Ý 
+  65   3                          LED2=0;
+  66   3                              delay_ms(300);
+  67   3                              LED2=1;
+  68   3                              delay_ms(300);  
+  69   3                              break;
+  70   3                      case 3:
+  71   3                              Rx_Buf[0]=0;                            //Çå¿ÕÊý¾Ý 
+  72   3                          LED3=0;
+  73   3                              delay_ms(300);
+  74   3                              LED3=1;
+  75   3                              delay_ms(300);  
+  76   3                              break;
+  77   3                      default:
+  78   3                              Rx_Buf[0]=0;                            //Çå¿ÕÊý¾Ý 
+  79   3                          LED4=0;
+  80   3                              delay_ms(300);
+  81   3                              LED4=1;
+  82   3                              delay_ms(300);  
+  83   3                              break;
+  84   3                      }               
+  85   2              }
+  86   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    205    ----
+   CONSTANT SIZE    =      1    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      33
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
