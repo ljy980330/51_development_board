@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=DS3231_SDA Pin= -1
+Removed Pin From Net: NetName=DS3231_SCL Pin= -2
+Removed Pin From Net: NetName=SQW Pin= -3
+Removed Pin From Net: NetName=32K Pin= -4
+Removed Pin From Net: NetName=VCC Pin= -5
+Removed Pin From Net: NetName=VCC Pin= -6
+Removed Pin From Net: NetName=VCC Pin= -7
+Removed Pin From Net: NetName=VCC Pin= -8
+Removed Pin From Net: NetName=DS3231_SDA Pin=U12-5
+Removed Pin From Net: NetName=DS3231_SCL Pin=U12-6
+Change Component Comment : Designator= Old Comment=R21 New Comment=R30
+Added Pin To Net: NetName=NetP1_7 Pin=U12-5
+Added Pin To Net: NetName=NetP1_8 Pin=U12-6
+Change Net Name : Old Net Name=NetP1_7 New Net Name=AT24C32_SDA
+Change Net Name : Old Net Name=NetP1_8 New Net Name=AT24C32_SCL
+Added Member To Class: ClassName=STC12C5A60S2µ×°å Member=Component  R30
+Added Room: Name=STC12C5A60S2µ×°å

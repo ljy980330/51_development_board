@@ -1,0 +1,41 @@
+Removed Pin From Net: NetName=GND Pin=K4-2
+Removed Pin From Net: NetName=GND Pin=K4-2
+Removed Pin From Net: NetName=GND Pin=K5-2
+Removed Pin From Net: NetName=GND Pin=K5-2
+Removed Pin From Net: NetName=GND Pin=K6-2
+Removed Pin From Net: NetName=GND Pin=K6-2
+Removed Pin From Net: NetName=DS3231_SCL Pin=P13-4
+Removed Pin From Net: NetName=DS3231_SDA Pin=P13-5
+Removed Pin From Net: NetName=NetP13_3 Pin=U11-1
+Change Component Comment : Designator=R8 Old Comment=55XX New Comment=5516
+Added Pin To Net: NetName=GND Pin=K4-1
+Added Pin To Net: NetName=GND Pin=K4-1
+Added Pin To Net: NetName=GND Pin=K5-1
+Added Pin To Net: NetName=GND Pin=K5-1
+Added Pin To Net: NetName=GND Pin=K6-1
+Added Pin To Net: NetName=GND Pin=K6-1
+Added Pin To Net: NetName=DS3231_SCL Pin=P13-1
+Added Pin To Net: NetName=DS3231_SDA Pin=P13-2
+Added Pin To Net: NetName=NetP13_3 Pin=U11-3
+Added Pin To Net: NetName=NetK4_2 Pin=K4-2
+Added Pin To Net: NetName=NetK4_2 Pin=K4-2
+Added Pin To Net: NetName=NetK4_2 Pin=P13-6
+Added Net: Name=NetK4_2
+Added Pin To Net: NetName=NetK5_2 Pin=K5-2
+Added Pin To Net: NetName=NetK5_2 Pin=K5-2
+Added Pin To Net: NetName=NetK5_2 Pin=P13-7
+Added Net: Name=NetK5_2
+Added Pin To Net: NetName=NetK6_2 Pin=K6-2
+Added Pin To Net: NetName=NetK6_2 Pin=K6-2
+Added Pin To Net: NetName=NetK6_2 Pin=P13-8
+Added Net: Name=NetK6_2
+Added Pin To Net: NetName=NetP13_4 Pin=P13-4
+Added Pin To Net: NetName=NetP13_4 Pin=U11-2
+Added Net: Name=NetP13_4
+Added Pin To Net: NetName=NetP13_5 Pin=P13-5
+Added Pin To Net: NetName=NetP13_5 Pin=U11-1
+Added Net: Name=NetP13_5
+Added Member To Class: ClassName=STC12C5A60S2µ×°å Member=Component BUZZER1 BUZZER 9.6X5.5_4MM
+Added Member To Class: ClassName=STC12C5A60S2µ×°å Member=Component P4 PIN20
+Added Member To Class: ClassName=STC12C5A60S2µ×°å Member=Component U12 AT24C32
+Added Room: Name=STC12C5A60S2µ×°å
