@@ -1,5 +1,0 @@
-".\Objects\main.obj",
-".\Objects\delay.obj",
-".\Objects\spi.obj" 
-TO ".\Objects\spi" 
-PRINT(".\Listings\spi.m51") RAMSIZE(256) 

@@ -1,7 +1,0 @@
-".\Objects\delay.obj",
-".\Objects\spi.obj",
-".\Objects\UART.obj",
-".\Objects\main.obj",
-".\Objects\send.obj" 
-TO ".\Objects\spi_wireless" 
-PRINT(".\Listings\spi_wireless.m51") RAMSIZE(256) 

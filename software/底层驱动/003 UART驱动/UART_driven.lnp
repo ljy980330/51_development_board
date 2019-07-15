@@ -1,4 +1,0 @@
-"main.obj",
-"UART.obj" 
-TO "UART_driven" 
-RAMSIZE(256) 
