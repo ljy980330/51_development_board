@@ -254,10 +254,10 @@
     </File>
   </Group>
 
-  <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\中级例程\004 OLED屏幕显示ASCII码\I2C\I2C.H</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>28</CurrentLine>
+  <AlienFilesLine>7</CurrentLine>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\004 OLED屏幕显示ASCII码\I2C\I2C.H</PathWithFilename>
+    <TopLine>4</TopLine>
+    <CurrentLine>20</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -393,9 +393,9 @@
         <ItemNo>5</ItemNo>
         <Name>Command</Name>
         <AnchorWinID>197</AnchorWinID>
-        <AnchorWinName>Build Output</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
-        <OtherWinName>Build Output</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -418,9 +418,9 @@
         <ItemNo>6</ItemNo>
         <Name>Find in Files</Name>
         <AnchorWinID>197</AnchorWinID>
-        <AnchorWinName>Build Output</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
-        <OtherWinName>Build Output</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -443,9 +443,9 @@
         <ItemNo>7</ItemNo>
         <Name>Browse</Name>
         <AnchorWinID>197</AnchorWinID>
-        <AnchorWinName>Build Output</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
-        <OtherWinName>Build Output</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -468,9 +468,9 @@
         <ItemNo>8</ItemNo>
         <Name>UART #1</Name>
         <AnchorWinID>197</AnchorWinID>
-        <AnchorWinName>Build Output</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
-        <OtherWinName>Build Output</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -493,9 +493,9 @@
         <ItemNo>9</ItemNo>
         <Name>UART #2</Name>
         <AnchorWinID>197</AnchorWinID>
-        <AnchorWinName>Build Output</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
-        <OtherWinName>Build Output</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -518,9 +518,9 @@
         <ItemNo>10</ItemNo>
         <Name>UART #3</Name>
         <AnchorWinID>197</AnchorWinID>
-        <AnchorWinName>Build Output</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
-        <OtherWinName>Build Output</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -543,9 +543,9 @@
         <ItemNo>11</ItemNo>
         <Name>UART #4</Name>
         <AnchorWinID>197</AnchorWinID>
-        <AnchorWinName>Build Output</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
-        <OtherWinName>Build Output</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -568,9 +568,9 @@
         <ItemNo>12</ItemNo>
         <Name>Call Stack</Name>
         <AnchorWinID>197</AnchorWinID>
-        <AnchorWinName>Build Output</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
-        <OtherWinName>Build Output</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>2</DockType>
         <DockLocation>2</DockLocation>
@@ -593,9 +593,9 @@
         <ItemNo>13</ItemNo>
         <Name>Call Stack</Name>
         <AnchorWinID>1944</AnchorWinID>
-        <AnchorWinName>Call Stack</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
-        <OtherWinName>Build Output</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -618,9 +618,9 @@
         <ItemNo>14</ItemNo>
         <Name>Locals</Name>
         <AnchorWinID>1944</AnchorWinID>
-        <AnchorWinName>Call Stack</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
-        <OtherWinName>Build Output</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -643,9 +643,9 @@
         <ItemNo>15</ItemNo>
         <Name>Watch 1</Name>
         <AnchorWinID>1944</AnchorWinID>
-        <AnchorWinName>Call Stack</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
-        <OtherWinName>Build Output</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -668,9 +668,9 @@
         <ItemNo>16</ItemNo>
         <Name>Watch 2</Name>
         <AnchorWinID>1944</AnchorWinID>
-        <AnchorWinName>Call Stack</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
-        <OtherWinName>Build Output</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -693,9 +693,9 @@
         <ItemNo>17</ItemNo>
         <Name>Memory 1</Name>
         <AnchorWinID>1944</AnchorWinID>
-        <AnchorWinName>Call Stack</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
-        <OtherWinName>Build Output</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -718,9 +718,9 @@
         <ItemNo>18</ItemNo>
         <Name>Memory 2</Name>
         <AnchorWinID>1944</AnchorWinID>
-        <AnchorWinName>Call Stack</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
-        <OtherWinName>Build Output</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -743,9 +743,9 @@
         <ItemNo>19</ItemNo>
         <Name>Memory 3</Name>
         <AnchorWinID>1944</AnchorWinID>
-        <AnchorWinName>Call Stack</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
-        <OtherWinName>Build Output</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -768,9 +768,9 @@
         <ItemNo>20</ItemNo>
         <Name>Memory 4</Name>
         <AnchorWinID>1944</AnchorWinID>
-        <AnchorWinName>Call Stack</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
-        <OtherWinName>Build Output</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -793,9 +793,9 @@
         <ItemNo>21</ItemNo>
         <Name>Symbols</Name>
         <AnchorWinID>1944</AnchorWinID>
-        <AnchorWinName>Call Stack</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
-        <OtherWinName>Build Output</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -843,9 +843,9 @@
         <ItemNo>23</ItemNo>
         <Name>Books</Name>
         <AnchorWinID>1005</AnchorWinID>
-        <AnchorWinName>Project</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>1005</OtherWinID>
-        <OtherWinName>Project</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -868,9 +868,9 @@
         <ItemNo>24</ItemNo>
         <Name>Functions</Name>
         <AnchorWinID>1005</AnchorWinID>
-        <AnchorWinName>Project</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>1005</OtherWinID>
-        <OtherWinName>Project</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -893,9 +893,9 @@
         <ItemNo>25</ItemNo>
         <Name>Templates</Name>
         <AnchorWinID>1005</AnchorWinID>
-        <AnchorWinName>Project</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>1005</OtherWinID>
-        <OtherWinName>Project</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -918,9 +918,9 @@
         <ItemNo>26</ItemNo>
         <Name>Registers</Name>
         <AnchorWinID>1005</AnchorWinID>
-        <AnchorWinName>Project</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>1005</OtherWinID>
-        <OtherWinName>Project</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -968,9 +968,9 @@
         <ItemNo>28</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -993,9 +993,9 @@
         <ItemNo>29</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1018,9 +1018,9 @@
         <ItemNo>30</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1043,9 +1043,9 @@
         <ItemNo>31</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1068,9 +1068,9 @@
         <ItemNo>32</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1093,9 +1093,9 @@
         <ItemNo>33</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1118,9 +1118,9 @@
         <ItemNo>34</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1143,9 +1143,9 @@
         <ItemNo>35</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1168,9 +1168,9 @@
         <ItemNo>36</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1193,9 +1193,9 @@
         <ItemNo>37</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1218,9 +1218,9 @@
         <ItemNo>38</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1243,9 +1243,9 @@
         <ItemNo>39</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1268,9 +1268,9 @@
         <ItemNo>40</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1293,9 +1293,9 @@
         <ItemNo>41</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1318,9 +1318,9 @@
         <ItemNo>42</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1343,9 +1343,9 @@
         <ItemNo>43</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1368,9 +1368,9 @@
         <ItemNo>44</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1393,9 +1393,9 @@
         <ItemNo>45</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1418,9 +1418,9 @@
         <ItemNo>46</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1443,9 +1443,9 @@
         <ItemNo>47</ItemNo>
         <Name>not set</Name>
         <AnchorWinID>35885</AnchorWinID>
-        <AnchorWinName>???</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>35885</OtherWinID>
-        <OtherWinName>???</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1493,9 +1493,9 @@
         <ItemNo>49</ItemNo>
         <Name>Instruction Trace</Name>
         <AnchorWinID>203</AnchorWinID>
-        <AnchorWinName>Disassembly</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>203</OtherWinID>
-        <OtherWinName>Disassembly</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1543,9 +1543,9 @@
         <ItemNo>51</ItemNo>
         <Name>Performance Analyzer</Name>
         <AnchorWinID>203</AnchorWinID>
-        <AnchorWinName>Disassembly</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>203</OtherWinID>
-        <OtherWinName>Disassembly</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1568,9 +1568,9 @@
         <ItemNo>52</ItemNo>
         <Name>Performance Analyzer</Name>
         <AnchorWinID>203</AnchorWinID>
-        <AnchorWinName>Disassembly</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>203</OtherWinID>
-        <OtherWinName>Disassembly</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1593,9 +1593,9 @@
         <ItemNo>53</ItemNo>
         <Name>Code Coverage</Name>
         <AnchorWinID>203</AnchorWinID>
-        <AnchorWinName>Disassembly</AnchorWinName>
+        <AnchorWinName></AnchorWinName>
         <OtherWinID>203</OtherWinID>
-        <OtherWinName>Disassembly</OtherWinName>
+        <OtherWinName></OtherWinName>
         <WinType>1</WinType>
         <DockType>4</DockType>
         <DockLocation>2</DockLocation>
@@ -1643,9 +1643,9 @@
         </Doc>
         <Doc>
           <Name>I2C/I2C.H</Name>
-          <ColumnNumber>29</ColumnNumber>
+          <ColumnNumber>65</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>28</CurrentLine>
+          <CurrentLine>7</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

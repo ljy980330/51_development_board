@@ -43,7 +43,7 @@
         <PageWidth>120</PageWidth>
         <PageLength>65</PageLength>
         <TabStop>8</TabStop>
-        <ListingPath>.\Listings\</ListingPath>
+        <ListingPath>.\</ListingPath>
       </OPTLEX>
       <ListingPage>
         <CreateCListing>1</CreateCListing>
@@ -141,7 +141,7 @@
         <aSer4>0</aSer4>
         <StkLoc>0</StkLoc>
         <TrcWin>0</TrcWin>
-        <newCpu>0</newCpu>
+        <newCpu>1</newCpu>
         <uProt>0</uProt>
       </DebugFlag>
       <LintExecutable></LintExecutable>
@@ -155,12 +155,12 @@
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <File>
-      <GroupNumber>1</GroupNumber>
-      <FileNumber>1</FileNumber>
+      <GroupNumber>0</GroupNumber>
+      <FileNumber>0</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>44</ColumnNumber>
+      <ColumnNumber>1</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
       <CurrentLine>13</CurrentLine>
@@ -169,8 +169,8 @@
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>1</GroupNumber>
-      <FileNumber>2</FileNumber>
+      <GroupNumber>0</GroupNumber>
+      <FileNumber>0</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -183,8 +183,8 @@
       <FilenameWithoutPath>delay.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>1</GroupNumber>
-      <FileNumber>3</FileNumber>
+      <GroupNumber>0</GroupNumber>
+      <FileNumber>0</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -199,9 +199,9 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\006 外部中断\INT0\INTERRUPT.H</PathWithFilename>
+    <PathWithFilename>C:\Users\HJQ\Desktop\外部中断\config.h</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>1</CurrentLine>
+    <CurrentLine>18</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -225,33 +225,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\006 外部中断\DELAY\DELAY.H</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>1</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\006 外部中断\INCLUDES.H</PathWithFilename>
+    <PathWithFilename>C:\Users\HJQ\Desktop\外部中断\includes.h</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>16</CurrentLine>
     <Constant>0</Constant>
@@ -277,9 +251,35 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\006 外部中断\CONFIG.H</PathWithFilename>
+    <PathWithFilename>C:\Users\HJQ\Desktop\外部中断\delay\delay.h</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>15</CurrentLine>
+    <CurrentLine>1</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>C:\Users\HJQ\Desktop\外部中断\int0\interrupt.h</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1643,19 +1643,19 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>1</ActiveTab>
+      <ActiveTab>0</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>44</ColumnNumber>
+          <ColumnNumber>1</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>13</CurrentLine>
         </Doc>
         <Doc>
           <Name>CONFIG.H</Name>
-          <ColumnNumber>59</ColumnNumber>
+          <ColumnNumber>6</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>15</CurrentLine>
+          <CurrentLine>18</CurrentLine>
         </Doc>
         <Doc>
           <Name>INCLUDES.H</Name>
