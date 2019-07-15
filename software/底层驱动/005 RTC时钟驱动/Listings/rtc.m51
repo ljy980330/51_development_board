@@ -1,10 +1,9 @@
-
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/14/2019  13:31:33  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/15/2019  09:11:17  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-D:\单片机\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\delay.obj, .\Objects\rtc.obj TO .\Objects\rtc PRINT (.\Listings
->> \rtc.m51) RAMSIZE (256)
+D:\单片机\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\delay.obj, .\Objects\rtc.obj, .\Objects\i2c.obj TO .\Objects\rt
+>> c PRINT (.\Listings\rtc.m51) RAMSIZE (256)
 
 
 MEMORY MODEL: SMALL
@@ -14,6 +13,7 @@ INPUT MODULES INCLUDED:
   .\Objects\main.obj (MAIN)
   .\Objects\delay.obj (DELAY)
   .\Objects\rtc.obj (RTC)
+  .\Objects\i2c.obj (I2C)
   D:\单片机\C51\LIB\C51S.LIB (?C_STARTUP)
 
 
@@ -27,15 +27,18 @@ LINK MAP OF MODULE:  .\Objects\rtc (MAIN)
             REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
             DATA    0008H     000AH     UNIT         ?DT?RTC
             DATA    0012H     0006H     UNIT         ?DT?_MODIFYTIME?RTC
-            DATA    0018H     0002H     UNIT         ?DT?_WRITE_BYTE?RTC
-            DATA    001AH     0002H     UNIT         ?DT?GET_SHOW_TIME?RTC
-            DATA    001CH     0002H     UNIT         ?DT?GET_SHOW_DATE?RTC
-            DATA    001EH     0001H     UNIT         ?DT?READ_CURRENT?RTC
-            DATA    001FH     0001H     UNIT         ?DT?_READ_RANDOM?RTC
+            DATA    0018H     0003H     UNIT         ?DT?READ_I2C_BYTE?I2C
+            DATA    001BH     0002H     UNIT         ?DT?_WRITE_BYTE?RTC
+            DATA    001DH     0002H     UNIT         ?DT?GET_SHOW_TIME?RTC
+            DATA    001FH     0001H     UNIT         ?DT?READ_CURRENT?RTC
             BIT     0020H.0   0000H.1   UNIT         ?BI?RTC
-                    0020H.1   0000H.7                *** GAP ***
-            DATA    0021H     0001H     UNIT         ?DT?GET_SHOW_TEMPERATURE?RTC
-            IDATA   0022H     0001H     UNIT         ?STACK
+            BIT     0020H.1   0000H.1   UNIT         ?BI?ACK_I2C?I2C
+                    0020H.2   0000H.6                *** GAP ***
+            DATA    0021H     0002H     UNIT         ?DT?GET_SHOW_DATE?RTC
+            DATA    0023H     0001H     UNIT         ?DT?_READ_RANDOM?RTC
+            DATA    0024H     0001H     UNIT         ?DT?GET_SHOW_TEMPERATURE?RTC
+            DATA    0025H     0001H     UNIT         ?DT?CLOCK?I2C
+            IDATA   0026H     0001H     UNIT         ?STACK
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
             CODE    0000H     0003H     ABSOLUTE     
@@ -56,7 +59,7 @@ LINK MAP OF MODULE:  .\Objects\rtc (MAIN)
             CODE    0291H     001EH     UNIT         ?PR?READ_CURRENT?RTC
             CODE    02AFH     001BH     UNIT         ?PR?GET_SHOW_TEMPERATURE?RTC
             CODE    02CAH     0016H     UNIT         ?PR?_HEX2BCD?RTC
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  13:31:33  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:11:17  PAGE 2
 
 
             CODE    02E0H     0014H     UNIT         ?PR?_BCD2HEX?RTC
@@ -70,9 +73,6 @@ LINK MAP OF MODULE:  .\Objects\rtc (MAIN)
 
 
 OVERLAY MAP OF MODULE:   .\Objects\rtc (MAIN)
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  16:06:24  PAGE 2
-
-
 
 
 SEGMENT
@@ -80,16 +80,6 @@ SEGMENT
 ---------------------
 ?C_C51STARTUP
   +--> ?PR?MAIN?MAIN
-
-
-
-UNRESOLVED EXTERNAL SYMBOLS:
-   ?ACK_I2C?BIT
-   ACK_I2C
-   I2C_START
-   I2C_STOP
-   READ_I2C_BYTE
-   _WRITE_I2C_BYTE
 
 
 
@@ -109,58 +99,59 @@ SYMBOL TABLE OF MODULE:  .\Objects\rtc (MAIN)
   D:00A8H         PUBLIC        IE
   D:00B8H         PUBLIC        IP
   D:00D8H         PUBLIC        CCON
-  C:0228H         PUBLIC        main
+  C:033BH         PUBLIC        main
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
   D:00E0H         PUBLIC        ACC
   D:00D0H         PUBLIC        PSW
   -------         PROC          MAIN
-  C:0228H         LINE#         3
-  C:0228H         LINE#         4
-  C:0228H         LINE#         5
-  C:0228H         LINE#         6
-  C:0228H         LINE#         8
+  C:033BH         LINE#         3
+  C:033BH         LINE#         4
+  C:033BH         LINE#         5
+  C:033BH         LINE#         6
+  C:033BH         LINE#         8
   -------         ENDPROC       MAIN
   -------         ENDMOD        MAIN
 
   -------         MODULE        DELAY
   C:0000H         SYMBOL        _ICE_DUMMY_
-  C:01F3H         PUBLIC        _nop
-  C:0151H         PUBLIC        _delay_ms
-  C:0212H         PUBLIC        _delay_us
+  C:02F4H         PUBLIC        _nop
+  C:0252H         PUBLIC        _delay_ms
+  C:0325H         PUBLIC        _delay_us
   -------         PROC          _DELAY_MS
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  13:31:33  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:11:17  PAGE 3
 
 
+  D:0006H         SYMBOL        n
   -------         DO            
   D:0004H         SYMBOL        i
   D:0002H         SYMBOL        j
   -------         ENDDO         
-  C:0151H         LINE#         14
-  C:0151H         LINE#         15
-  C:0151H         LINE#         17
-  C:015BH         LINE#         18
-  C:0170H         LINE#         19
+  C:0252H         LINE#         14
+  C:0252H         LINE#         15
+  C:0252H         LINE#         17
+  C:025CH         LINE#         18
+  C:0271H         LINE#         19
   -------         ENDPROC       _DELAY_MS
   -------         PROC          _DELAY_US
   D:0006H         SYMBOL        n
-  C:0212H         LINE#         24
-  C:0212H         LINE#         25
-  C:0212H         LINE#         26
-  C:021CH         LINE#         27
+  C:0325H         LINE#         24
+  C:0325H         LINE#         25
+  C:0325H         LINE#         26
+  C:032FH         LINE#         27
   -------         ENDPROC       _DELAY_US
   -------         PROC          _NOP
   D:0006H         SYMBOL        n
   -------         DO            
   D:0004H         SYMBOL        i
   -------         ENDDO         
-  C:01F3H         LINE#         32
-  C:01F3H         LINE#         33
-  C:01F3H         LINE#         35
-  C:01FDH         LINE#         36
-  C:01FDH         LINE#         37
-  C:01FEH         LINE#         38
-  C:0205H         LINE#         39
+  C:02F4H         LINE#         32
+  C:02F4H         LINE#         33
+  C:02F4H         LINE#         35
+  C:02FEH         LINE#         36
+  C:02FEH         LINE#         37
+  C:02FFH         LINE#         38
+  C:0306H         LINE#         39
   -------         ENDPROC       _NOP
   -------         ENDMOD        DELAY
 
@@ -170,10 +161,10 @@ SYMBOL TABLE OF MODULE:  .\Objects\rtc (MAIN)
   D:0090H         PUBLIC        P1
   D:00A0H         PUBLIC        P2
   D:00B0H         PUBLIC        P3
-  C:0171H         PUBLIC        _read_random
+  C:0272H         PUBLIC        _read_random
   D:00C0H         PUBLIC        P4
   D:00C8H         PUBLIC        P5
-  C:0190H         PUBLIC        read_current
+  C:0291H         PUBLIC        read_current
   D:00A8H         PUBLIC        IE
   D:00B8H         PUBLIC        IP
   D:00D8H         PUBLIC        CCON
@@ -182,19 +173,20 @@ SYMBOL TABLE OF MODULE:  .\Objects\rtc (MAIN)
   D:0088H         PUBLIC        TCON
   D:0008H         PUBLIC        dis_digit
   D:0009H         PUBLIC        dis_index
-  C:021DH         PUBLIC        dis_code
-  C:00CFH         PUBLIC        _write_byte
+  C:0330H         PUBLIC        dis_code
+  C:0117H         PUBLIC        _write_byte
   D:00E0H         PUBLIC        ACC
-  C:008FH         PUBLIC        _DateDisplay
-  C:01AEH         PUBLIC        get_show_Temperature
+  C:00D7H         PUBLIC        _DateDisplay
+  C:02AFH         PUBLIC        get_show_Temperature
   D:000AH         PUBLIC        dis_buf
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  13:31:33  PAGE 4
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:11:17  PAGE 4
 
 
-  C:01DFH         PUBLIC        _BCD2HEX
-  C:012CH         PUBLIC        get_show_date
-  C:004FH         PUBLIC        _TimeDisplay
-  C:0104H         PUBLIC        get_show_time
+  C:02CAH         PUBLIC        _HEX2BCD
+  C:02E0H         PUBLIC        _BCD2HEX
+  C:01A1H         PUBLIC        get_show_date
+  C:0097H         PUBLIC        _TimeDisplay
+  C:0179H         PUBLIC        get_show_time
   D:00D0H         PUBLIC        PSW
   C:0003H         PUBLIC        _ModifyTime
   -------         PROC          _BCD2HEX
@@ -202,15 +194,15 @@ SYMBOL TABLE OF MODULE:  .\Objects\rtc (MAIN)
   -------         DO            
   D:0006H         SYMBOL        temp
   -------         ENDDO         
-  C:01DFH         LINE#         50
-  C:01DFH         LINE#         51
-  C:01DFH         LINE#         53
-  C:01E3H         LINE#         54
-  C:01E8H         LINE#         55
-  C:01EBH         LINE#         56
-  C:01F0H         LINE#         57
-  C:01F1H         LINE#         58
-  C:01F2H         LINE#         59
+  C:02E0H         LINE#         50
+  C:02E0H         LINE#         51
+  C:02E0H         LINE#         53
+  C:02E4H         LINE#         54
+  C:02E9H         LINE#         55
+  C:02ECH         LINE#         56
+  C:02F1H         LINE#         57
+  C:02F2H         LINE#         58
+  C:02F3H         LINE#         59
   -------         ENDPROC       _BCD2HEX
   -------         PROC          _HEX2BCD
   D:0007H         SYMBOL        val
@@ -219,65 +211,66 @@ SYMBOL TABLE OF MODULE:  .\Objects\rtc (MAIN)
   D:0007H         SYMBOL        j
   D:0007H         SYMBOL        k
   -------         ENDDO         
-  C:01C9H         LINE#         64
-  C:01C9H         LINE#         65
-  C:01C9H         LINE#         67
-  C:01CFH         LINE#         68
-  C:01D8H         LINE#         69
-  C:01DEH         LINE#         70
-  C:01DEH         LINE#         71
+  C:02CAH         LINE#         64
+  C:02CAH         LINE#         65
+  C:02CAH         LINE#         67
+  C:02D0H         LINE#         68
+  C:02D9H         LINE#         69
+  C:02DFH         LINE#         70
+  C:02DFH         LINE#         71
   -------         ENDPROC       _HEX2BCD
   -------         PROC          _WRITE_BYTE
-  D:0018H         SYMBOL        addr
-  D:0019H         SYMBOL        write_data
-  C:00CFH         LINE#         76
-  C:00D3H         LINE#         77
-  C:00D3H         LINE#         78
-  C:00D6H         LINE#         79
-  C:00DBH         LINE#         80
-  C:00DEH         LINE#         81
-  C:00E1H         LINE#         82
-  C:00E6H         LINE#         83
-  C:00E9H         LINE#         84
-  C:00ECH         LINE#         85
-  C:00F1H         LINE#         86
-  C:00F4H         LINE#         87
-  C:00F7H         LINE#         88
-  C:00FAH         LINE#         89
-  C:0101H         LINE#         90
-  C:0103H         LINE#         91
+  D:001BH         SYMBOL        addr
+  D:001CH         SYMBOL        write_data
+  C:0117H         LINE#         76
+  C:011BH         LINE#         77
+  C:011BH         LINE#         78
+  C:011EH         LINE#         79
+  C:0123H         LINE#         80
+  C:0126H         LINE#         81
+  C:0129H         LINE#         82
+  C:012EH         LINE#         83
+  C:0131H         LINE#         84
+  C:0134H         LINE#         85
+  C:0139H         LINE#         86
+  C:013CH         LINE#         87
+  C:013FH         LINE#         88
+  C:0142H         LINE#         89
+  C:0149H         LINE#         90
+  C:014BH         LINE#         91
   -------         ENDPROC       _WRITE_BYTE
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  13:31:33  PAGE 5
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:11:17  PAGE 5
 
 
+  -------         PROC          READ_CURRENT
   -------         DO            
-  D:001EH         SYMBOL        read_data
+  D:001FH         SYMBOL        read_data
   -------         ENDDO         
-  C:0190H         LINE#         96
-  C:0190H         LINE#         97
-  C:0190H         LINE#         99
-  C:0193H         LINE#         100
-  C:0198H         LINE#         101
-  C:019BH         LINE#         102
-  C:019EH         LINE#         103
-  C:01A3H         LINE#         104
-  C:01A8H         LINE#         105
-  C:01ABH         LINE#         106
-  C:01ADH         LINE#         107
+  C:0291H         LINE#         96
+  C:0291H         LINE#         97
+  C:0291H         LINE#         99
+  C:0294H         LINE#         100
+  C:0299H         LINE#         101
+  C:029CH         LINE#         102
+  C:029FH         LINE#         103
+  C:02A4H         LINE#         104
+  C:02A9H         LINE#         105
+  C:02ACH         LINE#         106
+  C:02AEH         LINE#         107
   -------         ENDPROC       READ_CURRENT
   -------         PROC          _READ_RANDOM
-  D:001FH         SYMBOL        random_addr
-  C:0171H         LINE#         112
-  C:0173H         LINE#         113
-  C:0173H         LINE#         114
-  C:0176H         LINE#         115
-  C:017BH         LINE#         116
-  C:017EH         LINE#         117
-  C:0181H         LINE#         118
-  C:0186H         LINE#         119
-  C:0189H         LINE#         120
-  C:018CH         LINE#         121
-  C:018FH         LINE#         122
+  D:0023H         SYMBOL        random_addr
+  C:0272H         LINE#         112
+  C:0274H         LINE#         113
+  C:0274H         LINE#         114
+  C:0277H         LINE#         115
+  C:027CH         LINE#         116
+  C:027FH         LINE#         117
+  C:0282H         LINE#         118
+  C:0287H         LINE#         119
+  C:028AH         LINE#         120
+  C:028DH         LINE#         121
+  C:0290H         LINE#         122
   -------         ENDPROC       _READ_RANDOM
   -------         PROC          _MODIFYTIME
   D:0007H         SYMBOL        yea
@@ -306,94 +299,96 @@ SYMBOL TABLE OF MODULE:  .\Objects\rtc (MAIN)
   C:004AH         LINE#         141
   -------         ENDPROC       _MODIFYTIME
   -------         PROC          _TIMEDISPLAY
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  13:31:33  PAGE 6
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:11:17  PAGE 6
 
 
+  D:0007H         SYMBOL        Dhour
   D:0005H         SYMBOL        Dmin
   D:0003H         SYMBOL        Dsec
-  C:004FH         LINE#         147
-  C:004FH         LINE#         148
-  C:004FH         LINE#         149
-  C:005AH         LINE#         150
-  C:0064H         LINE#         151
-  C:006CH         LINE#         152
-  C:0076H         LINE#         153
-  C:007EH         LINE#         154
-  C:0088H         LINE#         155
-  C:008BH         LINE#         156
-  C:008EH         LINE#         157
+  C:0097H         LINE#         147
+  C:0097H         LINE#         148
+  C:0097H         LINE#         149
+  C:00A2H         LINE#         150
+  C:00ACH         LINE#         151
+  C:00B4H         LINE#         152
+  C:00BEH         LINE#         153
+  C:00C6H         LINE#         154
+  C:00D0H         LINE#         155
+  C:00D3H         LINE#         156
+  C:00D6H         LINE#         157
   -------         ENDPROC       _TIMEDISPLAY
   -------         PROC          _DATEDISPLAY
   D:0007H         SYMBOL        Dyear
   D:0005H         SYMBOL        Dmonth
   D:0003H         SYMBOL        Dday
-  C:008FH         LINE#         162
-  C:008FH         LINE#         163
-  C:008FH         LINE#         164
-  C:009AH         LINE#         165
-  C:00A4H         LINE#         166
-  C:00ACH         LINE#         167
-  C:00B6H         LINE#         168
-  C:00BEH         LINE#         169
-  C:00C8H         LINE#         170
-  C:00CBH         LINE#         171
-  C:00CEH         LINE#         172
+  C:00D7H         LINE#         162
+  C:00D7H         LINE#         163
+  C:00D7H         LINE#         164
+  C:00E2H         LINE#         165
+  C:00ECH         LINE#         166
+  C:00F4H         LINE#         167
+  C:00FEH         LINE#         168
+  C:0106H         LINE#         169
+  C:0110H         LINE#         170
+  C:0113H         LINE#         171
+  C:0116H         LINE#         172
   -------         ENDPROC       _DATEDISPLAY
   -------         PROC          GET_SHOW_TIME
   -------         DO            
   D:0007H         SYMBOL        Htemp1
-  D:001AH         SYMBOL        Htemp2
+  D:001DH         SYMBOL        Htemp2
   D:0007H         SYMBOL        Mtemp1
-  D:001BH         SYMBOL        Mtemp2
+  D:001EH         SYMBOL        Mtemp2
   D:0007H         SYMBOL        Stemp1
   D:0003H         SYMBOL        Stemp2
   -------         ENDDO         
-  C:0104H         LINE#         177
-  C:0104H         LINE#         178
-  C:0104H         LINE#         180
-  C:0109H         LINE#         181
-  C:010CH         LINE#         182
-  C:0111H         LINE#         183
-  C:0116H         LINE#         184
-  C:011BH         LINE#         185
-  C:0120H         LINE#         186
-  C:0125H         LINE#         187
+  C:0179H         LINE#         177
+  C:0179H         LINE#         178
+  C:0179H         LINE#         180
+  C:017EH         LINE#         181
+  C:0181H         LINE#         182
+  C:0186H         LINE#         183
+  C:018BH         LINE#         184
+  C:0190H         LINE#         185
+  C:0195H         LINE#         186
+  C:019AH         LINE#         187
   -------         ENDPROC       GET_SHOW_TIME
   -------         PROC          GET_SHOW_DATE
   -------         DO            
   D:0007H         SYMBOL        Ytemp1
-  D:001CH         SYMBOL        Ytemp2
+  D:0021H         SYMBOL        Ytemp2
   D:0007H         SYMBOL        Mtemp1
   D:0022H         SYMBOL        Mtemp2
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  13:31:33  PAGE 7
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:11:17  PAGE 7
 
 
+  D:0007H         SYMBOL        Dtemp1
   D:0003H         SYMBOL        Dtemp2
   -------         ENDDO         
-  C:012CH         LINE#         193
-  C:012CH         LINE#         194
-  C:012CH         LINE#         196
-  C:0131H         LINE#         197
-  C:0136H         LINE#         198
-  C:013BH         LINE#         199
-  C:0140H         LINE#         200
-  C:0145H         LINE#         201
-  C:014AH         LINE#         202
+  C:01A1H         LINE#         193
+  C:01A1H         LINE#         194
+  C:01A1H         LINE#         196
+  C:01A6H         LINE#         197
+  C:01ABH         LINE#         198
+  C:01B0H         LINE#         199
+  C:01B5H         LINE#         200
+  C:01BAH         LINE#         201
+  C:01BFH         LINE#         202
   -------         ENDPROC       GET_SHOW_DATE
   -------         PROC          GET_SHOW_TEMPERATURE
   -------         DO            
   D:0007H         SYMBOL        Ttemp1
-  D:0021H         SYMBOL        Ttemp2
+  D:0024H         SYMBOL        Ttemp2
   D:0007H         SYMBOL        Ttemp3
   D:0003H         SYMBOL        Ttemp4
   -------         ENDDO         
-  C:01AEH         LINE#         208
-  C:01AEH         LINE#         209
-  C:01AEH         LINE#         211
-  C:01B3H         LINE#         212
-  C:01B8H         LINE#         213
-  C:01BDH         LINE#         214
-  C:01C2H         LINE#         215
+  C:02AFH         LINE#         208
+  C:02AFH         LINE#         209
+  C:02AFH         LINE#         211
+  C:02B4H         LINE#         212
+  C:02B9H         LINE#         213
+  C:02BEH         LINE#         214
+  C:02C3H         LINE#         215
   -------         ENDPROC       GET_SHOW_TEMPERATURE
   -------         ENDMOD        RTC
 
@@ -417,14 +412,14 @@ SYMBOL TABLE OF MODULE:  .\Objects\rtc (MAIN)
   D:0088H         PUBLIC        TCON
   C:01EAH         PUBLIC        I2C_Stop
   D:00E0H         PUBLIC        ACC
-  B:00A0H.1       PUBLIC        SDA
-  B:00A0H.0       PUBLIC        SCL
+  B:0080H.3       PUBLIC        SDA
+  B:0080H.2       PUBLIC        SCL
   C:020EH         PUBLIC        Clock
   D:00D0H         PUBLIC        PSW
   -------         PROC          I2C_INIT
   C:0307H         LINE#         16
   C:0307H         LINE#         17
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  13:31:33  PAGE 8
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:11:17  PAGE 8
 
 
   C:0307H         LINE#         18
@@ -484,7 +479,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\rtc (MAIN)
   D:0018H         SYMBOL        i
   D:0019H         SYMBOL        j
   D:001AH         SYMBOL        k
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  13:31:33  PAGE 9
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:11:17  PAGE 9
 
 
   -------         ENDDO         
@@ -544,10 +539,8 @@ SYMBOL TABLE OF MODULE:  .\Objects\rtc (MAIN)
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?_MODIFYTIME?RTC
 
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  13:31:33  PAGE 10
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:11:17  PAGE 10
 
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_MODIFYTIME?RTC
 
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?GET_SHOW_TIME?RTC
@@ -558,105 +551,11 @@ SYMBOL TABLE OF MODULE:  .\Objects\rtc (MAIN)
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?GET_SHOW_TEMPERATURE?RTC
 
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  READ_I2C_BYTE
-    MODULE:  .\Objects\rtc.obj (RTC)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?I2C_INIT?I2C
 
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  _WRITE_I2C_BYTE
-    MODULE:  .\Objects\rtc.obj (RTC)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLOCK?I2C
 
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  ACK_I2C
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  16:06:24  PAGE 8
-
-
-    MODULE:  .\Objects\rtc.obj (RTC)
-
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  ?ACK_I2C?BIT
-    MODULE:  .\Objects\rtc.obj (RTC)
-
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  I2C_START
-    MODULE:  .\Objects\rtc.obj (RTC)
-
-*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
-    SYMBOL:  I2C_STOP
-    MODULE:  .\Objects\rtc.obj (RTC)
-
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  I2C_START
-    MODULE:  .\Objects\rtc.obj (RTC)
-    ADDRESS: 00D4H
-
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _WRITE_I2C_BYTE
-    MODULE:  .\Objects\rtc.obj (RTC)
-    ADDRESS: 00D9H
-
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _WRITE_I2C_BYTE
-    MODULE:  .\Objects\rtc.obj (RTC)
-    ADDRESS: 00E4H
-
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _WRITE_I2C_BYTE
-    MODULE:  .\Objects\rtc.obj (RTC)
-    ADDRESS: 00EFH
-
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  I2C_STOP
-    MODULE:  .\Objects\rtc.obj (RTC)
-    ADDRESS: 00F8H
-
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  I2C_START
-    MODULE:  .\Objects\rtc.obj (RTC)
-    ADDRESS: 0191H
-
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _WRITE_I2C_BYTE
-    MODULE:  .\Objects\rtc.obj (RTC)
-    ADDRESS: 0196H
-
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  READ_I2C_BYTE
-    MODULE:  .\Objects\rtc.obj (RTC)
-    ADDRESS: 019FH
-
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  ?ACK_I2C?BIT
-    MODULE:  .\Objects\rtc.obj (RTC)
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  16:06:24  PAGE 9
-
-
-    ADDRESS: 01A4H
-
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  ACK_I2C
-    MODULE:  .\Objects\rtc.obj (RTC)
-    ADDRESS: 01A6H
-
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  I2C_STOP
-    MODULE:  .\Objects\rtc.obj (RTC)
-    ADDRESS: 01A9H
-
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  I2C_START
-    MODULE:  .\Objects\rtc.obj (RTC)
-    ADDRESS: 0174H
-
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _WRITE_I2C_BYTE
-    MODULE:  .\Objects\rtc.obj (RTC)
-    ADDRESS: 0179H
-
-*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
-    SYMBOL:  _WRITE_I2C_BYTE
-    MODULE:  .\Objects\rtc.obj (RTC)
-    ADDRESS: 0184H
-
-Program Size: data=34.1 xdata=0 code=554
-LINK/LOCATE RUN COMPLETE.  26 WARNING(S),  0 ERROR(S)
+Program Size: data=38.2 xdata=0 code=829
+LINK/LOCATE RUN COMPLETE.  7 WARNING(S),  0 ERROR(S)

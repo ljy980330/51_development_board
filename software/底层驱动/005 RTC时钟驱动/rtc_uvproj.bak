@@ -362,9 +362,9 @@
               <FilePath>.\rtc\rtc.c</FilePath>
             </File>
             <File>
-              <FileName>rtc.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\rtc\rtc.h</FilePath>
+              <FileName>i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\i2c\i2c.c</FilePath>
             </File>
           </Files>
         </Group>

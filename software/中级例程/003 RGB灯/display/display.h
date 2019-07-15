@@ -14,9 +14,9 @@
 #include "intrins.h"
 #include "delay/delay.h"
 
-sbit BB=P1^0;//blueÀ¶µÆ
-sbit RR=P1^1;//redºìµÆ
-sbit GG=P1^2;//greenÂÌµÆ
+sbit BB=P0^7;//blueÀ¶µÆ
+sbit RR=P0^6;//redºìµÆ
+sbit GG=P0^5;//greenÂÌµÆ
 
 
 void Display1();

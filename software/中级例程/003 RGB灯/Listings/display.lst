@@ -1,10 +1,10 @@
-C51 COMPILER V9.00   DISPLAY                                                               07/06/2019 13:33:29 PAGE 1   
+C51 COMPILER V9.00   DISPLAY                                                               07/15/2019 09:14:35 PAGE 1   
 
 
 C51 COMPILER V9.00, COMPILATION OF MODULE DISPLAY
-OBJECT MODULE PLACED IN display.obj
-COMPILER INVOKED BY: D:\µ¥Æ¬»ú\C51\BIN\C51.EXE display\display.c BROWSE DEBUG OBJECTEXTEND PRINT(.\display.lst) OBJECT(d
-                    -isplay.obj)
+OBJECT MODULE PLACED IN .\Objects\display.obj
+COMPILER INVOKED BY: D:\µ¥Æ¬»ú\C51\BIN\C51.EXE display\display.c BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\display.lst)
+                    - OBJECT(.\Objects\display.obj)
 
 line level    source
 
@@ -62,7 +62,7 @@ line level    source
   51   2              P3 = ~(1<<7-i);
   52   2              Delay_ms(N); 
   53   2          }
-C51 COMPILER V9.00   DISPLAY                                                               07/06/2019 13:33:29 PAGE 2   
+C51 COMPILER V9.00   DISPLAY                                                               07/15/2019 09:14:35 PAGE 2   
 
   54   1          RR=0;GG=0;BB=1;//ºìÂÌµÆÁÁ£¨»ÆÉ«¹â£©
   55   1          for(i=0;i<8;i++)
@@ -126,7 +126,7 @@ line level    source
  113   2              Delay_ms(N); 
  114   2          }
  115   1          for(i=0;i<8;i++)
-C51 COMPILER V9.00   DISPLAY                                                               07/06/2019 13:33:29 PAGE 3   
+C51 COMPILER V9.00   DISPLAY                                                               07/15/2019 09:14:35 PAGE 3   
 
  116   1              {   
  117   2              P3 = 0x7f>>i;
@@ -190,7 +190,7 @@ line level    source
  175   1          RR=0;GG=0;BB=0;//ºìÀ¶ÂÌµÆÁÁ
  176   1          for(i=0;i<8;i++)
  177   1              {   
-C51 COMPILER V9.00   DISPLAY                                                               07/06/2019 13:33:29 PAGE 4   
+C51 COMPILER V9.00   DISPLAY                                                               07/15/2019 09:14:35 PAGE 4   
 
  178   2              P3 = 0xfe<<i;
  179   2              Delay_ms(N); 
@@ -254,7 +254,7 @@ line level    source
  237   2              Delay_ms(N); 
  238   2          }
  239   1                      
-C51 COMPILER V9.00   DISPLAY                                                               07/06/2019 13:33:29 PAGE 5   
+C51 COMPILER V9.00   DISPLAY                                                               07/15/2019 09:14:35 PAGE 5   
 
  240   1              for(i=0;i<8;i++)
  241   1              {   

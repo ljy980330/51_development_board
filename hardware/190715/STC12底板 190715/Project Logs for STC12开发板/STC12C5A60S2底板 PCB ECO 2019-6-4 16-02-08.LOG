@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=DS3231_SCL Pin= -1
+Removed Pin From Net: NetName=DS3231_SDA Pin= -2
+Added Pin To Net: NetName=DS3231_SDA Pin= -1
+Added Pin To Net: NetName=DS3231_SCL Pin= -2
+Added Member To Class: ClassName=STC12C5A60S2µ×°å Member=Component  R20
+Added Room: Name=STC12C5A60S2µ×°å

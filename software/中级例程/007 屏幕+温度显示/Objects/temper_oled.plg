@@ -3,12 +3,10 @@
 <pre>
 <h1>礦ision Build Log</h1>
 <h2>Project:</h2>
-C:\Users\LEE SZE KI\Desktop\吴燕婷\ds3231_1\temper_oled.uvproj
+C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\007 屏幕+温度显示\temper_oled.uvproj
 Project File Date:  07/14/2019
 
 <h2>Output:</h2>
-compiling main.c...
-main.c - 0 Error(s), 0 Warning(s).
 Build target 'Target 1'
 compiling main.c...
 compiling code_tab.c...

@@ -202,8 +202,8 @@
       <Focus>0</Focus>
       <ColumnNumber>116</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>130</TopLine>
-      <CurrentLine>140</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\spi\spi.c</PathWithFileName>
       <FilenameWithoutPath>spi.c</FilenameWithoutPath>
@@ -211,7 +211,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\002 SPI驱动\SPI\SPI.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\底层驱动\002 SPI驱动\SPI\SPI.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>20</CurrentLine>
     <Constant>0</Constant>
@@ -237,7 +237,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\002 SPI驱动\DELAY\DELAY.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\底层驱动\002 SPI驱动\DELAY\DELAY.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -263,7 +263,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\002 SPI驱动\INCLUDES.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\底层驱动\002 SPI驱动\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -1634,8 +1634,8 @@
         <Doc>
           <Name>.\spi\spi.c</Name>
           <ColumnNumber>116</ColumnNumber>
-          <TopLine>130</TopLine>
-          <CurrentLine>140</CurrentLine>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\main.c</Name>

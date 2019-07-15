@@ -1,0 +1,35 @@
+Removed Pin From Net: NetName=VCC Pin=U12-1
+Removed Pin From Net: NetName=VCC Pin=U12-2
+Removed Pin From Net: NetName=VCC Pin=U12-3
+Added Component: Designator= (ÅÅ×è(0603))
+Add component. Clean all parameters for all variants
+Added Component: Designator=(ÅÅ×è(0603))
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=DS3231_SCL Pin= -3
+Added Pin To Net: NetName=DS3231_SDA Pin= -4
+Added Pin To Net: NetName=VCC Pin= -5
+Added Pin To Net: NetName=VCC Pin=-5
+Added Pin To Net: NetName=VCC Pin= -6
+Added Pin To Net: NetName=VCC Pin=-6
+Added Pin To Net: NetName=VCC Pin= -7
+Added Pin To Net: NetName=VCC Pin=-7
+Added Pin To Net: NetName=VCC Pin= -8
+Added Pin To Net: NetName=VCC Pin=-8
+Added Pin To Net: NetName=32K Pin= -2
+Added Pin To Net: NetName=32K Pin=U13-1
+Added Net: Name=32K
+Added Pin To Net: NetName=Net_2 Pin=-2
+Added Pin To Net: NetName=Net_2 Pin=U12-1
+Added Net: Name=Net_2
+Added Pin To Net: NetName=Net_3 Pin=-3
+Added Pin To Net: NetName=Net_3 Pin=U12-2
+Added Net: Name=Net_3
+Added Pin To Net: NetName=Net_4 Pin=-4
+Added Pin To Net: NetName=Net_4 Pin=U12-3
+Added Net: Name=Net_4
+Added Pin To Net: NetName=SQW Pin= -1
+Added Pin To Net: NetName=SQW Pin=U13-3
+Added Net: Name=SQW
+Added Member To Class: ClassName=STC12C5A60S2µ×°å Member=Component   R20
+Added Member To Class: ClassName=STC12C5A60S2µ×°å Member=Component  R21
+Added Room: Name=STC12C5A60S2µ×°å

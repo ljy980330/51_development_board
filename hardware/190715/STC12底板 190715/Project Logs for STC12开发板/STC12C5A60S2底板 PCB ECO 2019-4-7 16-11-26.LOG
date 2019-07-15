@@ -1,0 +1,5 @@
+Change Component DesignItemId : Designator=C7 Old DesignItemId=C_TAC-C New DesignItemId=C_0805
+Change Component Footprint: Designator=C7 Old Footprint=TAC_C New Footprint=C_0805
+Change Component Comment : Designator=C8 Old Comment=10¦ÌF New Comment=22¦ÌF
+Change Component Comment : Designator=C7 Old Comment=¦ÌF New Comment=22¦ÌF
+Added Room: Name=STC12C5A60S2µ×°å

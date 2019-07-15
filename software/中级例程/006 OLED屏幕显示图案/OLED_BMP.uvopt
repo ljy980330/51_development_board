@@ -255,9 +255,9 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\006 OLED屏幕显示图案\DISPLAY\DISPLAY.H</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>1</CurrentLine>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\006 OLED屏幕显示图案\I2C\I2C.H</PathWithFilename>
+    <TopLine>4</TopLine>
+    <CurrentLine>20</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -281,9 +281,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\006 OLED屏幕显示图案\I2C\I2C.H</PathWithFilename>
-    <TopLine>4</TopLine>
-    <CurrentLine>14</CurrentLine>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\006 OLED屏幕显示图案\DISPLAY\DISPLAY.H</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1699,7 +1699,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>0</ActiveTab>
+      <ActiveTab>3</ActiveTab>
       <Documents>
         <Doc>
           <Name>OLED_INIT\OLED_INIT.H</Name>
@@ -1757,9 +1757,9 @@
         </Doc>
         <Doc>
           <Name>I2C/I2C.H</Name>
-          <ColumnNumber>15</ColumnNumber>
+          <ColumnNumber>25</ColumnNumber>
           <TopLine>4</TopLine>
-          <CurrentLine>14</CurrentLine>
+          <CurrentLine>20</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

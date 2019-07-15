@@ -214,7 +214,7 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>5</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -269,7 +269,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\LEE SZE KI\Desktop\吴燕婷\ds3231_1\CONFIG.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\007 屏幕+温度显示\CONFIG.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -295,7 +295,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\LEE SZE KI\Desktop\吴燕婷\ds3231_1\DELAY\DELAY.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\007 屏幕+温度显示\DELAY\DELAY.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>13</CurrentLine>
     <Constant>0</Constant>
@@ -321,9 +321,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\LEE SZE KI\Desktop\吴燕婷\ds3231_1\I2C\I2C.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\007 屏幕+温度显示\I2C\I2C.H</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>14</CurrentLine>
+    <CurrentLine>20</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -347,7 +347,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\LEE SZE KI\Desktop\吴燕婷\ds3231_1\OLED_INIT\OLED_INIT.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\007 屏幕+温度显示\OLED_INIT\OLED_INIT.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -373,8 +373,8 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\LEE SZE KI\Desktop\吴燕婷\ds3231_1\CODE_TAB\CODE_TAB.H</PathWithFilename>
-    <TopLine>1</TopLine>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\007 屏幕+温度显示\CODE_TAB\CODE_TAB.H</PathWithFilename>
+    <TopLine>2</TopLine>
     <CurrentLine>22</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
@@ -399,8 +399,8 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\LEE SZE KI\Desktop\吴燕婷\ds3231_1\FUNCTION\FUNCTION.H</PathWithFilename>
-    <TopLine>1</TopLine>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\007 屏幕+温度显示\FUNCTION\FUNCTION.H</PathWithFilename>
+    <TopLine>2</TopLine>
     <CurrentLine>22</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
@@ -425,7 +425,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\LEE SZE KI\Desktop\吴燕婷\ds3231_1\DISPLAY\DISPLAY.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\007 屏幕+温度显示\DISPLAY\DISPLAY.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>8</CurrentLine>
     <Constant>0</Constant>
@@ -451,8 +451,8 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\LEE SZE KI\Desktop\吴燕婷\ds3231_1\DRIVE\DRIVE.H</PathWithFilename>
-    <TopLine>1</TopLine>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\007 屏幕+温度显示\DRIVE\DRIVE.H</PathWithFilename>
+    <TopLine>4</TopLine>
     <CurrentLine>24</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
@@ -503,7 +503,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\LEE SZE KI\Desktop\吴燕婷\ds3231_1\INCLUDES.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\007 屏幕+温度显示\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>12</CurrentLine>
     <Constant>0</Constant>
@@ -1869,8 +1869,14 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>1</ActiveTab>
+      <ActiveTab>0</ActiveTab>
       <Documents>
+        <Doc>
+          <Name>I2C/I2C.H</Name>
+          <ColumnNumber>25</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>20</CurrentLine>
+        </Doc>
         <Doc>
           <Name>.\delay\delay.c</Name>
           <ColumnNumber>0</ColumnNumber>
@@ -1898,7 +1904,7 @@
         <Doc>
           <Name>DRIVE/DRIVE.H</Name>
           <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
+          <TopLine>4</TopLine>
           <CurrentLine>24</CurrentLine>
         </Doc>
         <Doc>
@@ -1922,13 +1928,13 @@
         <Doc>
           <Name>FUNCTION/FUNCTION.H</Name>
           <ColumnNumber>32</ColumnNumber>
-          <TopLine>1</TopLine>
+          <TopLine>2</TopLine>
           <CurrentLine>22</CurrentLine>
         </Doc>
         <Doc>
           <Name>CODE_TAB/CODE_TAB.H</Name>
           <ColumnNumber>9</ColumnNumber>
-          <TopLine>1</TopLine>
+          <TopLine>2</TopLine>
           <CurrentLine>22</CurrentLine>
         </Doc>
         <Doc>
@@ -1954,12 +1960,6 @@
           <ColumnNumber>0</ColumnNumber>
           <TopLine>12</TopLine>
           <CurrentLine>12</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>I2C/I2C.H</Name>
-          <ColumnNumber>24</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>14</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\i2c\i2c.c</Name>

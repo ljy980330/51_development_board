@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=74HC595_SRCLK Pin=P4-14
+Removed Pin From Net: NetName=74HC595_RCLK Pin=P4-15
+Added Pin To Net: NetName=74HC595_RCLK Pin=P4-14
+Added Pin To Net: NetName=74HC595_SRCLK Pin=P4-15
+Added Member To Class: ClassName=STC12C5A60S2µ×°å Member=Component  R21
+Added Room: Name=STC12C5A60S2µ×°å
