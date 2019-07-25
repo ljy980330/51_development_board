@@ -7,7 +7,6 @@
 #include "includes.h"
 void main()
 {	
-
   Int0();
-
+  while(1);
 }

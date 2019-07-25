@@ -25,7 +25,7 @@
     <ToolsetNumber>0x0</ToolsetNumber>
     <ToolsetName>MCS-51</ToolsetName>
     <TargetOption>
-      <CLK51>45000000</CLK51>
+      <CLK51>11059200</CLK51>
       <OPTTT>
         <gFlags>1</gFlags>
         <BeepAtEnd>1</BeepAtEnd>
@@ -43,7 +43,7 @@
         <PageWidth>120</PageWidth>
         <PageLength>65</PageLength>
         <TabStop>8</TabStop>
-        <ListingPath>.\</ListingPath>
+        <ListingPath>.\Listings\</ListingPath>
       </OPTLEX>
       <ListingPage>
         <CreateCListing>1</CreateCListing>
@@ -186,7 +186,7 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>3</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -200,12 +200,12 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>4</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>7</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>9</CurrentLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Key\Key1.c</PathWithFileName>
       <FilenameWithoutPath>Key1.c</FilenameWithoutPath>
@@ -213,9 +213,9 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\HJQ\Desktop\独立按键2\KEY\KEY1.H</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\005 独立按键\KEY\KEY1.H</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>20</CurrentLine>
+    <CurrentLine>22</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -239,33 +239,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\HJQ\Desktop\独立按键2\SMG\SMGDISPLAY.H</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>1</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>C:\Users\HJQ\Desktop\独立按键2\DELAY\DELAY.H</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\005 独立按键\SMG\SMGDISPLAY.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -291,7 +265,33 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\HJQ\Desktop\独立按键2\INCLUDES.H</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\005 独立按键\DELAY\DELAY.H</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>1</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\005 独立按键\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>14</CurrentLine>
     <Constant>0</Constant>
@@ -317,7 +317,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\HJQ\Desktop\独立按键2\CONFIG.H</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\005 独立按键\CONFIG.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>17</CurrentLine>
     <Constant>0</Constant>
@@ -1683,7 +1683,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>5</ActiveTab>
+      <ActiveTab>8</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
@@ -1729,15 +1729,15 @@
         </Doc>
         <Doc>
           <Name>.\Key\Key1.c</Name>
-          <ColumnNumber>7</ColumnNumber>
+          <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>9</CurrentLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
           <Name>KEY/KEY1.H</Name>
-          <ColumnNumber>11</ColumnNumber>
+          <ColumnNumber>38</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>20</CurrentLine>
+          <CurrentLine>22</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

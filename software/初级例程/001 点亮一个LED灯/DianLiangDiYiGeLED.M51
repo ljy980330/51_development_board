@@ -1,8 +1,8 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/05/2019  11:09:43  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/25/2019  14:18:34  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-C:\KEIL\C51\BIN\BL51.EXE main.obj, DianliangLED.obj TO DianLiangDiYiGeLED RAMSIZE (256)
+F:\WORKAPP\KEIL_V5\C51\BIN\BL51.EXE main.obj, DianliangLED.obj TO DianLiangDiYiGeLED RAMSIZE (256)
 
 
 MEMORY MODEL: SMALL
@@ -11,7 +11,7 @@ MEMORY MODEL: SMALL
 INPUT MODULES INCLUDED:
   main.obj (MAIN)
   DianliangLED.obj (DIANLIANGLED)
-  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
 
 
 LINK MAP OF MODULE:  DianLiangDiYiGeLED (MAIN)
@@ -59,7 +59,7 @@ SYMBOL TABLE OF MODULE:  DianLiangDiYiGeLED (MAIN)
   D:00B0H         PUBLIC        P3
   D:00C0H         PUBLIC        P4
   D:00C8H         PUBLIC        P5
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/05/2019  11:09:43  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/25/2019  14:18:34  PAGE 2
 
 
   D:00A8H         PUBLIC        IE

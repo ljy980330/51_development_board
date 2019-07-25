@@ -25,7 +25,7 @@
     <ToolsetNumber>0x0</ToolsetNumber>
     <ToolsetName>MCS-51</ToolsetName>
     <TargetOption>
-      <CLK51>45000000</CLK51>
+      <CLK51>11059200</CLK51>
       <OPTTT>
         <gFlags>1</gFlags>
         <BeepAtEnd>1</BeepAtEnd>
@@ -43,7 +43,7 @@
         <PageWidth>120</PageWidth>
         <PageLength>65</PageLength>
         <TabStop>8</TabStop>
-        <ListingPath>.\</ListingPath>
+        <ListingPath>.\Listings\</ListingPath>
       </OPTLEX>
       <ListingPage>
         <CreateCListing>1</CreateCListing>
@@ -177,10 +177,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>42</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>5</CurrentLine>
+      <CurrentLine>8</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -205,10 +205,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>35</ColumnNumber>
+      <ColumnNumber>36</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>8</CurrentLine>
+      <TopLine>26</TopLine>
+      <CurrentLine>32</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\smgdisplay\smgdisplay.c</PathWithFileName>
       <FilenameWithoutPath>smgdisplay.c</FilenameWithoutPath>
@@ -219,10 +219,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>17</ColumnNumber>
+      <ColumnNumber>10</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>13</CurrentLine>
+      <TopLine>90</TopLine>
+      <CurrentLine>90</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\ChaoShengBo\ChaoShengBo.c</PathWithFileName>
       <FilenameWithoutPath>ChaoShengBo.c</FilenameWithoutPath>
@@ -230,8 +230,8 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\HJQ\Desktop\程序\超声波模块\CHAOSHENGBO\CHAOSHENGBO.H</PathWithFilename>
-    <TopLine>11</TopLine>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\008 超声波模块\CHAOSHENGBO\CHAOSHENGBO.H</PathWithFilename>
+    <TopLine>5</TopLine>
     <CurrentLine>23</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
@@ -256,7 +256,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\HJQ\Desktop\程序\超声波模块\CONFIG.H</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\008 超声波模块\CONFIG.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>14</CurrentLine>
     <Constant>0</Constant>
@@ -282,7 +282,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\HJQ\Desktop\程序\超声波模块\INCLUDES.H</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\008 超声波模块\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>10</CurrentLine>
     <Constant>0</Constant>
@@ -308,9 +308,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\HJQ\Desktop\程序\超声波模块\SMGDISPLAY\SMGDISPLAY.H</PathWithFilename>
-    <TopLine>6</TopLine>
-    <CurrentLine>23</CurrentLine>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\008 超声波模块\SMGDISPLAY\SMGDISPLAY.H</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>24</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -334,7 +334,33 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\HJQ\Desktop\程序\超声波模块\DELAY\DELAY.H</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\008 超声波模块\DELAY\DELAY.H</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>1</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\008 超声波模块\Listings\Ultrasonic.M51</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -1704,9 +1730,9 @@
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>0</ColumnNumber>
+          <ColumnNumber>42</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>5</CurrentLine>
+          <CurrentLine>8</CurrentLine>
         </Doc>
         <Doc>
           <Name>DELAY/DELAY.H</Name>
@@ -1722,15 +1748,15 @@
         </Doc>
         <Doc>
           <Name>.\smgdisplay\smgdisplay.c</Name>
-          <ColumnNumber>35</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>8</CurrentLine>
+          <ColumnNumber>36</ColumnNumber>
+          <TopLine>26</TopLine>
+          <CurrentLine>32</CurrentLine>
         </Doc>
         <Doc>
           <Name>SMGDISPLAY/SMGDISPLAY.H</Name>
-          <ColumnNumber>22</ColumnNumber>
-          <TopLine>6</TopLine>
-          <CurrentLine>23</CurrentLine>
+          <ColumnNumber>31</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>24</CurrentLine>
         </Doc>
         <Doc>
           <Name>INCLUDES.H</Name>
@@ -1746,15 +1772,21 @@
         </Doc>
         <Doc>
           <Name>.\ChaoShengBo\ChaoShengBo.c</Name>
-          <ColumnNumber>17</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>13</CurrentLine>
+          <ColumnNumber>10</ColumnNumber>
+          <TopLine>90</TopLine>
+          <CurrentLine>90</CurrentLine>
         </Doc>
         <Doc>
           <Name>CHAOSHENGBO/CHAOSHENGBO.H</Name>
           <ColumnNumber>21</ColumnNumber>
-          <TopLine>11</TopLine>
+          <TopLine>5</TopLine>
           <CurrentLine>23</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\008 超声波模块\Listings\Ultrasonic.M51</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>
