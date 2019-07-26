@@ -1,8 +1,6 @@
 //超声波模块程序
-//作者 ： Z H
-//时间 2015/11/29
-//Trig  = P3^6
-//Echo  = P3^7
+//Trig  = P3^7
+//Echo  = P3^2
 #include <STC12C5A.H>			  
 #include "config.h"	  			  
 #include "delay/delay.h"	 
@@ -21,18 +19,6 @@ sbit Trig  = P3^7;
 sbit Echo  = P3^2;
  
 //
-void delay(uint z)
-{
- uint x,y;
-  for(x=z;x>0;x--)
-  for(y=125;y>0;y--);
-}
-//
-void delay_20us()
- { 
-    uchar a ;
-    for(a=0;a<100;a++);
- }
 //***************************************************************
 //显示数据转换程序
 void display(uint temp) 
@@ -59,7 +45,7 @@ void display(uint temp)
  {		
 		EA=0;           //关总中断
 	    Trig=1;         //超声波输入端
-	    delay_20us();   //延时20us
+	    delay_us(20);   //延时20us
 	    Trig=0;         //产生一个20us的脉冲
 	    while(Echo==0); //等待Echo回波引脚变高电平
 	    succeed_flag=0; //清测量成功标志
@@ -69,7 +55,7 @@ void display(uint temp)
 	    TL1=0;          //定时器1清零
 	    TF1=0;          //计数溢出标志
 	    TR1=1;          //启动定时器1
-	    delay(20);   	
+	    delay_ms(20);   	
 	    TR1=0;          //关闭定时器1
 	    EX0=0;          //关闭外部中断0
 	   if(succeed_flag==1)
@@ -82,8 +68,11 @@ void display(uint temp)
 	      distance=0;                    //没有回波则清零
 	      test = !test;                  //测试灯变化
 	    }		 		  
-      display(distance);
-	  LED4_Display ();
+		if(distance>=9999)
+			distance=0;
+		else
+      		display(distance);
+	  	LED4_Display ();
  }
 //***************************************************************
 //外部中断0，用做判断回波电平
