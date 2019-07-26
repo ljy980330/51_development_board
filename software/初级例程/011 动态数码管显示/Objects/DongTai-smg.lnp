@@ -1,0 +1,5 @@
+"main.obj",
+"delay.obj",
+"smgdisplay.obj" 
+TO "DongTai-smg" 
+RAMSIZE(256) 

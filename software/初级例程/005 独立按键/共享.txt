@@ -1,2 +1,0 @@
-smgdisplay.h delay.h
-π≤”√
