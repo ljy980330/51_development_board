@@ -1,0 +1,5 @@
+".\Objects\main.obj",
+".\Objects\delay.obj",
+".\Objects\stepperMotor.obj" 
+TO ".\Objects\stepperMotor" 
+PRINT(".\Listings\stepperMotor.m51") RAMSIZE(256) 
