@@ -1,0 +1,200 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/25/2019  15:22:32  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+F:\WORKAPP\KEIL_V5\C51\BIN\BL51.EXE .\Objects\main.obj TO .\Objects\photoconductor PRINT (.\Listings\photoconductor.m51)
+>>  RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\main.obj (MAIN)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C?SIDIV)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C?UIDIV)
+
+
+LINK MAP OF MODULE:  .\Objects\photoconductor (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     000CH     UNIT         ?DT?MAIN
+            DATA    0014H     0002H     UNIT         _DATA_GROUP_
+            IDATA   0016H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     008BH     UNIT         ?C?LIB_CODE
+            CODE    008EH     0067H     UNIT         ?PR?DISPLAY?MAIN
+            CODE    00F5H     0026H     UNIT         ?PR?MAIN?MAIN
+            CODE    011BH     0025H     UNIT         ?PR?_LED_OUT?MAIN
+            CODE    0140H     0019H     UNIT         ?PR?INITADC?MAIN
+            CODE    0159H     000CH     UNIT         ?C_C51STARTUP
+            CODE    0165H     000AH     UNIT         ?CO?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\photoconductor (MAIN)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN                  -----    -----
+  +--> ?PR?INITADC?MAIN
+  +--> ?PR?DISPLAY?MAIN
+
+?PR?DISPLAY?MAIN               0014H    0002H
+  +--> ?PR?_LED_OUT?MAIN
+
+?PR?_LED_OUT?MAIN              -----    -----
+  +--> ?CO?MAIN
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/25/2019  15:22:32  PAGE 2
+
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\photoconductor (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00C0H         PUBLIC        P4
+  D:00C8H         PUBLIC        P5
+  D:00A8H         PUBLIC        IE
+  D:00BDH         PUBLIC        ADC_RES
+  D:00B8H         PUBLIC        IP
+  D:0008H         PUBLIC        date
+  D:00D8H         PUBLIC        CCON
+  C:00F5H         PUBLIC        main
+  C:0165H         PUBLIC        LED_0F
+  B:0080H.1       PUBLIC        RCLK
+  B:0080H.2       PUBLIC        SCLK
+  C:0129H         PUBLIC        _LED_OUT
+  D:00BCH         PUBLIC        ADC_CONTR
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:00E0H         PUBLIC        ACC
+  D:000AH         PUBLIC        LED
+  C:008EH         PUBLIC        Display
+  B:0080H.0       PUBLIC        DIO
+  D:009DH         PUBLIC        P1ASF
+  C:0140H         PUBLIC        InitADC
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          INITADC
+  C:0140H         LINE#         25
+  C:0140H         LINE#         26
+  C:0140H         LINE#         28
+  C:0143H         LINE#         30
+  C:0146H         LINE#         34
+  C:0149H         LINE#         38
+  C:014CH         LINE#         40
+  C:0151H         LINE#         41
+  C:0158H         LINE#         43
+  -------         ENDPROC       INITADC
+  -------         PROC          DISPLAY
+  -------         DO            
+  D:0082H         SYMBOL        led_table
+  D:0007H         SYMBOL        i
+  D:0003H         SYMBOL        ge
+  D:0014H         SYMBOL        shi
+  D:0015H         SYMBOL        bai
+  -------         ENDDO         
+  C:008EH         LINE#         63
+  C:008EH         LINE#         64
+  C:008EH         LINE#         68
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/25/2019  15:22:32  PAGE 3
+
+
+  C:009BH         LINE#         69
+  C:00AFH         LINE#         70
+  C:00C3H         LINE#         73
+  C:00C8H         LINE#         74
+  C:00C8H         LINE#         76
+  C:00CBH         LINE#         77
+  C:00D0H         LINE#         79
+  C:00D2H         LINE#         80
+  C:00D4H         LINE#         83
+  C:00D8H         LINE#         84
+  C:00D8H         LINE#         86
+  C:00DBH         LINE#         87
+  C:00E0H         LINE#         89
+  C:00E2H         LINE#         90
+  C:00E4H         LINE#         93
+  C:00E8H         LINE#         94
+  C:00E8H         LINE#         96
+  C:00EBH         LINE#         97
+  C:00F0H         LINE#         99
+  C:00F2H         LINE#         100
+  C:00F4H         LINE#         101
+  -------         ENDPROC       DISPLAY
+  C:011BH         SYMBOL        L?0015
+  -------         PROC          L?0014
+  -------         ENDPROC       L?0014
+  C:011BH         SYMBOL        L?0015
+  -------         PROC          _LED_OUT
+  D:0007H         SYMBOL        X
+  -------         DO            
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:0129H         LINE#         109
+  C:0129H         LINE#         110
+  C:0129H         LINE#         112
+  C:012BH         LINE#         113
+  C:012BH         LINE#         114
+  C:0135H         LINE#         115
+  C:0139H         LINE#         116
+  C:013BH         LINE#         117
+  C:013DH         LINE#         118
+  C:013FH         LINE#         119
+  -------         ENDPROC       _LED_OUT
+  -------         PROC          MAIN
+  C:00F5H         LINE#         126
+  C:00F5H         LINE#         127
+  C:00F5H         LINE#         128
+  C:00F8H         LINE#         129
+  C:00FBH         LINE#         130
+  C:00FEH         LINE#         131
+  C:0101H         LINE#         132
+  C:0104H         LINE#         133
+  C:0107H         LINE#         134
+  C:010AH         LINE#         135
+  C:010DH         LINE#         136
+  C:0110H         LINE#         137
+  C:0113H         LINE#         139
+  C:0113H         LINE#         140
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/25/2019  15:22:32  PAGE 4
+
+
+  C:0113H         LINE#         141
+  C:0116H         LINE#         142
+  C:0119H         LINE#         143
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        ?C?SIDIV
+  C:0003H         PUBLIC        ?C?SIDIV
+  -------         ENDMOD        ?C?SIDIV
+
+  -------         MODULE        ?C?UIDIV
+  C:0039H         PUBLIC        ?C?UIDIV
+  -------         ENDMOD        ?C?UIDIV
+
+Program Size: data=23.0 xdata=0 code=367
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -354,7 +354,7 @@
             <File>
               <FileName>DianliangLED.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\DianliangLED.c</FilePath>
+              <FilePath>.\DianLiangLED\DianliangLED.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -70,7 +70,7 @@ void Display ()
 	shi = (unsigned char)((date/10)%10);
 	bai = (unsigned char)((date/100)%10); 
 
-	//显示第1位
+	//显示第1位							-
 	led_table = LED_0F + LED[ge];
 	i = *led_table;
 

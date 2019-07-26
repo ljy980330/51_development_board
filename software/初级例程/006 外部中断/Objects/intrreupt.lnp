@@ -1,5 +1,0 @@
-"main.obj",
-"delay.obj",
-"interrupt.obj" 
-TO "intrreupt" 
-RAMSIZE(256) 

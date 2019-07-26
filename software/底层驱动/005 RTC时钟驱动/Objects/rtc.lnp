@@ -1,6 +1,0 @@
-".\Objects\main.obj",
-".\Objects\delay.obj",
-".\Objects\rtc.obj",
-".\Objects\i2c.obj" 
-TO ".\Objects\rtc" 
-PRINT(".\Listings\rtc.m51") RAMSIZE(256) 

@@ -1,8 +1,8 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/07/2019  22:29:33  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/25/2019  13:39:03  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-F:\KEIL4\C51\BIN\BL51.EXE main.obj TO photoconductor RAMSIZE (256)
+F:\WORKAPP\KEIL_V5\C51\BIN\BL51.EXE main.obj TO photoconductor RAMSIZE (256)
 
 
 MEMORY MODEL: SMALL
@@ -10,9 +10,9 @@ MEMORY MODEL: SMALL
 
 INPUT MODULES INCLUDED:
   main.obj (MAIN)
-  F:\KEIL4\C51\LIB\C51S.LIB (?C_STARTUP)
-  F:\KEIL4\C51\LIB\C51S.LIB (?C?SIDIV)
-  F:\KEIL4\C51\LIB\C51S.LIB (?C?UIDIV)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C?SIDIV)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C?UIDIV)
 
 
 LINK MAP OF MODULE:  photoconductor (MAIN)
@@ -59,7 +59,7 @@ SEGMENT                          DATA_GROUP
   +--> ?CO?MAIN
 
 
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/07/2019  22:29:33  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/25/2019  13:39:03  PAGE 2
 
 
 
@@ -119,7 +119,7 @@ SYMBOL TABLE OF MODULE:  photoconductor (MAIN)
   C:008EH         LINE#         65
   C:008EH         LINE#         69
   C:009BH         LINE#         70
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/07/2019  22:29:33  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/25/2019  13:39:03  PAGE 3
 
 
   C:00AFH         LINE#         71
@@ -179,7 +179,7 @@ SYMBOL TABLE OF MODULE:  photoconductor (MAIN)
   C:0113H         LINE#         140
   C:0113H         LINE#         141
   C:0113H         LINE#         142
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/07/2019  22:29:33  PAGE 4
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/25/2019  13:39:03  PAGE 4
 
 
   C:0116H         LINE#         143

@@ -186,12 +186,12 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>3</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>5</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <TopLine>77</TopLine>
+      <CurrentLine>77</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\display\display.c</PathWithFileName>
       <FilenameWithoutPath>display.c</FilenameWithoutPath>
@@ -214,11 +214,11 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>5</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>51</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>49</TopLine>
+      <TopLine>54</TopLine>
       <CurrentLine>62</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\i2c\i2c.c</PathWithFileName>
@@ -244,10 +244,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>6</ColumnNumber>
+      <ColumnNumber>4</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>10</TopLine>
-      <CurrentLine>10</CurrentLine>
+      <TopLine>13</TopLine>
+      <CurrentLine>18</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -255,8 +255,8 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\005 OLED屏幕显示中文\I2C\I2C.H</PathWithFilename>
-    <TopLine>4</TopLine>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\中级例程\005 OLED屏幕显示中文\I2C\I2C.H</PathWithFilename>
+    <TopLine>12</TopLine>
     <CurrentLine>20</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
@@ -1621,24 +1621,24 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>2</ActiveTab>
+      <ActiveTab>0</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>6</ColumnNumber>
-          <TopLine>10</TopLine>
-          <CurrentLine>10</CurrentLine>
+          <ColumnNumber>4</ColumnNumber>
+          <TopLine>13</TopLine>
+          <CurrentLine>18</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\display\display.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
+          <ColumnNumber>5</ColumnNumber>
+          <TopLine>77</TopLine>
+          <CurrentLine>77</CurrentLine>
         </Doc>
         <Doc>
           <Name>I2C/I2C.H</Name>
           <ColumnNumber>25</ColumnNumber>
-          <TopLine>4</TopLine>
+          <TopLine>12</TopLine>
           <CurrentLine>20</CurrentLine>
         </Doc>
         <Doc>
@@ -1656,7 +1656,7 @@
         <Doc>
           <Name>.\i2c\i2c.c</Name>
           <ColumnNumber>51</ColumnNumber>
-          <TopLine>49</TopLine>
+          <TopLine>54</TopLine>
           <CurrentLine>62</CurrentLine>
         </Doc>
         <Doc>

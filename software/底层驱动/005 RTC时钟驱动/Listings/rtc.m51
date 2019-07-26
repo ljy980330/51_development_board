@@ -1,9 +1,9 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/15/2019  09:11:17  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/15/2019  14:34:12  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-D:\单片机\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\delay.obj, .\Objects\rtc.obj, .\Objects\i2c.obj TO .\Objects\rt
->> c PRINT (.\Listings\rtc.m51) RAMSIZE (256)
+F:\WORKAPP\KEIL_V5\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\delay.obj, .\Objects\rtc.obj, .\Objects\i2c.obj TO .\O
+>> bjects\rtc PRINT (.\Listings\rtc.m51) RAMSIZE (256)
 
 
 MEMORY MODEL: SMALL
@@ -14,7 +14,7 @@ INPUT MODULES INCLUDED:
   .\Objects\delay.obj (DELAY)
   .\Objects\rtc.obj (RTC)
   .\Objects\i2c.obj (I2C)
-  D:\单片机\C51\LIB\C51S.LIB (?C_STARTUP)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
 
 
 LINK MAP OF MODULE:  .\Objects\rtc (MAIN)
@@ -59,7 +59,7 @@ LINK MAP OF MODULE:  .\Objects\rtc (MAIN)
             CODE    0291H     001EH     UNIT         ?PR?READ_CURRENT?RTC
             CODE    02AFH     001BH     UNIT         ?PR?GET_SHOW_TEMPERATURE?RTC
             CODE    02CAH     0016H     UNIT         ?PR?_HEX2BCD?RTC
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:11:17  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  14:34:12  PAGE 2
 
 
             CODE    02E0H     0014H     UNIT         ?PR?_BCD2HEX?RTC
@@ -119,7 +119,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\rtc (MAIN)
   C:0252H         PUBLIC        _delay_ms
   C:0325H         PUBLIC        _delay_us
   -------         PROC          _DELAY_MS
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:11:17  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  14:34:12  PAGE 3
 
 
   D:0006H         SYMBOL        n
@@ -179,7 +179,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\rtc (MAIN)
   C:00D7H         PUBLIC        _DateDisplay
   C:02AFH         PUBLIC        get_show_Temperature
   D:000AH         PUBLIC        dis_buf
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:11:17  PAGE 4
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  14:34:12  PAGE 4
 
 
   C:02CAH         PUBLIC        _HEX2BCD
@@ -239,7 +239,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\rtc (MAIN)
   C:0149H         LINE#         90
   C:014BH         LINE#         91
   -------         ENDPROC       _WRITE_BYTE
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:11:17  PAGE 5
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  14:34:12  PAGE 5
 
 
   -------         PROC          READ_CURRENT
@@ -299,7 +299,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\rtc (MAIN)
   C:004AH         LINE#         141
   -------         ENDPROC       _MODIFYTIME
   -------         PROC          _TIMEDISPLAY
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:11:17  PAGE 6
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  14:34:12  PAGE 6
 
 
   D:0007H         SYMBOL        Dhour
@@ -359,7 +359,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\rtc (MAIN)
   D:0021H         SYMBOL        Ytemp2
   D:0007H         SYMBOL        Mtemp1
   D:0022H         SYMBOL        Mtemp2
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:11:17  PAGE 7
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  14:34:12  PAGE 7
 
 
   D:0007H         SYMBOL        Dtemp1
@@ -419,7 +419,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\rtc (MAIN)
   -------         PROC          I2C_INIT
   C:0307H         LINE#         16
   C:0307H         LINE#         17
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:11:17  PAGE 8
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  14:34:12  PAGE 8
 
 
   C:0307H         LINE#         18
@@ -479,7 +479,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\rtc (MAIN)
   D:0018H         SYMBOL        i
   D:0019H         SYMBOL        j
   D:001AH         SYMBOL        k
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:11:17  PAGE 9
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  14:34:12  PAGE 9
 
 
   -------         ENDDO         
@@ -539,7 +539,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\rtc (MAIN)
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?_MODIFYTIME?RTC
 
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  09:11:17  PAGE 10
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/15/2019  14:34:12  PAGE 10
 
 
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS

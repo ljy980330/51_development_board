@@ -12,8 +12,8 @@ void LED_Shan_Shuo()
 while(1)
 {
    P4SW=0xbb;	//定义P4IO口
-   LED1=0;	   //点亮第一个led
-   LED2=0;
+   LED1=1;	   //点亮第一个led
+   LED2=1;
    LED3=0;
    E3=~E3;	   //使其电平反转
    Delay_us(10000);

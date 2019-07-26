@@ -1,5 +1,0 @@
-"main.obj",
-"delay.obj",
-"smgdisplay.obj" 
-TO "JingTai-smg" 
-RAMSIZE(256) 
