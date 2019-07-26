@@ -1,6 +1,0 @@
-".\Objects\main.obj",
-".\Objects\delay.obj",
-".\Objects\led.obj",
-".\Objects\Ultrasonic.obj" 
-TO ".\Objects\Ultrasonic" 
-PRINT(".\Listings\Ultrasonic.m51") RAMSIZE(256) 
