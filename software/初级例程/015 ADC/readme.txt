@@ -1,6 +1,6 @@
-photoconductor.hex 是最终烧录到单片机上的程序
+ADC.hex 是最终烧录到单片机上的程序
 
-photoconductor.uvproj 是该程序的工程文件
+ADC.uvproj 是该程序的工程文件
 
 main.c      是ADC的C源代码
 

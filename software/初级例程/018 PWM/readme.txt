@@ -1,6 +1,6 @@
-LEDindicator.hex 是最终烧录到单片机上的程序
+PWM.hex 是最终烧录到单片机上的程序
 
-LEDindicator.uvproj 是该程序的工程文件
+PWM.uvproj 是该程序的工程文件
 
 main.c      是PWM的C源代码
 

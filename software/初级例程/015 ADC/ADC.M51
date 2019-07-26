@@ -1,8 +1,8 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/06/2019  20:34:28  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/26/2019  18:46:21  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-F:\KEIL4\C51\BIN\BL51.EXE main.obj TO photoconductor RAMSIZE (256)
+F:\KEIL4\C51\BIN\BL51.EXE main.obj TO ADC RAMSIZE (256)
 
 
 MEMORY MODEL: SMALL
@@ -15,7 +15,7 @@ INPUT MODULES INCLUDED:
   F:\KEIL4\C51\LIB\C51S.LIB (?C?UIDIV)
 
 
-LINK MAP OF MODULE:  photoconductor (MAIN)
+LINK MAP OF MODULE:  ADC (MAIN)
 
 
             TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
@@ -39,7 +39,7 @@ LINK MAP OF MODULE:  photoconductor (MAIN)
 
 
 
-OVERLAY MAP OF MODULE:   photoconductor (MAIN)
+OVERLAY MAP OF MODULE:   ADC (MAIN)
 
 
 SEGMENT                          DATA_GROUP 
@@ -59,11 +59,11 @@ SEGMENT                          DATA_GROUP
   +--> ?CO?MAIN
 
 
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  20:34:28  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  18:46:21  PAGE 2
 
 
 
-SYMBOL TABLE OF MODULE:  photoconductor (MAIN)
+SYMBOL TABLE OF MODULE:  ADC (MAIN)
 
   VALUE           TYPE          NAME
   ----------------------------------
@@ -97,15 +97,15 @@ SYMBOL TABLE OF MODULE:  photoconductor (MAIN)
   C:0140H         PUBLIC        InitADC
   D:00D0H         PUBLIC        PSW
   -------         PROC          INITADC
-  C:0140H         LINE#         25
   C:0140H         LINE#         26
-  C:0140H         LINE#         28
-  C:0143H         LINE#         30
-  C:0146H         LINE#         34
-  C:0149H         LINE#         38
-  C:014CH         LINE#         40
-  C:0151H         LINE#         41
-  C:0158H         LINE#         43
+  C:0140H         LINE#         27
+  C:0140H         LINE#         29
+  C:0143H         LINE#         31
+  C:0146H         LINE#         35
+  C:0149H         LINE#         39
+  C:014CH         LINE#         41
+  C:0151H         LINE#         42
+  C:0158H         LINE#         44
   -------         ENDPROC       INITADC
   -------         PROC          DISPLAY
   -------         DO            
@@ -115,33 +115,33 @@ SYMBOL TABLE OF MODULE:  photoconductor (MAIN)
   D:0014H         SYMBOL        shi
   D:0015H         SYMBOL        bai
   -------         ENDDO         
-  C:008EH         LINE#         63
   C:008EH         LINE#         64
-  C:008EH         LINE#         68
-  C:009BH         LINE#         69
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  20:34:28  PAGE 3
+  C:008EH         LINE#         65
+  C:008EH         LINE#         69
+  C:009BH         LINE#         70
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  18:46:21  PAGE 3
 
 
-  C:00AFH         LINE#         70
-  C:00C3H         LINE#         73
-  C:00C8H         LINE#         74
-  C:00C8H         LINE#         76
-  C:00CBH         LINE#         77
-  C:00D0H         LINE#         79
-  C:00D2H         LINE#         80
-  C:00D4H         LINE#         83
-  C:00D8H         LINE#         84
-  C:00D8H         LINE#         86
-  C:00DBH         LINE#         87
-  C:00E0H         LINE#         89
-  C:00E2H         LINE#         90
-  C:00E4H         LINE#         93
-  C:00E8H         LINE#         94
-  C:00E8H         LINE#         96
-  C:00EBH         LINE#         97
-  C:00F0H         LINE#         99
-  C:00F2H         LINE#         100
-  C:00F4H         LINE#         101
+  C:00AFH         LINE#         71
+  C:00C3H         LINE#         74
+  C:00C8H         LINE#         75
+  C:00C8H         LINE#         77
+  C:00CBH         LINE#         78
+  C:00D0H         LINE#         80
+  C:00D2H         LINE#         81
+  C:00D4H         LINE#         84
+  C:00D8H         LINE#         85
+  C:00D8H         LINE#         87
+  C:00DBH         LINE#         88
+  C:00E0H         LINE#         90
+  C:00E2H         LINE#         91
+  C:00E4H         LINE#         94
+  C:00E8H         LINE#         95
+  C:00E8H         LINE#         97
+  C:00EBH         LINE#         98
+  C:00F0H         LINE#         100
+  C:00F2H         LINE#         101
+  C:00F4H         LINE#         102
   -------         ENDPROC       DISPLAY
   C:011BH         SYMBOL        L?0015
   -------         PROC          L?0014
@@ -152,38 +152,38 @@ SYMBOL TABLE OF MODULE:  photoconductor (MAIN)
   -------         DO            
   D:0006H         SYMBOL        i
   -------         ENDDO         
-  C:0129H         LINE#         109
   C:0129H         LINE#         110
-  C:0129H         LINE#         112
-  C:012BH         LINE#         113
+  C:0129H         LINE#         111
+  C:0129H         LINE#         113
   C:012BH         LINE#         114
-  C:0135H         LINE#         115
-  C:0139H         LINE#         116
-  C:013BH         LINE#         117
-  C:013DH         LINE#         118
-  C:013FH         LINE#         119
+  C:012BH         LINE#         115
+  C:0135H         LINE#         116
+  C:0139H         LINE#         117
+  C:013BH         LINE#         118
+  C:013DH         LINE#         119
+  C:013FH         LINE#         120
   -------         ENDPROC       _LED_OUT
   -------         PROC          MAIN
-  C:00F5H         LINE#         126
   C:00F5H         LINE#         127
   C:00F5H         LINE#         128
-  C:00F8H         LINE#         129
-  C:00FBH         LINE#         130
-  C:00FEH         LINE#         131
-  C:0101H         LINE#         132
-  C:0104H         LINE#         133
-  C:0107H         LINE#         134
-  C:010AH         LINE#         135
-  C:010DH         LINE#         136
-  C:0110H         LINE#         137
-  C:0113H         LINE#         139
+  C:00F5H         LINE#         129
+  C:00F8H         LINE#         130
+  C:00FBH         LINE#         131
+  C:00FEH         LINE#         132
+  C:0101H         LINE#         133
+  C:0104H         LINE#         134
+  C:0107H         LINE#         135
+  C:010AH         LINE#         136
+  C:010DH         LINE#         137
+  C:0110H         LINE#         138
   C:0113H         LINE#         140
   C:0113H         LINE#         141
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/06/2019  20:34:28  PAGE 4
+  C:0113H         LINE#         142
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  18:46:21  PAGE 4
 
 
-  C:0116H         LINE#         142
-  C:0119H         LINE#         143
+  C:0116H         LINE#         143
+  C:0119H         LINE#         144
   -------         ENDPROC       MAIN
   -------         ENDMOD        MAIN
 
