@@ -214,10 +214,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>56</ColumnNumber>
+      <ColumnNumber>14</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>9</CurrentLine>
+      <TopLine>25</TopLine>
+      <CurrentLine>35</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Ultrasonic\Ultrasonic.c</PathWithFileName>
       <FilenameWithoutPath>Ultrasonic.c</FilenameWithoutPath>
@@ -1653,9 +1653,9 @@
         </Doc>
         <Doc>
           <Name>.\Ultrasonic\Ultrasonic.c</Name>
-          <ColumnNumber>56</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>9</CurrentLine>
+          <ColumnNumber>14</ColumnNumber>
+          <TopLine>25</TopLine>
+          <CurrentLine>35</CurrentLine>
         </Doc>
         <Doc>
           <Name>ULTRASONIC/ULTRASONIC.H</Name>

@@ -1,0 +1,4 @@
+".\Objects\main.obj",
+".\Objects\DianliangLED.obj" 
+TO ".\Objects\DianLiangDiYiGeLED" 
+PRINT(".\Listings\DianLiangDiYiGeLED.m51") RAMSIZE(256) 
