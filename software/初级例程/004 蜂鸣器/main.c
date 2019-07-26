@@ -9,5 +9,6 @@
 
 void main()
 {
-    Feng_Ming_Qi();
+	init();
+    run();
 }

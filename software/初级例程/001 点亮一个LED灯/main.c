@@ -8,8 +8,8 @@
 #include "includes.h"
 void main()
 {
-while(1)
-{
-  Dian_Liang_LED();
-}	
+	while(1)
+	{
+	  run();
+	}	
 }

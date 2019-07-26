@@ -172,10 +172,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>6</ColumnNumber>
+      <ColumnNumber>42</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>11</CurrentLine>
+      <CurrentLine>10</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -188,8 +188,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\delay\delay.c</PathWithFileName>
       <FilenameWithoutPath>delay.c</FilenameWithoutPath>
@@ -200,10 +200,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>74</ColumnNumber>
+      <ColumnNumber>5</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>36</TopLine>
-      <CurrentLine>36</CurrentLine>
+      <TopLine>19</TopLine>
+      <CurrentLine>19</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\led\led.c</PathWithFileName>
       <FilenameWithoutPath>led.c</FilenameWithoutPath>
@@ -214,10 +214,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>14</ColumnNumber>
+      <ColumnNumber>19</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>25</TopLine>
-      <CurrentLine>35</CurrentLine>
+      <TopLine>43</TopLine>
+      <CurrentLine>45</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Ultrasonic\Ultrasonic.c</PathWithFileName>
       <FilenameWithoutPath>Ultrasonic.c</FilenameWithoutPath>
@@ -225,9 +225,9 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\008 超声波模块\动态数码管显示\LED\LED.H</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\整理这里，改好放进去\software\初级例程\008 超声波模块\动态数码管显示\LED\LED.H</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>9</CurrentLine>
+    <CurrentLine>11</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -251,7 +251,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\008 超声波模块\动态数码管显示\INCLUDES.H</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\整理这里，改好放进去\software\初级例程\008 超声波模块\动态数码管显示\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>17</CurrentLine>
     <Constant>0</Constant>
@@ -277,7 +277,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\008 超声波模块\动态数码管显示\ULTRASONIC\ULTRASONIC.H</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\整理这里，改好放进去\software\初级例程\008 超声波模块\动态数码管显示\ULTRASONIC\ULTRASONIC.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>9</CurrentLine>
     <Constant>0</Constant>
@@ -1647,15 +1647,15 @@
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>6</ColumnNumber>
+          <ColumnNumber>42</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>11</CurrentLine>
+          <CurrentLine>10</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\Ultrasonic\Ultrasonic.c</Name>
-          <ColumnNumber>14</ColumnNumber>
-          <TopLine>25</TopLine>
-          <CurrentLine>35</CurrentLine>
+          <ColumnNumber>19</ColumnNumber>
+          <TopLine>43</TopLine>
+          <CurrentLine>45</CurrentLine>
         </Doc>
         <Doc>
           <Name>ULTRASONIC/ULTRASONIC.H</Name>
@@ -1671,15 +1671,21 @@
         </Doc>
         <Doc>
           <Name>.\led\led.c</Name>
-          <ColumnNumber>74</ColumnNumber>
-          <TopLine>36</TopLine>
-          <CurrentLine>36</CurrentLine>
+          <ColumnNumber>5</ColumnNumber>
+          <TopLine>19</TopLine>
+          <CurrentLine>19</CurrentLine>
         </Doc>
         <Doc>
           <Name>LED/LED.H</Name>
-          <ColumnNumber>53</ColumnNumber>
+          <ColumnNumber>46</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>9</CurrentLine>
+          <CurrentLine>11</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\delay\delay.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

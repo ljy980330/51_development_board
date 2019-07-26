@@ -4,7 +4,7 @@
 #include <STC12C5A.H>			  
 #include "config.h"	  			  
 #include "delay/delay.h"	 
-#include <led/led.h> 
+#include "led/led.h" 
 extern uchar LED[8];	//用于LED的8位显示缓存
 
 uint distance;
@@ -18,23 +18,7 @@ uint succeed_flag;
 sbit Trig  = P3^7;
 sbit Echo  = P3^2;
  
-//
-//***************************************************************
-//显示数据转换程序
-void display(uint temp) 
- { 
-    uchar qian,ge,shi,bai;
-	qian = temp/1000;
-    bai=temp/100%10;
-    shi=temp%100/10;  
-    ge=temp%10;
-	
-	LED[4]=qian;
-	LED[3]=bai;
-	LED[2]=shi;
-	LED[1]=ge;
-	
- }	 
+ 
  void init()
  {
     Trig=0;       //首先拉低脉冲输入引脚
@@ -89,4 +73,4 @@ void timer1() interrupt 3  //
 {
      TH1=0;
      TL1=0;
-}	
+ }	
