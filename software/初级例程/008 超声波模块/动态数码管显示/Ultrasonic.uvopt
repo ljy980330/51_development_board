@@ -172,10 +172,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>42</ColumnNumber>
+      <ColumnNumber>36</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>10</CurrentLine>
+      <CurrentLine>6</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -214,10 +214,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>19</ColumnNumber>
+      <ColumnNumber>2</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>43</TopLine>
-      <CurrentLine>45</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Ultrasonic\Ultrasonic.c</PathWithFileName>
       <FilenameWithoutPath>Ultrasonic.c</FilenameWithoutPath>
@@ -225,7 +225,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\整理这里，改好放进去\software\初级例程\008 超声波模块\动态数码管显示\LED\LED.H</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\008 超声波模块\动态数码管显示\LED\LED.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>11</CurrentLine>
     <Constant>0</Constant>
@@ -251,9 +251,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\整理这里，改好放进去\software\初级例程\008 超声波模块\动态数码管显示\INCLUDES.H</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\008 超声波模块\动态数码管显示\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>17</CurrentLine>
+    <CurrentLine>7</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -277,7 +277,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\整理这里，改好放进去\software\初级例程\008 超声波模块\动态数码管显示\ULTRASONIC\ULTRASONIC.H</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\008 超声波模块\动态数码管显示\ULTRASONIC\ULTRASONIC.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>9</CurrentLine>
     <Constant>0</Constant>
@@ -1643,31 +1643,31 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>1</ActiveTab>
+      <ActiveTab>6</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>42</ColumnNumber>
+          <ColumnNumber>36</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>10</CurrentLine>
+          <CurrentLine>6</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\Ultrasonic\Ultrasonic.c</Name>
-          <ColumnNumber>19</ColumnNumber>
-          <TopLine>43</TopLine>
-          <CurrentLine>45</CurrentLine>
+          <ColumnNumber>2</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
-          <Name>ULTRASONIC/ULTRASONIC.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\008 超声波模块\动态数码管显示\ULTRASONIC\ULTRASONIC.H</Name>
           <ColumnNumber>23</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>9</CurrentLine>
         </Doc>
         <Doc>
-          <Name>INCLUDES.H</Name>
-          <ColumnNumber>35</ColumnNumber>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\008 超声波模块\动态数码管显示\INCLUDES.H</Name>
+          <ColumnNumber>41</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>17</CurrentLine>
+          <CurrentLine>7</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\led\led.c</Name>
@@ -1676,7 +1676,7 @@
           <CurrentLine>19</CurrentLine>
         </Doc>
         <Doc>
-          <Name>LED/LED.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\008 超声波模块\动态数码管显示\LED\LED.H</Name>
           <ColumnNumber>46</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>11</CurrentLine>

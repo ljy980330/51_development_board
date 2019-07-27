@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/26/2019  18:08:54  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/26/2019  22:17:49  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -29,7 +29,7 @@ LINK MAP OF MODULE:  .\Objects\led (MAIN)
             CODE    0000H     0003H     ABSOLUTE     
             CODE    0003H     000CH     UNIT         ?C_C51STARTUP
             CODE    000FH     000AH     UNIT         ?PR?RUN?LED
-            CODE    0019H     0005H     UNIT         ?PR?MAIN?MAIN
+            CODE    0019H     0003H     UNIT         ?PR?MAIN?MAIN
 
 
 
@@ -59,7 +59,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\led (MAIN)
   D:00A0H         PUBLIC        P2
   D:00B0H         PUBLIC        P3
   D:00C0H         PUBLIC        P4
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  18:08:54  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  22:17:49  PAGE 2
 
 
   D:00C8H         PUBLIC        P5
@@ -72,12 +72,9 @@ SYMBOL TABLE OF MODULE:  .\Objects\led (MAIN)
   D:00E0H         PUBLIC        ACC
   D:00D0H         PUBLIC        PSW
   -------         PROC          MAIN
-  C:0019H         LINE#         9
-  C:0019H         LINE#         10
-  C:0019H         LINE#         11
-  C:0019H         LINE#         12
   C:0019H         LINE#         13
-  C:001CH         LINE#         14
+  C:0019H         LINE#         14
+  C:0019H         LINE#         15
   -------         ENDPROC       MAIN
   -------         ENDMOD        MAIN
 
@@ -102,15 +99,15 @@ SYMBOL TABLE OF MODULE:  .\Objects\led (MAIN)
   C:000FH         PUBLIC        run
   D:00D0H         PUBLIC        PSW
   -------         PROC          RUN
-  C:000FH         LINE#         10
-  C:000FH         LINE#         11
-  C:000FH         LINE#         13
-  C:0012H         LINE#         14
-  C:0014H         LINE#         15
-  C:0016H         LINE#         16
-  C:0018H         LINE#         19
+  C:000FH         LINE#         17
+  C:000FH         LINE#         18
+  C:000FH         LINE#         20
+  C:0012H         LINE#         21
+  C:0014H         LINE#         22
+  C:0016H         LINE#         23
+  C:0018H         LINE#         25
   -------         ENDPROC       RUN
   -------         ENDMOD        LED
 
-Program Size: data=9.0 xdata=0 code=30
+Program Size: data=9.0 xdata=0 code=28
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

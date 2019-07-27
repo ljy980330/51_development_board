@@ -352,16 +352,6 @@
               <FilePath>.\main.c</FilePath>
             </File>
             <File>
-              <FileName>config.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\config.h</FilePath>
-            </File>
-            <File>
-              <FileName>includes.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\includes.h</FilePath>
-            </File>
-            <File>
               <FileName>delay.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\delay\delay.c</FilePath>
@@ -370,11 +360,6 @@
               <FileName>display.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\display\display.c</FilePath>
-            </File>
-            <File>
-              <FileName>display.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\display\display.h</FilePath>
             </File>
             <File>
               <FileName>key.c</FileName>

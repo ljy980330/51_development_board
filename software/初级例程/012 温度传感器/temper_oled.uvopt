@@ -160,10 +160,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>44</ColumnNumber>
+      <ColumnNumber>50</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>15</CurrentLine>
+      <CurrentLine>19</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -348,7 +348,7 @@
 
   <AlienFiles>
     <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\012 温度传感器\CODE_TAB\CODE_TAB.H</PathWithFilename>
-    <TopLine>4</TopLine>
+    <TopLine>1</TopLine>
     <CurrentLine>22</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
@@ -374,7 +374,7 @@
 
   <AlienFiles>
     <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\012 温度传感器\FUNCTION\FUNCTION.H</PathWithFilename>
-    <TopLine>4</TopLine>
+    <TopLine>1</TopLine>
     <CurrentLine>22</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
@@ -426,7 +426,7 @@
 
   <AlienFiles>
     <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\012 温度传感器\DRIVE\DRIVE.H</PathWithFilename>
-    <TopLine>6</TopLine>
+    <TopLine>1</TopLine>
     <CurrentLine>24</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
@@ -478,7 +478,7 @@
 
   <AlienFiles>
     <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\012 温度传感器\I2C\I2C.H</PathWithFilename>
-    <TopLine>2</TopLine>
+    <TopLine>1</TopLine>
     <CurrentLine>20</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
@@ -1843,12 +1843,12 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>6</ActiveTab>
+      <ActiveTab>2</ActiveTab>
       <Documents>
         <Doc>
           <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\012 温度传感器\I2C\I2C.H</Name>
           <ColumnNumber>25</ColumnNumber>
-          <TopLine>2</TopLine>
+          <TopLine>1</TopLine>
           <CurrentLine>20</CurrentLine>
         </Doc>
         <Doc>
@@ -1859,9 +1859,9 @@
         </Doc>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>44</ColumnNumber>
+          <ColumnNumber>50</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>15</CurrentLine>
+          <CurrentLine>19</CurrentLine>
         </Doc>
         <Doc>
           <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\012 温度传感器\INCLUDES.H</Name>
@@ -1872,7 +1872,7 @@
         <Doc>
           <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\012 温度传感器\DRIVE\DRIVE.H</Name>
           <ColumnNumber>0</ColumnNumber>
-          <TopLine>6</TopLine>
+          <TopLine>1</TopLine>
           <CurrentLine>24</CurrentLine>
         </Doc>
         <Doc>
@@ -1896,13 +1896,13 @@
         <Doc>
           <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\012 温度传感器\FUNCTION\FUNCTION.H</Name>
           <ColumnNumber>32</ColumnNumber>
-          <TopLine>4</TopLine>
+          <TopLine>1</TopLine>
           <CurrentLine>22</CurrentLine>
         </Doc>
         <Doc>
           <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\012 温度传感器\CODE_TAB\CODE_TAB.H</Name>
           <ColumnNumber>9</ColumnNumber>
-          <TopLine>4</TopLine>
+          <TopLine>1</TopLine>
           <CurrentLine>22</CurrentLine>
         </Doc>
         <Doc>

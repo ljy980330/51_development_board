@@ -1,9 +1,9 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/26/2019  18:18:48  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/26/2019  22:12:26  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-F:\WORKAPP\KEIL_V5\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\LEDshanshuo.obj, .\Objects\delay.obj TO .\Objects\led 
->> PRINT (.\Listings\led.m51) RAMSIZE (256)
+F:\WORKAPP\KEIL_V5\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\delay.obj, .\Objects\led.obj TO .\Objects\led PRINT (.
+>> \Listings\led.m51) RAMSIZE (256)
 
 
 MEMORY MODEL: SMALL
@@ -11,8 +11,8 @@ MEMORY MODEL: SMALL
 
 INPUT MODULES INCLUDED:
   .\Objects\main.obj (MAIN)
-  .\Objects\LEDshanshuo.obj (LEDSHANSHUO)
   .\Objects\delay.obj (DELAY)
+  .\Objects\led.obj (LED)
   F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
 
 
@@ -29,11 +29,11 @@ LINK MAP OF MODULE:  .\Objects\led (MAIN)
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
             CODE    0000H     0003H     ABSOLUTE     
             CODE    0003H     0020H     UNIT         ?PR?_DELAY_MS?DELAY
-            CODE    0023H     0014H     UNIT         ?PR?LED_SHAN_SHUO?LEDSHANSHUO
-            CODE    0037H     0013H     UNIT         ?PR?_NOP?DELAY
-            CODE    004AH     000CH     UNIT         ?C_C51STARTUP
-            CODE    0056H     000BH     UNIT         ?PR?_DELAY_US?DELAY
-            CODE    0061H     0003H     UNIT         ?PR?MAIN?MAIN
+            CODE    0023H     0013H     UNIT         ?PR?_NOP?DELAY
+            CODE    0036H     0012H     UNIT         ?PR?RUN?LED
+            CODE    0048H     000CH     UNIT         ?C_C51STARTUP
+            CODE    0054H     000BH     UNIT         ?PR?_DELAY_US?DELAY
+            CODE    005FH     0005H     UNIT         ?PR?MAIN?MAIN
 
 
 
@@ -47,10 +47,10 @@ SEGMENT
   +--> ?PR?MAIN?MAIN
 
 ?PR?MAIN?MAIN
-  +--> ?PR?LED_SHAN_SHUO?LEDSHANSHUO
+  +--> ?PR?RUN?LED
 
-?PR?LED_SHAN_SHUO?LEDSHANSHUO
-  +--> ?PR?_DELAY_US?DELAY
+?PR?RUN?LED
+  +--> ?PR?_DELAY_MS?DELAY
 
 
 
@@ -59,7 +59,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\led (MAIN)
   VALUE           TYPE          NAME
   ----------------------------------
 
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  18:18:48  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  22:12:26  PAGE 2
 
 
   -------         MODULE        MAIN
@@ -73,19 +73,64 @@ SYMBOL TABLE OF MODULE:  .\Objects\led (MAIN)
   D:00A8H         PUBLIC        IE
   D:00B8H         PUBLIC        IP
   D:00D8H         PUBLIC        CCON
-  C:0061H         PUBLIC        main
+  C:005FH         PUBLIC        main
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
   D:00E0H         PUBLIC        ACC
   D:00D0H         PUBLIC        PSW
   -------         PROC          MAIN
-  C:0061H         LINE#         10
-  C:0061H         LINE#         11
-  C:0061H         LINE#         12
+  C:005FH         LINE#         11
+  C:005FH         LINE#         12
+  C:005FH         LINE#         13
+  C:005FH         LINE#         14
+  C:005FH         LINE#         15
+  C:0062H         LINE#         16
   -------         ENDPROC       MAIN
   -------         ENDMOD        MAIN
 
-  -------         MODULE        LEDSHANSHUO
+  -------         MODULE        DELAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0023H         PUBLIC        _nop
+  C:0003H         PUBLIC        _delay_ms
+  C:0054H         PUBLIC        _delay_us
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        n
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0002H         SYMBOL        j
+  -------         ENDDO         
+  C:0003H         LINE#         14
+  C:0003H         LINE#         15
+  C:0003H         LINE#         17
+  C:000DH         LINE#         18
+  C:0022H         LINE#         19
+  -------         ENDPROC       _DELAY_MS
+  -------         PROC          _DELAY_US
+  D:0006H         SYMBOL        n
+  C:0054H         LINE#         24
+  C:0054H         LINE#         25
+  C:0054H         LINE#         26
+  C:005EH         LINE#         27
+  -------         ENDPROC       _DELAY_US
+  -------         PROC          _NOP
+  D:0006H         SYMBOL        n
+  -------         DO            
+  D:0004H         SYMBOL        i
+  -------         ENDDO         
+  C:0023H         LINE#         32
+  C:0023H         LINE#         33
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  22:12:26  PAGE 3
+
+
+  C:0023H         LINE#         35
+  C:002DH         LINE#         36
+  C:002DH         LINE#         37
+  C:002EH         LINE#         38
+  C:0035H         LINE#         39
+  -------         ENDPROC       _NOP
+  -------         ENDMOD        DELAY
+
+  -------         MODULE        LED
   C:0000H         SYMBOL        _ICE_DUMMY_
   D:0080H         PUBLIC        P0
   D:0090H         PUBLIC        P1
@@ -102,69 +147,24 @@ SYMBOL TABLE OF MODULE:  .\Objects\led (MAIN)
   D:00BBH         PUBLIC        P4SW
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-  C:0023H         PUBLIC        LED_Shan_Shuo
   D:00E0H         PUBLIC        ACC
+  C:0036H         PUBLIC        run
   B:00A0H.3       PUBLIC        E3
   D:00D0H         PUBLIC        PSW
-  -------         PROC          LED_SHAN_SHUO
-  C:0023H         LINE#         10
-  C:0023H         LINE#         11
-  C:0023H         LINE#         12
-  C:0023H         LINE#         13
-  C:0023H         LINE#         14
-  C:0026H         LINE#         15
-  C:0028H         LINE#         16
-  C:002AH         LINE#         17
-  C:002CH         LINE#         18
-  C:002EH         LINE#         19
-  C:0035H         LINE#         21
-  -------         ENDPROC       LED_SHAN_SHUO
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  18:18:48  PAGE 3
-
-
-  -------         ENDMOD        LEDSHANSHUO
-
-  -------         MODULE        DELAY
-  C:0000H         SYMBOL        _ICE_DUMMY_
-  C:0037H         PUBLIC        _nop
-  C:0003H         PUBLIC        _delay_ms
-  C:0056H         PUBLIC        _delay_us
-  -------         PROC          _DELAY_MS
-  D:0006H         SYMBOL        n
-  -------         DO            
-  D:0004H         SYMBOL        i
-  D:0002H         SYMBOL        j
-  -------         ENDDO         
-  C:0003H         LINE#         14
-  C:0003H         LINE#         15
-  C:0003H         LINE#         17
-  C:000DH         LINE#         18
-  C:0022H         LINE#         19
-  -------         ENDPROC       _DELAY_MS
-  -------         PROC          _DELAY_US
-  D:0006H         SYMBOL        n
-  C:0056H         LINE#         24
-  C:0056H         LINE#         25
-  C:0056H         LINE#         26
-  C:0060H         LINE#         27
-  -------         ENDPROC       _DELAY_US
-  -------         PROC          _NOP
-  D:0006H         SYMBOL        n
-  -------         DO            
-  D:0004H         SYMBOL        i
-  -------         ENDDO         
-  C:0037H         LINE#         32
-  C:0037H         LINE#         33
-  C:0037H         LINE#         35
-  C:0041H         LINE#         36
-  C:0041H         LINE#         37
-  C:0042H         LINE#         38
-  C:0049H         LINE#         39
-  -------         ENDPROC       _NOP
-  -------         ENDMOD        DELAY
+  -------         PROC          RUN
+  C:0036H         LINE#         16
+  C:0036H         LINE#         17
+  C:0036H         LINE#         18
+  C:0039H         LINE#         19
+  C:003BH         LINE#         20
+  C:003DH         LINE#         21
+  C:003FH         LINE#         22
+  C:0041H         LINE#         23
+  -------         ENDPROC       RUN
+  -------         ENDMOD        LED
 
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DELAY_MS?DELAY
+    SEGMENT: ?PR?_DELAY_US?DELAY
 
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?_NOP?DELAY

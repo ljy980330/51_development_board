@@ -213,7 +213,7 @@
               <RCB>
                 <Type>0</Type>
                 <StartAddress>0x0</StartAddress>
-                <Size>0x10000</Size>
+                <Size>0xffff</Size>
               </RCB>
               <RXB>
                 <Type>0</Type>
@@ -357,19 +357,9 @@
               <FilePath>.\delay\delay.c</FilePath>
             </File>
             <File>
-              <FileName>includes.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\includes.h</FilePath>
-            </File>
-            <File>
               <FileName>display.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\display\display.c</FilePath>
-            </File>
-            <File>
-              <FileName>display.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\display\display.h</FilePath>
             </File>
           </Files>
         </Group>

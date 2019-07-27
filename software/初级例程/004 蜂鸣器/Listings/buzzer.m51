@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/26/2019  19:27:49  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/26/2019  22:21:57  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -39,7 +39,7 @@ LINK MAP OF MODULE:  .\Objects\buzzer (MAIN)
             CODE    023AH     008CH     UNIT         ?C_C51STARTUP
             CODE    02C6H     0020H     UNIT         ?PR?_DELAY_MS?DELAY
             CODE    02E6H     0013H     UNIT         ?PR?_NOP?DELAY
-            CODE    02F9H     0013H     UNIT         ?PR?INT0?BUZZER
+            CODE    02F9H     0013H     UNIT         ?PR?TIME0?BUZZER
             CODE    030CH     0012H     UNIT         ?C?LIB_CODE
             CODE    031EH     0010H     UNIT         ?PR?INIT?BUZZER
             CODE    032EH     000BH     UNIT         ?PR?_DELAY_US?DELAY
@@ -59,7 +59,7 @@ SEGMENT
 
 ?PR?MAIN?MAIN
   +--> ?PR?INIT?BUZZER
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  19:27:49  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  22:21:57  PAGE 2
 
 
   +--> ?PR?RUN?BUZZER
@@ -92,10 +92,10 @@ SYMBOL TABLE OF MODULE:  .\Objects\buzzer (MAIN)
   D:00E0H         PUBLIC        ACC
   D:00D0H         PUBLIC        PSW
   -------         PROC          MAIN
-  C:0003H         LINE#         10
-  C:0003H         LINE#         11
-  C:0003H         LINE#         12
-  C:0006H         LINE#         13
+  C:0003H         LINE#         14
+  C:0003H         LINE#         15
+  C:0003H         LINE#         16
+  C:0006H         LINE#         17
   -------         ENDPROC       MAIN
   -------         ENDMOD        MAIN
 
@@ -119,7 +119,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\buzzer (MAIN)
   -------         PROC          _DELAY_US
   D:0006H         SYMBOL        n
   C:032EH         LINE#         24
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  19:27:49  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  22:21:57  PAGE 3
 
 
   C:032EH         LINE#         25
@@ -163,12 +163,12 @@ SYMBOL TABLE OF MODULE:  .\Objects\buzzer (MAIN)
   D:008AH         PUBLIC        TL0
   C:018CH         PUBLIC        run
   B:0088H.4       PUBLIC        TR0
+  C:02F9H         PUBLIC        time0
   D:0008H         PUBLIC        i
   D:000AH         PUBLIC        m
   D:000CH         PUBLIC        n
   D:000EH         PUBLIC        p
   D:00D0H         PUBLIC        PSW
-  C:02F9H         PUBLIC        int0
   -------         PROC          INIT
   C:031EH         LINE#         66
   C:031EH         LINE#         67
@@ -179,7 +179,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\buzzer (MAIN)
   C:032DH         LINE#         72
   -------         ENDPROC       INIT
   -------         PROC          RUN
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  19:27:49  PAGE 4
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  22:21:57  PAGE 4
 
 
   -------         DO            
@@ -200,13 +200,13 @@ SYMBOL TABLE OF MODULE:  .\Objects\buzzer (MAIN)
   C:0235H         LINE#         89
   C:0237H         LINE#         90
   -------         ENDPROC       RUN
-  -------         PROC          INT0
+  -------         PROC          TIME0
   C:02F9H         LINE#         97
   C:02FBH         LINE#         98
   C:02FEH         LINE#         99
   C:0301H         LINE#         100
   C:0309H         LINE#         101
-  -------         ENDPROC       INT0
+  -------         ENDPROC       TIME0
   -------         ENDMOD        BUZZER
 
   -------         MODULE        ?C?IMUL

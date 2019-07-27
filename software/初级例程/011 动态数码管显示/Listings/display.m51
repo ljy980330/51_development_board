@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/26/2019  20:47:09  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/27/2019  10:37:14  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -59,7 +59,7 @@ SEGMENT                            DATA_GROUP
 ?PR?MAIN?MAIN                    -----    -----
   +--> ?PR?_DISPLAY?DISPLAY
   +--> ?PR?LED4_DISPLAY?DISPLAY
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  20:47:09  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2019  10:37:14  PAGE 2
 
 
 
@@ -96,13 +96,13 @@ SYMBOL TABLE OF MODULE:  .\Objects\display (MAIN)
   D:00E0H         PUBLIC        ACC
   D:00D0H         PUBLIC        PSW
   -------         PROC          MAIN
-  C:01F0H         LINE#         6
-  C:01F0H         LINE#         7
-  C:01F0H         LINE#         8
-  C:01F0H         LINE#         9
   C:01F0H         LINE#         10
-  C:01F7H         LINE#         11
-  C:01FAH         LINE#         12
+  C:01F0H         LINE#         11
+  C:01F0H         LINE#         12
+  C:01F0H         LINE#         13
+  C:01F0H         LINE#         14
+  C:01F7H         LINE#         15
+  C:01FAH         LINE#         16
   -------         ENDPROC       MAIN
   -------         ENDMOD        MAIN
 
@@ -119,7 +119,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\display (MAIN)
   -------         ENDDO         
   C:01BDH         LINE#         14
   C:01BDH         LINE#         15
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  20:47:09  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2019  10:37:14  PAGE 3
 
 
   C:01BDH         LINE#         17
@@ -174,62 +174,62 @@ SYMBOL TABLE OF MODULE:  .\Objects\display (MAIN)
   B:0090H.0       PUBLIC        DIO
   C:00E4H         PUBLIC        _display
   D:00D0H         PUBLIC        PSW
-  -------         PROC          LED4_DISPLAY
-  -------         DO            
-  D:0082H         SYMBOL        led_table
-  D:0007H         SYMBOL        i
-  -------         ENDDO         
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  20:47:09  PAGE 4
-
-
-  C:0138H         LINE#         19
-  C:0138H         LINE#         20
-  C:0138H         LINE#         24
-  C:013CH         LINE#         25
-  C:013CH         LINE#         27
-  C:013FH         LINE#         28
-  C:0144H         LINE#         30
-  C:0146H         LINE#         31
-  C:0148H         LINE#         33
-  C:014CH         LINE#         34
-  C:014CH         LINE#         36
-  C:014FH         LINE#         37
-  C:0154H         LINE#         39
-  C:0156H         LINE#         40
-  C:0158H         LINE#         42
-  C:015CH         LINE#         43
-  C:015CH         LINE#         45
-  C:015FH         LINE#         46
-  C:0164H         LINE#         48
-  C:0166H         LINE#         49
-  C:0168H         LINE#         51
-  C:016CH         LINE#         52
-  C:016CH         LINE#         54
-  C:016FH         LINE#         55
-  C:0174H         LINE#         57
-  C:0176H         LINE#         58
-  C:0178H         LINE#         59
-  -------         ENDPROC       LED4_DISPLAY
   C:019CH         SYMBOL        L?0010
   -------         PROC          L?0009
   -------         ENDPROC       L?0009
   C:019CH         SYMBOL        L?0010
   -------         PROC          _LED_OUT
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2019  10:37:14  PAGE 4
+
+
   D:0007H         SYMBOL        X
   -------         DO            
   D:0006H         SYMBOL        i
   -------         ENDDO         
-  C:01A6H         LINE#         61
-  C:01A6H         LINE#         62
-  C:01A6H         LINE#         64
-  C:01A8H         LINE#         65
-  C:01A8H         LINE#         66
-  C:01B2H         LINE#         67
-  C:01B6H         LINE#         68
-  C:01B8H         LINE#         69
-  C:01BAH         LINE#         70
-  C:01BCH         LINE#         71
+  C:01A6H         LINE#         28
+  C:01A6H         LINE#         29
+  C:01A6H         LINE#         31
+  C:01A8H         LINE#         32
+  C:01A8H         LINE#         33
+  C:01B2H         LINE#         34
+  C:01B6H         LINE#         35
+  C:01B8H         LINE#         36
+  C:01BAH         LINE#         37
+  C:01BCH         LINE#         38
   -------         ENDPROC       _LED_OUT
+  -------         PROC          LED4_DISPLAY
+  -------         DO            
+  D:0082H         SYMBOL        led_table
+  D:0007H         SYMBOL        i
+  -------         ENDDO         
+  C:0138H         LINE#         44
+  C:0138H         LINE#         45
+  C:0138H         LINE#         49
+  C:013CH         LINE#         50
+  C:013CH         LINE#         52
+  C:013FH         LINE#         53
+  C:0144H         LINE#         55
+  C:0146H         LINE#         56
+  C:0148H         LINE#         58
+  C:014CH         LINE#         59
+  C:014CH         LINE#         61
+  C:014FH         LINE#         62
+  C:0154H         LINE#         64
+  C:0156H         LINE#         65
+  C:0158H         LINE#         67
+  C:015CH         LINE#         68
+  C:015CH         LINE#         70
+  C:015FH         LINE#         71
+  C:0164H         LINE#         73
+  C:0166H         LINE#         74
+  C:0168H         LINE#         76
+  C:016CH         LINE#         77
+  C:016CH         LINE#         79
+  C:016FH         LINE#         80
+  C:0174H         LINE#         82
+  C:0176H         LINE#         83
+  C:0178H         LINE#         84
+  -------         ENDPROC       LED4_DISPLAY
   -------         PROC          _DISPLAY
   D:0002H         SYMBOL        temp
   -------         DO            
@@ -238,20 +238,20 @@ SYMBOL TABLE OF MODULE:  .\Objects\display (MAIN)
   D:0015H         SYMBOL        shi
   D:0016H         SYMBOL        bai
   -------         ENDDO         
-  C:00E4H         LINE#         81
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  20:47:09  PAGE 5
+  C:00E4H         LINE#         90
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2019  10:37:14  PAGE 5
 
 
-  C:00E8H         LINE#         82
-  C:00E8H         LINE#         84
-  C:00F1H         LINE#         85
-  C:0105H         LINE#         86
-  C:011FH         LINE#         87
-  C:012CH         LINE#         89
-  C:012FH         LINE#         90
-  C:0132H         LINE#         91
-  C:0135H         LINE#         92
-  C:0137H         LINE#         94
+  C:00E8H         LINE#         91
+  C:00E8H         LINE#         93
+  C:00F1H         LINE#         94
+  C:0105H         LINE#         95
+  C:011FH         LINE#         96
+  C:012CH         LINE#         98
+  C:012FH         LINE#         99
+  C:0132H         LINE#         100
+  C:0135H         LINE#         101
+  C:0137H         LINE#         103
   -------         ENDPROC       _DISPLAY
   -------         ENDMOD        DISPLAY
 

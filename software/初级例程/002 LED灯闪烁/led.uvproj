@@ -352,14 +352,19 @@
               <FilePath>.\main.c</FilePath>
             </File>
             <File>
-              <FileName>LEDshanshuo.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\led\LEDshanshuo.c</FilePath>
-            </File>
-            <File>
               <FileName>delay.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\delay\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\led\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>led.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\led\led.h</FilePath>
             </File>
           </Files>
         </Group>

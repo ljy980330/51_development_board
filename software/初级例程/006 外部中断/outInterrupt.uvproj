@@ -42,7 +42,7 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>.\Objects\</OutputDirectory>
+          <OutputDirectory>.\Listings\</OutputDirectory>
           <OutputName>outInterrupt</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
@@ -355,11 +355,6 @@
               <FileName>delay.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\delay\delay.c</FilePath>
-            </File>
-            <File>
-              <FileName>key.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\key\key.c</FilePath>
             </File>
             <File>
               <FileName>led.c</FileName>

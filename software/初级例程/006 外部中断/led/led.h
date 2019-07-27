@@ -10,9 +10,9 @@
 #include <STC12C5A.H>  
 sbit LED1=P4^0;      //位定义，将stc12中的定义为LED
 sbit LED2=P4^1; 	  //每一个IO口都要进行定义
-sbit LED3=P4^4; 
+sbit LED3=P4^4;  
+sbit E3  =P2^3;		 //使能端 当该IO电平拉低时，LED全灭
 
 void led1();
 void led2(); 
-void led3();
 #endif
