@@ -1,15 +1,16 @@
 /*********************************************************************************************************
-*名称：DCMotor.h
-*功能：外部所用到的直流电机函数声明
+*名称：delay.h
+*功能：外部所用到的延迟功能函数声明
 创建时间：2019/7/8
 修改时间：2019/7/8
 作者：黄彦钊
 *********************************************************************************************************/
-#ifndef _DCMOTOR_H
-#define _DCMOTOR_H	  
+#ifndef _DELAY_H
+#define _DELAY_H	  
 #include "config.h"
 
-void Init_PWM();
-void PWM_change();
+void delay_ms(uint n);
+void delay_us(uint n);
+void nop(uint n);
 
 #endif

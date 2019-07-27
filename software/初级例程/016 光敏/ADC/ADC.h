@@ -1,16 +1,13 @@
 /*********************************************************************************************************
 *名称：delay.h
 *功能：外部所用到的延迟功能函数声明
-创建时间：2019/7/8
-修改时间：2019/7/8
-作者：黄彦钊
+修改时间：2019年7月27日	
+作者：曾思茹
 *********************************************************************************************************/
-#ifndef _PHOTOSENSITIVE_H
-#define _PHOTOSENSITIVE_H	  
-#include "config.h"
+#ifndef _ADC_H
+#define _ADC_H	  
 
-void delay_ms(uint n);
-void delay_us(uint n);
-void nop(uint n);
-
+void init();
+void InitADC();
+void Display ();
 #endif

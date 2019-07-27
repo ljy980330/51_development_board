@@ -1,10 +1,17 @@
-LEDindicator.hex 是最终烧录到单片机上的程序
+PWM文件夹是用来储存AD转换初始化以及输出数据的C源码与头文件
+
+dalay文件夹是用于存放公用的延时函数
+
+Listings文件夹包含了编译所有中间文件
+
+Objects文件夹包含了编译出来的文件（包括最终烧录进单片机的hex文件）
 
 LEDindicator.uvproj 是该程序的工程文件
 
-main.c      是呼吸灯的C源代码
+config.h包含了所有的类型的声明和定义
 
-本程序是基于PWM原理来使LED灯有呼吸效果，
-故该程序的C源代码与PWM的C源代码相同。
-该程序是使用P1.3口作为PWM的输出口，
-使用前用杜邦线连接P1.3口与LED灯正极即可。
+includes.h包含了所有的头文件
+
+main.c是主函数C源码
+
+使用此程序之前将PWM输出口接led正极
