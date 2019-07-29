@@ -228,10 +228,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>11</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>25</TopLine>
-      <CurrentLine>25</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>8</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\stepperMotor\stepperMotor.c</PathWithFileName>
       <FilenameWithoutPath>stepperMotor.c</FilenameWithoutPath>
@@ -1619,7 +1619,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>1</ActiveTab>
+      <ActiveTab>5</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
@@ -1629,15 +1629,15 @@
         </Doc>
         <Doc>
           <Name>.\stepperMotor\stepperMotor.c</Name>
-          <ColumnNumber>11</ColumnNumber>
-          <TopLine>25</TopLine>
-          <CurrentLine>25</CurrentLine>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>8</CurrentLine>
         </Doc>
         <Doc>
           <Name>STEPPERMOTOR/STEPPERMOTOR.H</Name>
-          <ColumnNumber>27</ColumnNumber>
+          <ColumnNumber>1</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>3</CurrentLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\delay\delay.c</Name>
