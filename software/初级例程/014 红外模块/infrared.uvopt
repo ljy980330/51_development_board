@@ -153,7 +153,7 @@
         <aSer4>0</aSer4>
         <StkLoc>0</StkLoc>
         <TrcWin>0</TrcWin>
-        <newCpu>1</newCpu>
+        <newCpu>0</newCpu>
         <uProt>0</uProt>
       </DebugFlag>
       <LintExecutable></LintExecutable>
@@ -167,8 +167,8 @@
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <File>
-      <GroupNumber>0</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>1</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -181,24 +181,24 @@
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>0</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>2</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>53</ColumnNumber>
+      <ColumnNumber>25</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>54</TopLine>
-      <CurrentLine>66</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>3</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\infrared\infrared.c</PathWithFileName>
       <FilenameWithoutPath>infrared.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>0</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>3</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>64</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -209,15 +209,15 @@
       <FilenameWithoutPath>delay.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>0</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>4</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>27</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>3</TopLine>
-      <CurrentLine>16</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>3</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\display\display.c</PathWithFileName>
       <FilenameWithoutPath>display.c</FilenameWithoutPath>
@@ -225,9 +225,9 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\014 红外模块\1\infrared\infrared.h</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\014 红外模块\DELAY\DELAY.H</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>2</CurrentLine>
+    <CurrentLine>11</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -251,33 +251,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\014 红外模块\1\display\display.h</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>14</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\014 红外模块\1\includes.h</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\014 红外模块\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>12</CurrentLine>
     <Constant>0</Constant>
@@ -303,9 +277,35 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\014 红外模块\1\DELAY\DELAY.H</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\014 红外模块\DISPLAY\DISPLAY.H</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>11</CurrentLine>
+    <CurrentLine>14</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\014 红外模块\INFRARED\INFRARED.H</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>2</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1669,7 +1669,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>6</ActiveTab>
+      <ActiveTab>3</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
@@ -1679,30 +1679,30 @@
         </Doc>
         <Doc>
           <Name>.\infrared\infrared.c</Name>
-          <ColumnNumber>53</ColumnNumber>
-          <TopLine>54</TopLine>
-          <CurrentLine>66</CurrentLine>
+          <ColumnNumber>25</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>INFRARED/INFRARED.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\014 红外模块\INFRARED\INFRARED.H</Name>
           <ColumnNumber>15</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>2</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\display\display.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>3</TopLine>
-          <CurrentLine>16</CurrentLine>
+          <ColumnNumber>27</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>DISPLAY/DISPLAY.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\014 红外模块\DISPLAY\DISPLAY.H</Name>
           <ColumnNumber>21</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>14</CurrentLine>
         </Doc>
         <Doc>
-          <Name>INCLUDES.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\014 红外模块\INCLUDES.H</Name>
           <ColumnNumber>32</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>12</CurrentLine>
@@ -1714,7 +1714,7 @@
           <CurrentLine>6</CurrentLine>
         </Doc>
         <Doc>
-          <Name>DELAY/DELAY.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\014 红外模块\DELAY\DELAY.H</Name>
           <ColumnNumber>42</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>11</CurrentLine>

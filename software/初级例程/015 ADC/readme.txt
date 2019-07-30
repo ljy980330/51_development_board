@@ -1,1 +1,1 @@
-led：	led灯函数
+deMotor：	直流电机模块

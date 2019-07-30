@@ -2,8 +2,8 @@
 *名称：drive.c
 *功能：dht11数据采集和系统初始化
 创建时间：2019/7/14
-修改时间：2019/XX/XX
-作者：XXX
+修改时间：2019/7/30
+作者：黄彦钊
 **********************************************************************************************************/
 
 #include "drive.h"
@@ -39,9 +39,9 @@ void DHT_Collect()
 	uint CheckValue=0;//校验和
 	
 	DHT=0;//主机发起始信号
-	Delay_20ms();//主机拉低总线至少18ms
+	delay_ms(20);//主机拉低总线至少18ms
 	DHT=1;//主机拉高总线20~40us
-	Delay_30us();
+	delay_us(30);
 	
 	t=80;//设置超时等待时间
 	while(DHT&&t--);//等待DHT11拉低总线
@@ -82,8 +82,8 @@ void DHT_Collect()
 		Data_Receive[j]=dat8;
 	}
 	
-	Delay_30us();//等待DHT11拉低50us
-	Delay_30us();
+	delay_us(30);//等待DHT11拉低50us
+	delay_us(30);
 	DHT=1;
 
 	for(i=0;i<4;i++)

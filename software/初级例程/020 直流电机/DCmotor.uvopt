@@ -172,31 +172,31 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>14</ColumnNumber>
+      <ColumnNumber>25</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>2</CurrentLine>
+      <CurrentLine>3</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\dcMotor\dcMotor.c</PathWithFileName>
       <FilenameWithoutPath>dcMotor.c</FilenameWithoutPath>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
-      <FileNumber>5</FileNumber>
+      <FileNumber>2</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>36</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>7</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\delay\delay.c</PathWithFileName>
       <FilenameWithoutPath>delay.c</FilenameWithoutPath>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
-      <FileNumber>6</FileNumber>
+      <FileNumber>3</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -211,7 +211,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\020 直流电机\includes.h</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\020 直流电机\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>6</CurrentLine>
     <Constant>0</Constant>
@@ -263,7 +263,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\020 直流电机\dcMotor\dcMotor.h</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\020 直流电机\DCMOTOR\DCMOTOR.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>3</CurrentLine>
     <Constant>0</Constant>
@@ -1629,7 +1629,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>3</ActiveTab>
+      <ActiveTab>1</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
@@ -1639,24 +1639,24 @@
         </Doc>
         <Doc>
           <Name>.\dcMotor\dcMotor.c</Name>
-          <ColumnNumber>14</ColumnNumber>
+          <ColumnNumber>25</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>2</CurrentLine>
+          <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>DCMOTOR/DCMOTOR.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\020 直流电机\DCMOTOR\DCMOTOR.H</Name>
           <ColumnNumber>27</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>DELAY\DELAY.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\020 直流电机\DELAY\DELAY.H</Name>
           <ColumnNumber>33</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>7</CurrentLine>
         </Doc>
         <Doc>
-          <Name>INCLUDES.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\020 直流电机\INCLUDES.H</Name>
           <ColumnNumber>12</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>6</CurrentLine>
