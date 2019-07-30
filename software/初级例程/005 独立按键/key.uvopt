@@ -172,10 +172,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>17</ColumnNumber>
+      <ColumnNumber>11</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>4</TopLine>
-      <CurrentLine>19</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>18</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -188,8 +188,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\delay\delay.c</PathWithFileName>
       <FilenameWithoutPath>delay.c</FilenameWithoutPath>
@@ -200,10 +200,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>54</ColumnNumber>
+      <ColumnNumber>13</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>10</TopLine>
-      <CurrentLine>28</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>3</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\display\display.c</PathWithFileName>
       <FilenameWithoutPath>display.c</FilenameWithoutPath>
@@ -214,10 +214,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>63</ColumnNumber>
+      <ColumnNumber>5</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>5</TopLine>
-      <CurrentLine>14</CurrentLine>
+      <TopLine>17</TopLine>
+      <CurrentLine>17</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\key\key.c</PathWithFileName>
       <FilenameWithoutPath>key.c</FilenameWithoutPath>
@@ -1647,39 +1647,45 @@
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>17</ColumnNumber>
-          <TopLine>4</TopLine>
-          <CurrentLine>19</CurrentLine>
+          <ColumnNumber>11</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>18</CurrentLine>
         </Doc>
         <Doc>
-          <Name>INCLUDES.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\005 独立按键\INCLUDES.H</Name>
           <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>19</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\key\key.c</Name>
-          <ColumnNumber>63</ColumnNumber>
-          <TopLine>5</TopLine>
-          <CurrentLine>14</CurrentLine>
+          <ColumnNumber>5</ColumnNumber>
+          <TopLine>17</TopLine>
+          <CurrentLine>17</CurrentLine>
         </Doc>
         <Doc>
-          <Name>KEY/KEY.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\005 独立按键\KEY\KEY.H</Name>
           <ColumnNumber>10</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>2</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\display\display.c</Name>
-          <ColumnNumber>54</ColumnNumber>
-          <TopLine>10</TopLine>
-          <CurrentLine>28</CurrentLine>
+          <ColumnNumber>13</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>DISPLAY/DISPLAY.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\005 独立按键\DISPLAY\DISPLAY.H</Name>
           <ColumnNumber>7</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>2</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\delay\delay.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

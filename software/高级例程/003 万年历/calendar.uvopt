@@ -25,7 +25,7 @@
     <ToolsetNumber>0x0</ToolsetNumber>
     <ToolsetName>MCS-51</ToolsetName>
     <TargetOption>
-      <CLK51>12000000</CLK51>
+      <CLK51>11059200</CLK51>
       <OPTTT>
         <gFlags>1</gFlags>
         <BeepAtEnd>1</BeepAtEnd>
@@ -170,9 +170,9 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>1</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>8</ColumnNumber>
+      <ColumnNumber>6</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
       <CurrentLine>19</CurrentLine>
@@ -184,7 +184,7 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>2</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>15</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -198,12 +198,12 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>3</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>13</ColumnNumber>
+      <ColumnNumber>38</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>97</TopLine>
-      <CurrentLine>98</CurrentLine>
+      <TopLine>216</TopLine>
+      <CurrentLine>240</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtc\rtc.c</PathWithFileName>
       <FilenameWithoutPath>rtc.c</FilenameWithoutPath>
@@ -212,12 +212,12 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>4</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>10</ColumnNumber>
+      <ColumnNumber>15</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>70</TopLine>
-      <CurrentLine>70</CurrentLine>
+      <TopLine>28</TopLine>
+      <CurrentLine>41</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\iic\iic.c</PathWithFileName>
       <FilenameWithoutPath>iic.c</FilenameWithoutPath>
@@ -226,7 +226,7 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>5</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>32</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -1739,24 +1739,24 @@
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>8</ColumnNumber>
+          <ColumnNumber>6</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>19</CurrentLine>
         </Doc>
         <Doc>
-          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\高级例程\003 万年历\INCLUDES.H</Name>
+          <Name>INCLUDES.H</Name>
           <ColumnNumber>28</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>12</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\iic\iic.c</Name>
-          <ColumnNumber>10</ColumnNumber>
-          <TopLine>70</TopLine>
-          <CurrentLine>70</CurrentLine>
+          <ColumnNumber>15</ColumnNumber>
+          <TopLine>28</TopLine>
+          <CurrentLine>41</CurrentLine>
         </Doc>
         <Doc>
-          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\高级例程\003 万年历\IIC\IIC.H</Name>
+          <Name>IIC/IIC.H</Name>
           <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>4</CurrentLine>
@@ -1768,19 +1768,19 @@
           <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\高级例程\003 万年历\OLED\OLED.H</Name>
+          <Name>OLED/OLED.H</Name>
           <ColumnNumber>34</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>5</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\rtc\rtc.c</Name>
-          <ColumnNumber>13</ColumnNumber>
-          <TopLine>97</TopLine>
-          <CurrentLine>98</CurrentLine>
+          <ColumnNumber>38</ColumnNumber>
+          <TopLine>216</TopLine>
+          <CurrentLine>240</CurrentLine>
         </Doc>
         <Doc>
-          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\高级例程\003 万年历\RTC\RTC.H</Name>
+          <Name>RTC/RTC.H</Name>
           <ColumnNumber>20</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>4</CurrentLine>
@@ -1792,13 +1792,13 @@
           <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\高级例程\003 万年历\DELAY\DELAY.H</Name>
+          <Name>DELAY/DELAY.H</Name>
           <ColumnNumber>49</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
-          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\高级例程\003 万年历\CONFIG.H</Name>
+          <Name>CONFIG.H</Name>
           <ColumnNumber>34</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>4</CurrentLine>
