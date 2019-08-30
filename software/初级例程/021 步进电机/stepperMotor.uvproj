@@ -347,16 +347,6 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>includes.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\includes.h</FilePath>
-            </File>
-            <File>
-              <FileName>config.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\config.h</FilePath>
-            </File>
-            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\main.c</FilePath>
