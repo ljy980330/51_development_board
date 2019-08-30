@@ -1,9 +1,9 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/25/2019  15:22:58  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/27/2019  16:44:40  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-F:\WORKAPP\KEIL_V5\C51\BIN\BL51.EXE .\Objects\main.obj TO .\Objects\photoconductor PRINT (.\Listings\photoconductor.m51)
->>  RAMSIZE (256)
+F:\KEIL4\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\ADC.obj TO .\Objects\photoconductor PRINT (.\Listings\photocondu
+>> ctor.m51) RAMSIZE (256)
 
 
 MEMORY MODEL: SMALL
@@ -11,9 +11,10 @@ MEMORY MODEL: SMALL
 
 INPUT MODULES INCLUDED:
   .\Objects\main.obj (MAIN)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C?SIDIV)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C?UIDIV)
+  .\Objects\ADC.obj (ADC)
+  F:\KEIL4\C51\LIB\C51S.LIB (?C_STARTUP)
+  F:\KEIL4\C51\LIB\C51S.LIB (?C?SIDIV)
+  F:\KEIL4\C51\LIB\C51S.LIB (?C?UIDIV)
 
 
 LINK MAP OF MODULE:  .\Objects\photoconductor (MAIN)
@@ -24,19 +25,20 @@ LINK MAP OF MODULE:  .\Objects\photoconductor (MAIN)
 
             * * * * * * *   D A T A   M E M O R Y   * * * * * * *
             REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
-            DATA    0008H     000CH     UNIT         ?DT?MAIN
+            DATA    0008H     000CH     UNIT         ?DT?ADC
             DATA    0014H     0002H     UNIT         _DATA_GROUP_
             IDATA   0016H     0001H     UNIT         ?STACK
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
             CODE    0000H     0003H     ABSOLUTE     
             CODE    0003H     008BH     UNIT         ?C?LIB_CODE
-            CODE    008EH     0067H     UNIT         ?PR?DISPLAY?MAIN
-            CODE    00F5H     0026H     UNIT         ?PR?MAIN?MAIN
-            CODE    011BH     0025H     UNIT         ?PR?_LED_OUT?MAIN
-            CODE    0140H     0019H     UNIT         ?PR?INITADC?MAIN
-            CODE    0159H     000CH     UNIT         ?C_C51STARTUP
-            CODE    0165H     000AH     UNIT         ?CO?MAIN
+            CODE    008EH     0067H     UNIT         ?PR?DISPLAY?ADC
+            CODE    00F5H     0025H     UNIT         ?PR?_LED_OUT?ADC
+            CODE    011AH     001FH     UNIT         ?PR?INIT?ADC
+            CODE    0139H     0019H     UNIT         ?PR?INITADC?ADC
+            CODE    0152H     000CH     UNIT         ?C_C51STARTUP
+            CODE    015EH     000BH     UNIT         ?PR?MAIN?MAIN
+            CODE    0169H     000AH     UNIT         ?CO?ADC
 
 
 
@@ -50,17 +52,18 @@ SEGMENT                          DATA_GROUP
   +--> ?PR?MAIN?MAIN
 
 ?PR?MAIN?MAIN                  -----    -----
-  +--> ?PR?INITADC?MAIN
-  +--> ?PR?DISPLAY?MAIN
+  +--> ?PR?INIT?ADC
+  +--> ?PR?INITADC?ADC
+  +--> ?PR?DISPLAY?ADC
 
-?PR?DISPLAY?MAIN               0014H    0002H
-  +--> ?PR?_LED_OUT?MAIN
+?PR?DISPLAY?ADC                0014H    0002H
+  +--> ?PR?_LED_OUT?ADC
 
-?PR?_LED_OUT?MAIN              -----    -----
-  +--> ?CO?MAIN
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2019  16:44:40  PAGE 2
 
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/25/2019  15:22:58  PAGE 2
 
+?PR?_LED_OUT?ADC               -----    -----
+  +--> ?CO?ADC
 
 
 
@@ -78,35 +81,66 @@ SYMBOL TABLE OF MODULE:  .\Objects\photoconductor (MAIN)
   D:00C0H         PUBLIC        P4
   D:00C8H         PUBLIC        P5
   D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  D:00D8H         PUBLIC        CCON
+  C:015EH         PUBLIC        main
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:00E0H         PUBLIC        ACC
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          MAIN
+  C:015EH         LINE#         17
+  C:015EH         LINE#         18
+  C:015EH         LINE#         19
+  C:0161H         LINE#         21
+  C:0161H         LINE#         22
+  C:0161H         LINE#         23
+  C:0164H         LINE#         24
+  C:0167H         LINE#         25
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        ADC
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00C0H         PUBLIC        P4
+  D:00C8H         PUBLIC        P5
+  D:00A8H         PUBLIC        IE
   D:00BDH         PUBLIC        ADC_RES
   D:00B8H         PUBLIC        IP
   D:0008H         PUBLIC        date
   D:00D8H         PUBLIC        CCON
-  C:00F5H         PUBLIC        main
-  C:0165H         PUBLIC        LED_0F
+  C:0169H         PUBLIC        LED_0F
   B:0080H.1       PUBLIC        RCLK
   B:0080H.2       PUBLIC        SCLK
-  C:0129H         PUBLIC        _LED_OUT
+  C:0103H         PUBLIC        _LED_OUT
   D:00BCH         PUBLIC        ADC_CONTR
   D:0098H         PUBLIC        SCON
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2019  16:44:40  PAGE 3
+
+
   D:0088H         PUBLIC        TCON
+  C:011AH         PUBLIC        init
   D:00E0H         PUBLIC        ACC
   D:000AH         PUBLIC        LED
   C:008EH         PUBLIC        Display
   B:0080H.0       PUBLIC        DIO
   D:009DH         PUBLIC        P1ASF
-  C:0140H         PUBLIC        InitADC
+  C:0139H         PUBLIC        InitADC
   D:00D0H         PUBLIC        PSW
   -------         PROC          INITADC
-  C:0140H         LINE#         26
-  C:0140H         LINE#         27
-  C:0140H         LINE#         29
-  C:0143H         LINE#         31
-  C:0146H         LINE#         35
-  C:0149H         LINE#         39
-  C:014CH         LINE#         41
-  C:0151H         LINE#         42
-  C:0158H         LINE#         44
+  C:0139H         LINE#         27
+  C:0139H         LINE#         28
+  C:0139H         LINE#         29
+  C:013CH         LINE#         31
+  C:013FH         LINE#         35
+  C:0142H         LINE#         39
+  C:0145H         LINE#         41
+  C:014AH         LINE#         42
+  C:0151H         LINE#         44
   -------         ENDPROC       INITADC
   -------         PROC          DISPLAY
   -------         DO            
@@ -119,9 +153,6 @@ SYMBOL TABLE OF MODULE:  .\Objects\photoconductor (MAIN)
   C:008EH         LINE#         64
   C:008EH         LINE#         65
   C:008EH         LINE#         69
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/25/2019  15:22:58  PAGE 3
-
-
   C:009BH         LINE#         70
   C:00AFH         LINE#         71
   C:00C3H         LINE#         74
@@ -144,49 +175,45 @@ SYMBOL TABLE OF MODULE:  .\Objects\photoconductor (MAIN)
   C:00F2H         LINE#         101
   C:00F4H         LINE#         102
   -------         ENDPROC       DISPLAY
-  C:011BH         SYMBOL        L?0015
-  -------         PROC          L?0014
-  -------         ENDPROC       L?0014
-  C:011BH         SYMBOL        L?0015
+  C:00F5H         SYMBOL        L?0013
+  -------         PROC          L?0012
+  -------         ENDPROC       L?0012
+  C:00F5H         SYMBOL        L?0013
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2019  16:44:40  PAGE 4
+
+
   -------         PROC          _LED_OUT
   D:0007H         SYMBOL        X
   -------         DO            
   D:0006H         SYMBOL        i
   -------         ENDDO         
-  C:0129H         LINE#         110
-  C:0129H         LINE#         111
-  C:0129H         LINE#         113
-  C:012BH         LINE#         114
-  C:012BH         LINE#         115
-  C:0135H         LINE#         116
-  C:0139H         LINE#         117
-  C:013BH         LINE#         118
-  C:013DH         LINE#         119
-  C:013FH         LINE#         120
+  C:0103H         LINE#         110
+  C:0103H         LINE#         111
+  C:0103H         LINE#         113
+  C:0105H         LINE#         114
+  C:0105H         LINE#         115
+  C:010FH         LINE#         116
+  C:0113H         LINE#         117
+  C:0115H         LINE#         118
+  C:0117H         LINE#         119
+  C:0119H         LINE#         120
   -------         ENDPROC       _LED_OUT
-  -------         PROC          MAIN
-  C:00F5H         LINE#         127
-  C:00F5H         LINE#         128
-  C:00F5H         LINE#         129
-  C:00F8H         LINE#         130
-  C:00FBH         LINE#         131
-  C:00FEH         LINE#         132
-  C:0101H         LINE#         133
-  C:0104H         LINE#         134
-  C:0107H         LINE#         135
-  C:010AH         LINE#         136
-  C:010DH         LINE#         137
-  C:0110H         LINE#         138
-  C:0113H         LINE#         140
-  C:0113H         LINE#         141
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/25/2019  15:22:58  PAGE 4
-
-
-  C:0113H         LINE#         142
-  C:0116H         LINE#         143
-  C:0119H         LINE#         144
-  -------         ENDPROC       MAIN
-  -------         ENDMOD        MAIN
+  -------         PROC          INIT
+  C:011AH         LINE#         123
+  C:011AH         LINE#         124
+  C:011AH         LINE#         125
+  C:011DH         LINE#         126
+  C:0120H         LINE#         127
+  C:0123H         LINE#         128
+  C:0126H         LINE#         129
+  C:0129H         LINE#         130
+  C:012CH         LINE#         131
+  C:012FH         LINE#         132
+  C:0132H         LINE#         133
+  C:0135H         LINE#         134
+  C:0138H         LINE#         136
+  -------         ENDPROC       INIT
+  -------         ENDMOD        ADC
 
   -------         MODULE        ?C?SIDIV
   C:0003H         PUBLIC        ?C?SIDIV
@@ -196,5 +223,5 @@ SYMBOL TABLE OF MODULE:  .\Objects\photoconductor (MAIN)
   C:0039H         PUBLIC        ?C?UIDIV
   -------         ENDMOD        ?C?UIDIV
 
-Program Size: data=23.0 xdata=0 code=367
+Program Size: data=23.0 xdata=0 code=371
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

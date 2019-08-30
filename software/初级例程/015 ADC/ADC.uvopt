@@ -172,10 +172,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>27</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>15</TopLine>
-      <CurrentLine>33</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>5</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\delay\delay.c</PathWithFileName>
       <FilenameWithoutPath>delay.c</FilenameWithoutPath>
@@ -214,10 +214,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>39</ColumnNumber>
+      <ColumnNumber>42</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>14</CurrentLine>
+      <CurrentLine>7</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -228,7 +228,7 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>8</ColumnNumber>
+      <ColumnNumber>58</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>37</TopLine>
       <CurrentLine>37</CurrentLine>
@@ -279,12 +279,12 @@
   </AlienFiles>
 
   <WinLayout>
-    <sActiveDebugView>Default</sActiveDebugView>
+    <sActiveDebugView>默认</sActiveDebugView>
     <iActiveDebugViewLocation>1</iActiveDebugViewLocation>
     <sActiveBuildView>Build</sActiveBuildView>
     <iActiveBuildViewLocation>0</iActiveBuildViewLocation>
     <View>
-      <ViewName>Default</ViewName>
+      <ViewName>默认</ViewName>
       <ViewType>1</ViewType>
       <Window>
         <WinId>59392</WinId>
@@ -364,7 +364,7 @@
       <Window>
         <WinId>197</WinId>
         <ItemNo>4</ItemNo>
-        <Name>Build Output</Name>
+        <Name>编译输出</Name>
         <AnchorWinID>0</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>0</OtherWinID>
@@ -389,7 +389,7 @@
       <Window>
         <WinId>198</WinId>
         <ItemNo>5</ItemNo>
-        <Name>Command</Name>
+        <Name>指令</Name>
         <AnchorWinID>197</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
@@ -414,7 +414,7 @@
       <Window>
         <WinId>199</WinId>
         <ItemNo>6</ItemNo>
-        <Name>Find in Files</Name>
+        <Name>批量查找</Name>
         <AnchorWinID>197</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
@@ -564,7 +564,7 @@
       <Window>
         <WinId>1944</WinId>
         <ItemNo>12</ItemNo>
-        <Name>Call Stack</Name>
+        <Name>调用堆栈</Name>
         <AnchorWinID>197</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
@@ -589,7 +589,7 @@
       <Window>
         <WinId>1507</WinId>
         <ItemNo>13</ItemNo>
-        <Name>Call Stack</Name>
+        <Name>调用堆栈</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
@@ -789,7 +789,7 @@
       <Window>
         <WinId>1506</WinId>
         <ItemNo>21</ItemNo>
-        <Name>Symbols</Name>
+        <Name>符号</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>197</OtherWinID>
@@ -814,7 +814,7 @@
       <Window>
         <WinId>1005</WinId>
         <ItemNo>22</ItemNo>
-        <Name>Project</Name>
+        <Name>工程</Name>
         <AnchorWinID>0</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>0</OtherWinID>
@@ -839,7 +839,7 @@
       <Window>
         <WinId>109</WinId>
         <ItemNo>23</ItemNo>
-        <Name>Books</Name>
+        <Name>书籍</Name>
         <AnchorWinID>1005</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>1005</OtherWinID>
@@ -864,7 +864,7 @@
       <Window>
         <WinId>195</WinId>
         <ItemNo>24</ItemNo>
-        <Name>Functions</Name>
+        <Name>函数</Name>
         <AnchorWinID>1005</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>1005</OtherWinID>
@@ -889,7 +889,7 @@
       <Window>
         <WinId>196</WinId>
         <ItemNo>25</ItemNo>
-        <Name>Templates</Name>
+        <Name>模板</Name>
         <AnchorWinID>1005</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>1005</OtherWinID>
@@ -914,7 +914,7 @@
       <Window>
         <WinId>38003</WinId>
         <ItemNo>26</ItemNo>
-        <Name>Registers</Name>
+        <Name>寄存器</Name>
         <AnchorWinID>1005</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>1005</OtherWinID>
@@ -1464,7 +1464,7 @@
       <Window>
         <WinId>203</WinId>
         <ItemNo>48</ItemNo>
-        <Name>Disassembly</Name>
+        <Name>反汇编</Name>
         <AnchorWinID>0</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>0</OtherWinID>
@@ -1489,7 +1489,7 @@
       <Window>
         <WinId>1913</WinId>
         <ItemNo>49</ItemNo>
-        <Name>Instruction Trace</Name>
+        <Name>指令跟踪</Name>
         <AnchorWinID>203</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>203</OtherWinID>
@@ -1514,7 +1514,7 @@
       <Window>
         <WinId>35824</WinId>
         <ItemNo>50</ItemNo>
-        <Name>Logic Analyzer</Name>
+        <Name>逻辑分析器</Name>
         <AnchorWinID>0</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>0</OtherWinID>
@@ -1539,7 +1539,7 @@
       <Window>
         <WinId>343</WinId>
         <ItemNo>51</ItemNo>
-        <Name>Performance Analyzer</Name>
+        <Name>性能分析器</Name>
         <AnchorWinID>203</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>203</OtherWinID>
@@ -1564,7 +1564,7 @@
       <Window>
         <WinId>204</WinId>
         <ItemNo>52</ItemNo>
-        <Name>Performance Analyzer</Name>
+        <Name>性能分析器</Name>
         <AnchorWinID>203</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>203</OtherWinID>
@@ -1589,7 +1589,7 @@
       <Window>
         <WinId>346</WinId>
         <ItemNo>53</ItemNo>
-        <Name>Code Coverage</Name>
+        <Name>代码作用范围</Name>
         <AnchorWinID>203</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>203</OtherWinID>
@@ -1623,39 +1623,33 @@
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>39</ColumnNumber>
+          <ColumnNumber>42</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>14</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\delay\delay.c</Name>
-          <ColumnNumber>27</ColumnNumber>
-          <TopLine>15</TopLine>
-          <CurrentLine>33</CurrentLine>
+          <CurrentLine>7</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\ADC\ADC.c</Name>
-          <ColumnNumber>8</ColumnNumber>
-          <TopLine>37</TopLine>
-          <CurrentLine>37</CurrentLine>
+          <ColumnNumber>58</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
-          <Name>.\ADC\ADC.h</Name>
-          <ColumnNumber>16</ColumnNumber>
+          <Name>ADC/ADC.H</Name>
+          <ColumnNumber>13</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>13</CurrentLine>
+          <CurrentLine>6</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\includes.h</Name>
-          <ColumnNumber>38</ColumnNumber>
+          <ColumnNumber>35</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>19</CurrentLine>
+          <CurrentLine>3</CurrentLine>
         </Doc>
         <Doc>
-          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\015 ADC\DELAY\DELAY.H</Name>
-          <ColumnNumber>0</ColumnNumber>
+          <Name>CONFIG.H</Name>
+          <ColumnNumber>19</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
+          <CurrentLine>5</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>
