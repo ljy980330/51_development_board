@@ -160,10 +160,17 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
+<<<<<<< HEAD
       <ColumnNumber>42</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>6</TopLine>
       <CurrentLine>13</CurrentLine>
+=======
+      <ColumnNumber>23</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>7</TopLine>
+      <CurrentLine>27</CurrentLine>
+>>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -216,10 +223,17 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
+<<<<<<< HEAD
       <ColumnNumber>39</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>45</TopLine>
       <CurrentLine>45</CurrentLine>
+=======
+      <ColumnNumber>16</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>1</TopLine>
+      <CurrentLine>9</CurrentLine>
+>>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
       <bDave2>0</bDave2>
       <PathWithFileName>.\i2c\i2c.c</PathWithFileName>
       <FilenameWithoutPath>i2c.c</FilenameWithoutPath>
@@ -258,7 +272,11 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
+<<<<<<< HEAD
       <ColumnNumber>44</ColumnNumber>
+=======
+      <ColumnNumber>5</ColumnNumber>
+>>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
       <CurrentLine>1</CurrentLine>
@@ -269,6 +287,7 @@
   </Group>
 
   <AlienFiles>
+<<<<<<< HEAD
     <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\012 温度传感器\DISPLAY\DISPLAY.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>8</CurrentLine>
@@ -530,6 +549,9 @@
 
   <AlienFiles>
     <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\012 温度传感器\FUNCTION\FUNCTION.H</PathWithFilename>
+=======
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51_development_board\software\初级例程\012 温度传感器\I2C\I2C.H</PathWithFilename>
+>>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
     <TopLine>1</TopLine>
     <CurrentLine>7</CurrentLine>
     <Constant>0</Constant>
@@ -1895,6 +1917,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
+<<<<<<< HEAD
       <ActiveTab>3</ActiveTab>
       <Documents>
         <Doc>
@@ -1936,10 +1959,30 @@
         <Doc>
           <Name>CODE_TAB/CODE_TAB.H</Name>
           <ColumnNumber>106</ColumnNumber>
+=======
+      <ActiveTab>8</ActiveTab>
+      <Documents>
+        <Doc>
+          <Name>.\delay\delay.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>21</TopLine>
+          <CurrentLine>21</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\main.c</Name>
+          <ColumnNumber>23</ColumnNumber>
+          <TopLine>7</TopLine>
+          <CurrentLine>27</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\drive\drive.c</Name>
+          <ColumnNumber>5</ColumnNumber>
+>>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
           <TopLine>1</TopLine>
           <CurrentLine>7</CurrentLine>
         </Doc>
         <Doc>
+<<<<<<< HEAD
           <Name>DRIVE/DRIVE.H</Name>
           <ColumnNumber>108</ColumnNumber>
           <TopLine>1</TopLine>
@@ -1966,10 +2009,21 @@
         <Doc>
           <Name>CONFIG.H</Name>
           <ColumnNumber>107</ColumnNumber>
+=======
+          <Name>.\display\display.c</Name>
+          <ColumnNumber>80</ColumnNumber>
+          <TopLine>5</TopLine>
+          <CurrentLine>14</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\code_tab\code_tab.c</Name>
+          <ColumnNumber>2</ColumnNumber>
+>>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
           <TopLine>1</TopLine>
           <CurrentLine>7</CurrentLine>
         </Doc>
         <Doc>
+<<<<<<< HEAD
           <Name>F:\WORKAPP\KEIL_V5\C51\INC\STC\STC12C5A.H</Name>
           <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
@@ -1980,6 +2034,12 @@
           <ColumnNumber>12</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>6</CurrentLine>
+=======
+          <Name>.\OLED_Init\OLED_Init.c</Name>
+          <ColumnNumber>9</ColumnNumber>
+          <TopLine>7</TopLine>
+          <CurrentLine>18</CurrentLine>
+>>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
         </Doc>
         <Doc>
           <Name>.\function\function.c</Name>
@@ -1988,6 +2048,7 @@
           <CurrentLine>6</CurrentLine>
         </Doc>
         <Doc>
+<<<<<<< HEAD
           <Name>I2C/I2C.H</Name>
           <ColumnNumber>106</ColumnNumber>
           <TopLine>1</TopLine>
@@ -2010,6 +2071,18 @@
           <ColumnNumber>12</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>6</CurrentLine>
+=======
+          <Name>.\i2c\i2c.c</Name>
+          <ColumnNumber>16</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>9</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>I2C/I2C.H</Name>
+          <ColumnNumber>13</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>20</CurrentLine>
+>>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
         </Doc>
       </Documents>
     </MDIGroup>

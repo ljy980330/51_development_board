@@ -162,7 +162,11 @@
       <Focus>0</Focus>
       <ColumnNumber>34</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
+<<<<<<< HEAD
       <TopLine>1</TopLine>
+=======
+      <TopLine>9</TopLine>
+>>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
       <CurrentLine>14</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
@@ -218,8 +222,13 @@
       <Focus>0</Focus>
       <ColumnNumber>53</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
+<<<<<<< HEAD
       <TopLine>1</TopLine>
       <CurrentLine>29</CurrentLine>
+=======
+      <TopLine>48</TopLine>
+      <CurrentLine>48</CurrentLine>
+>>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
       <bDave2>0</bDave2>
       <PathWithFileName>.\i2c\i2c.c</PathWithFileName>
       <FilenameWithoutPath>i2c.c</FilenameWithoutPath>
@@ -232,8 +241,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>13</TopLine>
-      <CurrentLine>21</CurrentLine>
+      <TopLine>31</TopLine>
+      <CurrentLine>31</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\delay\delay.c</PathWithFileName>
       <FilenameWithoutPath>delay.c</FilenameWithoutPath>
@@ -246,7 +255,7 @@
       <Focus>0</Focus>
       <ColumnNumber>9</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>7</TopLine>
+      <TopLine>1</TopLine>
       <CurrentLine>18</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\OLED_Init\OLED_Init.c</PathWithFileName>
@@ -269,7 +278,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\中级例程\007 屏幕+温度显示\CONFIG.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51_development_board\software\中级例程\007 屏幕+温度显示\CONFIG.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -295,7 +304,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\中级例程\007 屏幕+温度显示\DELAY\DELAY.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51_development_board\software\中级例程\007 屏幕+温度显示\DELAY\DELAY.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>13</CurrentLine>
     <Constant>0</Constant>
@@ -321,7 +330,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\中级例程\007 屏幕+温度显示\OLED_INIT\OLED_INIT.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51_development_board\software\中级例程\007 屏幕+温度显示\OLED_INIT\OLED_INIT.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -347,8 +356,8 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\中级例程\007 屏幕+温度显示\CODE_TAB\CODE_TAB.H</PathWithFilename>
-    <TopLine>1</TopLine>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51_development_board\software\中级例程\007 屏幕+温度显示\CODE_TAB\CODE_TAB.H</PathWithFilename>
+    <TopLine>2</TopLine>
     <CurrentLine>22</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
@@ -373,8 +382,8 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\中级例程\007 屏幕+温度显示\FUNCTION\FUNCTION.H</PathWithFilename>
-    <TopLine>1</TopLine>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51_development_board\software\中级例程\007 屏幕+温度显示\FUNCTION\FUNCTION.H</PathWithFilename>
+    <TopLine>2</TopLine>
     <CurrentLine>22</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
@@ -399,7 +408,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\中级例程\007 屏幕+温度显示\DISPLAY\DISPLAY.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51_development_board\software\中级例程\007 屏幕+温度显示\DISPLAY\DISPLAY.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>8</CurrentLine>
     <Constant>0</Constant>
@@ -425,7 +434,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\中级例程\007 屏幕+温度显示\DRIVE\DRIVE.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51_development_board\software\中级例程\007 屏幕+温度显示\DRIVE\DRIVE.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>24</CurrentLine>
     <Constant>0</Constant>
@@ -451,7 +460,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\中级例程\007 屏幕+温度显示\INCLUDES.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51_development_board\software\中级例程\007 屏幕+温度显示\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>12</CurrentLine>
     <Constant>0</Constant>
@@ -477,9 +486,15 @@
   </AlienFiles>
 
   <AlienFiles>
+<<<<<<< HEAD
     <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\中级例程\007 屏幕+温度显示\I2C\I2C.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>12</CurrentLine>
+=======
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51_development_board\software\中级例程\007 屏幕+温度显示\I2C\I2C.H</PathWithFilename>
+    <TopLine>3</TopLine>
+    <CurrentLine>23</CurrentLine>
+>>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1846,21 +1861,43 @@
       <ActiveTab>0</ActiveTab>
       <Documents>
         <Doc>
+          <Name>.\OLED_Init\OLED_Init.c</Name>
+          <ColumnNumber>9</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>18</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\i2c\i2c.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>48</TopLine>
+          <CurrentLine>48</CurrentLine>
+        </Doc>
+        <Doc>
           <Name>I2C/I2C.H</Name>
+<<<<<<< HEAD
           <ColumnNumber>134</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>12</CurrentLine>
+=======
+          <ColumnNumber>63</ColumnNumber>
+          <TopLine>3</TopLine>
+          <CurrentLine>23</CurrentLine>
+>>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
         </Doc>
         <Doc>
           <Name>.\delay\delay.c</Name>
           <ColumnNumber>0</ColumnNumber>
-          <TopLine>13</TopLine>
-          <CurrentLine>21</CurrentLine>
+          <TopLine>31</TopLine>
+          <CurrentLine>31</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\main.c</Name>
           <ColumnNumber>34</ColumnNumber>
+<<<<<<< HEAD
           <TopLine>1</TopLine>
+=======
+          <TopLine>9</TopLine>
+>>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
           <CurrentLine>14</CurrentLine>
         </Doc>
         <Doc>
@@ -1896,13 +1933,13 @@
         <Doc>
           <Name>FUNCTION/FUNCTION.H</Name>
           <ColumnNumber>32</ColumnNumber>
-          <TopLine>1</TopLine>
+          <TopLine>2</TopLine>
           <CurrentLine>22</CurrentLine>
         </Doc>
         <Doc>
           <Name>CODE_TAB/CODE_TAB.H</Name>
           <ColumnNumber>9</ColumnNumber>
-          <TopLine>1</TopLine>
+          <TopLine>2</TopLine>
           <CurrentLine>22</CurrentLine>
         </Doc>
         <Doc>
@@ -1918,24 +1955,21 @@
           <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
-          <Name>.\OLED_Init\OLED_Init.c</Name>
-          <ColumnNumber>9</ColumnNumber>
-          <TopLine>7</TopLine>
-          <CurrentLine>18</CurrentLine>
-        </Doc>
-        <Doc>
           <Name>.\function\function.c</Name>
           <ColumnNumber>0</ColumnNumber>
           <TopLine>12</TopLine>
           <CurrentLine>12</CurrentLine>
         </Doc>
         <Doc>
+<<<<<<< HEAD
           <Name>.\i2c\i2c.c</Name>
           <ColumnNumber>53</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>29</CurrentLine>
         </Doc>
         <Doc>
+=======
+>>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
           <Name>DELAY/DELAY.H</Name>
           <ColumnNumber>19</ColumnNumber>
           <TopLine>1</TopLine>
