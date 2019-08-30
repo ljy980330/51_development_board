@@ -16,7 +16,7 @@
 #define high 1	//高电平
 #define low  0	//低电位
 
-sbit SCL=P0^2; //串行时钟
+sbit SCL=P0^4; //串行时钟
 sbit SDA=P0^3; //串行数据
 
 void IIC_Start();

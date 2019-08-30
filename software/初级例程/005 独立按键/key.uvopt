@@ -200,10 +200,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>54</ColumnNumber>
+      <ColumnNumber>5</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>10</TopLine>
-      <CurrentLine>28</CurrentLine>
+      <TopLine>37</TopLine>
+      <CurrentLine>37</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\display\display.c</PathWithFileName>
       <FilenameWithoutPath>display.c</FilenameWithoutPath>
@@ -214,10 +214,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>63</ColumnNumber>
+      <ColumnNumber>16</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>5</TopLine>
-      <CurrentLine>14</CurrentLine>
+      <TopLine>17</TopLine>
+      <CurrentLine>26</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\key\key.c</PathWithFileName>
       <FilenameWithoutPath>key.c</FilenameWithoutPath>
@@ -225,7 +225,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\005 独立按键\DISPLAY\DISPLAY.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51_development_board\software\初级例程\005 独立按键\DISPLAY\DISPLAY.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>2</CurrentLine>
     <Constant>0</Constant>
@@ -251,7 +251,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\005 独立按键\KEY\KEY.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51_development_board\software\初级例程\005 独立按键\KEY\KEY.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>2</CurrentLine>
     <Constant>0</Constant>
@@ -277,7 +277,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\005 独立按键\INCLUDES.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51_development_board\software\初级例程\005 独立按键\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>19</CurrentLine>
     <Constant>0</Constant>
@@ -1643,7 +1643,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>2</ActiveTab>
+      <ActiveTab>4</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
@@ -1652,31 +1652,31 @@
           <CurrentLine>19</CurrentLine>
         </Doc>
         <Doc>
-          <Name>INCLUDES.H</Name>
+          <Name>C:\Users\LEE SZE KI\Documents\GitHub\51_development_board\software\初级例程\005 独立按键\INCLUDES.H</Name>
           <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>19</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\key\key.c</Name>
-          <ColumnNumber>63</ColumnNumber>
-          <TopLine>5</TopLine>
-          <CurrentLine>14</CurrentLine>
+          <ColumnNumber>16</ColumnNumber>
+          <TopLine>17</TopLine>
+          <CurrentLine>26</CurrentLine>
         </Doc>
         <Doc>
-          <Name>KEY/KEY.H</Name>
+          <Name>C:\Users\LEE SZE KI\Documents\GitHub\51_development_board\software\初级例程\005 独立按键\KEY\KEY.H</Name>
           <ColumnNumber>10</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>2</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\display\display.c</Name>
-          <ColumnNumber>54</ColumnNumber>
-          <TopLine>10</TopLine>
-          <CurrentLine>28</CurrentLine>
+          <ColumnNumber>5</ColumnNumber>
+          <TopLine>37</TopLine>
+          <CurrentLine>37</CurrentLine>
         </Doc>
         <Doc>
-          <Name>DISPLAY/DISPLAY.H</Name>
+          <Name>C:\Users\LEE SZE KI\Documents\GitHub\51_development_board\software\初级例程\005 独立按键\DISPLAY\DISPLAY.H</Name>
           <ColumnNumber>7</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>2</CurrentLine>
