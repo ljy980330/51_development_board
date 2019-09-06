@@ -12,9 +12,8 @@
 #include <STC12C5A.H> 
 #include "intrins.h"
 #include "config.h"	 
-#include "delay/delay.h" 
-#include "display/display.h"  
-
-
+#include "delay/delay.h" 	   
+#include "display/display.h"  				
+#include "timerInterrupt/timerInterrupt.h"  
 
 #endif

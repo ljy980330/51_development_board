@@ -203,10 +203,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>24</ColumnNumber>
+      <ColumnNumber>99</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>5</TopLine>
-      <CurrentLine>8</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>10</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\led\led.c</PathWithFileName>
       <FilenameWithoutPath>led.c</FilenameWithoutPath>
@@ -230,7 +230,7 @@
   <AlienFiles>
     <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\003 LED流水灯\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>11</CurrentLine>
+    <CurrentLine>16</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1597,6 +1597,12 @@
       <ActiveTab>2</ActiveTab>
       <Documents>
         <Doc>
+          <Name>INCLUDES.H</Name>
+          <ColumnNumber>147</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>16</CurrentLine>
+        </Doc>
+        <Doc>
           <Name>.\main.c</Name>
           <ColumnNumber>80</ColumnNumber>
           <TopLine>1</TopLine>
@@ -1604,15 +1610,9 @@
         </Doc>
         <Doc>
           <Name>.\led\led.c</Name>
-          <ColumnNumber>24</ColumnNumber>
-          <TopLine>5</TopLine>
-          <CurrentLine>8</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>INCLUDES.H</Name>
-          <ColumnNumber>107</ColumnNumber>
+          <ColumnNumber>99</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>11</CurrentLine>
+          <CurrentLine>10</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

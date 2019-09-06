@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/26/2019  22:21:57  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        08/30/2019  17:09:15  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -14,8 +14,6 @@ INPUT MODULES INCLUDED:
   .\Objects\delay.obj (DELAY)
   .\Objects\buzzer.obj (BUZZER)
   F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C?IMUL)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
 
 
 LINK MAP OF MODULE:  .\Objects\buzzer (MAIN)
@@ -26,24 +24,17 @@ LINK MAP OF MODULE:  .\Objects\buzzer (MAIN)
 
             * * * * * * *   D A T A   M E M O R Y   * * * * * * *
             REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
-            DATA    0008H     0008H     UNIT         ?DT?BUZZER
-            IDATA   0010H     0001H     UNIT         ?STACK
+            IDATA   0008H     0001H     UNIT         ?STACK
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
             CODE    0000H     0003H     ABSOLUTE     
-            CODE    0003H     0006H     UNIT         ?PR?MAIN?MAIN
-                    0009H     0002H                  *** GAP ***
-            CODE    000BH     0003H     ABSOLUTE     
-            CODE    000EH     017EH     UNIT         ?CO?BUZZER
-            CODE    018CH     00AEH     UNIT         ?PR?RUN?BUZZER
-            CODE    023AH     008CH     UNIT         ?C_C51STARTUP
-            CODE    02C6H     0020H     UNIT         ?PR?_DELAY_MS?DELAY
-            CODE    02E6H     0013H     UNIT         ?PR?_NOP?DELAY
-            CODE    02F9H     0013H     UNIT         ?PR?TIME0?BUZZER
-            CODE    030CH     0012H     UNIT         ?C?LIB_CODE
-            CODE    031EH     0010H     UNIT         ?PR?INIT?BUZZER
-            CODE    032EH     000BH     UNIT         ?PR?_DELAY_US?DELAY
-            CODE    0339H     0009H     UNIT         ?C_INITSEG
+            CODE    0003H     0020H     UNIT         ?PR?_DELAY_MS?DELAY
+            CODE    0023H     0013H     UNIT         ?PR?_NOP?DELAY
+            CODE    0036H     0010H     UNIT         ?PR?INIT?BUZZER
+            CODE    0046H     000CH     UNIT         ?C_C51STARTUP
+            CODE    0052H     000BH     UNIT         ?PR?_DELAY_US?DELAY
+            CODE    005DH     000BH     UNIT         ?PR?RUN?BUZZER
+            CODE    0068H     0006H     UNIT         ?PR?MAIN?MAIN
 
 
 
@@ -55,24 +46,22 @@ SEGMENT
 ---------------------
 ?C_C51STARTUP
   +--> ?PR?MAIN?MAIN
-  +--> ?C_INITSEG
 
 ?PR?MAIN?MAIN
   +--> ?PR?INIT?BUZZER
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  22:21:57  PAGE 2
-
-
   +--> ?PR?RUN?BUZZER
 
 ?PR?RUN?BUZZER
-  +--> ?CO?BUZZER
-  +--> ?PR?_DELAY_US?DELAY
+  +--> ?PR?_DELAY_MS?DELAY
 
 
 
 SYMBOL TABLE OF MODULE:  .\Objects\buzzer (MAIN)
 
   VALUE           TYPE          NAME
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  17:09:15  PAGE 2
+
+
   ----------------------------------
 
   -------         MODULE        MAIN
@@ -86,58 +75,58 @@ SYMBOL TABLE OF MODULE:  .\Objects\buzzer (MAIN)
   D:00A8H         PUBLIC        IE
   D:00B8H         PUBLIC        IP
   D:00D8H         PUBLIC        CCON
-  C:0003H         PUBLIC        main
+  C:0068H         PUBLIC        main
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
   D:00E0H         PUBLIC        ACC
   D:00D0H         PUBLIC        PSW
   -------         PROC          MAIN
-  C:0003H         LINE#         14
-  C:0003H         LINE#         15
-  C:0003H         LINE#         16
-  C:0006H         LINE#         17
+  C:0068H         LINE#         14
+  C:0068H         LINE#         15
+  C:0068H         LINE#         16
+  C:006BH         LINE#         18
   -------         ENDPROC       MAIN
   -------         ENDMOD        MAIN
 
   -------         MODULE        DELAY
   C:0000H         SYMBOL        _ICE_DUMMY_
-  C:02E6H         PUBLIC        _nop
-  C:02C6H         PUBLIC        _delay_ms
-  C:032EH         PUBLIC        _delay_us
+  C:0023H         PUBLIC        _nop
+  C:0003H         PUBLIC        _delay_ms
+  C:0052H         PUBLIC        _delay_us
   -------         PROC          _DELAY_MS
   D:0006H         SYMBOL        n
   -------         DO            
   D:0004H         SYMBOL        i
   D:0002H         SYMBOL        j
   -------         ENDDO         
-  C:02C6H         LINE#         14
-  C:02C6H         LINE#         15
-  C:02C6H         LINE#         17
-  C:02D0H         LINE#         18
-  C:02E5H         LINE#         19
+  C:0003H         LINE#         14
+  C:0003H         LINE#         15
+  C:0003H         LINE#         17
+  C:000DH         LINE#         18
+  C:0022H         LINE#         19
   -------         ENDPROC       _DELAY_MS
   -------         PROC          _DELAY_US
   D:0006H         SYMBOL        n
-  C:032EH         LINE#         24
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  22:21:57  PAGE 3
-
-
-  C:032EH         LINE#         25
-  C:032EH         LINE#         26
-  C:0338H         LINE#         27
+  C:0052H         LINE#         24
+  C:0052H         LINE#         25
+  C:0052H         LINE#         26
+  C:005CH         LINE#         27
   -------         ENDPROC       _DELAY_US
   -------         PROC          _NOP
   D:0006H         SYMBOL        n
   -------         DO            
   D:0004H         SYMBOL        i
   -------         ENDDO         
-  C:02E6H         LINE#         32
-  C:02E6H         LINE#         33
-  C:02E6H         LINE#         35
-  C:02F0H         LINE#         36
-  C:02F0H         LINE#         37
-  C:02F1H         LINE#         38
-  C:02F8H         LINE#         39
+  C:0023H         LINE#         32
+  C:0023H         LINE#         33
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  17:09:15  PAGE 3
+
+
+  C:0023H         LINE#         35
+  C:002DH         LINE#         36
+  C:002DH         LINE#         37
+  C:002EH         LINE#         38
+  C:0035H         LINE#         39
   -------         ENDPROC       _NOP
   -------         ENDMOD        DELAY
 
@@ -155,69 +144,38 @@ SYMBOL TABLE OF MODULE:  .\Objects\buzzer (MAIN)
   D:0098H         PUBLIC        SCON
   D:0089H         PUBLIC        TMOD
   D:0088H         PUBLIC        TCON
-  C:031EH         PUBLIC        init
-  C:000EH         PUBLIC        music_tab
+  C:0036H         PUBLIC        init
   D:00E0H         PUBLIC        ACC
   D:008CH         PUBLIC        TH0
   B:00A0H.7       PUBLIC        buzz
   D:008AH         PUBLIC        TL0
-  C:018CH         PUBLIC        run
-  B:0088H.4       PUBLIC        TR0
-  C:02F9H         PUBLIC        time0
-  D:0008H         PUBLIC        i
-  D:000AH         PUBLIC        m
-  D:000CH         PUBLIC        n
-  D:000EH         PUBLIC        p
+  C:005DH         PUBLIC        run
   D:00D0H         PUBLIC        PSW
   -------         PROC          INIT
-  C:031EH         LINE#         66
-  C:031EH         LINE#         67
-  C:031EH         LINE#         68
-  C:0321H         LINE#         69
-  C:0324H         LINE#         70
-  C:032AH         LINE#         71
-  C:032DH         LINE#         72
+  C:0036H         LINE#         15
+  C:0036H         LINE#         16
+  C:0036H         LINE#         17
+  C:0039H         LINE#         18
+  C:003CH         LINE#         19
+  C:0042H         LINE#         20
+  C:0045H         LINE#         21
   -------         ENDPROC       INIT
   -------         PROC          RUN
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  22:21:57  PAGE 4
-
-
-  -------         DO            
-  C:018CH         SYMBOL        play
-  C:018CH         SYMBOL        a
-  -------         ENDDO         
-  C:018CH         LINE#         78
-  C:018CH         LINE#         79
-  C:018CH         LINE#         80
-  C:018CH         LINE#         81
-  C:018CH         LINE#         82
-  C:018CH         LINE#         83
-  C:01A8H         LINE#         84
-  C:01B9H         LINE#         85
-  C:01D3H         LINE#         86
-  C:021BH         LINE#         87
-  C:021DH         LINE#         88
-  C:0235H         LINE#         89
-  C:0237H         LINE#         90
+  C:005DH         LINE#         27
+  C:005DH         LINE#         28
+  C:005DH         LINE#         29
+  C:005DH         LINE#         30
+  C:005DH         LINE#         31
+  C:0064H         LINE#         32
+  C:0066H         LINE#         33
   -------         ENDPROC       RUN
-  -------         PROC          TIME0
-  C:02F9H         LINE#         97
-  C:02FBH         LINE#         98
-  C:02FEH         LINE#         99
-  C:0301H         LINE#         100
-  C:0309H         LINE#         101
-  -------         ENDPROC       TIME0
   -------         ENDMOD        BUZZER
 
-  -------         MODULE        ?C?IMUL
-  C:030CH         PUBLIC        ?C?IMUL
-  -------         ENDMOD        ?C?IMUL
-
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?_DELAY_MS?DELAY
+    SEGMENT: ?PR?_DELAY_US?DELAY
 
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?_NOP?DELAY
 
-Program Size: data=17.0 xdata=0 code=832
+Program Size: data=9.0 xdata=0 code=110
 LINK/LOCATE RUN COMPLETE.  2 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,6 @@
+".\Objects\main.obj",
+".\Objects\delay.obj",
+".\Objects\display.obj",
+".\Objects\timerInterrupt.obj" 
+TO ".\Objects\display" 
+PRINT(".\Listings\display.m51") RAMSIZE(256) 
