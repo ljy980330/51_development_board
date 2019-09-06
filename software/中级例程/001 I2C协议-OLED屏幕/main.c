@@ -12,8 +12,5 @@ int mian()
 {
 	OLED_Init();	//OLED≥ı ºªØ
 
-	while(1)
-	{
-	 	
-	 };
+	while(1);
 }

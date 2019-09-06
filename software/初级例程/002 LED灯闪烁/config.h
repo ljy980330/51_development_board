@@ -9,7 +9,7 @@
 #ifndef _CONFIG_H
 #define _CONFIG_H
 
-typedef unsigned char  U8;	 //新数据类型的声明定义
-typedef unsigned int  U16;
+typedef unsigned char  uchar;	 //新数据类型的声明定义
+typedef unsigned int  uint;
 
 #endif

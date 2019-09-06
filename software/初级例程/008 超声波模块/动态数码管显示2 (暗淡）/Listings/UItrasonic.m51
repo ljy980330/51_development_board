@@ -1,0 +1,450 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/26/2019  19:55:55  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+F:\WORKAPP\KEIL_V5\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\delay.obj, .\Objects\Ultrasonic.obj, .\Objects\led.obj
+>>  TO .\Objects\UItrasonic PRINT (.\Listings\UItrasonic.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL WITH FLOATING POINT ARITHMETIC
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\main.obj (MAIN)
+  .\Objects\delay.obj (DELAY)
+  .\Objects\Ultrasonic.obj (ULTRASONIC)
+  .\Objects\led.obj (LED)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FPMUL)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FPDIV)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FPCMP)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FCAST)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51FPS.LIB (?C?CASTF)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FPGETOPN)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C?UIDIV)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C?LNEG)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  .\Objects\UItrasonic (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     000CH     UNIT         ?DT?LED
+            DATA    0014H     0008H     UNIT         ?DT?ULTRASONIC
+                    001CH     0004H                  *** GAP ***
+            BIT     0020H.0   0000H.1   UNIT         ?BI?ULTRASONIC
+                    0020H.1   0000H.7                *** GAP ***
+            DATA    0021H     0005H     UNIT         _DATA_GROUP_
+            IDATA   0026H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0008H     UNIT         ?PR?MAIN?MAIN
+            CODE    000BH     0003H     ABSOLUTE     
+            CODE    000EH     0335H     UNIT         ?C?LIB_CODE
+            CODE    0343H     008CH     UNIT         ?C_C51STARTUP
+            CODE    03CFH     006BH     UNIT         ?PR?CONUT?ULTRASONIC
+            CODE    043AH     0054H     UNIT         ?PR?_DISPLAY?LED
+            CODE    048EH     0041H     UNIT         ?PR?LED4_DISPLAY?LED
+            CODE    04CFH     002CH     UNIT         ?PR?RUN?ULTRASONIC
+            CODE    04FBH     0023H     UNIT         ?CO?LED
+            CODE    051EH     0021H     UNIT         ?PR?_LED_OUT?LED
+            CODE    053FH     0020H     UNIT         ?PR?_DELAY_MS?DELAY
+            CODE    055FH     001CH     UNIT         ?PR?INIT?ULTRASONIC
+            CODE    057BH     0017H     UNIT         ?C_INITSEG
+            CODE    0592H     0013H     UNIT         ?PR?_NOP?DELAY
+            CODE    05A5H     000CH     UNIT         ?PR?STARTMODULE?ULTRASONIC
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  19:55:55  PAGE 2
+
+
+            CODE    05B1H     000BH     UNIT         ?PR?_DELAY_US?DELAY
+            CODE    05BCH     000AH     UNIT         ?PR?TIMER_COUNT?ULTRASONIC
+            CODE    05C6H     0005H     UNIT         ?PR?TIMER0?ULTRASONIC
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\UItrasonic (MAIN)
+
+
+SEGMENT                              DATA_GROUP 
+  +--> CALLED SEGMENT              START    LENGTH
+--------------------------------------------------
+?C_C51STARTUP                      -----    -----
+  +--> ?PR?MAIN?MAIN
+  +--> ?C_INITSEG
+
+?PR?MAIN?MAIN                      -----    -----
+  +--> ?PR?INIT?ULTRASONIC
+  +--> ?PR?RUN?ULTRASONIC
+
+?PR?RUN?ULTRASONIC                 0021H    0002H
+  +--> ?PR?_DELAY_MS?DELAY
+  +--> ?PR?STARTMODULE?ULTRASONIC
+  +--> ?PR?TIMER_COUNT?ULTRASONIC
+
+?PR?STARTMODULE?ULTRASONIC         -----    -----
+  +--> ?PR?_NOP?DELAY
+
+?PR?TIMER_COUNT?ULTRASONIC         -----    -----
+  +--> ?PR?CONUT?ULTRASONIC
+
+?PR?CONUT?ULTRASONIC               -----    -----
+  +--> ?PR?_DISPLAY?LED
+  +--> ?PR?LED4_DISPLAY?LED
+
+?PR?_DISPLAY?LED                   0023H    0003H
+
+?PR?LED4_DISPLAY?LED               -----    -----
+  +--> ?CO?LED
+  +--> ?PR?_LED_OUT?LED
+
+?PR?_LED_OUT?LED                   -----    -----
+  +--> ?CO?LED
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\UItrasonic (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  19:55:55  PAGE 3
+
+
+  D:00C0H         PUBLIC        P4
+  D:00C8H         PUBLIC        P5
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  D:00D8H         PUBLIC        CCON
+  C:0003H         PUBLIC        main
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:00E0H         PUBLIC        ACC
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          MAIN
+  C:0003H         LINE#         6
+  C:0003H         LINE#         7
+  C:0003H         LINE#         8
+  C:0006H         LINE#         9
+  C:0006H         LINE#         10
+  C:0006H         LINE#         11
+  C:0009H         LINE#         12
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        DELAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0592H         PUBLIC        _nop
+  C:053FH         PUBLIC        _delay_ms
+  C:05B1H         PUBLIC        _delay_us
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        n
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0002H         SYMBOL        j
+  -------         ENDDO         
+  C:053FH         LINE#         14
+  C:053FH         LINE#         15
+  C:053FH         LINE#         17
+  C:0549H         LINE#         18
+  C:055EH         LINE#         19
+  -------         ENDPROC       _DELAY_MS
+  -------         PROC          _DELAY_US
+  D:0006H         SYMBOL        n
+  C:05B1H         LINE#         24
+  C:05B1H         LINE#         25
+  C:05B1H         LINE#         26
+  C:05BBH         LINE#         27
+  -------         ENDPROC       _DELAY_US
+  -------         PROC          _NOP
+  D:0006H         SYMBOL        n
+  -------         DO            
+  D:0004H         SYMBOL        i
+  -------         ENDDO         
+  C:0592H         LINE#         32
+  C:0592H         LINE#         33
+  C:0592H         LINE#         35
+  C:059CH         LINE#         36
+  C:059CH         LINE#         37
+  C:059DH         LINE#         38
+  C:05A4H         LINE#         39
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  19:55:55  PAGE 4
+
+
+  -------         ENDPROC       _NOP
+  -------         ENDMOD        DELAY
+
+  -------         MODULE        ULTRASONIC
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00C0H         PUBLIC        P4
+  D:00C8H         PUBLIC        P5
+  B:00A8H.7       PUBLIC        EA
+  D:00A8H         PUBLIC        IE
+  C:05BCH         PUBLIC        timer_Count
+  D:00B8H         PUBLIC        IP
+  C:05A5H         PUBLIC        startModule
+  B:0020H.0       PUBLIC        flag
+  B:0098H.1       PUBLIC        TI
+  D:0014H         PUBLIC        timer
+  D:00D8H         PUBLIC        CCON
+  B:00B0H.2       PUBLIC        RX
+  C:03CFH         PUBLIC        conut
+  B:00B0H.7       PUBLIC        TX
+  D:0016H         PUBLIC        time
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  D:0088H         PUBLIC        TCON
+  C:055FH         PUBLIC        init
+  D:00E0H         PUBLIC        ACC
+  B:00A8H.1       PUBLIC        ET0
+  D:008CH         PUBLIC        TH0
+  D:008DH         PUBLIC        TH1
+  D:0018H         PUBLIC        distance
+  D:008AH         PUBLIC        TL0
+  D:008BH         PUBLIC        TL1
+  C:05C6H         PUBLIC        timer0
+  C:04CFH         PUBLIC        run
+  B:0088H.4       PUBLIC        TR0
+  B:0088H.6       PUBLIC        TR1
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          CONUT
+  C:03CFH         LINE#         15
+  C:03CFH         LINE#         16
+  C:03CFH         LINE#         17
+  C:03DFH         LINE#         18
+  C:03E2H         LINE#         19
+  C:03E4H         LINE#         20
+  C:0408H         LINE#         21
+  C:0420H         LINE#         22
+  C:0420H         LINE#         23
+  C:0422H         LINE#         24
+  C:0426H         LINE#         25
+  C:0426H         LINE#         26
+  C:0428H         LINE#         28
+  C:0428H         LINE#         29
+  C:0436H         LINE#         30
+  C:0439H         LINE#         31
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  19:55:55  PAGE 5
+
+
+  C:0439H         LINE#         32
+  -------         ENDPROC       CONUT
+  -------         PROC          TIMER_COUNT
+  C:05BCH         LINE#         33
+  C:05BCH         LINE#         34
+  C:05BCH         LINE#         35
+  C:05BEH         LINE#         36
+  C:05C1H         LINE#         37
+  C:05C3H         LINE#         38
+  -------         ENDPROC       TIMER_COUNT
+  -------         PROC          STARTMODULE
+  C:05A5H         LINE#         42
+  C:05A5H         LINE#         43
+  C:05A5H         LINE#         44
+  C:05A7H         LINE#         45
+  C:05AEH         LINE#         46
+  C:05B0H         LINE#         47
+  -------         ENDPROC       STARTMODULE
+  -------         PROC          INIT
+  C:055FH         LINE#         49
+  C:055FH         LINE#         50
+  C:055FH         LINE#         51
+  C:0562H         LINE#         52
+  C:0565H         LINE#         53
+  C:0568H         LINE#         54
+  C:056BH         LINE#         55
+  C:056EH         LINE#         56
+  C:0570H         LINE#         57
+  C:0572H         LINE#         58
+  C:0574H         LINE#         59
+  C:0576H         LINE#         60
+  C:0578H         LINE#         62
+  C:057AH         LINE#         63
+  -------         ENDPROC       INIT
+  -------         PROC          RUN
+  -------         DO            
+  D:0021H         SYMBOL        valA
+  -------         ENDDO         
+  C:04CFH         LINE#         65
+  C:04CFH         LINE#         66
+  C:04CFH         LINE#         68
+  C:04D6H         LINE#         69
+  C:04D8H         LINE#         70
+  C:04DBH         LINE#         71
+  C:04E1H         LINE#         72
+  C:04E1H         LINE#         73
+  C:04E4H         LINE#         74
+  C:04E4H         LINE#         75
+  C:04E7H         LINE#         76
+  C:04E7H         LINE#         77
+  C:04FAH         LINE#         78
+  -------         ENDPROC       RUN
+  -------         PROC          TIMER0
+  C:05C6H         LINE#         80
+  C:05C6H         LINE#         82
+  C:05C8H         LINE#         83
+  C:05CAH         LINE#         84
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  19:55:55  PAGE 6
+
+
+  -------         ENDPROC       TIMER0
+  -------         ENDMOD        ULTRASONIC
+
+  -------         MODULE        LED
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0008H         PUBLIC        disbuf
+  D:0090H         PUBLIC        P1
+  C:0505H         PUBLIC        segbit
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00C0H         PUBLIC        P4
+  D:00C8H         PUBLIC        P5
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  D:00D8H         PUBLIC        CCON
+  C:04FBH         PUBLIC        fseg
+  C:050DH         PUBLIC        LED_0F
+  B:0090H.1       PUBLIC        RCLK
+  B:0090H.2       PUBLIC        SCLK
+  C:0528H         PUBLIC        _LED_OUT
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  C:048EH         PUBLIC        LED4_Display
+  D:00E0H         PUBLIC        ACC
+  D:000CH         PUBLIC        LED
+  B:0090H.0       PUBLIC        DIO
+  C:043AH         PUBLIC        _display
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          LED4_DISPLAY
+  -------         DO            
+  D:0082H         SYMBOL        led_table
+  D:0007H         SYMBOL        i
+  -------         ENDDO         
+  C:048EH         LINE#         19
+  C:048EH         LINE#         20
+  C:048EH         LINE#         24
+  C:0492H         LINE#         25
+  C:0492H         LINE#         27
+  C:0495H         LINE#         28
+  C:049AH         LINE#         30
+  C:049CH         LINE#         31
+  C:049EH         LINE#         33
+  C:04A2H         LINE#         34
+  C:04A2H         LINE#         36
+  C:04A5H         LINE#         37
+  C:04AAH         LINE#         39
+  C:04ACH         LINE#         40
+  C:04AEH         LINE#         42
+  C:04B2H         LINE#         43
+  C:04B2H         LINE#         45
+  C:04B5H         LINE#         46
+  C:04BAH         LINE#         48
+  C:04BCH         LINE#         49
+  C:04BEH         LINE#         51
+  C:04C2H         LINE#         52
+  C:04C2H         LINE#         54
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  19:55:55  PAGE 7
+
+
+  C:04C5H         LINE#         55
+  C:04CAH         LINE#         57
+  C:04CCH         LINE#         58
+  C:04CEH         LINE#         59
+  -------         ENDPROC       LED4_DISPLAY
+  C:051EH         SYMBOL        L?0010
+  -------         PROC          L?0009
+  -------         ENDPROC       L?0009
+  C:051EH         SYMBOL        L?0010
+  -------         PROC          _LED_OUT
+  D:0007H         SYMBOL        X
+  -------         DO            
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:0528H         LINE#         61
+  C:0528H         LINE#         62
+  C:0528H         LINE#         64
+  C:052AH         LINE#         65
+  C:052AH         LINE#         66
+  C:0534H         LINE#         67
+  C:0538H         LINE#         68
+  C:053AH         LINE#         69
+  C:053CH         LINE#         70
+  C:053EH         LINE#         71
+  -------         ENDPROC       _LED_OUT
+  -------         PROC          _DISPLAY
+  D:0002H         SYMBOL        temp
+  -------         DO            
+  D:0023H         SYMBOL        qian
+  D:0007H         SYMBOL        ge
+  D:0024H         SYMBOL        shi
+  D:0025H         SYMBOL        bai
+  -------         ENDDO         
+  C:043AH         LINE#         81
+  C:043EH         LINE#         82
+  C:043EH         LINE#         84
+  C:0447H         LINE#         85
+  C:045BH         LINE#         86
+  C:0475H         LINE#         87
+  C:0482H         LINE#         89
+  C:0485H         LINE#         90
+  C:0488H         LINE#         91
+  C:048BH         LINE#         92
+  C:048DH         LINE#         94
+  -------         ENDPROC       _DISPLAY
+  -------         ENDMOD        LED
+
+  -------         MODULE        ?C?FPMUL
+  C:000EH         PUBLIC        ?C?FPMUL
+  -------         ENDMOD        ?C?FPMUL
+
+  -------         MODULE        ?C?FPDIV
+  C:0117H         PUBLIC        ?C?FPDIV
+  -------         ENDMOD        ?C?FPDIV
+
+  -------         MODULE        ?C?FPCMP
+  C:01B6H         PUBLIC        ?C?FPCMP
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/26/2019  19:55:55  PAGE 8
+
+
+  C:01B4H         PUBLIC        ?C?FPCMP3
+  -------         ENDMOD        ?C?FPCMP
+
+  -------         MODULE        ?C?FCAST
+  C:022BH         PUBLIC        ?C?FCASTC
+  C:0226H         PUBLIC        ?C?FCASTI
+  C:0221H         PUBLIC        ?C?FCASTL
+  -------         ENDMOD        ?C?FCAST
+
+  -------         MODULE        ?C?CASTF
+  C:025FH         PUBLIC        ?C?CASTF
+  -------         ENDMOD        ?C?CASTF
+
+  -------         MODULE        ?C?UIDIV
+  C:02E0H         PUBLIC        ?C?UIDIV
+  -------         ENDMOD        ?C?UIDIV
+
+  -------         MODULE        ?C?LNEG
+  C:0335H         PUBLIC        ?C?LNEG
+  -------         ENDMOD        ?C?LNEG
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+
+Program Size: data=34.1 xdata=0 code=1483
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

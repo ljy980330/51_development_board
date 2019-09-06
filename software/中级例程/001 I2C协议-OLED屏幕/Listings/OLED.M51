@@ -1,9 +1,9 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/09/2019  14:50:45  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/14/2019  10:08:52  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-D:\CX\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\delay.obj, .\Objects\OLED_Init.obj, .\Objects\i2c.obj, .\Objects\fu
->> nction.obj TO .\Objects\OLED PRINT (.\Listings\OLED.m51) RAMSIZE (256)
+D:\µ¥Æ¬»ú\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\delay.obj, .\Objects\OLED_Init.obj, .\Objects\i2c.obj, .\Object
+>> s\function.obj TO .\Objects\OLED PRINT (.\Listings\OLED.m51) RAMSIZE (256)
 
 
 MEMORY MODEL: SMALL
@@ -40,9 +40,10 @@ LINK MAP OF MODULE:  .\Objects\OLED (MAIN)
             CODE    013AH     001DH     UNIT         ?PR?_OLED_SET_POS?FUNCTION
             CODE    0157H     001AH     UNIT         ?PR?_OLED_WRCMD?FUNCTION
             CODE    0171H     0017H     UNIT         ?PR?_OLED_WRDAT?FUNCTION
-            CODE    0188H     0009H     UNIT         ?PR?IIC_START?I2C
-            CODE    0191H     0009H     UNIT         ?PR?IIC_STOP?I2C
-            CODE    019AH     0005H     UNIT         ?PR?MIAN?MAIN
+            CODE    0188H     0014H     UNIT         ?PR?IIC_START?I2C
+            CODE    019CH     0014H     UNIT         ?PR?IIC_STOP?I2C
+            CODE    01B0H     0005H     UNIT         ?PR?MIAN?MAIN
+            CODE    01B5H     0003H     UNIT         ?PR?NOP?DELAY
 
 
 
@@ -58,8 +59,8 @@ SYMBOL TABLE OF MODULE:  .\Objects\OLED (MAIN)
 
   VALUE           TYPE          NAME
   ----------------------------------
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  10:08:52  PAGE 2
 
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/09/2019  14:50:45  PAGE 2
 
 
   -------         MODULE        MAIN
@@ -73,24 +74,23 @@ SYMBOL TABLE OF MODULE:  .\Objects\OLED (MAIN)
   D:00A8H         PUBLIC        IE
   D:00B8H         PUBLIC        IP
   D:00D8H         PUBLIC        CCON
-  C:019AH         PUBLIC        mian
+  C:01B0H         PUBLIC        mian
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
   D:00E0H         PUBLIC        ACC
   D:00D0H         PUBLIC        PSW
   -------         PROC          MIAN
-  C:019AH         LINE#         11
-  C:019AH         LINE#         12
-  C:019AH         LINE#         13
-  C:019DH         LINE#         15
-  C:019DH         LINE#         16
-  C:019DH         LINE#         18
+  C:01B0H         LINE#         11
+  C:01B0H         LINE#         12
+  C:01B0H         LINE#         13
+  C:01B3H         LINE#         15
   -------         ENDPROC       MIAN
   -------         ENDMOD        MAIN
 
   -------         MODULE        DELAY
   C:0000H         SYMBOL        _ICE_DUMMY_
   C:011CH         PUBLIC        _Delay_ms
+  C:01B5H         PUBLIC        nop
   -------         PROC          _DELAY_MS
   D:0006H         SYMBOL        z
   -------         DO            
@@ -103,6 +103,13 @@ SYMBOL TABLE OF MODULE:  .\Objects\OLED (MAIN)
   C:0125H         LINE#         21
   C:0139H         LINE#         22
   -------         ENDPROC       _DELAY_MS
+  -------         PROC          NOP
+  C:01B5H         LINE#         29
+  C:01B5H         LINE#         30
+  C:01B5H         LINE#         31
+  C:01B6H         LINE#         32
+  C:01B7H         LINE#         33
+  -------         ENDPROC       NOP
   -------         ENDMOD        DELAY
 
   -------         MODULE        OLED_INIT
@@ -112,6 +119,9 @@ SYMBOL TABLE OF MODULE:  .\Objects\OLED (MAIN)
   D:00A0H         PUBLIC        P2
   D:00B0H         PUBLIC        P3
   D:00C0H         PUBLIC        P4
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  10:08:52  PAGE 3
+
+
   D:00C8H         PUBLIC        P5
   D:00A8H         PUBLIC        IE
   D:00B8H         PUBLIC        IP
@@ -119,9 +129,6 @@ SYMBOL TABLE OF MODULE:  .\Objects\OLED (MAIN)
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
   C:0000H         PUBLIC        OLED_init
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/09/2019  14:50:45  PAGE 3
-
-
   D:00E0H         PUBLIC        ACC
   D:00D0H         PUBLIC        PSW
   -------         PROC          OLED_INIT
@@ -172,60 +179,69 @@ SYMBOL TABLE OF MODULE:  .\Objects\OLED (MAIN)
   D:00A8H         PUBLIC        IE
   D:00B8H         PUBLIC        IP
   D:00D8H         PUBLIC        CCON
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  10:08:52  PAGE 4
+
+
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
   C:00FDH         PUBLIC        _Write_IIC_Byte
   C:0188H         PUBLIC        IIC_Start
   D:00E0H         PUBLIC        ACC
-  B:00A0H.1       PUBLIC        SDA
-  C:0191H         PUBLIC        IIC_Stop
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/09/2019  14:50:45  PAGE 4
-
-
-  B:00A0H.0       PUBLIC        SCL
+  B:00A0H.3       PUBLIC        SDA
+  C:019CH         PUBLIC        IIC_Stop
+  B:00A0H.5       PUBLIC        SCL
   D:00D0H         PUBLIC        PSW
   -------         PROC          IIC_START
   C:0188H         LINE#         16
   C:0188H         LINE#         17
   C:0188H         LINE#         18
   C:018AH         LINE#         19
-  C:018CH         LINE#         20
-  C:018EH         LINE#         21
-  C:0190H         LINE#         22
+  C:018DH         LINE#         20
+  C:018FH         LINE#         21
+  C:0192H         LINE#         22
+  C:0194H         LINE#         23
+  C:0197H         LINE#         24
+  C:0199H         LINE#         25
   -------         ENDPROC       IIC_START
   -------         PROC          IIC_STOP
-  C:0191H         LINE#         29
-  C:0191H         LINE#         30
-  C:0191H         LINE#         31
-  C:0193H         LINE#         32
-  C:0195H         LINE#         33
-  C:0197H         LINE#         34
-  C:0199H         LINE#         35
+  C:019CH         LINE#         33
+  C:019CH         LINE#         34
+  C:019CH         LINE#         35
+  C:019EH         LINE#         36
+  C:01A1H         LINE#         37
+  C:01A3H         LINE#         38
+  C:01A6H         LINE#         39
+  C:01A8H         LINE#         40
+  C:01ABH         LINE#         41
+  C:01ADH         LINE#         42
   -------         ENDPROC       IIC_STOP
   -------         PROC          _WRITE_IIC_BYTE
   D:0007H         SYMBOL        IIC_Byte
   -------         DO            
   D:0006H         SYMBOL        i
   -------         ENDDO         
-  C:00FDH         LINE#         43
-  C:00FDH         LINE#         44
-  C:00FDH         LINE#         47
-  C:00FFH         LINE#         48
-  C:00FFH         LINE#         49
-  C:0103H         LINE#         50
-  C:0107H         LINE#         52
-  C:0109H         LINE#         54
-  C:010BH         LINE#         56
-  C:010DH         LINE#         58
-  C:0111H         LINE#         59
-  C:0115H         LINE#         60
-  C:0117H         LINE#         61
-  C:0119H         LINE#         62
-  C:011BH         LINE#         63
+  C:00FDH         LINE#         51
+  C:00FDH         LINE#         52
+  C:00FDH         LINE#         55
+  C:00FFH         LINE#         56
+  C:00FFH         LINE#         57
+  C:0103H         LINE#         58
+  C:0107H         LINE#         60
+  C:0109H         LINE#         62
+  C:010BH         LINE#         64
+  C:010DH         LINE#         66
+  C:0111H         LINE#         67
+  C:0115H         LINE#         68
+  C:0117H         LINE#         69
+  C:0119H         LINE#         70
+  C:011BH         LINE#         71
   -------         ENDPROC       _WRITE_IIC_BYTE
   -------         ENDMOD        I2C
 
   -------         MODULE        FUNCTION
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  10:08:52  PAGE 5
+
+
   C:0000H         SYMBOL        _ICE_DUMMY_
   D:0080H         PUBLIC        P0
   D:0090H         PUBLIC        P1
@@ -239,9 +255,6 @@ SYMBOL TABLE OF MODULE:  .\Objects\OLED (MAIN)
   D:00D8H         PUBLIC        CCON
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/09/2019  14:50:45  PAGE 5
-
-
   C:013AH         PUBLIC        _OLED_Set_Pos
   D:00E0H         PUBLIC        ACC
   C:015AH         PUBLIC        _OLED_WrCmd
@@ -286,6 +299,9 @@ SYMBOL TABLE OF MODULE:  .\Objects\OLED (MAIN)
   D:000AH         SYMBOL        x
   -------         ENDDO         
   C:00CEH         LINE#         67
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/14/2019  10:08:52  PAGE 6
+
+
   C:00D0H         LINE#         68
   C:00D0H         LINE#         70
   C:00D3H         LINE#         71
@@ -299,9 +315,6 @@ SYMBOL TABLE OF MODULE:  .\Objects\OLED (MAIN)
   -------         ENDPROC       _OLED_FILL
   -------         PROC          OLED_CLS
   -------         DO            
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/09/2019  14:50:45  PAGE 6
-
-
   D:000BH         SYMBOL        y
   D:000CH         SYMBOL        x
   -------         ENDDO         
@@ -327,5 +340,5 @@ SYMBOL TABLE OF MODULE:  .\Objects\OLED (MAIN)
 
 *** WARNING L10: CANNOT DETERMINE ROOT SEGMENT
 
-Program Size: data=16.0 xdata=0 code=415
+Program Size: data=16.0 xdata=0 code=440
 LINK/LOCATE RUN COMPLETE.  3 WARNING(S),  0 ERROR(S)

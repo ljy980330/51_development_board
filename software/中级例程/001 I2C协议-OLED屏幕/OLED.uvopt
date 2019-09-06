@@ -160,10 +160,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>44</ColumnNumber>
+      <ColumnNumber>7</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>9</CurrentLine>
+      <CurrentLine>16</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -174,10 +174,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>30</ColumnNumber>
+      <ColumnNumber>7</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>3</CurrentLine>
+      <CurrentLine>28</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\delay\delay.c</PathWithFileName>
       <FilenameWithoutPath>delay.c</FilenameWithoutPath>
@@ -200,12 +200,12 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>4</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>82</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <CurrentLine>19</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\i2c\i2c.c</PathWithFileName>
       <FilenameWithoutPath>i2c.c</FilenameWithoutPath>
@@ -214,12 +214,12 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>5</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>15</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <TopLine>19</TopLine>
+      <CurrentLine>19</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\function\function.c</PathWithFileName>
       <FilenameWithoutPath>function.c</FilenameWithoutPath>
@@ -227,7 +227,8 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\工作\github_stc12\software\中级例程\001 I2C协议-OLED屏幕\INCLUDES.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\001 I2C协议-OLED屏幕\INCLUDES.H</PathWithFilename>
+
     <TopLine>1</TopLine>
     <CurrentLine>11</CurrentLine>
     <Constant>0</Constant>
@@ -253,9 +254,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\工作\github_stc12\software\中级例程\001 I2C协议-OLED屏幕\I2C\I2C.H</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>13</CurrentLine>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\001 I2C协议-OLED屏幕\I2C\I2C.H</PathWithFilename>
+    <TopLine>7</TopLine>
+    <CurrentLine>20</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -279,7 +280,8 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\工作\github_stc12\software\中级例程\001 I2C协议-OLED屏幕\OLED_INIT\OLED_INIT.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\001 I2C协议-OLED屏幕\OLED_INIT\OLED_INIT.H</PathWithFilename>
+
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -305,7 +307,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\工作\github_stc12\software\中级例程\001 I2C协议-OLED屏幕\FUNCTION\FUNCTION.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\001 I2C协议-OLED屏幕\FUNCTION\FUNCTION.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>2</CurrentLine>
     <Constant>0</Constant>
@@ -331,9 +333,10 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\工作\github_stc12\software\中级例程\001 I2C协议-OLED屏幕\DELAY\DELAY.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\001 I2C协议-OLED屏幕\DELAY\DELAY.H</PathWithFilename>
+
     <TopLine>1</TopLine>
-    <CurrentLine>4</CurrentLine>
+    <CurrentLine>16</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -357,7 +360,8 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\工作\github_stc12\software\中级例程\001 I2C协议-OLED屏幕\CONFIG.H</PathWithFilename>
+    <PathWithFilename>C:\Users\LEE SZE KI\Documents\GitHub\51项目\51_development_board\software\中级例程\001 I2C协议-OLED屏幕\CONFIG.H</PathWithFilename>
+
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -391,33 +395,8 @@
       <ViewName>默认</ViewName>
       <ViewType>1</ViewType>
       <Window>
-        <WinId>195</WinId>
-        <ItemNo>1</ItemNo>
-        <Name>Un-named</Name>
-        <AnchorWinID>0</AnchorWinID>
-        <AnchorWinName></AnchorWinName>
-        <OtherWinID>0</OtherWinID>
-        <OtherWinName></OtherWinName>
-        <WinType>1</WinType>
-        <DockType>1</DockType>
-        <DockLocation>5</DockLocation>
-        <Pinned>0</Pinned>
-        <DockedRect_top>0</DockedRect_top>
-        <DockedRect_left>0</DockedRect_left>
-        <DockedRect_bottom>0</DockedRect_bottom>
-        <DockedRect_right>0</DockedRect_right>
-        <FloatingRect_top>0</FloatingRect_top>
-        <FloatingRect_left>0</FloatingRect_left>
-        <FloatingRect_bottom>0</FloatingRect_bottom>
-        <FloatingRect_right>0</FloatingRect_right>
-        <ContainerPercent>100</ContainerPercent>
-        <ActiveTab>0</ActiveTab>
-        <Visible>0</Visible>
-        <Dynamic>0</Dynamic>
-      </Window>
-      <Window>
         <WinId>59392</WinId>
-        <ItemNo>2</ItemNo>
+        <ItemNo>1</ItemNo>
         <Name>File</Name>
         <AnchorWinID>0</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -442,7 +421,7 @@
       </Window>
       <Window>
         <WinId>59398</WinId>
-        <ItemNo>3</ItemNo>
+        <ItemNo>2</ItemNo>
         <Name>Build</Name>
         <AnchorWinID>0</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -467,7 +446,7 @@
       </Window>
       <Window>
         <WinId>59399</WinId>
-        <ItemNo>4</ItemNo>
+        <ItemNo>3</ItemNo>
         <Name>Debug</Name>
         <AnchorWinID>0</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -492,7 +471,7 @@
       </Window>
       <Window>
         <WinId>197</WinId>
-        <ItemNo>5</ItemNo>
+        <ItemNo>4</ItemNo>
         <Name>编译输出</Name>
         <AnchorWinID>0</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -517,7 +496,7 @@
       </Window>
       <Window>
         <WinId>198</WinId>
-        <ItemNo>6</ItemNo>
+        <ItemNo>5</ItemNo>
         <Name>指令</Name>
         <AnchorWinID>197</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -542,7 +521,7 @@
       </Window>
       <Window>
         <WinId>199</WinId>
-        <ItemNo>7</ItemNo>
+        <ItemNo>6</ItemNo>
         <Name>批量查找</Name>
         <AnchorWinID>197</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -567,7 +546,7 @@
       </Window>
       <Window>
         <WinId>38007</WinId>
-        <ItemNo>8</ItemNo>
+        <ItemNo>7</ItemNo>
         <Name>Browse</Name>
         <AnchorWinID>197</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -592,7 +571,7 @@
       </Window>
       <Window>
         <WinId>1939</WinId>
-        <ItemNo>9</ItemNo>
+        <ItemNo>8</ItemNo>
         <Name>UART #1</Name>
         <AnchorWinID>197</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -617,7 +596,7 @@
       </Window>
       <Window>
         <WinId>1940</WinId>
-        <ItemNo>10</ItemNo>
+        <ItemNo>9</ItemNo>
         <Name>UART #2</Name>
         <AnchorWinID>197</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -642,7 +621,7 @@
       </Window>
       <Window>
         <WinId>1941</WinId>
-        <ItemNo>11</ItemNo>
+        <ItemNo>10</ItemNo>
         <Name>UART #3</Name>
         <AnchorWinID>197</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -667,7 +646,7 @@
       </Window>
       <Window>
         <WinId>1942</WinId>
-        <ItemNo>12</ItemNo>
+        <ItemNo>11</ItemNo>
         <Name>UART #4</Name>
         <AnchorWinID>197</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -692,7 +671,7 @@
       </Window>
       <Window>
         <WinId>1944</WinId>
-        <ItemNo>13</ItemNo>
+        <ItemNo>12</ItemNo>
         <Name>调用堆栈</Name>
         <AnchorWinID>197</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -717,7 +696,7 @@
       </Window>
       <Window>
         <WinId>1507</WinId>
-        <ItemNo>14</ItemNo>
+        <ItemNo>13</ItemNo>
         <Name>调用堆栈</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -742,7 +721,7 @@
       </Window>
       <Window>
         <WinId>1935</WinId>
-        <ItemNo>15</ItemNo>
+        <ItemNo>14</ItemNo>
         <Name>Locals</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -767,7 +746,7 @@
       </Window>
       <Window>
         <WinId>1936</WinId>
-        <ItemNo>16</ItemNo>
+        <ItemNo>15</ItemNo>
         <Name>Watch 1</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -792,7 +771,7 @@
       </Window>
       <Window>
         <WinId>1937</WinId>
-        <ItemNo>17</ItemNo>
+        <ItemNo>16</ItemNo>
         <Name>Watch 2</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -817,7 +796,7 @@
       </Window>
       <Window>
         <WinId>1465</WinId>
-        <ItemNo>18</ItemNo>
+        <ItemNo>17</ItemNo>
         <Name>Memory 1</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -842,7 +821,7 @@
       </Window>
       <Window>
         <WinId>1466</WinId>
-        <ItemNo>19</ItemNo>
+        <ItemNo>18</ItemNo>
         <Name>Memory 2</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -867,7 +846,7 @@
       </Window>
       <Window>
         <WinId>1467</WinId>
-        <ItemNo>20</ItemNo>
+        <ItemNo>19</ItemNo>
         <Name>Memory 3</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -892,7 +871,7 @@
       </Window>
       <Window>
         <WinId>1468</WinId>
-        <ItemNo>21</ItemNo>
+        <ItemNo>20</ItemNo>
         <Name>Memory 4</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -917,7 +896,7 @@
       </Window>
       <Window>
         <WinId>1506</WinId>
-        <ItemNo>22</ItemNo>
+        <ItemNo>21</ItemNo>
         <Name>符号</Name>
         <AnchorWinID>1944</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -942,7 +921,7 @@
       </Window>
       <Window>
         <WinId>1005</WinId>
-        <ItemNo>23</ItemNo>
+        <ItemNo>22</ItemNo>
         <Name>工程</Name>
         <AnchorWinID>0</AnchorWinID>
         <AnchorWinName></AnchorWinName>
@@ -967,8 +946,33 @@
       </Window>
       <Window>
         <WinId>109</WinId>
-        <ItemNo>24</ItemNo>
+        <ItemNo>23</ItemNo>
         <Name>书籍</Name>
+        <AnchorWinID>1005</AnchorWinID>
+        <AnchorWinName></AnchorWinName>
+        <OtherWinID>1005</OtherWinID>
+        <OtherWinName></OtherWinName>
+        <WinType>1</WinType>
+        <DockType>4</DockType>
+        <DockLocation>2</DockLocation>
+        <Pinned>0</Pinned>
+        <DockedRect_top>0</DockedRect_top>
+        <DockedRect_left>0</DockedRect_left>
+        <DockedRect_bottom>600</DockedRect_bottom>
+        <DockedRect_right>210</DockedRect_right>
+        <FloatingRect_top>0</FloatingRect_top>
+        <FloatingRect_left>0</FloatingRect_left>
+        <FloatingRect_bottom>600</FloatingRect_bottom>
+        <FloatingRect_right>250</FloatingRect_right>
+        <ContainerPercent>100</ContainerPercent>
+        <ActiveTab>0</ActiveTab>
+        <Visible>0</Visible>
+        <Dynamic>0</Dynamic>
+      </Window>
+      <Window>
+        <WinId>195</WinId>
+        <ItemNo>24</ItemNo>
+        <Name>函数</Name>
         <AnchorWinID>1005</AnchorWinID>
         <AnchorWinName></AnchorWinName>
         <OtherWinID>1005</OtherWinID>
@@ -1723,13 +1727,31 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>9</ActiveTab>
+      <ActiveTab>6</ActiveTab>
       <Documents>
         <Doc>
-          <Name>FUNCTION/FUNCTION.H</Name>
-          <ColumnNumber>12</ColumnNumber>
+          <Name>CONFIG.H</Name>
+          <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>2</CurrentLine>
+          <CurrentLine>1</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\i2c\i2c.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>19</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>DELAY/DELAY.H</Name>
+          <ColumnNumber>11</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>16</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>FUNCTION/FUNCTION.H</Name>
+          <ColumnNumber>54</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>17</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\OLED_Init\OLED_Init.c</Name>
@@ -1745,51 +1767,33 @@
         </Doc>
         <Doc>
           <Name>I2C/I2C.H</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>13</CurrentLine>
+          <ColumnNumber>25</ColumnNumber>
+          <TopLine>7</TopLine>
+          <CurrentLine>20</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>44</ColumnNumber>
+          <ColumnNumber>7</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>9</CurrentLine>
+          <CurrentLine>16</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\delay\delay.c</Name>
-          <ColumnNumber>30</ColumnNumber>
+          <ColumnNumber>7</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>3</CurrentLine>
+          <CurrentLine>28</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\function\function.c</Name>
           <ColumnNumber>15</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\i2c\i2c.c</Name>
-          <ColumnNumber>82</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
+          <TopLine>19</TopLine>
+          <CurrentLine>19</CurrentLine>
         </Doc>
         <Doc>
           <Name>INCLUDES.H</Name>
           <ColumnNumber>51</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>11</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>DELAY/DELAY.H</Name>
-          <ColumnNumber>23</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>4</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>CONFIG.H</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

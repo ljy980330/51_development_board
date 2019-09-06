@@ -1,9 +1,0 @@
-"code_tab.obj",
-"delay.obj",
-"display.obj",
-"function.obj",
-"i2c.obj",
-"OLED_Init.obj",
-"main.obj" 
-TO "OLED_STR" 
-RAMSIZE(256) 

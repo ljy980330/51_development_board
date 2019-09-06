@@ -15,10 +15,14 @@
 
 void IIC_Start()
 {
-	SCL = high;
 	SDA = high;
+	nop();
+	SCL = high;
+	nop();
 	SDA = low;
+	nop();
 	SCL = low;
+	nop();
 }
 
 /*******************************************************************************
@@ -29,9 +33,13 @@ void IIC_Start()
 void IIC_Stop()
 {
 	SCL = low;
+	nop();
 	SDA = low;
+	nop();
 	SCL = high;
+	nop();
 	SDA = high;
+	nop();
 }
 
 
@@ -57,9 +65,9 @@ void Write_IIC_Byte(U8 IIC_Byte)
 
 		IIC_Byte<<=1;
 	}
-	SDA=1;
-	SCL=1;
-	SCL=0;
+	SDA=low;
+	SCL=high;
+	SCL=low;
 }
 
 

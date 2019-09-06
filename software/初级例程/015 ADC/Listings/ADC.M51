@@ -1,0 +1,282 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        08/30/2019  16:39:01  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+F:\WORKAPP\KEIL_V5\C51\BIN\BL51.EXE .\Objects\delay.obj, .\Objects\main.obj, .\Objects\ADC.obj TO .\Objects\ADC PRINT (.
+>> \Listings\ADC.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\delay.obj (DELAY)
+  .\Objects\main.obj (MAIN)
+  .\Objects\ADC.obj (ADC)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C?SIDIV)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C?UIDIV)
+
+
+LINK MAP OF MODULE:  .\Objects\ADC (DELAY)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     000CH     UNIT         ?DT?ADC
+            DATA    0014H     0002H     UNIT         _DATA_GROUP_
+            IDATA   0016H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     008BH     UNIT         ?C?LIB_CODE
+            CODE    008EH     0067H     UNIT         ?PR?DISPLAY?ADC
+            CODE    00F5H     0025H     UNIT         ?PR?_LED_OUT?ADC
+            CODE    011AH     0020H     UNIT         ?PR?_DELAY_MS?DELAY
+            CODE    013AH     001FH     UNIT         ?PR?INIT?ADC
+            CODE    0159H     0019H     UNIT         ?PR?INITADC?ADC
+            CODE    0172H     0013H     UNIT         ?PR?_NOP?DELAY
+            CODE    0185H     000CH     UNIT         ?C_C51STARTUP
+            CODE    0191H     000BH     UNIT         ?PR?_DELAY_US?DELAY
+            CODE    019CH     000BH     UNIT         ?PR?MAIN?MAIN
+            CODE    01A7H     000AH     UNIT         ?CO?ADC
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\ADC (DELAY)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN                  -----    -----
+  +--> ?PR?INIT?ADC
+  +--> ?PR?INITADC?ADC
+  +--> ?PR?DISPLAY?ADC
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  16:39:01  PAGE 2
+
+
+
+?PR?DISPLAY?ADC                0014H    0002H
+  +--> ?PR?_LED_OUT?ADC
+
+?PR?_LED_OUT?ADC               -----    -----
+  +--> ?CO?ADC
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\ADC (DELAY)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        DELAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0172H         PUBLIC        _nop
+  C:011AH         PUBLIC        _delay_ms
+  C:0191H         PUBLIC        _delay_us
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        n
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0002H         SYMBOL        j
+  -------         ENDDO         
+  C:011AH         LINE#         14
+  C:011AH         LINE#         15
+  C:011AH         LINE#         17
+  C:0124H         LINE#         18
+  C:0139H         LINE#         19
+  -------         ENDPROC       _DELAY_MS
+  -------         PROC          _DELAY_US
+  D:0006H         SYMBOL        n
+  C:0191H         LINE#         24
+  C:0191H         LINE#         25
+  C:0191H         LINE#         26
+  C:019BH         LINE#         27
+  -------         ENDPROC       _DELAY_US
+  -------         PROC          _NOP
+  D:0006H         SYMBOL        n
+  -------         DO            
+  D:0004H         SYMBOL        i
+  -------         ENDDO         
+  C:0172H         LINE#         32
+  C:0172H         LINE#         33
+  C:0172H         LINE#         35
+  C:017CH         LINE#         36
+  C:017CH         LINE#         37
+  C:017DH         LINE#         38
+  C:0184H         LINE#         39
+  -------         ENDPROC       _NOP
+  -------         ENDMOD        DELAY
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  16:39:01  PAGE 3
+
+
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00C0H         PUBLIC        P4
+  D:00C8H         PUBLIC        P5
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  D:00D8H         PUBLIC        CCON
+  C:019CH         PUBLIC        main
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:00E0H         PUBLIC        ACC
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          MAIN
+  C:019CH         LINE#         18
+  C:019CH         LINE#         19
+  C:019CH         LINE#         20
+  C:019FH         LINE#         22
+  C:019FH         LINE#         23
+  C:019FH         LINE#         24
+  C:01A2H         LINE#         25
+  C:01A5H         LINE#         26
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        ADC
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00C0H         PUBLIC        P4
+  D:00C8H         PUBLIC        P5
+  D:00A8H         PUBLIC        IE
+  D:00BDH         PUBLIC        ADC_RES
+  D:00B8H         PUBLIC        IP
+  D:0008H         PUBLIC        date
+  D:00D8H         PUBLIC        CCON
+  C:01A7H         PUBLIC        LED_0F
+  B:0080H.1       PUBLIC        RCLK
+  B:0080H.2       PUBLIC        SCLK
+  C:0103H         PUBLIC        _LED_OUT
+  D:00BCH         PUBLIC        ADC_CONTR
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  C:013AH         PUBLIC        init
+  D:00E0H         PUBLIC        ACC
+  D:000AH         PUBLIC        LED
+  C:008EH         PUBLIC        Display
+  B:0080H.0       PUBLIC        DIO
+  D:009DH         PUBLIC        P1ASF
+  C:0159H         PUBLIC        InitADC
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          INITADC
+  C:0159H         LINE#         27
+  C:0159H         LINE#         28
+  C:0159H         LINE#         30
+  C:015CH         LINE#         32
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  16:39:01  PAGE 4
+
+
+  C:015FH         LINE#         36
+  C:0162H         LINE#         40
+  C:0165H         LINE#         42
+  C:016AH         LINE#         43
+  C:0171H         LINE#         45
+  -------         ENDPROC       INITADC
+  -------         PROC          DISPLAY
+  -------         DO            
+  D:0082H         SYMBOL        led_table
+  D:0007H         SYMBOL        i
+  D:0003H         SYMBOL        ge
+  D:0014H         SYMBOL        shi
+  D:0015H         SYMBOL        bai
+  -------         ENDDO         
+  C:008EH         LINE#         65
+  C:008EH         LINE#         66
+  C:008EH         LINE#         70
+  C:009BH         LINE#         71
+  C:00AFH         LINE#         72
+  C:00C3H         LINE#         75
+  C:00C8H         LINE#         76
+  C:00C8H         LINE#         78
+  C:00CBH         LINE#         79
+  C:00D0H         LINE#         81
+  C:00D2H         LINE#         82
+  C:00D4H         LINE#         85
+  C:00D8H         LINE#         86
+  C:00D8H         LINE#         88
+  C:00DBH         LINE#         89
+  C:00E0H         LINE#         91
+  C:00E2H         LINE#         92
+  C:00E4H         LINE#         95
+  C:00E8H         LINE#         96
+  C:00E8H         LINE#         98
+  C:00EBH         LINE#         99
+  C:00F0H         LINE#         101
+  C:00F2H         LINE#         102
+  C:00F4H         LINE#         103
+  -------         ENDPROC       DISPLAY
+  C:00F5H         SYMBOL        L?0013
+  -------         PROC          L?0012
+  -------         ENDPROC       L?0012
+  C:00F5H         SYMBOL        L?0013
+  -------         PROC          _LED_OUT
+  D:0007H         SYMBOL        X
+  -------         DO            
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:0103H         LINE#         111
+  C:0103H         LINE#         112
+  C:0103H         LINE#         114
+  C:0105H         LINE#         115
+  C:0105H         LINE#         116
+  C:010FH         LINE#         117
+  C:0113H         LINE#         118
+  C:0115H         LINE#         119
+  C:0117H         LINE#         120
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  16:39:01  PAGE 5
+
+
+  C:0119H         LINE#         121
+  -------         ENDPROC       _LED_OUT
+  -------         PROC          INIT
+  C:013AH         LINE#         127
+  C:013AH         LINE#         128
+  C:013AH         LINE#         129
+  C:013DH         LINE#         130
+  C:0140H         LINE#         131
+  C:0143H         LINE#         132
+  C:0146H         LINE#         133
+  C:0149H         LINE#         134
+  C:014CH         LINE#         135
+  C:014FH         LINE#         136
+  C:0152H         LINE#         137
+  C:0155H         LINE#         138
+  C:0158H         LINE#         140
+  -------         ENDPROC       INIT
+  -------         ENDMOD        ADC
+
+  -------         MODULE        ?C?SIDIV
+  C:0003H         PUBLIC        ?C?SIDIV
+  -------         ENDMOD        ?C?SIDIV
+
+  -------         MODULE        ?C?UIDIV
+  C:0039H         PUBLIC        ?C?UIDIV
+  -------         ENDMOD        ?C?UIDIV
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_MS?DELAY
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_US?DELAY
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_NOP?DELAY
+
+Program Size: data=23.0 xdata=0 code=433
+LINK/LOCATE RUN COMPLETE.  3 WARNING(S),  0 ERROR(S)

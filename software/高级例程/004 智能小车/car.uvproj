@@ -362,19 +362,9 @@
               <FilePath>.\color\color.c</FilePath>
             </File>
             <File>
-              <FileName>color.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\color\color.h</FilePath>
-            </File>
-            <File>
               <FileName>flame.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\flame\flame.c</FilePath>
-            </File>
-            <File>
-              <FileName>flame.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\flame\flame.h</FilePath>
             </File>
             <File>
               <FileName>pwm.c</FileName>
@@ -382,29 +372,14 @@
               <FilePath>.\pwm\pwm.c</FilePath>
             </File>
             <File>
-              <FileName>pwm.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\pwm\pwm.h</FilePath>
-            </File>
-            <File>
               <FileName>track.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\track\track.c</FilePath>
             </File>
             <File>
-              <FileName>track.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\track\track.h</FilePath>
-            </File>
-            <File>
               <FileName>voice.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\voice\voice.c</FilePath>
-            </File>
-            <File>
-              <FileName>voice.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\voice\voice.h</FilePath>
             </File>
           </Files>
         </Group>

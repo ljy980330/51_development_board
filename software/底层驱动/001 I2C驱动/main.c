@@ -10,7 +10,5 @@
 
 int main()
 {
-	I2C_Init();	//I2C≥ı ºªØ
-
 	while(1);
 }

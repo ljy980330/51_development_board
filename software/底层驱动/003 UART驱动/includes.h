@@ -11,8 +11,7 @@
 
 #include <STC12C5A.H>
 #include "config.h"
-#include "UART_Init/UART_Init.h"
-#include "UART_Interrupt/UART_Interrupt.h"
+#include "UART/UART.h"
 
 
 #endif

@@ -1,9 +1,0 @@
-"main.obj",
-"delay.obj",
-"color.obj",
-"flame.obj",
-"pwm.obj",
-"track.obj",
-"voice.obj" 
-TO "car" 
-RAMSIZE(256) 

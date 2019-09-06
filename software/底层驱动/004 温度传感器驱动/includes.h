@@ -12,9 +12,8 @@
 #include <STC12C5A.H>
 #include "config.h"
 #include "intrins.h"
-#include "data_read/data_read.h"
-#include "uart/uart.h"
 #include "delay/delay.h"
+#include "drive/drive.h"
 
 #endif
 
