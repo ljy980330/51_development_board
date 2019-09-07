@@ -8,8 +8,8 @@
 #include "led.h"	  										 
 #include "config.h"
 #include "delay/delay.h"														
-sbit LED1=P4^0;      //位定义，将stc12中的定义为LED
-sbit LED2=P4^1; 	  //每一个IO口都要进行定义
+sbit LED1=P4^2;      //位定义，将stc12中的定义为LED
+sbit LED2=P4^3; 	  //每一个IO口都要进行定义
 sbit LED3=P4^4; 
 					
 /*******************************************************************************

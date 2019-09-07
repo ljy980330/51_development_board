@@ -8,10 +8,9 @@
 
 #include "led.h"	
 #include "delay/delay.h"	 
-sbit LED1=P4^0;      //位定义，将stc12中的定义为LED
-sbit LED2=P4^1; 
+sbit LED1=P4^2;      //位定义，将stc12中的定义为LED
+sbit LED2=P4^3; 
 sbit LED3=P4^4;
-sbit E3  =P2^3;		 //使能端 当该IO电平拉低时，LED全灭
 		 
 /*******************************************************************************
 * 函 数 名         : run
@@ -20,9 +19,12 @@ sbit E3  =P2^3;		 //使能端 当该IO电平拉低时，LED全灭
 void run()
 {
    P4SW=0xbb;	//定义P4IO口
-   LED1=0;	   //点亮第一个led
+   LED1=1;	   //点亮第一个led
    LED2=0;
    LED3=0;
-   E3=~E3;	   //使其电平反转
-   delay_ms(100);
+   delay_ms(500);	  
+   LED1=0;	   //点亮第一个led
+   LED2=1;
+   LED3=0;
+   delay_ms(500);
 }

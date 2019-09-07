@@ -8,7 +8,7 @@
 #ifndef _PWM_H
 #define _PWM_H
 
-PWM_change()
-Init_PWM()
+void PWM_change();
+void Init_PWM();
 
 #endif
