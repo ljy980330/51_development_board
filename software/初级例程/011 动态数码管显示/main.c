@@ -9,9 +9,9 @@
 #include   "includes.h"	
 void main(void)
 {  
+	init();
 	while(1)
 	{
-	  	display(10);
 	  	LED4_Display ();
 	}
 }              

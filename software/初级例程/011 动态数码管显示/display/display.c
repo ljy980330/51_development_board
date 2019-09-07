@@ -6,14 +6,15 @@
 作者：黄彦钊
 *********************************************************************************************************/
 #include "display.h"	  
+					
+sbit DIO   = P0^0;				//串行数据输入
+sbit RCLK  = P0^1;				//时钟脉冲信号——上升沿有效
+sbit SCLK  = P0^2;				//打入信号————上升沿有效
 
-sbit DIO = P1^0;		//串行数据输入
-sbit RCLK  = P1^1;		//时钟脉冲信号——上升沿有效
-sbit SCLK = P1^2;		//打入信号————上升沿有效	 
 uchar  disbuf[4]={0,0,0,0};// 函数原形定义
 uchar LED[8];	//用于LED的8位显示缓存
 uchar code LED_0F[];		// LED字模表
-uchar code fseg[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90};
+uchar code fseg[]={0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,0x7f,0x6f,0x77};
 uchar code segbit[]={0x80,0x40,0x20,0x10,0x08,0x04,0x02,0x01};			  
 uchar code LED_0F[] = 
 {// 0	 1	  2	   3	4	 5	  6	   7	8	 9	  A	   b	C    d	  E    F    -
@@ -95,10 +96,10 @@ void display(uint temp)
     shi=temp%100/10;  
     ge=temp%10;
 	
-	LED[4]=qian;
-	LED[3]=bai;
+	LED[0]=qian;
+	LED[1]=bai;
 	LED[2]=shi;
-	LED[1]=ge;
+	LED[3]=ge;
 	
  }	
 

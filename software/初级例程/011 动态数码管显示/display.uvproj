@@ -361,7 +361,15 @@
               <FileType>1</FileType>
               <FilePath>.\display\display.c</FilePath>
             </File>
+            <File>
+              <FileName>timerInterrupt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\timerInterrupt\timerInterrupt.c</FilePath>
+            </File>
           </Files>
+        </Group>
+        <Group>
+          <GroupName>New Group</GroupName>
         </Group>
       </Groups>
     </Target>
