@@ -2,4 +2,4 @@
 
 keilkilll.bat：每次编译后上传前使用，清除中间文件，缩小工程（直接点击即可）
 
-STC12C5A.H放到keil目录下的\\C51\INC
+STC12C5A.H放到keil目录下的\\C51\INC！！
