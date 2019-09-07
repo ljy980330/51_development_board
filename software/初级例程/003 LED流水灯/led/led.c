@@ -20,12 +20,12 @@ sbit LED3=P4^4;
 void run()
 {
 	 P4SW=0xbb;	//定义P4IO口
-     LED1=0;LED2=0;LED3=0;delay_ms(50);   //根据真值表点亮第1个LED	 
-     LED1=0;LED2=0;LED3=1;delay_ms(50);   //根据真值表点亮第2个LED	 
-     LED1=0;LED2=1;LED3=0;delay_ms(50);   //根据真值表点亮第3个LED	 
-     LED1=0;LED2=1;LED3=1;delay_ms(50);   //根据真值表点亮第4个LED	 
-     LED1=1;LED2=0;LED3=0;delay_ms(50);   //根据真值表点亮第5个LED	 
-     LED1=1;LED2=0;LED3=1;delay_ms(50);   //根据真值表点亮第6个LED	 
-     LED1=1;LED2=1;LED3=0;delay_ms(50);   //根据真值表点亮第7个LED	 
-     LED1=1;LED2=1;LED3=1;delay_ms(50);   //根据真值表点亮第8个LED	 
+     LED1=0;LED2=0;LED3=0;delay_ms(500);   //根据真值表点亮第1个LED	 
+     LED1=0;LED2=0;LED3=1;delay_ms(500);   //根据真值表点亮第2个LED	 
+     LED1=0;LED2=1;LED3=0;delay_ms(500);   //根据真值表点亮第3个LED	 
+     LED1=0;LED2=1;LED3=1;delay_ms(500);   //根据真值表点亮第4个LED	 
+     LED1=1;LED2=0;LED3=0;delay_ms(500);   //根据真值表点亮第5个LED	 
+     LED1=1;LED2=0;LED3=1;delay_ms(500);   //根据真值表点亮第6个LED	 
+     LED1=1;LED2=1;LED3=0;delay_ms(500);   //根据真值表点亮第7个LED	 
+     LED1=1;LED2=1;LED3=1;delay_ms(500);   //根据真值表点亮第8个LED	 
 }
