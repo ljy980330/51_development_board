@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/30/2019  13:21:44  PAGE 1
-=======
-BL51 BANKED LINKER/LOCATER V6.22                                                        08/30/2019  13:57:14  PAGE 1
->>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
+BL51 BANKED LINKER/LOCATER V6.22                                                        09/07/2019  10:35:54  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -48,7 +44,6 @@ LINK MAP OF MODULE:  .\Objects\temper_oled (MAIN)
             CODE    0000H     0003H     ABSOLUTE     
             CODE    0003H     03A6H     UNIT         ?CO?CODE_TAB
             CODE    03A9H     0167H     UNIT         ?PR?_OLED_DATADISPLAY_T?DISPLAY
-<<<<<<< HEAD
             CODE    0510H     00F2H     UNIT         ?PR?DHT_COLLECT?DRIVE
             CODE    0602H     00C4H     UNIT         ?PR?_OLED_DATADISPLAY_H?DISPLAY
             CODE    06C6H     009EH     UNIT         ?PR?OLED_INIT?OLED_INIT
@@ -64,7 +59,7 @@ LINK MAP OF MODULE:  .\Objects\temper_oled (MAIN)
             CODE    0B8EH     004DH     UNIT         ?PR?_OLED_P16X16CH?DISPLAY
             CODE    0BDBH     003AH     UNIT         ?PR?_OLED_FORMLINE?DISPLAY
             CODE    0C15H     0030H     UNIT         ?PR?OLED_CLS?FUNCTION
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/30/2019  13:21:44  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  10:35:54  PAGE 2
 
 
             CODE    0C45H     002FH     UNIT         ?PR?_OLED_FILL?FUNCTION
@@ -80,41 +75,6 @@ LINK MAP OF MODULE:  .\Objects\temper_oled (MAIN)
             CODE    0D85H     0017H     UNIT         ?PR?_OLED_WRDAT?FUNCTION
             CODE    0D9CH     0013H     UNIT         ?PR?_NOP?DELAY
             CODE    0DAFH     000BH     UNIT         ?PR?_DELAY_US?DELAY
-=======
-            CODE    0510H     00E3H     UNIT         ?PR?DHT_COLLECT?DRIVE
-            CODE    05F3H     00C4H     UNIT         ?PR?_OLED_DATADISPLAY_H?DISPLAY
-            CODE    06B7H     009EH     UNIT         ?PR?OLED_INIT?OLED_INIT
-            CODE    0755H     008CH     UNIT         ?C_C51STARTUP
-            CODE    07E1H     0087H     UNIT         ?PR?_OLED_FORMTITLE?DISPLAY
-            CODE    0868H     0087H     UNIT         ?PR?_OLED_FORMTEMP?DISPLAY
-            CODE    08EFH     0087H     UNIT         ?PR?_OLED_FORMHUMI?DISPLAY
-            CODE    0976H     0074H     UNIT         ?PR?_OLED_ANYCHAR_16X16?DISPLAY
-            CODE    09EAH     0074H     UNIT         ?PR?_OLED_ANYCHAR_8X16?DISPLAY
-            CODE    0A5EH     006BH     UNIT         ?PR?SYS_INIT?DRIVE
-            CODE    0AC9H     0065H     UNIT         ?C?LIB_CODE
-            CODE    0B2EH     0051H     UNIT         ?PR?_OLED_FORMNAME?DISPLAY
-            CODE    0B7FH     004DH     UNIT         ?PR?_OLED_P16X16CH?DISPLAY
-            CODE    0BCCH     003AH     UNIT         ?PR?_OLED_FORMLINE?DISPLAY
-            CODE    0C06H     0030H     UNIT         ?PR?OLED_CLS?FUNCTION
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  13:57:14  PAGE 2
-
-
-            CODE    0C36H     002FH     UNIT         ?PR?_OLED_FILL?FUNCTION
-            CODE    0C65H     001FH     UNIT         ?PR?_WRITE_IIC_BYTE?I2C
-            CODE    0C84H     001EH     UNIT         ?PR?_DELAY_MS?DELAY
-            CODE    0CA2H     001EH     UNIT         ?PR?OLED_DISPLAY?DRIVE
-            CODE    0CC0H     001DH     UNIT         ?PR?_OLED_SET_POS?FUNCTION
-            CODE    0CDDH     001AH     UNIT         ?PR?_OLED_WRCMD?FUNCTION
-            CODE    0CF7H     0017H     UNIT         ?C_INITSEG
-            CODE    0D0EH     0017H     UNIT         ?PR?_OLED_WRDAT?FUNCTION
-            CODE    0D25H     0016H     UNIT         ?PR?MAIN?MAIN
-            CODE    0D3BH     0014H     UNIT         ?PR?IIC_START?I2C
-            CODE    0D4FH     0014H     UNIT         ?PR?IIC_STOP?I2C
-            CODE    0D63H     000DH     UNIT         ?PR?DELAY_20MS?DELAY
-            CODE    0D70H     000DH     UNIT         ?PR?DELAY_1S?DELAY
-            CODE    0D7DH     0005H     UNIT         ?PR?DELAY_30US?DELAY
-            CODE    0D82H     0003H     UNIT         ?PR?NOP?DELAY
->>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
 
 
 
@@ -157,13 +117,9 @@ SEGMENT                                   DATA_GROUP
   +--> ?PR?IIC_STOP?I2C
 
 ?PR?IIC_START?I2C                       -----    -----
-<<<<<<< HEAD
   +--> ?PR?_NOP?DELAY
-=======
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  13:57:14  PAGE 3
->>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
 
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/30/2019  13:21:44  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  10:35:54  PAGE 3
 
 
 ?PR?IIC_STOP?I2C                        -----    -----
@@ -221,15 +177,9 @@ SEGMENT                                   DATA_GROUP
   +--> ?PR?_OLED_DATADISPLAY_H?DISPLAY
 
 ?PR?_OLED_DATADISPLAY_T?DISPLAY         0017H    0008H
-<<<<<<< HEAD
-=======
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  13:57:14  PAGE 4
-
-
->>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
   +--> ?PR?_OLED_SET_POS?FUNCTION
   +--> ?CO?CODE_TAB
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/30/2019  13:21:44  PAGE 4
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  10:35:54  PAGE 4
 
 
   +--> ?PR?_OLED_WRDAT?FUNCTION
@@ -287,15 +237,9 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   C:0000H         SYMBOL        _ICE_DUMMY_
   C:00A9H         PUBLIC        NumberFont
   C:02A9H         PUBLIC        F16x16
-<<<<<<< HEAD
-=======
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  13:57:14  PAGE 5
-
-
->>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
   C:0033H         PUBLIC        PointChar
   C:0023H         PUBLIC        HumiChar
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/30/2019  13:21:44  PAGE 5
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  10:35:54  PAGE 5
 
 
   C:0003H         PUBLIC        TempChar
@@ -353,15 +297,9 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   -------         PROC          _OLED_FORMLINE
   D:0018H         SYMBOL        x
   D:0019H         SYMBOL        y
-<<<<<<< HEAD
-=======
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  13:57:14  PAGE 6
-
-
->>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
   -------         DO            
   D:001BH         SYMBOL        i
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/30/2019  13:21:44  PAGE 6
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  10:35:54  PAGE 6
 
 
   D:001CH         SYMBOL        j
@@ -411,7 +349,6 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   D:001BH         SYMBOL        i
   D:001CH         SYMBOL        j
   -------         ENDDO         
-<<<<<<< HEAD
   C:0877H         LINE#         77
   C:087DH         LINE#         78
   C:087DH         LINE#         79
@@ -422,7 +359,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   C:088EH         LINE#         85
   C:088EH         LINE#         86
   C:08AFH         LINE#         87
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/30/2019  13:21:44  PAGE 7
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  10:35:54  PAGE 7
 
 
   C:08B8H         LINE#         88
@@ -433,29 +370,6 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   C:08EEH         LINE#         94
   C:08F4H         LINE#         95
   C:08FDH         LINE#         96
-=======
-  C:0868H         LINE#         77
-  C:086EH         LINE#         78
-  C:086EH         LINE#         79
-  C:0873H         LINE#         80
-  C:0875H         LINE#         81
-  C:0875H         LINE#         82
-  C:087CH         LINE#         84
-  C:087FH         LINE#         85
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  13:57:14  PAGE 7
-
-
-  C:087FH         LINE#         86
-  C:08A0H         LINE#         87
-  C:08A9H         LINE#         88
-  C:08B2H         LINE#         90
-  C:08B5H         LINE#         91
-  C:08B5H         LINE#         92
-  C:08D6H         LINE#         93
-  C:08DFH         LINE#         94
-  C:08E5H         LINE#         95
-  C:08EEH         LINE#         96
->>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
   -------         ENDPROC       _OLED_FORMTEMP
   -------         PROC          _OLED_FORMHUMI
   D:0018H         SYMBOL        x
@@ -490,7 +404,6 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   -------         DO            
   D:001EH         SYMBOL        i
   -------         ENDDO         
-<<<<<<< HEAD
   C:0985H         LINE#         130
   C:0991H         LINE#         132
   C:0991H         LINE#         133
@@ -506,35 +419,12 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   C:09CCH         LINE#         146
   C:09D5H         LINE#         148
   C:09D8H         LINE#         149
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/30/2019  13:21:44  PAGE 8
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  10:35:54  PAGE 8
 
 
   C:09D8H         LINE#         150
   C:09EFH         LINE#         151
   C:09F8H         LINE#         152
-=======
-  C:0976H         LINE#         130
-  C:0982H         LINE#         132
-  C:0982H         LINE#         133
-  C:0985H         LINE#         134
-  C:098CH         LINE#         135
-  C:098CH         LINE#         136
-  C:0997H         LINE#         137
-  C:0997H         LINE#         139
-  C:099EH         LINE#         141
-  C:09A1H         LINE#         142
-  C:09A1H         LINE#         143
-  C:09B4H         LINE#         144
-  C:09BDH         LINE#         146
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  13:57:14  PAGE 8
-
-
-  C:09C6H         LINE#         148
-  C:09C9H         LINE#         149
-  C:09C9H         LINE#         150
-  C:09E0H         LINE#         151
-  C:09E9H         LINE#         152
->>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
   -------         ENDPROC       _OLED_ANYCHAR_16X16
   -------         PROC          _OLED_ANYCHAR_8X16
   D:0018H         SYMBOL        x
@@ -570,7 +460,6 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   D:001DH         SYMBOL        i
   D:001EH         SYMBOL        j
   -------         ENDDO         
-<<<<<<< HEAD
   C:0602H         LINE#         188
   C:060EH         LINE#         190
   C:060EH         LINE#         191
@@ -589,31 +478,8 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   C:06B3H         LINE#         204
   C:06B9H         LINE#         205
   C:06C5H         LINE#         206
-=======
-  C:05F3H         LINE#         188
-  C:05FFH         LINE#         190
-  C:05FFH         LINE#         191
-  C:0604H         LINE#         192
-  C:0606H         LINE#         193
-  C:0606H         LINE#         194
-  C:060DH         LINE#         195
-  C:0610H         LINE#         196
-  C:0610H         LINE#         197
-  C:064BH         LINE#         198
-  C:0654H         LINE#         199
-  C:065DH         LINE#         200
-  C:0660H         LINE#         201
-  C:0660H         LINE#         202
-  C:069BH         LINE#         203
-  C:06A4H         LINE#         204
-  C:06AAH         LINE#         205
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  13:57:14  PAGE 9
-
-
-  C:06B6H         LINE#         206
->>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
   -------         ENDPROC       _OLED_DATADISPLAY_H
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/30/2019  13:21:44  PAGE 9
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  10:35:54  PAGE 9
 
 
   -------         PROC          _OLED_DATADISPLAY_T
@@ -662,7 +528,6 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   D:001BH         SYMBOL        wm
   D:001CH         SYMBOL        adder
   -------         ENDDO         
-<<<<<<< HEAD
   C:0B8EH         LINE#         250
   C:0B94H         LINE#         251
   C:0B94H         LINE#         252
@@ -674,7 +539,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   C:0BAEH         LINE#         262
   C:0BB0H         LINE#         263
   C:0BB9H         LINE#         264
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/30/2019  13:21:44  PAGE 10
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  10:35:54  PAGE 10
 
 
   C:0BC2H         LINE#         266
@@ -683,28 +548,6 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   C:0BCFH         LINE#         270
   C:0BD1H         LINE#         271
   C:0BDAH         LINE#         272
-=======
-  C:0B7FH         LINE#         250
-  C:0B85H         LINE#         251
-  C:0B85H         LINE#         252
-  C:0B88H         LINE#         254
-  C:0B8FH         LINE#         256
-  C:0B92H         LINE#         258
-  C:0B95H         LINE#         259
-  C:0B95H         LINE#         260
-  C:0B9FH         LINE#         262
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  13:57:14  PAGE 10
-
-
-  C:0BA1H         LINE#         263
-  C:0BAAH         LINE#         264
-  C:0BB3H         LINE#         266
-  C:0BB6H         LINE#         267
-  C:0BB6H         LINE#         268
-  C:0BC0H         LINE#         270
-  C:0BC2H         LINE#         271
-  C:0BCBH         LINE#         272
->>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
   -------         ENDPROC       _OLED_P16X16CH
   -------         ENDMOD        DISPLAY
 
@@ -753,15 +596,10 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   -------         PROC          _OLED_SET_POS
   D:001FH         SYMBOL        x
   D:0005H         SYMBOL        y
-<<<<<<< HEAD
   C:0D37H         LINE#         52
   C:0D39H         LINE#         53
   C:0D39H         LINE#         54
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/30/2019  13:21:44  PAGE 11
-=======
-  C:0CC0H         LINE#         52
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  13:57:14  PAGE 11
->>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  10:35:54  PAGE 11
 
 
   C:0D3DH         LINE#         56
@@ -817,27 +655,15 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   D:00D8H         PUBLIC        CCON
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-<<<<<<< HEAD
   C:0CDCH         PUBLIC        _Write_IIC_Byte
   C:0C74H         PUBLIC        IIC_Start
   D:00E0H         PUBLIC        ACC
   B:0080H.3       PUBLIC        SDA
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/30/2019  13:21:44  PAGE 12
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  10:35:54  PAGE 12
 
 
   C:0C98H         PUBLIC        IIC_Stop
-  B:0080H.2       PUBLIC        SCL
-=======
-  C:0C65H         PUBLIC        _Write_IIC_Byte
-  C:0D3BH         PUBLIC        IIC_Start
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  13:57:14  PAGE 12
-
-
-  D:00E0H         PUBLIC        ACC
-  B:0080H.3       PUBLIC        SDA
-  C:0D4FH         PUBLIC        IIC_Stop
   B:0080H.4       PUBLIC        SCL
->>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
   D:00D0H         PUBLIC        PSW
   -------         PROC          IIC_START
   C:0C74H         LINE#         16
@@ -888,19 +714,12 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
 
   -------         MODULE        DELAY
   C:0000H         SYMBOL        _ICE_DUMMY_
-<<<<<<< HEAD
   C:0D9CH         PUBLIC        _nop
   C:0CBCH         PUBLIC        _delay_ms
   C:0DAFH         PUBLIC        _delay_us
   -------         PROC          _DELAY_MS
   D:0006H         SYMBOL        n
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/30/2019  13:21:44  PAGE 13
-=======
-  C:0D63H         PUBLIC        Delay_20ms
-  C:0D7DH         PUBLIC        Delay_30us
-  C:0C84H         PUBLIC        _Delay_ms
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  13:57:14  PAGE 13
->>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  10:35:54  PAGE 13
 
 
   -------         DO            
@@ -925,7 +744,6 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   -------         DO            
   D:0004H         SYMBOL        i
   -------         ENDDO         
-<<<<<<< HEAD
   C:0D9CH         LINE#         32
   C:0D9CH         LINE#         33
   C:0D9CH         LINE#         35
@@ -934,24 +752,6 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   C:0DA7H         LINE#         38
   C:0DAEH         LINE#         39
   -------         ENDPROC       _NOP
-=======
-  C:0C84H         LINE#         69
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  13:57:14  PAGE 14
-
-
-  C:0C84H         LINE#         70
-  C:0C84H         LINE#         73
-  C:0C8DH         LINE#         75
-  C:0CA1H         LINE#         76
-  -------         ENDPROC       _DELAY_MS
-  -------         PROC          NOP
-  C:0D82H         LINE#         83
-  C:0D82H         LINE#         84
-  C:0D82H         LINE#         85
-  C:0D83H         LINE#         86
-  C:0D84H         LINE#         87
-  -------         ENDPROC       NOP
->>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
   -------         ENDMOD        DELAY
 
   -------         MODULE        OLED_INIT
@@ -971,7 +771,6 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   D:00E0H         PUBLIC        ACC
   D:00D0H         PUBLIC        PSW
   -------         PROC          OLED_INIT
-<<<<<<< HEAD
   C:06C6H         LINE#         16
   C:06C6H         LINE#         17
   C:06C6H         LINE#         18
@@ -980,7 +779,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   C:06D7H         LINE#         24
   C:06DCH         LINE#         26
   C:06E1H         LINE#         28
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/30/2019  13:21:44  PAGE 14
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  10:35:54  PAGE 14
 
 
   C:06E6H         LINE#         30
@@ -1008,44 +807,6 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   C:0754H         LINE#         74
   C:0759H         LINE#         76
   C:075EH         LINE#         78
-=======
-  C:06B7H         LINE#         16
-  C:06B7H         LINE#         17
-  C:06B7H         LINE#         18
-  C:06BEH         LINE#         20
-  C:06C3H         LINE#         22
-  C:06C8H         LINE#         24
-  C:06CDH         LINE#         26
-  C:06D2H         LINE#         28
-  C:06D7H         LINE#         30
-  C:06DCH         LINE#         32
-  C:06E1H         LINE#         34
-  C:06E6H         LINE#         36
-  C:06EBH         LINE#         38
-  C:06F0H         LINE#         40
-  C:06F5H         LINE#         42
-  C:06FAH         LINE#         44
-  C:06FFH         LINE#         46
-  C:0704H         LINE#         48
-  C:0709H         LINE#         50
-  C:070EH         LINE#         52
-  C:0713H         LINE#         54
-  C:0718H         LINE#         56
-  C:071DH         LINE#         58
-  C:0722H         LINE#         60
-  C:0727H         LINE#         62
-  C:072CH         LINE#         64
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  13:57:14  PAGE 15
-
-
-  C:0731H         LINE#         66
-  C:0736H         LINE#         68
-  C:073BH         LINE#         70
-  C:0740H         LINE#         72
-  C:0745H         LINE#         74
-  C:074AH         LINE#         76
-  C:074FH         LINE#         78
->>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
   -------         ENDPROC       OLED_INIT
   -------         ENDMOD        OLED_INIT
 
@@ -1078,7 +839,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   -------         DO            
   D:0017H         SYMBOL        i
   D:0006H         SYMBOL        j
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/30/2019  13:21:44  PAGE 15
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  10:35:54  PAGE 15
 
 
   D:0007H         SYMBOL        t
@@ -1091,7 +852,6 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   C:0513H         LINE#         39
   C:0517H         LINE#         41
   C:0519H         LINE#         42
-<<<<<<< HEAD
   C:051FH         LINE#         43
   C:0521H         LINE#         44
   C:0528H         LINE#         46
@@ -1139,7 +899,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   C:05B7H         LINE#         92
   C:05BEH         LINE#         93
   C:05C4H         LINE#         94
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/30/2019  13:21:44  PAGE 16
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  10:35:54  PAGE 16
 
 
   C:05C4H         LINE#         95
@@ -1149,71 +909,11 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   C:05F4H         LINE#         99
   C:0601H         LINE#         100
   C:0601H         LINE#         101
-=======
-  C:051CH         LINE#         43
-  C:051EH         LINE#         44
-  C:0521H         LINE#         46
-  C:0523H         LINE#         47
-  C:052CH         LINE#         48
-  C:052FH         LINE#         49
-  C:052FH         LINE#         50
-  C:0531H         LINE#         51
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  13:57:14  PAGE 16
-
-
-  C:0531H         LINE#         52
-  C:0533H         LINE#         53
-  C:053CH         LINE#         54
-  C:053FH         LINE#         55
-  C:053FH         LINE#         56
-  C:0541H         LINE#         57
-  C:0541H         LINE#         58
-  C:0543H         LINE#         59
-  C:054CH         LINE#         60
-  C:054FH         LINE#         61
-  C:054FH         LINE#         62
-  C:0551H         LINE#         63
-  C:0551H         LINE#         65
-  C:0553H         LINE#         66
-  C:0553H         LINE#         67
-  C:0556H         LINE#         68
-  C:0556H         LINE#         70
-  C:0558H         LINE#         71
-  C:0561H         LINE#         72
-  C:0564H         LINE#         73
-  C:0564H         LINE#         74
-  C:0566H         LINE#         75
-  C:0566H         LINE#         76
-  C:0568H         LINE#         77
-  C:056FH         LINE#         78
-  C:0575H         LINE#         79
-  C:057BH         LINE#         80
-  C:057DH         LINE#         81
-  C:0584H         LINE#         82
-  C:058AH         LINE#         83
-  C:058EH         LINE#         85
-  C:0591H         LINE#         86
-  C:0594H         LINE#         87
-  C:0596H         LINE#         89
-  C:0599H         LINE#         90
-  C:0599H         LINE#         91
-  C:05A8H         LINE#         92
-  C:05AFH         LINE#         93
-  C:05B5H         LINE#         94
-  C:05B5H         LINE#         95
-  C:05C0H         LINE#         96
-  C:05CDH         LINE#         97
-  C:05DAH         LINE#         98
-  C:05E5H         LINE#         99
-  C:05F2H         LINE#         100
-  C:05F2H         LINE#         101
->>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
   -------         ENDPROC       DHT_COLLECT
   -------         PROC          SYS_INIT
   -------         DO            
   D:0017H         SYMBOL        i
   -------         ENDDO         
-<<<<<<< HEAD
   C:0A6DH         LINE#         108
   C:0A6DH         LINE#         109
   C:0A6DH         LINE#         114
@@ -1228,25 +928,6 @@ SYMBOL TABLE OF MODULE:  .\Objects\temper_oled (MAIN)
   C:0AABH         LINE#         123
   C:0ABAH         LINE#         124
   C:0AC9H         LINE#         125
-=======
-  C:0A5EH         LINE#         108
-  C:0A5EH         LINE#         109
-  C:0A5EH         LINE#         114
-  C:0A61H         LINE#         115
-  C:0A64H         LINE#         116
-  C:0A67H         LINE#         117
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  13:57:14  PAGE 17
-
-
-  C:0A67H         LINE#         118
-  C:0A78H         LINE#         119
-  C:0A81H         LINE#         120
-  C:0A8AH         LINE#         121
-  C:0A93H         LINE#         122
-  C:0A9CH         LINE#         123
-  C:0AABH         LINE#         124
-  C:0ABAH         LINE#         125
->>>>>>> cc9ae4ac80be5ab1115f1e781ab01b7794f631df
   -------         ENDPROC       SYS_INIT
   -------         ENDMOD        DRIVE
 
