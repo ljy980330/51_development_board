@@ -9,7 +9,8 @@
 #ifndef _INCLUDES_H
 #define _INCLUDES_H
 
-#include "STC12C5A.H"
+//#include "STC12C5A.H"
+#include <STC12C5A60S2.H>
 #include "config.h"
 #include "serial/serial.h"
 #include "delay/delay.h"  
