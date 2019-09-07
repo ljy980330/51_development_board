@@ -27,9 +27,9 @@ int date;		 //╢╒╢ФADв╙╩╩╡ЗиЗ╣д8н╩йЩ╬щ
 void InitADC()
 {
 	
-	P1ASF=0x01;//P1.0вВн╙ADй╧сц
+	P1ASF=0x02;//P1.0вВн╙ADй╧сц
 	
-	ADC_CONTR=0xe0;//ADC╣Гт╢╢Р©╙,ц©90╦Жй╠жсв╙╩╩1╢н,CHSя║тЯP1.0
+	ADC_CONTR=0xe1;//ADC╣Гт╢╢Р©╙,ц©90╦Жй╠жсв╙╩╩1╢н,CHSя║тЯP1.0
 	
 	//д╛хон╙8н╩дёй╫
 	
@@ -70,18 +70,18 @@ void Display ()
 	ge = (uchar)(date%10);
 	shi = (uchar)((date/10)%10);
 	bai = (uchar)((date/100)%10); 
-
-	//отй╬╣з1н╩
-	led_table = LED_0F + LED[ge];
+								  
+	//отй╬╣з╟ы╩
+	led_table = LED_0F+LED[ge];
 	i = *led_table;
 
-	LED_OUT(i);	//╢╚хКр╙отй╬╣двж╥Ш		
-	LED_OUT(0x01); //╢╚хКр╙отй╬╣дн╩йЩ		
+	LED_OUT(i);		  //╢╚хКр╙отй╬╣двж╥Ш
+	LED_OUT(0x04);	//╢╚хКр╙отй╬╣дн╩йЩ	
 
 	RCLK = 0;
-	RCLK = 1;	//й╠жсбЖЁЕпе╨е║╙║╙иоиЩяьспп╖
+	RCLK = 1;	  //й╠жсбЖЁЕпе╨е║╙║╙иоиЩяьспп╖	
 
-	//отй╬╣з2н╩
+	//отй╬╣зй╝н╩
 	led_table = LED_0F+LED[shi];  
 	i = *led_table;
 
@@ -90,16 +90,16 @@ void Display ()
 
 	RCLK = 0;
 	RCLK = 1;	 //й╠жсбЖЁЕпе╨е║╙║╙иоиЩяьспп╖
-
-	//отй╬╣з3н╩
-	led_table = LED_0F+LED[bai];
+	  
+	//отй╬╣з╦Жн╩
+	led_table = LED_0F + LED[bai];
 	i = *led_table;
 
-	LED_OUT(i);		  //╢╚хКр╙отй╬╣двж╥Ш
-	LED_OUT(0x04);	//╢╚хКр╙отй╬╣дн╩йЩ	
+	LED_OUT(i);	//╢╚хКр╙отй╬╣двж╥Ш		
+	LED_OUT(0x01); //╢╚хКр╙отй╬╣дн╩йЩ		
 
 	RCLK = 0;
-	RCLK = 1;	  //й╠жсбЖЁЕпе╨е║╙║╙иоиЩяьспп╖
+	RCLK = 1;	//й╠жсбЖЁЕпе╨е║╙║╙иоиЩяьспп╖
 }
 
 

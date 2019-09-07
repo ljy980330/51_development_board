@@ -226,7 +226,7 @@
 
   <AlienFiles>
     <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\005 RTC时钟驱动\I2C\I2C.H</PathWithFilename>
-    <TopLine>16</TopLine>
+    <TopLine>1</TopLine>
     <CurrentLine>20</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
@@ -1710,7 +1710,7 @@
           <CurrentLine>62</CurrentLine>
         </Doc>
         <Doc>
-          <Name>RTC/RTC.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\005 RTC时钟驱动\RTC\RTC.H</Name>
           <ColumnNumber>79</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>4</CurrentLine>
@@ -1722,19 +1722,19 @@
           <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
-          <Name>DELAY/DELAY.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\005 RTC时钟驱动\DELAY\DELAY.H</Name>
           <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
-          <Name>INCLUDES.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\005 RTC时钟驱动\INCLUDES.H</Name>
           <ColumnNumber>19</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>15</CurrentLine>
         </Doc>
         <Doc>
-          <Name>CONFIG.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\005 RTC时钟驱动\CONFIG.H</Name>
           <ColumnNumber>53</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>1</CurrentLine>
@@ -1746,9 +1746,9 @@
           <CurrentLine>108</CurrentLine>
         </Doc>
         <Doc>
-          <Name>I2C/I2C.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\底层驱动\005 RTC时钟驱动\I2C\I2C.H</Name>
           <ColumnNumber>25</ColumnNumber>
-          <TopLine>16</TopLine>
+          <TopLine>1</TopLine>
           <CurrentLine>20</CurrentLine>
         </Doc>
       </Documents>

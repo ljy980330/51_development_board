@@ -16,6 +16,16 @@
 *******************************************************************************/
 void main()
 {	
-	UsartInit();  //	串口初始化
-	while(1);		
+//	Usart2Init();  //	串口初始化
+//	
+//	Usart2SendString("STC12 UART2 TEST!\r\n");
+//	while(1);		
+	
+	
+	Uart2Init();//初始化9600
+	
+	Uart2_send_string("STC12 UART2 TEST!\r\n");       //将这个字符串发送
+	
+	while(1);
 }					   
+

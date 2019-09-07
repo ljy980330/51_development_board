@@ -158,12 +158,12 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>1</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>4</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <CurrentLine>30</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -176,8 +176,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\code_tab\code_tab.c</PathWithFileName>
       <FilenameWithoutPath>code_tab.c</FilenameWithoutPath>
@@ -188,10 +188,15 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>5</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
+<<<<<<< HEAD
       <TopLine>49</TopLine>
       <CurrentLine>79</CurrentLine>
+=======
+      <TopLine>77</TopLine>
+      <CurrentLine>77</CurrentLine>
+>>>>>>> 62213746b07d51da2f568f97c5a9c5645150a05c
       <bDave2>0</bDave2>
       <PathWithFileName>.\display\display.c</PathWithFileName>
       <FilenameWithoutPath>display.c</FilenameWithoutPath>
@@ -204,8 +209,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\function\function.c</PathWithFileName>
       <FilenameWithoutPath>function.c</FilenameWithoutPath>
@@ -218,8 +223,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\i2c\i2c.c</PathWithFileName>
       <FilenameWithoutPath>i2c.c</FilenameWithoutPath>
@@ -232,8 +237,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\delay\delay.c</PathWithFileName>
       <FilenameWithoutPath>delay.c</FilenameWithoutPath>
@@ -246,8 +251,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\OLED_Init\OLED_Init.c</PathWithFileName>
       <FilenameWithoutPath>OLED_Init.c</FilenameWithoutPath>
@@ -258,10 +263,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>125</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>7</TopLine>
+      <CurrentLine>7</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\drive\drive.c</PathWithFileName>
       <FilenameWithoutPath>drive.c</FilenameWithoutPath>
@@ -271,7 +276,85 @@
   <AlienFiles>
     <PathWithFilename>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\012 温度传感器\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>12</CurrentLine>
+    <CurrentLine>23</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\012 温度传感器\CODE_TAB\CODE_TAB.H</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>1</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\012 温度传感器\drive\drive.h</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>21</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\012 温度传感器\config.h</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>13</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1635,6 +1718,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
+<<<<<<< HEAD
       <ActiveTab>1</ActiveTab>
       <Documents>
         <Doc>
@@ -1642,18 +1726,81 @@
           <ColumnNumber>0</ColumnNumber>
           <TopLine>49</TopLine>
           <CurrentLine>79</CurrentLine>
+=======
+      <ActiveTab>8</ActiveTab>
+      <Documents>
+        <Doc>
+          <Name>.\display\display.c</Name>
+          <ColumnNumber>5</ColumnNumber>
+          <TopLine>77</TopLine>
+          <CurrentLine>77</CurrentLine>
+>>>>>>> 62213746b07d51da2f568f97c5a9c5645150a05c
         </Doc>
         <Doc>
           <Name>.\main.c</Name>
+          <ColumnNumber>4</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>30</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>INCLUDES.H</Name>
+          <ColumnNumber>25</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>23</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\code_tab\code_tab.c</Name>
           <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>1</CurrentLine>
         </Doc>
         <Doc>
-          <Name>INCLUDES.H</Name>
-          <ColumnNumber>37</ColumnNumber>
+          <Name>.\function\function.c</Name>
+          <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>12</CurrentLine>
+          <CurrentLine>1</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\i2c\i2c.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\delay\delay.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\OLED_Init\OLED_Init.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\drive\drive.c</Name>
+          <ColumnNumber>125</ColumnNumber>
+          <TopLine>7</TopLine>
+          <CurrentLine>7</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>CODE_TAB/CODE_TAB.H</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>DRIVE/DRIVE.H</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>21</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>CONFIG.H</Name>
+          <ColumnNumber>27</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>13</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

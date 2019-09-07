@@ -7,12 +7,14 @@
 **********************************************************************************************************/
 
 #include "drive.h"
-
+#include <stdio.h>
 extern uint Temperature[3];
 extern uint Humidity[2];
 extern uchar Data_Receive[5];
 
 sbit DHT = P2^0;
+
+//#define PRINT_LOG
 
 /*******************************************************************************
 * 函 数 名         : OLED_Display
@@ -42,6 +44,7 @@ void DHT_Collect()
 	delay_ms(20);//主机拉低总线至少18ms
 	DHT=1;//主机拉高总线20~40us
 	delay_us(30);
+	
 	
 	t=80;//设置超时等待时间
 	while(DHT&&t--);//等待DHT11拉低总线
@@ -80,6 +83,7 @@ void DHT_Collect()
 			dat8+=1;//传输值为1
 		}
 		Data_Receive[j]=dat8;
+		//printf("dat8 is : %c\n", dat8);
 	}
 	
 	delay_us(30);//等待DHT11拉低50us
@@ -98,6 +102,14 @@ void DHT_Collect()
 		Humidity[0]=Data_Receive[0]/10;
 		Humidity[1]=Data_Receive[0]%10;
 	}
+
+#ifdef PRINT_LOG
+	delay_ms(100);
+	printf("Temperature : %c%c%c\n\r", Temperature[0], Temperature[1], Temperature[2]);
+	delay_ms(100);
+	printf("Humidity : %c%c\n\r", Humidity[0], Humidity[1]);
+	delay_ms(100);
+#endif
 }
 
 /*******************************************************************************

@@ -12,8 +12,8 @@
 typedef unsigned char uchar;	//新数据类型的声明定义
 typedef unsigned int  uint;
 
-
 #define FSCLK	11059200	//#define FSCLK	12000000
+
 
 
 #endif

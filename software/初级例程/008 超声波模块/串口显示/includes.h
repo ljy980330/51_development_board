@@ -12,6 +12,7 @@
 #include <STC12C5A.H> 
 #include "intrins.h"
 #include "config.h"	 	
+#include "stdio.h"
 #include "delay/delay.h" 	  
 #include "Ultrasonic/Ultrasonic.h" 	 
 

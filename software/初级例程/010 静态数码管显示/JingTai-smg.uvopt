@@ -205,10 +205,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>21</ColumnNumber>
+      <ColumnNumber>56</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>20</CurrentLine>
+      <CurrentLine>6</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\smgdisplay\smgdisplay.c</PathWithFileName>
       <FilenameWithoutPath>smgdisplay.c</FilenameWithoutPath>
@@ -216,7 +216,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\010 静态数码管显示\SMGDISPLAY\SMGDISPLAY.H</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\010 静态数码管显示\SMGDISPLAY\SMGDISPLAY.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>10</CurrentLine>
     <Constant>0</Constant>
@@ -242,7 +242,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\010 静态数码管显示\CONFIG.H</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\010 静态数码管显示\CONFIG.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>6</CurrentLine>
     <Constant>0</Constant>
@@ -268,7 +268,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\010 静态数码管显示\INCLUDES.H</PathWithFilename>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\010 静态数码管显示\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>14</CurrentLine>
     <Constant>0</Constant>
@@ -1643,26 +1643,32 @@
           <CurrentLine>14</CurrentLine>
         </Doc>
         <Doc>
-          <Name>INCLUDES.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\010 静态数码管显示\INCLUDES.H</Name>
           <ColumnNumber>50</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>14</CurrentLine>
         </Doc>
         <Doc>
-          <Name>CONFIG.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\010 静态数码管显示\CONFIG.H</Name>
           <ColumnNumber>31</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>6</CurrentLine>
         </Doc>
         <Doc>
-          <Name>SMGDISPLAY/SMGDISPLAY.H</Name>
+          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\010 静态数码管显示\SMGDISPLAY\SMGDISPLAY.H</Name>
           <ColumnNumber>60</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>10</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\smgdisplay\smgdisplay.c</Name>
-          <ColumnNumber>21</ColumnNumber>
+          <ColumnNumber>56</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>6</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\delay\delay.c</Name>
+          <ColumnNumber>49</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>20</CurrentLine>
         </Doc>
