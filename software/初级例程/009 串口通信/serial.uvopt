@@ -153,7 +153,7 @@
         <aSer4>0</aSer4>
         <StkLoc>0</StkLoc>
         <TrcWin>0</TrcWin>
-        <newCpu>1</newCpu>
+        <newCpu>0</newCpu>
         <uProt>0</uProt>
       </DebugFlag>
       <LintExecutable></LintExecutable>
@@ -167,22 +167,22 @@
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <File>
-      <GroupNumber>0</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>1</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>18</ColumnNumber>
+      <ColumnNumber>52</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>5</CurrentLine>
+      <CurrentLine>17</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>0</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>2</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -195,10 +195,10 @@
       <FilenameWithoutPath>includes.h</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>0</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>3</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>80</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -209,15 +209,15 @@
       <FilenameWithoutPath>delay.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>0</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>4</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>134</ColumnNumber>
+      <ColumnNumber>15</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>7</CurrentLine>
+      <CurrentLine>25</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\serial\serial.c</PathWithFileName>
       <FilenameWithoutPath>serial.c</FilenameWithoutPath>
@@ -225,9 +225,9 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\009 串口通信\1\serial\serial.h</PathWithFilename>
+    <PathWithFilename>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\009 串口通信\DELAY\DELAY.H</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>13</CurrentLine>
+    <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -251,7 +251,59 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\009 串口通信\1\DELAY\DELAY.H</PathWithFilename>
+    <PathWithFilename>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\009 串口通信\SERIAL\SERIAL.H</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>11</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\009 串口通信\CONFIG.H</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>1</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>C:\KEIL_V5\C51\INC\STC12C5A.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
     <Constant>0</Constant>
@@ -1621,21 +1673,21 @@
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>18</ColumnNumber>
+          <ColumnNumber>52</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>5</CurrentLine>
+          <CurrentLine>17</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\serial\serial.c</Name>
-          <ColumnNumber>134</ColumnNumber>
+          <ColumnNumber>15</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>7</CurrentLine>
+          <CurrentLine>25</CurrentLine>
         </Doc>
         <Doc>
           <Name>SERIAL/SERIAL.H</Name>
-          <ColumnNumber>26</ColumnNumber>
+          <ColumnNumber>8</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>13</CurrentLine>
+          <CurrentLine>11</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\delay\delay.c</Name>
@@ -1652,6 +1704,18 @@
         <Doc>
           <Name>DELAY/DELAY.H</Name>
           <ColumnNumber>41</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>CONFIG.H</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>1</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>C:\KEIL_V5\C51\INC\STC12C5A.H</Name>
+          <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>1</CurrentLine>
         </Doc>
