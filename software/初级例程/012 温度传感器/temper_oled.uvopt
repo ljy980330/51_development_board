@@ -190,7 +190,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>79</TopLine>
+      <TopLine>49</TopLine>
       <CurrentLine>79</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\display\display.c</PathWithFileName>
@@ -269,7 +269,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\012 温度传感器\INCLUDES.H</PathWithFilename>
+    <PathWithFilename>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\012 温度传感器\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>12</CurrentLine>
     <Constant>0</Constant>
@@ -1635,12 +1635,12 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>2</ActiveTab>
+      <ActiveTab>1</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\display\display.c</Name>
           <ColumnNumber>0</ColumnNumber>
-          <TopLine>79</TopLine>
+          <TopLine>49</TopLine>
           <CurrentLine>79</CurrentLine>
         </Doc>
         <Doc>

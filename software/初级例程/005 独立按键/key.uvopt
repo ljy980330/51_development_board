@@ -160,10 +160,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>14</ColumnNumber>
+      <ColumnNumber>13</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>21</CurrentLine>
+      <CurrentLine>11</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -213,9 +213,35 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\005 独立按键\DISPLAY\DISPLAY.H</PathWithFilename>
+    <PathWithFilename>C:\KEIL_V5\C51\INC\STC12C5A.H</PathWithFilename>
+    <TopLine>241</TopLine>
+    <CurrentLine>266</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\005 独立按键\KEY\KEY.H</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>17</CurrentLine>
+    <CurrentLine>14</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -265,35 +291,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\005 独立按键\key\key.h</PathWithFilename>
+    <PathWithFilename>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\005 独立按键\DISPLAY\DISPLAY.H</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>14</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>C:\Keil_v5\C51\INC\STC12C5A.H</PathWithFilename>
-    <TopLine>241</TopLine>
-    <CurrentLine>266</CurrentLine>
+    <CurrentLine>17</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1657,7 +1657,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>3</ActiveTab>
+      <ActiveTab>1</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\delay\delay.c</Name>
@@ -1672,16 +1672,16 @@
           <CurrentLine>60</CurrentLine>
         </Doc>
         <Doc>
-          <Name>DISPLAY/DISPLAY.H</Name>
+          <Name>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\005 独立按键\DISPLAY\DISPLAY.H</Name>
           <ColumnNumber>13</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>17</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>14</ColumnNumber>
+          <ColumnNumber>13</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>21</CurrentLine>
+          <CurrentLine>11</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\key\key.c</Name>
@@ -1690,13 +1690,13 @@
           <CurrentLine>24</CurrentLine>
         </Doc>
         <Doc>
-          <Name>INCLUDES.H</Name>
-          <ColumnNumber>12</ColumnNumber>
+          <Name>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\005 独立按键\INCLUDES.H</Name>
+          <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>12</CurrentLine>
         </Doc>
         <Doc>
-          <Name>KEY/KEY.H</Name>
+          <Name>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\005 独立按键\KEY\KEY.H</Name>
           <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>14</CurrentLine>
