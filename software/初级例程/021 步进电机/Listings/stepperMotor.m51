@@ -1,9 +1,9 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        08/30/2019  16:36:59  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        09/07/2019  20:42:30  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-F:\WORKAPP\KEIL_V5\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\delay.obj, .\Objects\stepperMotor.obj TO .\Objects\ste
->> pperMotor PRINT (.\Listings\stepperMotor.m51) RAMSIZE (256)
+C:\KEIL5\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\delay.obj, .\Objects\stepperMotor.obj TO .\Objects\stepperMotor 
+>> PRINT (.\Listings\stepperMotor.m51) RAMSIZE (256)
 
 
 MEMORY MODEL: SMALL
@@ -13,7 +13,7 @@ INPUT MODULES INCLUDED:
   .\Objects\main.obj (MAIN)
   .\Objects\delay.obj (DELAY)
   .\Objects\stepperMotor.obj (STEPPERMOTOR)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL5\C51\LIB\C51S.LIB (?C_STARTUP)
 
 
 LINK MAP OF MODULE:  .\Objects\stepperMotor (MAIN)
@@ -59,7 +59,7 @@ SEGMENT
   +--> ?PR?B_RUN?STEPPERMOTOR
   +--> ?PR?C_RUN?STEPPERMOTOR
   +--> ?PR?D_RUN?STEPPERMOTOR
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  16:36:59  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  20:42:30  PAGE 2
 
 
 
@@ -119,7 +119,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\stepperMotor (MAIN)
   C:006CH         LINE#         25
   C:006CH         LINE#         26
   C:0076H         LINE#         27
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  16:36:59  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  20:42:30  PAGE 3
 
 
   -------         ENDPROC       _DELAY_US
@@ -153,10 +153,10 @@ SYMBOL TABLE OF MODULE:  .\Objects\stepperMotor (MAIN)
   D:0088H         PUBLIC        TCON
   D:00E0H         PUBLIC        ACC
   C:0003H         PUBLIC        run
-  B:00A0H.3       PUBLIC        a
-  B:00A0H.4       PUBLIC        b
-  B:00A0H.5       PUBLIC        c
-  B:00A0H.6       PUBLIC        d
+  B:00A0H.4       PUBLIC        a
+  B:00A0H.5       PUBLIC        b
+  B:00A0H.6       PUBLIC        c
+  B:00A0H.7       PUBLIC        d
   C:0077H         PUBLIC        A_run
   C:0080H         PUBLIC        B_run
   C:0089H         PUBLIC        C_run
@@ -179,7 +179,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\stepperMotor (MAIN)
   C:0084H         LINE#         36
   C:0086H         LINE#         37
   C:0088H         LINE#         38
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  16:36:59  PAGE 4
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  20:42:30  PAGE 4
 
 
   -------         ENDPROC       B_RUN
