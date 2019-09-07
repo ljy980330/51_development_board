@@ -9,12 +9,12 @@
 #include "config.h"	  		  
 #include "delay/delay.h"
 
-#define speed 200 //宏定义延时函数要使用的大小
+#define speed 100 //宏定义延时函数要使用的大小
 
-sbit a=P2^3;
-sbit b=P2^4;
-sbit c=P2^5;
-sbit d=P2^6;	 //给管口命名
+sbit a=P2^4;
+sbit b=P2^5;
+sbit c=P2^6;
+sbit d=P2^7;	 //给管口命名
 
 /*******************************************************************************
 * 函 数 名         : X_run
@@ -60,11 +60,11 @@ void run()
 		
 	P1=0x00;  //0000 0000	将所有的IO关闭
 	A_run();		  //A相通电，其他相断电
-	delay_ms(20);
+	delay_ms(speed);
 	B_run();		  //B相通电，其他相断电
-	delay_ms(20);
+	delay_ms(speed);
 	C_run();		  //C相通电，其他相断电
-	delay_ms(20);
+	delay_ms(speed);
 	D_run();		  //D相通电，其他相断电
-	delay_ms(20);
+	delay_ms(speed);
 }

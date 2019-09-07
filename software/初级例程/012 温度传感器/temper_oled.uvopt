@@ -190,8 +190,13 @@
       <Focus>0</Focus>
       <ColumnNumber>5</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
+<<<<<<< HEAD
+      <TopLine>49</TopLine>
+      <CurrentLine>79</CurrentLine>
+=======
       <TopLine>77</TopLine>
       <CurrentLine>77</CurrentLine>
+>>>>>>> 62213746b07d51da2f568f97c5a9c5645150a05c
       <bDave2>0</bDave2>
       <PathWithFileName>.\display\display.c</PathWithFileName>
       <FilenameWithoutPath>display.c</FilenameWithoutPath>
@@ -269,7 +274,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\012 温度传感器\INCLUDES.H</PathWithFilename>
+    <PathWithFilename>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\012 温度传感器\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>23</CurrentLine>
     <Constant>0</Constant>
@@ -1713,6 +1718,15 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
+<<<<<<< HEAD
+      <ActiveTab>1</ActiveTab>
+      <Documents>
+        <Doc>
+          <Name>.\display\display.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>49</TopLine>
+          <CurrentLine>79</CurrentLine>
+=======
       <ActiveTab>8</ActiveTab>
       <Documents>
         <Doc>
@@ -1720,6 +1734,7 @@
           <ColumnNumber>5</ColumnNumber>
           <TopLine>77</TopLine>
           <CurrentLine>77</CurrentLine>
+>>>>>>> 62213746b07d51da2f568f97c5a9c5645150a05c
         </Doc>
         <Doc>
           <Name>.\main.c</Name>

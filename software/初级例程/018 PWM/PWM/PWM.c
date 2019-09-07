@@ -41,8 +41,7 @@ void Init()         //  PWM功能的初始化
 ***************************/
 void PWM_plus(uchar k)
 {		
-	k=k+5;
-	CCAP0H=k;
+	CCAP0H = k;
 }
 
 /***************************
@@ -51,8 +50,7 @@ void PWM_plus(uchar k)
 ***************************/
 void PWM_minus(uchar x)
 {
-	x=x-5;
-	CCAP0H=x;
+	CCAP0H = x;
 }
 
 
@@ -62,12 +60,13 @@ void PWM_minus(uchar x)
 *********************************************************/
 void key()
 {
-	uchar temp=0;
+	static uchar temp=0;
 	if(k1==0)		  //检测按键K1是否按下
 	{	
 		delay_us(1000);   //消除抖动 一般大约10ms
 		if(k1==0)	 //再次判断按键是否按下
 		{
+			temp += 5;
 			PWM_plus(temp);	 //增加占空比 
 		}
 		while(!k1);	 //检测按键是否松开
@@ -77,6 +76,7 @@ void key()
 		delay_us(1000);   //消除抖动 一般大约10ms
 		if(k2==0)	 //再次判断按键是否按下
 		{
+			temp -= 5;
 			PWM_minus(temp);	//减小占空比	  
 		}
 		while(!k2);	 //检测按键是否松开

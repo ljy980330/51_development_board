@@ -1,8 +1,8 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/29/2019  16:21:18  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        09/07/2019  20:20:06  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-F:\KEIL4\C51\BIN\BL51.EXE .\Objects\delay.obj, .\Objects\main.obj, .\Objects\PWM.obj TO .\Objects\PWM PRINT (.\Listings\
+C:\KEIL5\C51\BIN\BL51.EXE .\Objects\delay.obj, .\Objects\main.obj, .\Objects\PWM.obj TO .\Objects\PWM PRINT (.\Listings\
 >> PWM.m51) RAMSIZE (256)
 
 
@@ -13,7 +13,8 @@ INPUT MODULES INCLUDED:
   .\Objects\delay.obj (DELAY)
   .\Objects\main.obj (MAIN)
   .\Objects\PWM.obj (PWM)
-  F:\KEIL4\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL5\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL5\C51\LIB\C51S.LIB (?C_INIT)
 
 
 LINK MAP OF MODULE:  .\Objects\PWM (DELAY)
@@ -24,43 +25,45 @@ LINK MAP OF MODULE:  .\Objects\PWM (DELAY)
 
             * * * * * * *   D A T A   M E M O R Y   * * * * * * *
             REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
-            DATA    0008H     0001H     UNIT         _DATA_GROUP_
+            DATA    0008H     0001H     UNIT         ?DT?PWM
             IDATA   0009H     0001H     UNIT         ?STACK
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
             CODE    0000H     0003H     ABSOLUTE     
-            CODE    0003H     002EH     UNIT         ?PR?KEY?PWM
-            CODE    0031H     0020H     UNIT         ?PR?_DELAY_MS?DELAY
-            CODE    0051H     001FH     UNIT         ?PR?INIT?PWM
-            CODE    0070H     0013H     UNIT         ?PR?_NOP?DELAY
-            CODE    0083H     000CH     UNIT         ?C_C51STARTUP
-            CODE    008FH     000BH     UNIT         ?PR?_DELAY_US?DELAY
-            CODE    009AH     0008H     UNIT         ?PR?MAIN?MAIN
-            CODE    00A2H     0006H     UNIT         ?PR?_PWM_PLUS?PWM
-            CODE    00A8H     0006H     UNIT         ?PR?_PWM_MINUS?PWM
+            CODE    0003H     008CH     UNIT         ?C_C51STARTUP
+            CODE    008FH     0035H     UNIT         ?PR?KEY?PWM
+            CODE    00C4H     0020H     UNIT         ?PR?_DELAY_MS?DELAY
+            CODE    00E4H     001FH     UNIT         ?PR?INIT?PWM
+            CODE    0103H     0013H     UNIT         ?PR?_NOP?DELAY
+            CODE    0116H     000BH     UNIT         ?PR?_DELAY_US?DELAY
+            CODE    0121H     0008H     UNIT         ?PR?MAIN?MAIN
+            CODE    0129H     0004H     UNIT         ?C_INITSEG
+            CODE    012DH     0003H     UNIT         ?PR?_PWM_PLUS?PWM
+            CODE    0130H     0003H     UNIT         ?PR?_PWM_MINUS?PWM
 
 
 
 OVERLAY MAP OF MODULE:   .\Objects\PWM (DELAY)
 
 
-SEGMENT                          DATA_GROUP 
-  +--> CALLED SEGMENT          START    LENGTH
-----------------------------------------------
-?C_C51STARTUP                  -----    -----
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
   +--> ?PR?MAIN?MAIN
+  +--> ?C_INITSEG
 
-?PR?MAIN?MAIN                  -----    -----
+?PR?MAIN?MAIN
   +--> ?PR?INIT?PWM
   +--> ?PR?KEY?PWM
 
-?PR?KEY?PWM                    0008H    0001H
+?PR?KEY?PWM
   +--> ?PR?_DELAY_US?DELAY
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  20:20:06  PAGE 2
+
+
   +--> ?PR?_PWM_PLUS?PWM
   +--> ?PR?_PWM_MINUS?PWM
-
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/29/2019  16:21:18  PAGE 2
-
 
 
 
@@ -71,57 +74,57 @@ SYMBOL TABLE OF MODULE:  .\Objects\PWM (DELAY)
 
   -------         MODULE        DELAY
   C:0000H         SYMBOL        _ICE_DUMMY_
-  C:0070H         PUBLIC        _nop
-  C:0031H         PUBLIC        _delay_ms
-  C:008FH         PUBLIC        _delay_us
+  C:0103H         PUBLIC        _nop
+  C:00C4H         PUBLIC        _delay_ms
+  C:0116H         PUBLIC        _delay_us
   -------         PROC          _DELAY_MS
   D:0006H         SYMBOL        n
   -------         DO            
   D:0004H         SYMBOL        i
   D:0002H         SYMBOL        j
   -------         ENDDO         
-  C:0031H         LINE#         14
-  C:0031H         LINE#         15
-  C:0031H         LINE#         17
-  C:003BH         LINE#         18
-  C:0050H         LINE#         19
+  C:00C4H         LINE#         14
+  C:00C4H         LINE#         15
+  C:00C4H         LINE#         17
+  C:00CEH         LINE#         18
+  C:00E3H         LINE#         19
   -------         ENDPROC       _DELAY_MS
   -------         PROC          _DELAY_US
   D:0006H         SYMBOL        n
-  C:008FH         LINE#         24
-  C:008FH         LINE#         25
-  C:008FH         LINE#         26
-  C:0099H         LINE#         27
+  C:0116H         LINE#         24
+  C:0116H         LINE#         25
+  C:0116H         LINE#         26
+  C:0120H         LINE#         27
   -------         ENDPROC       _DELAY_US
   -------         PROC          _NOP
   D:0006H         SYMBOL        n
   -------         DO            
   D:0004H         SYMBOL        i
   -------         ENDDO         
-  C:0070H         LINE#         32
-  C:0070H         LINE#         33
-  C:0070H         LINE#         35
-  C:007AH         LINE#         36
-  C:007AH         LINE#         37
-  C:007BH         LINE#         38
-  C:0082H         LINE#         39
+  C:0103H         LINE#         32
+  C:0103H         LINE#         33
+  C:0103H         LINE#         35
+  C:010DH         LINE#         36
+  C:010DH         LINE#         37
+  C:010EH         LINE#         38
+  C:0115H         LINE#         39
   -------         ENDPROC       _NOP
   -------         ENDMOD        DELAY
 
   -------         MODULE        MAIN
   C:0000H         SYMBOL        _ICE_DUMMY_
-  C:009AH         PUBLIC        main
+  C:0121H         PUBLIC        main
   -------         PROC          MAIN
-  C:009AH         LINE#         17
-  C:009AH         LINE#         18
-  C:009AH         LINE#         19
-  C:009DH         LINE#         20
-  C:009DH         LINE#         21
-  C:009DH         LINE#         22
-  C:00A0H         LINE#         23
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/29/2019  16:21:18  PAGE 3
+  C:0121H         LINE#         17
+  C:0121H         LINE#         18
+  C:0121H         LINE#         19
+  C:0124H         LINE#         20
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  20:20:06  PAGE 3
 
 
+  C:0124H         LINE#         21
+  C:0124H         LINE#         22
+  C:0127H         LINE#         23
   -------         ENDPROC       MAIN
   -------         ENDMOD        MAIN
 
@@ -134,17 +137,17 @@ SYMBOL TABLE OF MODULE:  .\Objects\PWM (DELAY)
   D:00B3H         PUBLIC        P4M1
   D:00B0H         PUBLIC        P3
   D:00C0H         PUBLIC        P4
-  C:00A8H         PUBLIC        _PWM_minus
+  C:0130H         PUBLIC        _PWM_minus
   D:00C8H         PUBLIC        P5
   D:00A8H         PUBLIC        IE
   D:00E9H         PUBLIC        CL
   D:00FAH         PUBLIC        CCAP0H
   D:00EAH         PUBLIC        CCAP0L
   B:00D8H.6       PUBLIC        CR
-  C:0051H         PUBLIC        Init
+  C:00E4H         PUBLIC        Init
   D:00DAH         PUBLIC        CCAPM0
   D:00B8H         PUBLIC        IP
-  C:00A2H         PUBLIC        _PWM_plus
+  C:012DH         PUBLIC        _PWM_plus
   B:00C0H.5       PUBLIC        k1
   B:00C0H.6       PUBLIC        k2
   D:00D9H         PUBLIC        CMOD
@@ -153,70 +156,69 @@ SYMBOL TABLE OF MODULE:  .\Objects\PWM (DELAY)
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
   D:00E0H         PUBLIC        ACC
-  C:0003H         PUBLIC        key
+  C:008FH         PUBLIC        key
   D:00F2H         PUBLIC        PCA_PWM0
   D:00D0H         PUBLIC        PSW
   -------         PROC          INIT
-  C:0051H         LINE#         20
-  C:0051H         LINE#         21
-  C:0051H         LINE#         22
-  C:0054H         LINE#         24
-  C:0057H         LINE#         25
-  C:005AH         LINE#         26
-  C:005DH         LINE#         27
-  C:0060H         LINE#         28
-  C:0062H         LINE#         29
-  C:0064H         LINE#         32
-  C:0067H         LINE#         33
-  C:0069H         LINE#         34
-  C:006CH         LINE#         35
-  C:006FH         LINE#         36
+  C:00E4H         LINE#         20
+  C:00E4H         LINE#         21
+  C:00E4H         LINE#         22
+  C:00E7H         LINE#         24
+  C:00EAH         LINE#         25
+  C:00EDH         LINE#         26
+  C:00F0H         LINE#         27
+  C:00F3H         LINE#         28
+  C:00F5H         LINE#         29
+  C:00F7H         LINE#         32
+  C:00FAH         LINE#         33
+  C:00FCH         LINE#         34
+  C:00FFH         LINE#         35
+  C:0102H         LINE#         36
   -------         ENDPROC       INIT
   -------         PROC          _PWM_PLUS
   D:0007H         SYMBOL        k
-  C:00A2H         LINE#         42
-  C:00A2H         LINE#         43
-  C:00A2H         LINE#         44
-  C:00A5H         LINE#         45
-  C:00A7H         LINE#         46
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/29/2019  16:21:18  PAGE 4
+  C:012DH         LINE#         42
+  C:012DH         LINE#         43
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  20:20:06  PAGE 4
 
 
+  C:012DH         LINE#         44
+  C:012FH         LINE#         45
   -------         ENDPROC       _PWM_PLUS
   -------         PROC          _PWM_MINUS
   D:0007H         SYMBOL        x
-  C:00A8H         LINE#         52
-  C:00A8H         LINE#         53
-  C:00A8H         LINE#         54
-  C:00ABH         LINE#         55
-  C:00ADH         LINE#         56
+  C:0130H         LINE#         51
+  C:0130H         LINE#         52
+  C:0130H         LINE#         53
+  C:0132H         LINE#         54
   -------         ENDPROC       _PWM_MINUS
   -------         PROC          KEY
   -------         DO            
   D:0008H         SYMBOL        temp
   -------         ENDDO         
-  C:0003H         LINE#         63
-  C:0003H         LINE#         64
-  C:0003H         LINE#         65
-  C:0006H         LINE#         66
-  C:0009H         LINE#         67
-  C:0009H         LINE#         68
-  C:0010H         LINE#         69
-  C:0013H         LINE#         70
-  C:0013H         LINE#         71
-  C:0018H         LINE#         72
-  C:0018H         LINE#         73
-  C:001BH         LINE#         74
-  C:001BH         LINE#         75
-  C:001EH         LINE#         76
-  C:001EH         LINE#         77
-  C:0025H         LINE#         78
-  C:0028H         LINE#         79
-  C:0028H         LINE#         80
-  C:002DH         LINE#         81
-  C:002DH         LINE#         82
-  C:0030H         LINE#         83
-  C:0030H         LINE#         84
+  C:008FH         LINE#         61
+  C:008FH         LINE#         62
+  C:008FH         LINE#         64
+  C:0092H         LINE#         65
+  C:0092H         LINE#         66
+  C:0099H         LINE#         67
+  C:009CH         LINE#         68
+  C:009CH         LINE#         69
+  C:00A2H         LINE#         70
+  C:00A6H         LINE#         71
+  C:00A6H         LINE#         72
+  C:00A9H         LINE#         73
+  C:00A9H         LINE#         74
+  C:00ACH         LINE#         75
+  C:00ACH         LINE#         76
+  C:00B3H         LINE#         77
+  C:00B6H         LINE#         78
+  C:00B6H         LINE#         79
+  C:00BCH         LINE#         80
+  C:00C0H         LINE#         81
+  C:00C0H         LINE#         82
+  C:00C3H         LINE#         83
+  C:00C3H         LINE#         84
   -------         ENDPROC       KEY
   -------         ENDMOD        PWM
 
@@ -226,5 +228,5 @@ SYMBOL TABLE OF MODULE:  .\Objects\PWM (DELAY)
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?_NOP?DELAY
 
-Program Size: data=10.0 xdata=0 code=174
+Program Size: data=10.0 xdata=0 code=307
 LINK/LOCATE RUN COMPLETE.  2 WARNING(S),  0 ERROR(S)
