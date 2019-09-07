@@ -205,10 +205,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>12</ColumnNumber>
+      <ColumnNumber>21</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>23</CurrentLine>
+      <CurrentLine>20</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\smgdisplay\smgdisplay.c</PathWithFileName>
       <FilenameWithoutPath>smgdisplay.c</FilenameWithoutPath>
@@ -216,7 +216,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\010 静态数码管显示\SMGDISPLAY\SMGDISPLAY.H</PathWithFilename>
+    <PathWithFilename>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\010 静态数码管显示\SMGDISPLAY\SMGDISPLAY.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>10</CurrentLine>
     <Constant>0</Constant>
@@ -242,7 +242,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\010 静态数码管显示\CONFIG.H</PathWithFilename>
+    <PathWithFilename>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\010 静态数码管显示\CONFIG.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>6</CurrentLine>
     <Constant>0</Constant>
@@ -268,7 +268,7 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\010 静态数码管显示\INCLUDES.H</PathWithFilename>
+    <PathWithFilename>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\010 静态数码管显示\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>14</CurrentLine>
     <Constant>0</Constant>
@@ -1634,7 +1634,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>3</ActiveTab>
+      <ActiveTab>4</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
@@ -1662,9 +1662,9 @@
         </Doc>
         <Doc>
           <Name>.\smgdisplay\smgdisplay.c</Name>
-          <ColumnNumber>12</ColumnNumber>
+          <ColumnNumber>21</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>23</CurrentLine>
+          <CurrentLine>20</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

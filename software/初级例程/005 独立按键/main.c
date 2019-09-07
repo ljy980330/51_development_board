@@ -19,6 +19,7 @@ void main()
 	P4M0=0x72; 
 	P4SW=0x70;//P4.4=I/O P4.5=I/O P4.6=I/O 
     P1=0x00;
+	P47 = 1;
 	while(1)
 	{
     	run();

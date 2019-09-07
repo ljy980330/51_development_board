@@ -8,7 +8,7 @@
 #include "timerInterrupt.h"	
 #include "config.h"	  
 #include "led/led.h"	
-uint time;
+uint time=0;
 /*********************************************************************************************************
 ** TMOD是八位定时器/计数器模式控制寄存器（TIMER/COUNTER MODE CONTROL REGISTER），其中低四位定义定时器/计数器T0,高四位定义定时器/计数器T1
 **
@@ -49,23 +49,23 @@ void init()
 
 void timer0() interrupt 1
 {
-	int i=0;
+	static int i=0;
 	TH0 = (65536-FSCLK/12/20)/256; //每一次进入中断都要给定时器赋值，以确定下一次进入中断的时间
 	TL0 = (65536-FSCLK/12/20)%256;	
 	time ++;
 	if(time ==40)				
-	{
-		if(i==0)
-			led1();	
-		if(i==1)
-			led2();
-		if(i==2)
-		{
-			i=0;
-			led3();
-		}
+	{		 
 		time = 0; 
 		i++;
+		if(i==1)
+			led1();	
+		if(i==2)
+			led2();
+		if(i==3)
+		{
+			led3();	
+			i=0;
+		}
 	}		
 }
 

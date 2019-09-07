@@ -186,10 +186,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>50</ColumnNumber>
+      <ColumnNumber>8</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>3</CurrentLine>
+      <CurrentLine>29</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\delay\delay.c</PathWithFileName>
       <FilenameWithoutPath>delay.c</FilenameWithoutPath>
@@ -200,10 +200,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>142</ColumnNumber>
+      <ColumnNumber>26</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>22</CurrentLine>
+      <CurrentLine>32</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\buzzer\buzzer.c</PathWithFileName>
       <FilenameWithoutPath>buzzer.c</FilenameWithoutPath>
@@ -1561,15 +1561,15 @@
         </Doc>
         <Doc>
           <Name>.\buzzer\buzzer.c</Name>
-          <ColumnNumber>142</ColumnNumber>
+          <ColumnNumber>26</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>22</CurrentLine>
+          <CurrentLine>32</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\delay\delay.c</Name>
-          <ColumnNumber>50</ColumnNumber>
+          <ColumnNumber>8</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>3</CurrentLine>
+          <CurrentLine>29</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

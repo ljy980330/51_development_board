@@ -200,24 +200,24 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>30</ColumnNumber>
+      <ColumnNumber>5</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>62</TopLine>
-      <CurrentLine>68</CurrentLine>
+      <TopLine>58</TopLine>
+      <CurrentLine>91</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\display\display.c</PathWithFileName>
       <FilenameWithoutPath>display.c</FilenameWithoutPath>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <FileNumber>4</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>118</ColumnNumber>
+      <ColumnNumber>4</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>19</TopLine>
-      <CurrentLine>30</CurrentLine>
+      <CurrentLine>59</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\timerInterrupt\timerInterrupt.c</PathWithFileName>
       <FilenameWithoutPath>timerInterrupt.c</FilenameWithoutPath>
@@ -232,61 +232,61 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\011 动态数码管显示\INCLUDES.H</PathWithFilename>
+    <PathWithFilename>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\011 动态数码管显示\CONFIG.H</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>16</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\011 动态数码管显示\TIMERINTERRUPT\TIMERINTERRUPT.H</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>16</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\011 动态数码管显示\INCLUDES.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>17</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\011 动态数码管显示\TIMERINTERRUPT\TIMERINTERRUPT.H</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>16</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\011 动态数码管显示\config.h</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>16</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1650,7 +1650,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>3</ActiveTab>
+      <ActiveTab>1</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
@@ -1660,30 +1660,30 @@
         </Doc>
         <Doc>
           <Name>.\display\display.c</Name>
-          <ColumnNumber>30</ColumnNumber>
-          <TopLine>62</TopLine>
-          <CurrentLine>68</CurrentLine>
+          <ColumnNumber>5</ColumnNumber>
+          <TopLine>58</TopLine>
+          <CurrentLine>91</CurrentLine>
         </Doc>
         <Doc>
-          <Name>INCLUDES.H</Name>
+          <Name>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\011 动态数码管显示\INCLUDES.H</Name>
           <ColumnNumber>41</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>17</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\timerInterrupt\timerInterrupt.c</Name>
-          <ColumnNumber>118</ColumnNumber>
+          <ColumnNumber>4</ColumnNumber>
           <TopLine>19</TopLine>
-          <CurrentLine>30</CurrentLine>
+          <CurrentLine>59</CurrentLine>
         </Doc>
         <Doc>
-          <Name>TIMERINTERRUPT/TIMERINTERRUPT.H</Name>
+          <Name>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\011 动态数码管显示\TIMERINTERRUPT\TIMERINTERRUPT.H</Name>
           <ColumnNumber>25</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>16</CurrentLine>
         </Doc>
         <Doc>
-          <Name>CONFIG.H</Name>
+          <Name>D:\Users\DELL\Documents\GitHub\51_development_board\software\初级例程\011 动态数码管显示\CONFIG.H</Name>
           <ColumnNumber>8</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>16</CurrentLine>
