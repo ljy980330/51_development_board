@@ -243,6 +243,32 @@
   </Group>
 
   <AlienFiles>
+    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\015 ADC\INCLUDES.H</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>11</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
     <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\015 ADC\ADC\ADC.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>1</CurrentLine>
@@ -272,32 +298,6 @@
     <PathWithFilename>F:\WORKAPP\KEIL_V5\C51\INC\STC12C5A.H</PathWithFilename>
     <TopLine>578</TopLine>
     <CurrentLine>607</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\015 ADC\INCLUDES.H</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>11</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1664,7 +1664,7 @@
       <ActiveTab>5</ActiveTab>
       <Documents>
         <Doc>
-          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\015 ADC\INCLUDES.H</Name>
+          <Name>INCLUDES.H</Name>
           <ColumnNumber>24</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>11</CurrentLine>
@@ -1688,7 +1688,7 @@
           <CurrentLine>12</CurrentLine>
         </Doc>
         <Doc>
-          <Name>F:\workApp\github_repository\github_stc12\51_development_board\software\初级例程\015 ADC\ADC\ADC.H</Name>
+          <Name>ADC/ADC.H</Name>
           <ColumnNumber>57</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>1</CurrentLine>
