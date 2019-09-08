@@ -1,6 +1,6 @@
 /*********************************************************************************************************
-*名称：i2c_set.h
-*功能：	i2c设置所有用到的头文件以及函数的声明
+*名称：i2c.h
+*功能：对i2c总线设置用到头文件，函数声明
 创建时间：2019/7/5
 修改时间：2019/XX/XX
 作者：XXX
@@ -9,28 +9,15 @@
 #ifndef _I2C_H
 #define _I2C_H
 
-#include "config.h"
-#include "STC12C5A.H"
-#include "delay/delay.h"
+#include <STC12C5A60S2.H>
+#include "../src/config.h"
+#include "../src/delay/delay.h"
 
 #define high 1	//高电平
 #define low  0	//低电位
 
-sbit SCL = P4^0; //串行时钟
-sbit SDA = P4^1; //串行数据
+void IIC_Start(bit scl, bit sda, uint counter);
 
-void I2C_Init();
-
-void I2C_Start();
-
-void I2C_Stop();
-
-void Write_I2C_Byte(uchar I2C_Byte);
-
-uchar Read_I2C_Byte();
-
-void Ack_I2C(bit a);
-
+void IIC_Stop(bit scl, bit sda, uint counter);
 
 #endif
-
