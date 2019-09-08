@@ -1,9 +1,9 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        09/07/2019  17:30:19  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        09/08/2019  14:31:04  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
-F:\WORKAPP\KEIL_V5\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\delay.obj, .\Objects\Ultrasonic.obj TO .\Objects\UItra
->> sonic PRINT (.\Listings\UItrasonic.m51) RAMSIZE (256)
+C:\KEIL5\C51\BIN\BL51.EXE .\Objects\main.obj, .\Objects\delay.obj, .\Objects\Ultrasonic.obj TO .\Objects\UItrasonic PRIN
+>> T (.\Listings\UItrasonic.m51) RAMSIZE (256)
 
 
 MEMORY MODEL: SMALL WITH FLOATING POINT ARITHMETIC
@@ -13,24 +13,24 @@ INPUT MODULES INCLUDED:
   .\Objects\main.obj (MAIN)
   .\Objects\delay.obj (DELAY)
   .\Objects\Ultrasonic.obj (ULTRASONIC)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FPMUL)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FPDIV)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FCAST)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51FPS.LIB (PRINTF)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FPGETOPN)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FPROUND)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FPCONVERT)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FPADD)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51FPS.LIB (?C?FTNPWR)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C?CLDPTR)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C?CLDOPTR)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C?CSTPTR)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C?LNEG)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C?PLDIIDATA)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C?CCASE)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (PUTCHAR)
-  F:\WORKAPP\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
+  C:\KEIL5\C51\LIB\C51FPS.LIB (?C?FPMUL)
+  C:\KEIL5\C51\LIB\C51FPS.LIB (?C?FPDIV)
+  C:\KEIL5\C51\LIB\C51FPS.LIB (?C?FCAST)
+  C:\KEIL5\C51\LIB\C51FPS.LIB (PRINTF)
+  C:\KEIL5\C51\LIB\C51FPS.LIB (?C?FPGETOPN)
+  C:\KEIL5\C51\LIB\C51FPS.LIB (?C?FPROUND)
+  C:\KEIL5\C51\LIB\C51FPS.LIB (?C?FPCONVERT)
+  C:\KEIL5\C51\LIB\C51FPS.LIB (?C?FPADD)
+  C:\KEIL5\C51\LIB\C51FPS.LIB (?C?FTNPWR)
+  C:\KEIL5\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL5\C51\LIB\C51S.LIB (?C?CLDPTR)
+  C:\KEIL5\C51\LIB\C51S.LIB (?C?CLDOPTR)
+  C:\KEIL5\C51\LIB\C51S.LIB (?C?CSTPTR)
+  C:\KEIL5\C51\LIB\C51S.LIB (?C?LNEG)
+  C:\KEIL5\C51\LIB\C51S.LIB (?C?PLDIIDATA)
+  C:\KEIL5\C51\LIB\C51S.LIB (?C?CCASE)
+  C:\KEIL5\C51\LIB\C51S.LIB (PUTCHAR)
+  C:\KEIL5\C51\LIB\C51S.LIB (?C_INIT)
 
 
 LINK MAP OF MODULE:  .\Objects\UItrasonic (MAIN)
@@ -42,12 +42,11 @@ LINK MAP OF MODULE:  .\Objects\UItrasonic (MAIN)
             * * * * * * *   D A T A   M E M O R Y   * * * * * * *
             REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
             DATA    0008H     0006H     UNIT         ?DT?ULTRASONIC
-            DATA    000EH     0002H     UNIT         ?DT?RUN?ULTRASONIC
-                    0010H     0010H                  *** GAP ***
+                    000EH     0012H                  *** GAP ***
             BIT     0020H.0   0001H.1   UNIT         _BIT_GROUP_
                     0021H.1   0000H.7                *** GAP ***
-            DATA    0022H     001CH     UNIT         _DATA_GROUP_
-            IDATA   003EH     0001H     UNIT         ?STACK
+            DATA    0022H     001EH     UNIT         _DATA_GROUP_
+            IDATA   0040H     0001H     UNIT         ?STACK
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
             CODE    0000H     0003H     ABSOLUTE     
@@ -59,17 +58,16 @@ LINK MAP OF MODULE:  .\Objects\UItrasonic (MAIN)
             CODE    0AD8H     0027H     UNIT         ?PR?PUTCHAR?PUTCHAR
             CODE    0AFFH     0020H     UNIT         ?PR?_DELAY_MS?DELAY
             CODE    0B1FH     001CH     UNIT         ?PR?INIT?ULTRASONIC
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  17:30:19  PAGE 2
+            CODE    0B3BH     0013H     UNIT         ?PR?_NOP?DELAY
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/08/2019  14:31:04  PAGE 2
 
 
-            CODE    0B3BH     0017H     UNIT         ?CO?MAIN
-            CODE    0B52H     0013H     UNIT         ?PR?_NOP?DELAY
-            CODE    0B65H     000EH     UNIT         ?PR?MAIN?MAIN
-            CODE    0B73H     000DH     UNIT         ?CO?ULTRASONIC
-            CODE    0B80H     000CH     UNIT         ?PR?STARTMODULE?ULTRASONIC
-            CODE    0B8CH     000BH     UNIT         ?PR?_DELAY_US?DELAY
-            CODE    0B97H     000BH     UNIT         ?C_INITSEG
-            CODE    0BA2H     000AH     UNIT         ?PR?TIMER_COUNT?ULTRASONIC
+            CODE    0B4EH     000DH     UNIT         ?CO?ULTRASONIC
+            CODE    0B5BH     000CH     UNIT         ?PR?STARTMODULE?ULTRASONIC
+            CODE    0B67H     000BH     UNIT         ?PR?_DELAY_US?DELAY
+            CODE    0B72H     000BH     UNIT         ?C_INITSEG
+            CODE    0B7DH     000AH     UNIT         ?PR?TIMER_COUNT?ULTRASONIC
+            CODE    0B87H     0008H     UNIT         ?PR?MAIN?MAIN
 
 
 
@@ -85,10 +83,24 @@ SEGMENT                               BIT_GROUP          DATA_GROUP
 
 ?PR?MAIN?MAIN                      -----    -----      -----    -----
   +--> ?PR?INIT?ULTRASONIC
-  +--> ?CO?MAIN
+  +--> ?PR?RUN?ULTRASONIC
+
+?PR?RUN?ULTRASONIC                 -----    -----      0022H    0002H
+  +--> ?PR?_DELAY_MS?DELAY
+  +--> ?PR?STARTMODULE?ULTRASONIC
+  +--> ?PR?TIMER_COUNT?ULTRASONIC
+
+?PR?STARTMODULE?ULTRASONIC         -----    -----      -----    -----
+  +--> ?PR?_NOP?DELAY
+
+?PR?TIMER_COUNT?ULTRASONIC         -----    -----      -----    -----
+  +--> ?PR?CONUT?ULTRASONIC
+
+?PR?CONUT?ULTRASONIC               -----    -----      -----    -----
+  +--> ?CO?ULTRASONIC
   +--> ?PR?PRINTF?PRINTF
 
-?PR?PRINTF?PRINTF                  0020H.0  0001H.1    0022H    001CH
+?PR?PRINTF?PRINTF                  0020H.0  0001H.1    0024H    001CH
   +--> ?PR?PUTCHAR?PUTCHAR
 
 
@@ -107,32 +119,32 @@ SYMBOL TABLE OF MODULE:  .\Objects\UItrasonic (MAIN)
   D:00C0H         PUBLIC        P4
   D:00C8H         PUBLIC        P5
   D:00A8H         PUBLIC        IE
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/08/2019  14:31:04  PAGE 3
+
+
   D:00B8H         PUBLIC        IP
   D:00D8H         PUBLIC        CCON
-  C:0B65H         PUBLIC        main
+  C:0B87H         PUBLIC        main
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
   D:00E0H         PUBLIC        ACC
   D:00D0H         PUBLIC        PSW
   -------         PROC          MAIN
-  C:0B65H         LINE#         15
-  C:0B65H         LINE#         16
-  C:0B65H         LINE#         17
-  C:0B68H         LINE#         18
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  17:30:19  PAGE 3
-
-
-  C:0B68H         LINE#         19
-  C:0B68H         LINE#         20
-  C:0B71H         LINE#         22
+  C:0B87H         LINE#         15
+  C:0B87H         LINE#         16
+  C:0B87H         LINE#         17
+  C:0B8AH         LINE#         18
+  C:0B8AH         LINE#         19
+  C:0B8AH         LINE#         20
+  C:0B8DH         LINE#         21
   -------         ENDPROC       MAIN
   -------         ENDMOD        MAIN
 
   -------         MODULE        DELAY
   C:0000H         SYMBOL        _ICE_DUMMY_
-  C:0B52H         PUBLIC        _nop
+  C:0B3BH         PUBLIC        _nop
   C:0AFFH         PUBLIC        _delay_ms
-  C:0B8CH         PUBLIC        _delay_us
+  C:0B67H         PUBLIC        _delay_us
   -------         PROC          _DELAY_MS
   D:0006H         SYMBOL        n
   -------         DO            
@@ -147,25 +159,28 @@ SYMBOL TABLE OF MODULE:  .\Objects\UItrasonic (MAIN)
   -------         ENDPROC       _DELAY_MS
   -------         PROC          _DELAY_US
   D:0006H         SYMBOL        n
-  C:0B8CH         LINE#         24
-  C:0B8CH         LINE#         25
-  C:0B8CH         LINE#         26
-  C:0B96H         LINE#         27
+  C:0B67H         LINE#         24
+  C:0B67H         LINE#         25
+  C:0B67H         LINE#         26
+  C:0B71H         LINE#         27
   -------         ENDPROC       _DELAY_US
   -------         PROC          _NOP
   D:0006H         SYMBOL        n
   -------         DO            
   D:0004H         SYMBOL        i
   -------         ENDDO         
-  C:0B52H         LINE#         32
-  C:0B52H         LINE#         33
-  C:0B52H         LINE#         35
-  C:0B5CH         LINE#         36
-  C:0B5CH         LINE#         37
-  C:0B5DH         LINE#         38
-  C:0B64H         LINE#         39
+  C:0B3BH         LINE#         32
+  C:0B3BH         LINE#         33
+  C:0B3BH         LINE#         35
+  C:0B45H         LINE#         36
+  C:0B45H         LINE#         37
+  C:0B46H         LINE#         38
+  C:0B4DH         LINE#         39
   -------         ENDPROC       _NOP
   -------         ENDMOD        DELAY
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/08/2019  14:31:04  PAGE 4
+
 
   -------         MODULE        ULTRASONIC
   C:0000H         SYMBOL        _ICE_DUMMY_
@@ -178,13 +193,10 @@ SYMBOL TABLE OF MODULE:  .\Objects\UItrasonic (MAIN)
   D:00C8H         PUBLIC        P5
   B:00A8H.7       PUBLIC        EA
   D:00A8H         PUBLIC        IE
-  C:0BA2H         PUBLIC        timer_Count
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  17:30:19  PAGE 4
-
-
+  C:0B7DH         PUBLIC        timer_Count
   B:00B0H.7       PUBLIC        Trig
   D:00B8H         PUBLIC        IP
-  C:0B80H         PUBLIC        startModule
+  C:0B5BH         PUBLIC        startModule
   B:0098H.1       PUBLIC        TI
   D:00D8H         PUBLIC        CCON
   C:0A62H         PUBLIC        conut
@@ -214,20 +226,23 @@ SYMBOL TABLE OF MODULE:  .\Objects\UItrasonic (MAIN)
   C:0A9BH         LINE#         27
   -------         ENDPROC       CONUT
   -------         PROC          TIMER_COUNT
-  C:0BA2H         LINE#         33
-  C:0BA2H         LINE#         34
-  C:0BA2H         LINE#         35
-  C:0BA4H         LINE#         36
-  C:0BA7H         LINE#         37
-  C:0BA9H         LINE#         38
+  C:0B7DH         LINE#         33
+  C:0B7DH         LINE#         34
+  C:0B7DH         LINE#         35
+  C:0B7FH         LINE#         36
+  C:0B82H         LINE#         37
+  C:0B84H         LINE#         38
   -------         ENDPROC       TIMER_COUNT
   -------         PROC          STARTMODULE
-  C:0B80H         LINE#         45
-  C:0B80H         LINE#         46
-  C:0B80H         LINE#         47
-  C:0B82H         LINE#         48
-  C:0B89H         LINE#         49
-  C:0B8BH         LINE#         50
+  C:0B5BH         LINE#         45
+  C:0B5BH         LINE#         46
+  C:0B5BH         LINE#         47
+  C:0B5DH         LINE#         48
+  C:0B64H         LINE#         49
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/08/2019  14:31:04  PAGE 5
+
+
+  C:0B66H         LINE#         50
   -------         ENDPROC       STARTMODULE
   -------         PROC          INIT
   C:0B1FH         LINE#         56
@@ -239,9 +254,6 @@ SYMBOL TABLE OF MODULE:  .\Objects\UItrasonic (MAIN)
   C:0B2AH         LINE#         63
   C:0B2CH         LINE#         64
   C:0B2EH         LINE#         66
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  17:30:19  PAGE 5
-
-
   C:0B31H         LINE#         67
   C:0B34H         LINE#         68
   C:0B36H         LINE#         69
@@ -250,7 +262,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\UItrasonic (MAIN)
   -------         ENDPROC       INIT
   -------         PROC          RUN
   -------         DO            
-  D:000EH         SYMBOL        valA
+  D:0022H         SYMBOL        valA
   -------         ENDDO         
   C:0AACH         LINE#         78
   C:0AACH         LINE#         79
@@ -283,10 +295,13 @@ SYMBOL TABLE OF MODULE:  .\Objects\UItrasonic (MAIN)
   -------         ENDMOD        ?C?FCAST
 
   -------         MODULE        PRINTF
-  D:0022H         PUBLIC        ?_PRINTF?BYTE
-  D:0022H         PUBLIC        ?_SPRINTF?BYTE
+  D:0024H         PUBLIC        ?_PRINTF?BYTE
+  D:0024H         PUBLIC        ?_SPRINTF?BYTE
   C:05C9H         PUBLIC        _PRINTF
   C:05C3H         PUBLIC        _SPRINTF
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/08/2019  14:31:04  PAGE 6
+
+
   -------         ENDMOD        PRINTF
 
   -------         MODULE        ?C?FPROUND
@@ -299,9 +314,6 @@ SYMBOL TABLE OF MODULE:  .\Objects\UItrasonic (MAIN)
 
   -------         MODULE        ?C?FPADD
   C:036AH         PUBLIC        ?C?FPADD
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/07/2019  17:30:19  PAGE 6
-
-
   C:0366H         PUBLIC        ?C?FPSUB
   -------         ENDMOD        ?C?FPADD
 
@@ -340,8 +352,5 @@ SYMBOL TABLE OF MODULE:  .\Objects\UItrasonic (MAIN)
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?_DELAY_US?DELAY
 
-*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-    SEGMENT: ?PR?RUN?ULTRASONIC
-
-Program Size: data=46.1 xdata=0 code=2988
-LINK/LOCATE RUN COMPLETE.  2 WARNING(S),  0 ERROR(S)
+Program Size: data=46.1 xdata=0 code=2959
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)
