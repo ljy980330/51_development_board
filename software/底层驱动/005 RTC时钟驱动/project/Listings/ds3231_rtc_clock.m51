@@ -1,0 +1,698 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        09/09/2019  17:52:56  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+F:\WORKAPP\KEIL_V5\C51\BIN\BL51.EXE ..\output\main.obj, ..\output\rtc.obj, ..\output\i2c.obj, ..\output\delay.obj, ..\ou
+>> tput\printf_init.obj TO ..\output\ds3231_rtc_clock PRINT (.\Listings\ds3231_rtc_clock.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: LARGE
+
+
+INPUT MODULES INCLUDED:
+  ..\output\main.obj (MAIN)
+  ..\output\rtc.obj (RTC)
+  ..\output\i2c.obj (I2C)
+  ..\output\delay.obj (DELAY)
+  ..\output\printf_init.obj (PRINTF_INIT)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51L.LIB (?C_STARTUP)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51L.LIB (PRINTF)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51L.LIB (?C_INIT)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51L.LIB (?C?CLDPTR)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51L.LIB (?C?CLDOPTR)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51L.LIB (?C?CSTPTR)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51L.LIB (?C?PLDIXDATA)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51L.LIB (?C?PSTXDATA)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51L.LIB (?C?CCASE)
+  F:\WORKAPP\KEIL_V5\C51\LIB\C51L.LIB (PUTCHAR)
+
+
+LINK MAP OF MODULE:  ..\output\ds3231_rtc_clock (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0005H     UNIT         _DATA_GROUP_
+                    000DH     0013H                  *** GAP ***
+            BIT     0020H.0   0001H.1   UNIT         _BIT_GROUP_
+            BIT     0021H.1   0000H.2   UNIT         ?BI?IIC_START?I2C
+            BIT     0021H.3   0000H.2   UNIT         ?BI?IIC_STOP?I2C
+                    0021H.5   0000H.3                *** GAP ***
+            IDATA   0022H     0001H     UNIT         ?STACK
+
+            * * * * * * *  X D A T A   M E M O R Y  * * * * * * *
+            XDATA   0000H     008CH     UNIT         _XDATA_GROUP_
+            XDATA   008CH     0020H     UNIT         ?XD?RTC
+            XDATA   00ACH     0002H     UNIT         ?XD?IIC_START?I2C
+            XDATA   00AEH     0002H     UNIT         ?XD?IIC_STOP?I2C
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0365H     UNIT         ?PR?PRINTF?PRINTF
+            CODE    0368H     00F7H     UNIT         ?PR?MAIN?MAIN
+            CODE    045FH     00BEH     UNIT         ?PR?UPDATE_RTC_BUFFER?RTC
+            CODE    051DH     009EH     UNIT         ?C?LIB_CODE
+            CODE    05BBH     008CH     UNIT         ?C_C51STARTUP
+            CODE    0647H     005FH     UNIT         ?PR?DS3231_WRITE_TIME?RTC
+            CODE    06A6H     0048H     UNIT         ?PR?DS3231_TIME_INIT?RTC
+            CODE    06EEH     003FH     UNIT         ?CO?MAIN
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/09/2019  17:52:56  PAGE 2
+
+
+            CODE    072DH     0034H     UNIT         ?PR?IIC_START?I2C
+            CODE    0761H     0034H     UNIT         ?PR?IIC_STOP?I2C
+            CODE    0795H     002DH     UNIT         ?PR?DS3231_READ_TIME?RTC
+            CODE    07C2H     0027H     UNIT         ?PR?PUTCHAR?PUTCHAR
+            CODE    07E9H     0025H     UNIT         ?PR?_DS3231_IIC_SINGLE_BYTE_READ?RTC
+            CODE    080EH     001FH     UNIT         ?PR?DS3231_IIC_READ_BYTE?RTC
+            CODE    082DH     001EH     UNIT         ?PR?_DS3231_IIC_WRITE_BYTE?RTC
+            CODE    084BH     001EH     UNIT         ?PR?_DELAY_MS?DELAY
+            CODE    0869H     001CH     UNIT         ?PR?DS3231_IIC_TACK?RTC
+            CODE    0885H     0018H     UNIT         ?PR?_DS3231_IIC_SINGLE_BYTE_WRITE?RTC
+            CODE    089DH     0014H     UNIT         ?C_INITSEG
+            CODE    08B1H     0013H     UNIT         ?PR?_DELAY_NOP?DELAY
+            CODE    08C4H     0013H     UNIT         ?PR?UARTPRINTINIT?PRINTF_INIT
+            CODE    08D7H     000FH     UNIT         ?PR?DS3231_IIC_START?RTC
+            CODE    08E6H     000DH     UNIT         ?PR?DELAY_20MS?DELAY
+            CODE    08F3H     000DH     UNIT         ?PR?DELAY_1S?DELAY
+            CODE    0900H     000BH     UNIT         ?PR?DS3231_INIT?RTC
+            CODE    090BH     000AH     UNIT         ?PR?DS3231_IIC_DELAY?RTC
+            CODE    0915H     000AH     UNIT         ?PR?DS3231_IIC_STOP?RTC
+            CODE    091FH     0008H     UNIT         ?CO?RTC
+            CODE    0927H     0005H     UNIT         ?PR?DELAY_30US?DELAY
+
+
+
+OVERLAY MAP OF MODULE:   ..\output\ds3231_rtc_clock (MAIN)
+
+
+SEGMENT                                          BIT_GROUP          DATA_GROUP          XDATA_GROUP
+  +--> CALLED SEGMENT                         START    LENGTH     START    LENGTH     START    LENGTH
+-----------------------------------------------------------------------------------------------------
+?C_C51STARTUP                                 -----    -----      -----    -----      -----    -----
+  +--> ?PR?MAIN?MAIN
+  +--> ?C_INITSEG
+
+?PR?MAIN?MAIN                                 -----    -----      -----    -----      0000H    0064H
+  +--> ?PR?UARTPRINTINIT?PRINTF_INIT
+  +--> ?PR?DS3231_TIME_INIT?RTC
+  +--> ?PR?DS3231_INIT?RTC
+  +--> ?PR?DS3231_READ_TIME?RTC
+  +--> ?PR?UPDATE_RTC_BUFFER?RTC
+  +--> ?CO?MAIN
+  +--> ?PR?PRINTF?PRINTF
+  +--> ?PR?DELAY_1S?DELAY
+
+?PR?DS3231_TIME_INIT?RTC                      -----    -----      -----    -----      -----    -----
+  +--> ?PR?DS3231_READ_TIME?RTC
+  +--> ?PR?DS3231_WRITE_TIME?RTC
+
+?PR?DS3231_READ_TIME?RTC                      -----    -----      -----    -----      -----    -----
+  +--> ?CO?RTC
+  +--> ?PR?_DS3231_IIC_SINGLE_BYTE_READ?RTC
+
+?PR?_DS3231_IIC_SINGLE_BYTE_READ?RTC          -----    -----      -----    -----      -----    -----
+  +--> ?PR?DS3231_IIC_TACK?RTC
+  +--> ?PR?_DS3231_IIC_WRITE_BYTE?RTC
+  +--> ?PR?DS3231_IIC_STOP?RTC
+  +--> ?PR?DS3231_IIC_START?RTC
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/09/2019  17:52:56  PAGE 3
+
+
+  +--> ?PR?DS3231_IIC_READ_BYTE?RTC
+  +--> ?PR?DS3231_IIC_DELAY?RTC
+
+?PR?DS3231_IIC_TACK?RTC                       0020H.0  0000H.1    -----    -----      -----    -----
+  +--> ?PR?DS3231_IIC_START?RTC
+  +--> ?PR?_DS3231_IIC_WRITE_BYTE?RTC
+  +--> ?PR?DS3231_IIC_DELAY?RTC
+
+?PR?DS3231_IIC_START?RTC                      -----    -----      -----    -----      -----    -----
+  +--> ?PR?DS3231_IIC_DELAY?RTC
+
+?PR?_DS3231_IIC_WRITE_BYTE?RTC                -----    -----      -----    -----      -----    -----
+  +--> ?PR?DS3231_IIC_DELAY?RTC
+
+?PR?DS3231_IIC_STOP?RTC                       -----    -----      -----    -----      -----    -----
+  +--> ?PR?DS3231_IIC_DELAY?RTC
+
+?PR?DS3231_IIC_READ_BYTE?RTC                  -----    -----      -----    -----      -----    -----
+  +--> ?PR?DS3231_IIC_DELAY?RTC
+
+?PR?DS3231_WRITE_TIME?RTC                     -----    -----      -----    -----      -----    -----
+  +--> ?CO?RTC
+  +--> ?PR?_DS3231_IIC_SINGLE_BYTE_WRITE?RTC
+
+?PR?_DS3231_IIC_SINGLE_BYTE_WRITE?RTC         -----    -----      -----    -----      -----    -----
+  +--> ?PR?DS3231_IIC_TACK?RTC
+  +--> ?PR?_DS3231_IIC_WRITE_BYTE?RTC
+  +--> ?PR?DS3231_IIC_STOP?RTC
+
+?PR?DS3231_INIT?RTC                           -----    -----      -----    -----      -----    -----
+  +--> ?PR?_DS3231_IIC_SINGLE_BYTE_WRITE?RTC
+
+?PR?PRINTF?PRINTF                             0020H.0  0001H.1    0008H    0005H      0064H    0028H
+  +--> ?PR?PUTCHAR?PUTCHAR
+
+
+
+SYMBOL TABLE OF MODULE:  ..\output\ds3231_rtc_clock (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00C0H         PUBLIC        P4
+  D:00C8H         PUBLIC        P5
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  D:00D8H         PUBLIC        CCON
+  C:0368H         PUBLIC        main
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:00E0H         PUBLIC        ACC
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/09/2019  17:52:56  PAGE 4
+
+
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          MAIN
+  -------         DO            
+  X:0000H         SYMBOL        send_buffer
+  -------         ENDDO         
+  C:0368H         LINE#         11
+  C:0368H         LINE#         12
+  C:0368H         LINE#         15
+  C:036BH         LINE#         16
+  C:036EH         LINE#         17
+  C:0371H         LINE#         19
+  C:0371H         LINE#         20
+  C:0371H         LINE#         21
+  C:0374H         LINE#         22
+  C:0377H         LINE#         24
+  C:0442H         LINE#         34
+  C:0459H         LINE#         36
+  C:045CH         LINE#         37
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        RTC
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  X:008CH         PUBLIC        display_buff
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  C:0647H         PUBLIC        DS3231_write_time
+  D:00B0H         PUBLIC        P3
+  D:00C0H         PUBLIC        P4
+  D:00C8H         PUBLIC        P5
+  C:0910H         PUBLIC        DS3231_IIC_delay
+  D:00A8H         PUBLIC        IE
+  C:07E9H         PUBLIC        _DS3231_IIC_single_byte_read
+  C:091FH         PUBLIC        rtc_address
+  D:00B8H         PUBLIC        IP
+  D:00D8H         PUBLIC        CCON
+  C:0885H         PUBLIC        _DS3231_IIC_single_byte_write
+  C:08D7H         PUBLIC        DS3231_IIC_start
+  C:080EH         PUBLIC        DS3231_IIC_read_byte
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  C:082DH         PUBLIC        _DS3231_IIC_write_byte
+  C:0915H         PUBLIC        DS3231_IIC_stop
+  X:009CH         PUBLIC        RTC_Data
+  D:00E0H         PUBLIC        ACC
+  B:00C0H.1       PUBLIC        DS3231_IIC_SDA
+  C:0795H         PUBLIC        DS3231_Read_time
+  C:0900H         PUBLIC        DS3231_Init
+  B:00C0H.0       PUBLIC        DS3231_IIC_SCL
+  C:06A6H         PUBLIC        DS3231_time_Init
+  C:045FH         PUBLIC        Update_rtc_buffer
+  X:00A4H         PUBLIC        RTC_Data1
+  D:00D0H         PUBLIC        PSW
+  C:0871H         PUBLIC        DS3231_IIC_Tack
+  C:090BH         SYMBOL        L?0035
+  -------         PROC          L?0034
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/09/2019  17:52:56  PAGE 5
+
+
+  -------         ENDPROC       L?0034
+  C:090BH         SYMBOL        L?0035
+  -------         PROC          DS3231_IIC_DELAY
+  C:0910H         LINE#         19
+  C:0910H         LINE#         20
+  C:0910H         LINE#         21
+  C:0914H         LINE#         22
+  -------         ENDPROC       DS3231_IIC_DELAY
+  -------         PROC          DS3231_IIC_START
+  C:08D7H         LINE#         24
+  C:08D7H         LINE#         25
+  C:08D7H         LINE#         26
+  C:08D9H         LINE#         27
+  C:08DBH         LINE#         28
+  C:08DEH         LINE#         29
+  C:08E0H         LINE#         30
+  C:08E3H         LINE#         31
+  C:08E5H         LINE#         32
+  -------         ENDPROC       DS3231_IIC_START
+  -------         PROC          DS3231_IIC_STOP
+  C:0915H         LINE#         34
+  C:0915H         LINE#         35
+  C:0915H         LINE#         36
+  C:0917H         LINE#         37
+  C:0917H         LINE#         38
+  C:0917H         LINE#         39
+  C:091AH         LINE#         40
+  C:091CH         LINE#         41
+  -------         ENDPROC       DS3231_IIC_STOP
+  -------         PROC          L?0033
+  -------         ENDPROC       L?0033
+  -------         PROC          DS3231_IIC_TACK
+  -------         DO            
+  B:0020H.0       SYMBOL        ack
+  -------         ENDDO         
+  C:0871H         LINE#         44
+  C:0871H         LINE#         45
+  C:0871H         LINE#         47
+  C:0873H         LINE#         48
+  C:0873H         LINE#         49
+  C:0873H         LINE#         50
+  C:0876H         LINE#         51
+  C:087AH         LINE#         52
+  C:087DH         LINE#         53
+  C:087FH         LINE#         54
+  C:0882H         LINE#         55
+  C:0884H         LINE#         56
+  -------         ENDPROC       DS3231_IIC_TACK
+  -------         PROC          _DS3231_IIC_WRITE_BYTE
+  D:0007H         SYMBOL        Data
+  -------         DO            
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:082DH         LINE#         58
+  C:082DH         LINE#         59
+  C:082DH         LINE#         61
+  C:082FH         LINE#         62
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/09/2019  17:52:56  PAGE 6
+
+
+  C:082FH         LINE#         63
+  C:0833H         LINE#         64
+  C:0837H         LINE#         66
+  C:0839H         LINE#         67
+  C:0839H         LINE#         68
+  C:0839H         LINE#         69
+  C:083CH         LINE#         70
+  C:083EH         LINE#         71
+  C:0841H         LINE#         72
+  C:0845H         LINE#         73
+  C:084AH         LINE#         74
+  -------         ENDPROC       _DS3231_IIC_WRITE_BYTE
+  -------         PROC          DS3231_IIC_READ_BYTE
+  -------         DO            
+  D:0006H         SYMBOL        i
+  D:0007H         SYMBOL        Data
+  -------         ENDDO         
+  C:080EH         LINE#         76
+  C:080EH         LINE#         77
+  C:080EH         LINE#         80
+  C:0810H         LINE#         81
+  C:0810H         LINE#         82
+  C:0812H         LINE#         83
+  C:0815H         LINE#         84
+  C:0819H         LINE#         85
+  C:081CH         LINE#         87
+  C:081FH         LINE#         88
+  C:0822H         LINE#         89
+  C:0824H         LINE#         90
+  C:0827H         LINE#         91
+  C:082CH         LINE#         92
+  C:082CH         LINE#         93
+  -------         ENDPROC       DS3231_IIC_READ_BYTE
+  -------         PROC          _DS3231_IIC_SINGLE_BYTE_WRITE
+  D:0004H         SYMBOL        Waddr
+  D:0005H         SYMBOL        Data
+  C:0885H         LINE#         95
+  C:0887H         LINE#         96
+  C:0887H         LINE#         97
+  C:0887H         LINE#         98
+  C:0887H         LINE#         99
+  C:088AH         LINE#         100
+  C:088FH         LINE#         101
+  C:0892H         LINE#         102
+  C:0897H         LINE#         103
+  C:089AH         LINE#         104
+  -------         ENDPROC       _DS3231_IIC_SINGLE_BYTE_WRITE
+  -------         PROC          _DS3231_IIC_SINGLE_BYTE_READ
+  D:0005H         SYMBOL        Waddr
+  -------         DO            
+  D:0007H         SYMBOL        Data
+  -------         ENDDO         
+  C:07E9H         LINE#         107
+  C:07EBH         LINE#         108
+  C:07EBH         LINE#         110
+  C:07EBH         LINE#         111
+  C:07EBH         LINE#         112
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/09/2019  17:52:56  PAGE 7
+
+
+  C:07EEH         LINE#         113
+  C:07F3H         LINE#         114
+  C:07F6H         LINE#         115
+  C:07F9H         LINE#         116
+  C:07FCH         LINE#         117
+  C:0801H         LINE#         118
+  C:0804H         LINE#         119
+  C:0807H         LINE#         120
+  C:080AH         LINE#         121
+  C:080DH         LINE#         122
+  C:080DH         LINE#         123
+  -------         ENDPROC       _DS3231_IIC_SINGLE_BYTE_READ
+  -------         PROC          DS3231_READ_TIME
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0007H         SYMBOL        tmp
+  D:0006H         SYMBOL        tmp1
+  D:0005H         SYMBOL        tmp2
+  -------         ENDDO         
+  C:0795H         LINE#         125
+  C:0795H         LINE#         126
+  C:0795H         LINE#         128
+  C:0797H         LINE#         129
+  C:0797H         LINE#         130
+  C:07A0H         LINE#         131
+  C:07A5H         LINE#         132
+  C:07A9H         LINE#         133
+  C:07BCH         LINE#         134
+  C:07C1H         LINE#         135
+  -------         ENDPROC       DS3231_READ_TIME
+  -------         PROC          DS3231_WRITE_TIME
+  -------         DO            
+  D:0003H         SYMBOL        i
+  D:0006H         SYMBOL        tmp
+  -------         ENDDO         
+  C:0647H         LINE#         137
+  C:0647H         LINE#         138
+  C:0647H         LINE#         140
+  C:0649H         LINE#         141
+  C:0649H         LINE#         142
+  C:065AH         LINE#         143
+  C:066CH         LINE#         144
+  C:067EH         LINE#         145
+  C:0683H         LINE#         146
+  C:0685H         LINE#         147
+  C:0685H         LINE#         148
+  C:069AH         LINE#         149
+  C:069FH         LINE#         150
+  -------         ENDPROC       DS3231_WRITE_TIME
+  -------         PROC          DS3231_INIT
+  C:0900H         LINE#         153
+  C:0900H         LINE#         154
+  C:0900H         LINE#         155
+  C:0902H         LINE#         156
+  C:0904H         LINE#         157
+  -------         ENDPROC       DS3231_INIT
+  -------         PROC          DS3231_TIME_INIT
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/09/2019  17:52:56  PAGE 8
+
+
+  C:06A6H         LINE#         164
+  C:06A6H         LINE#         165
+  C:06A6H         LINE#         166
+  C:06A9H         LINE#         167
+  C:06D3H         LINE#         168
+  C:06D3H         LINE#         169
+  C:06D4H         LINE#         170
+  C:06D6H         LINE#         171
+  C:06DAH         LINE#         172
+  C:06DEH         LINE#         173
+  C:06E2H         LINE#         174
+  C:06E6H         LINE#         175
+  C:06EAH         LINE#         176
+  C:06EDH         LINE#         177
+  C:06EDH         LINE#         178
+  -------         ENDPROC       DS3231_TIME_INIT
+  -------         PROC          UPDATE_RTC_BUFFER
+  C:045FH         LINE#         180
+  C:045FH         LINE#         181
+  C:045FH         LINE#         182
+  C:0465H         LINE#         183
+  C:0468H         LINE#         184
+  C:0475H         LINE#         185
+  C:047EH         LINE#         187
+  C:048BH         LINE#         188
+  C:0494H         LINE#         190
+  C:04A1H         LINE#         191
+  C:04AAH         LINE#         193
+  C:04B7H         LINE#         194
+  C:04C0H         LINE#         196
+  C:04CDH         LINE#         197
+  C:04D6H         LINE#         199
+  C:04E3H         LINE#         200
+  C:04ECH         LINE#         202
+  C:04F9H         LINE#         203
+  C:0502H         LINE#         205
+  C:050EH         LINE#         206
+  C:051CH         LINE#         207
+  -------         ENDPROC       UPDATE_RTC_BUFFER
+  -------         ENDMOD        RTC
+
+  -------         MODULE        I2C
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00C0H         PUBLIC        P4
+  D:00C8H         PUBLIC        P5
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  D:00D8H         PUBLIC        CCON
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  C:072DH         PUBLIC        IIC_Start
+  D:00E0H         PUBLIC        ACC
+  C:0761H         PUBLIC        IIC_Stop
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/09/2019  17:52:56  PAGE 9
+
+
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          IIC_START
+  B:0021H.1       SYMBOL        scl
+  B:0021H.2       SYMBOL        sda
+  X:00ACH         SYMBOL        counter
+  C:072DH         LINE#         16
+  C:072DH         LINE#         17
+  C:072DH         LINE#         18
+  C:072FH         LINE#         19
+  C:073AH         LINE#         20
+  C:073CH         LINE#         21
+  C:0747H         LINE#         22
+  C:0749H         LINE#         23
+  C:0754H         LINE#         24
+  C:0756H         LINE#         25
+  -------         ENDPROC       IIC_START
+  -------         PROC          IIC_STOP
+  B:0021H.3       SYMBOL        scl
+  B:0021H.4       SYMBOL        sda
+  X:00AEH         SYMBOL        counter
+  C:0761H         LINE#         33
+  C:0761H         LINE#         34
+  C:0761H         LINE#         35
+  C:0763H         LINE#         36
+  C:076EH         LINE#         37
+  C:0770H         LINE#         38
+  C:077BH         LINE#         39
+  C:077DH         LINE#         40
+  C:0788H         LINE#         41
+  C:078AH         LINE#         42
+  -------         ENDPROC       IIC_STOP
+  -------         ENDMOD        I2C
+
+  -------         MODULE        DELAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:08E6H         PUBLIC        Delay_20ms
+  C:0927H         PUBLIC        Delay_30us
+  C:08B1H         PUBLIC        _Delay_nop
+  C:084BH         PUBLIC        _Delay_ms
+  C:08F3H         PUBLIC        Delay_1s
+  -------         PROC          DELAY_30US
+  -------         DO            
+  D:0007H         SYMBOL        i
+  -------         ENDDO         
+  C:0927H         LINE#         16
+  C:0927H         LINE#         17
+  C:0927H         LINE#         19
+  C:0929H         LINE#         20
+  C:092BH         LINE#         21
+  -------         ENDPROC       DELAY_30US
+  -------         PROC          DELAY_20MS
+  -------         DO            
+  D:0007H         SYMBOL        i
+  D:0006H         SYMBOL        j
+  D:0005H         SYMBOL        k
+  -------         ENDDO         
+  C:08E6H         LINE#         28
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/09/2019  17:52:56  PAGE 10
+
+
+  C:08E6H         LINE#         29
+  C:08E6H         LINE#         31
+  C:08E8H         LINE#         32
+  C:08EAH         LINE#         33
+  C:08ECH         LINE#         35
+  C:08ECH         LINE#         37
+  C:08ECH         LINE#         38
+  C:08EEH         LINE#         39
+  C:08EEH         LINE#         40
+  C:08F0H         LINE#         41
+  C:08F2H         LINE#         42
+  -------         ENDPROC       DELAY_20MS
+  -------         PROC          DELAY_1S
+  -------         DO            
+  D:0007H         SYMBOL        i
+  D:0006H         SYMBOL        j
+  D:0005H         SYMBOL        k
+  -------         ENDDO         
+  C:08F3H         LINE#         49
+  C:08F3H         LINE#         50
+  C:08F3H         LINE#         52
+  C:08F5H         LINE#         53
+  C:08F7H         LINE#         54
+  C:08F9H         LINE#         56
+  C:08F9H         LINE#         58
+  C:08F9H         LINE#         59
+  C:08FBH         LINE#         60
+  C:08FBH         LINE#         61
+  C:08FDH         LINE#         62
+  C:08FFH         LINE#         63
+  -------         ENDPROC       DELAY_1S
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        z
+  -------         DO            
+  D:0006H         SYMBOL        x
+  D:0004H         SYMBOL        y
+  -------         ENDDO         
+  C:084BH         LINE#         69
+  C:084BH         LINE#         70
+  C:084BH         LINE#         73
+  C:0854H         LINE#         75
+  C:0868H         LINE#         76
+  -------         ENDPROC       _DELAY_MS
+  -------         PROC          _DELAY_NOP
+  D:0006H         SYMBOL        counter
+  -------         DO            
+  D:0004H         SYMBOL        i
+  -------         ENDDO         
+  C:08B1H         LINE#         83
+  C:08B1H         LINE#         84
+  C:08B1H         LINE#         87
+  C:08BBH         LINE#         88
+  C:08C3H         LINE#         89
+  -------         ENDPROC       _DELAY_NOP
+  -------         ENDMOD        DELAY
+
+  -------         MODULE        PRINTF_INIT
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/09/2019  17:52:56  PAGE 11
+
+
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00C0H         PUBLIC        P4
+  D:00C8H         PUBLIC        P5
+  B:00A8H.7       PUBLIC        EA
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  B:0098H.1       PUBLIC        TI
+  D:00D8H         PUBLIC        CCON
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  D:0088H         PUBLIC        TCON
+  C:08C4H         PUBLIC        UartPrintInit
+  D:00E0H         PUBLIC        ACC
+  D:008DH         PUBLIC        TH1
+  D:008BH         PUBLIC        TL1
+  B:0088H.6       PUBLIC        TR1
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          UARTPRINTINIT
+  C:08C4H         LINE#         7
+  C:08C4H         LINE#         8
+  C:08C4H         LINE#         9
+  C:08C7H         LINE#         10
+  C:08CAH         LINE#         12
+  C:08CDH         LINE#         13
+  C:08D0H         LINE#         14
+  C:08D2H         LINE#         15
+  C:08D4H         LINE#         17
+  C:08D6H         LINE#         18
+  -------         ENDPROC       UARTPRINTINIT
+  -------         ENDMOD        PRINTF_INIT
+
+  -------         MODULE        PRINTF
+  X:0064H         PUBLIC        ?_PRINTF517?BYTE
+  X:0064H         PUBLIC        ?_PRINTF?BYTE
+  X:0064H         PUBLIC        ?_SPRINTF517?BYTE
+  X:0064H         PUBLIC        ?_SPRINTF?BYTE
+  C:006EH         PUBLIC        _PRINTF
+  C:006EH         PUBLIC        _PRINTF517
+  C:0068H         PUBLIC        _SPRINTF
+  C:0068H         PUBLIC        _SPRINTF517
+  -------         ENDMOD        PRINTF
+
+  -------         MODULE        ?C?CLDPTR
+  C:051DH         PUBLIC        ?C?CLDPTR
+  -------         ENDMOD        ?C?CLDPTR
+
+  -------         MODULE        ?C?CLDOPTR
+  C:0536H         PUBLIC        ?C?CLDOPTR
+  -------         ENDMOD        ?C?CLDOPTR
+
+  -------         MODULE        ?C?CSTPTR
+  C:0563H         PUBLIC        ?C?CSTPTR
+  -------         ENDMOD        ?C?CSTPTR
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/09/2019  17:52:56  PAGE 12
+
+
+
+  -------         MODULE        ?C?PLDIXDATA
+  C:0575H         PUBLIC        ?C?PLDIXDATA
+  -------         ENDMOD        ?C?PLDIXDATA
+
+  -------         MODULE        ?C?PSTXDATA
+  C:058CH         PUBLIC        ?C?PSTXDATA
+  -------         ENDMOD        ?C?PSTXDATA
+
+  -------         MODULE        ?C?CCASE
+  C:0595H         PUBLIC        ?C?CCASE
+  -------         ENDMOD        ?C?CCASE
+
+  -------         MODULE        PUTCHAR
+  C:07C2H         PUBLIC        _PUTCHAR
+  -------         ENDMOD        PUTCHAR
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?IIC_START?I2C
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?IIC_STOP?I2C
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_30US?DELAY
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY_20MS?DELAY
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_MS?DELAY
+
+Program Size: data=15.5 xdata=176 code=2348
+LINK/LOCATE RUN COMPLETE.  5 WARNING(S),  0 ERROR(S)

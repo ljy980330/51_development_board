@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        08/30/2019  17:09:15  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        09/09/2019  19:18:36  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -59,7 +59,7 @@ SEGMENT
 SYMBOL TABLE OF MODULE:  .\Objects\buzzer (MAIN)
 
   VALUE           TYPE          NAME
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  17:09:15  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/09/2019  19:18:36  PAGE 2
 
 
   ----------------------------------
@@ -119,7 +119,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\buzzer (MAIN)
   -------         ENDDO         
   C:0023H         LINE#         32
   C:0023H         LINE#         33
-BL51 BANKED LINKER/LOCATER V6.22                                                      08/30/2019  17:09:15  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/09/2019  19:18:36  PAGE 3
 
 
   C:0023H         LINE#         35
@@ -147,7 +147,7 @@ SYMBOL TABLE OF MODULE:  .\Objects\buzzer (MAIN)
   C:0036H         PUBLIC        init
   D:00E0H         PUBLIC        ACC
   D:008CH         PUBLIC        TH0
-  B:00A0H.7       PUBLIC        buzz
+  B:00A0H.3       PUBLIC        buzz
   D:008AH         PUBLIC        TL0
   C:005DH         PUBLIC        run
   D:00D0H         PUBLIC        PSW

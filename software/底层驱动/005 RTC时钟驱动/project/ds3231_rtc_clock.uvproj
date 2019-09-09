@@ -12,14 +12,14 @@
       <ToolsetName>MCS-51</ToolsetName>
       <TargetOption>
         <TargetCommonOption>
-          <Device>STC89C51RC</Device>
-          <Vendor>STC-STC89</Vendor>
-          <Cpu>IRAM(0-0xFF) XRAM(0-0xFF) IROM(0-0xFFF) CLOCK(45000000) MODP2</Cpu>
+          <Device>STC12C5A60S2</Device>
+          <Vendor>STC</Vendor>
+          <Cpu>IRAM(0-0xFF) XRAM(0-0x3FF) IROM(0-0xEFFF) CLOCK(45000000) MODP2</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile>"LIB\STARTUP.A51" ("Standard 8051 Startup Code")</StartupFile>
           <FlashDriverDll></FlashDriverDll>
-          <DeviceId>0</DeviceId>
-          <RegisterFile>STC89.H</RegisterFile>
+          <DeviceId>53630</DeviceId>
+          <RegisterFile>STC12C5A60S2.H</RegisterFile>
           <MemoryEnv></MemoryEnv>
           <Cmp></Cmp>
           <Asm></Asm>
@@ -42,8 +42,8 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>OLED_STR</OutputName>
+          <OutputDirectory>..\output\</OutputDirectory>
+          <OutputName>ds3231_rtc_clock</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -100,7 +100,7 @@
           <SimDllName>S8051.DLL</SimDllName>
           <SimDllArguments></SimDllArguments>
           <SimDlgDll>DP51.DLL</SimDlgDll>
-          <SimDlgDllArguments>-p51</SimDlgDllArguments>
+          <SimDlgDllArguments>-pDR8051</SimDlgDllArguments>
           <TargetDllName>S8051.DLL</TargetDllName>
           <TargetDllArguments></TargetDllArguments>
           <TargetDlgDll>TP51.DLL</TargetDlgDll>
@@ -168,7 +168,7 @@
         </Utilities>
         <Target51>
           <Target51Misc>
-            <MemoryModel>0</MemoryModel>
+            <MemoryModel>2</MemoryModel>
             <RTOS>0</RTOS>
             <RomSize>2</RomSize>
             <DataHold>0</DataHold>
@@ -253,7 +253,7 @@
               <IRO>
                 <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
-                <Size>0x1000</Size>
+                <Size>0xf000</Size>
               </IRO>
               <IRA>
                 <Type>0</Type>
@@ -263,7 +263,7 @@
               <XRA>
                 <Type>0</Type>
                 <StartAddress>0x0</StartAddress>
-                <Size>0x100</Size>
+                <Size>0x400</Size>
               </XRA>
               <XRA512>
                 <Type>0</Type>
@@ -347,39 +347,29 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>code_tab.c</FileName>
+              <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\code_tab\code_tab.c</FilePath>
+              <FilePath>..\src\main.c</FilePath>
             </File>
             <File>
-              <FileName>delay.c</FileName>
+              <FileName>rtc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\delay\delay.c</FilePath>
-            </File>
-            <File>
-              <FileName>display.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\display\display.c</FilePath>
-            </File>
-            <File>
-              <FileName>function.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\function\function.c</FilePath>
+              <FilePath>..\src\ds3231\rtc.c</FilePath>
             </File>
             <File>
               <FileName>i2c.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\i2c\i2c.c</FilePath>
+              <FilePath>..\src\i2c\i2c.c</FilePath>
             </File>
             <File>
-              <FileName>OLED_Init.c</FileName>
+              <FileName>delay.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\OLED_Init\OLED_Init.c</FilePath>
+              <FilePath>..\src\delay\delay.c</FilePath>
             </File>
             <File>
-              <FileName>main.c</FileName>
+              <FileName>printf_init.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\main.c</FilePath>
+              <FilePath>..\src\printf_init\printf_init.c</FilePath>
             </File>
           </Files>
         </Group>
