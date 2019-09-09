@@ -1,5 +1,5 @@
 #include "led.h"
- unsigned char code fseg[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90};
+ unsigned char code fseg[]={0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,0x7f,0x6f};
  unsigned char code segbit[]={0x80,0x40,0x20,0x10,0x08,0x04,0x02,0x01};
  unsigned char  disbuf[4]={0,0,0,0};
  //-----------------------------------------------------------------------------
@@ -11,14 +11,14 @@ void LED_OUT(uchar X);				// LED单字节串行移位函数
 
 unsigned char code LED_0F[];		// LED字模表
 
-sbit DIO = P1^0;				//串行数据输入
-sbit RCLK  = P1^1;				//时钟脉冲信号——上升沿有效
-sbit SCLK = P1^2;				//打入信号————上升沿有效
+sbit DIO = P0^0;				//串行数据输入
+sbit RCLK  = P0^1;				//时钟脉冲信号——上升沿有效
+sbit SCLK = P0^2;				//打入信号————上升沿有效
 
 
 void LED4_Display ()
 {
-	unsigned char code *led_table;          // 查表指针
+	uchar code *led_table;          // 查表指针
 	uchar i;
 	//显示第1位
 	led_table = LED_0F + LED[0];
@@ -86,10 +86,10 @@ void display(uint temp)
     shi=temp%100/10;  
     ge=temp%10;
 	
-	LED[4]=qian;
-	LED[3]=bai;
-	LED[2]=shi;
-	LED[1]=ge;
+	LED[1]=qian;
+	LED[2]=bai;
+	LED[3]=shi;
+	LED[4]=ge;
 	
  }	
 

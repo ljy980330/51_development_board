@@ -13,4 +13,8 @@ void delay_ms(uint n);
 void delay_us(uint n);
 void nop(uint n);
 
+void Delay_30us();
+void Delay_20ms();
+void Delay_1s();
+
 #endif

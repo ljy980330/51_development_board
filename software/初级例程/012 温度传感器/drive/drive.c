@@ -7,14 +7,11 @@
 **********************************************************************************************************/
 
 #include "drive.h"
-#include <stdio.h>
 extern uint Temperature[3];
 extern uint Humidity[2];
 extern uchar Data_Receive[5];
 
 sbit DHT = P2^0;
-
-//#define PRINT_LOG
 
 /*******************************************************************************
 * 函 数 名         : OLED_Display
@@ -41,10 +38,12 @@ void DHT_Collect()
 	uint CheckValue=0;//校验和
 	
 	DHT=0;//主机发起始信号
-	delay_ms(20);//主机拉低总线至少18ms
-	DHT=1;//主机拉高总线20~40us
-	delay_us(30);
+//	delay_ms(20);//主机拉低总线至少18ms
+	Delay_20ms();//主机拉低总线至少18ms
 	
+	DHT=1;//主机拉高总线20~40us
+//	delay_us(30);
+	Delay_30us();
 	
 	t=80;//设置超时等待时间
 	while(DHT&&t--);//等待DHT11拉低总线
@@ -86,8 +85,11 @@ void DHT_Collect()
 		//printf("dat8 is : %c\n", dat8);
 	}
 	
-	delay_us(30);//等待DHT11拉低50us
-	delay_us(30);
+//	delay_us(30);//等待DHT11拉低50us
+//	delay_us(30);
+	Delay_30us();
+	Delay_30us();
+	
 	DHT=1;
 
 	for(i=0;i<4;i++)
@@ -102,14 +104,6 @@ void DHT_Collect()
 		Humidity[0]=Data_Receive[0]/10;
 		Humidity[1]=Data_Receive[0]%10;
 	}
-
-#ifdef PRINT_LOG
-	delay_ms(100);
-	printf("Temperature : %c%c%c\n\r", Temperature[0], Temperature[1], Temperature[2]);
-	delay_ms(100);
-	printf("Humidity : %c%c\n\r", Humidity[0], Humidity[1]);
-	delay_ms(100);
-#endif
 }
 
 /*******************************************************************************

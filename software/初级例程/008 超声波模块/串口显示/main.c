@@ -17,7 +17,6 @@ void main(void)
 	init();
 	while(1)
 	{
-		printf("111111111111111111111\n");
-//	 run();
+	 run();
 	}
 }              
